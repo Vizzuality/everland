@@ -1,0 +1,8 @@
+/.next
+/.vercel
+/out
+/node_modules
+/cypress
+/public
+/docs
+/public
