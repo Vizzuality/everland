@@ -1,3 +1,4 @@
+import { Text } from 'components/Text';
 import Head from 'next/head';
 
 const Home: React.FC = () => (
@@ -5,17 +6,14 @@ const Home: React.FC = () => (
     <Head>
       <title>Welcome</title>
     </Head>
-    <h1>Welcome to Vizzuality Front End scaffold project.</h1>
-    <p>Remember to edit:</p>
-    <ul>
-      <li>package.json</li>
-      <li>pages/app.js</li>
-      <li>now.json (Vercel)</li>
-    </ul>
-    <p>
-      Also, we strongly recommend to read and follow our [Standardization
-      guidelines](https://vizzuality.github.io/devismos/docs/guidelines/standardization/).
-    </p>
+    <main>
+      <Text weight='thin' family='primary'>Hola, StagSans thin</Text><br />
+      <Text weight='regular' family='primary'>Hola, StagSans regular</Text><br />
+      <Text weight='regular' family='secondary'>Hola, StagSans regular</Text><br />
+      <Text weight='bold' family='primary'>Hola, StagSans bold</Text><br />
+      <Text weight='bold' family='secondary'>Hola, Cardo bold</Text><br />
+      <Text fontStyle='italic' family='secondary'>Hola, Cardo italic</Text><br />
+    </main>
   </div>
 );
 

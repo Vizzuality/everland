@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider as ReduxProvider } from 'react-redux';
+import { globalStyles } from 'stitches.config'
 
 import type { AppProps } from 'next/app';
 
@@ -8,9 +9,8 @@ import { Hydrate } from 'react-query/hydration';
 
 import store from 'store';
 
-import 'styles/globals.css';
-
 const queryClient = new QueryClient();
+globalStyles()
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
   <ReduxProvider store={store}>
