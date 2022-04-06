@@ -24,35 +24,88 @@ export const {
 } = createStitches({
   theme: {
     colors: {
+      'primary-jasper-100': '#FCEBDA',
+      'primary-jasper-200': '#FAD2B7',
+      'primary-jasper-300': '#F0AF90',
+      'primary-jasper-400': '#E28D71',
+      'primary-jasper-500': '#D05D45',
+      'primary-jasper-600': '#B23E32',
+      'primary-jasper-700': '#952522',
+      'primary-jasper-800': '#78161B',
+      'primary-jasper-900': '#630D18',
+      'primary-jasper-default': '#D05D45',
 
-    },
-    space: {
+      'primary-tuna-100': '#EBEDF5',
+      'primary-tuna-200': '#D8DCEC',
+      'primary-tuna-300': '#AEB2C6',
+      'primary-tuna-400': '#787C8E',
+      'primary-tuna-500': '#363844',
+      'primary-tuna-600': '#27293A',
+      'primary-tuna-700': '#1B1D30',
+      'primary-tuna-800': '#111327',
+      'primary-tuna-900': '#0A0C20',
+      'primary-tuna-default': '#363844',
 
+      'secondary-grey-100': '#F8F9F6',
+      'secondary-grey-200': '#F2F3EE',
+      'secondary-grey-300': '#DADDD6',
+      'secondary-grey-400': '#B8BCB4',
+      'secondary-grey-500': '#8C9088',
+      'secondary-grey-600': '#6E7B63',
+      'secondary-grey-700': '#526744',
+      'secondary-grey-800': '#39532B',
+      'secondary-grey-900': '#27451A',
+      'secondary-grey-default': '#8C9088',
+
+      'secondary-green-100': '#D1F4CC',
+      'secondary-green-200': '#9EEA9C',
+      'secondary-green-300': '#60C067',
+      'secondary-green-400': '#31813E',
+      'secondary-green-500': '#082E12',
+      'secondary-green-600': '#052711',
+      'secondary-green-700': '#042111',
+      'secondary-green-800': '#021A0F',
+      'secondary-green-900': '#01160E',
+      'secondary-green-default': '#082E12',
+
+      'neutral-white': '#FFFFFF',
+      'neutral-light-beige': '#FFF9ED',
+      'neutral-dark-beige': '#EADDC3',
+      'neutral-dark-grey': '#393939',
+      'neutral-black': '#111111',
     },
+    space: {},
     fontSizes: {
-
+      h1: '80px',
     },
     lineHeights: {
-
+      h1: '80px',
+    },
+    letterSpacings: {
+      h1: '-2.4%',
     },
     fonts: {
       primary: 'StagSans',
-      secondary: 'Cardo'
+      secondary: 'Cardo',
     },
     fontWeights: {
       thin: 300,
       regular: 400,
       bold: 700,
     },
-    letterSpacings: {},
     sizes: {
-
+      1: '4px',
+      2: '8px',
+      3: '12px',
+      4: '16px',
+      5: '20px',
+      6: '24px',
+      7: '32px',
+      8: '40px',
     },
     borderWidths: {},
     borderStyles: {},
-    radii: {
-
-    },
+    radii: {},
     shadows: {},
     zIndices: {
       1: 100,
@@ -100,11 +153,28 @@ export const globalStyles = stitchesGlobal({
   body: {
     fontFamily: '$primary',
   },
-  '@font-face': {
-    fontFamily: '$primary',
-    fontWeight: 300,
-    src: 'url("fonts/stag-sans/StagSansThin.ttf")',
-  }
+  '@font-face': [
+    {
+      fontFamily: 'StagSans',
+      fontWeight: 300,
+      src: 'url("fonts/stag-sans/StagSans-thin.ttf")',
+    },
+    {
+      fontFamily: 'StagSans',
+      fontWeight: 400,
+      src: 'url("fonts/stag-sans/StagSans-Regular.ttf")',
+    },
+    {
+      fontFamily: 'StagSans',
+      fontWeight: 700,
+      src: 'url("fonts/stag-sans/StagSans-Bold.ttf")',
+    },
+    {
+      fontFamily: 'Cardo',
+      fontWeight: 300,
+      src: 'url("fonts/cardo/Cardo-Bold.ttf")',
+    },
+  ],
 })
 
 export type ColorTokens = keyof typeof theme.colors

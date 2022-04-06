@@ -21,4 +21,3 @@ declare global {
     dataLayer: Record<string, any>[]
   }
 }
-

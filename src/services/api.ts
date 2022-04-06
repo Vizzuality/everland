@@ -1,5 +1,5 @@
-import axios from 'axios';
-import Jsona from 'jsona';
+import axios from 'axios'
+import Jsona from 'jsona'
 // import { getSession, signOut } from 'next-auth/react';
 
 /**
@@ -7,12 +7,12 @@ import Jsona from 'jsona';
  * Then, by default all the request are sending the authorization header.
  */
 
-const dataFormatter = new Jsona();
+const dataFormatter = new Jsona()
 
 const defaultConfig = {
   baseURL: `${process.env.NEXT_PUBLIC_API_URL}/api/v1`,
   headers: { 'Content-Type': 'application/json' },
-};
+}
 
 // const authorizedRequest = async (config) => {
 //   const { accessToken } = await getSession();
@@ -26,11 +26,11 @@ const onResponseError = (error) => {
   //   signOut();
   // }
   // Do something with response error
-  return Promise.reject(error);
-};
+  return Promise.reject(error)
+}
 
 // This endpoint by default will deserialize the data
-export const apiService = axios.create(defaultConfig);
+export const apiService = axios.create(defaultConfig)
 
 apiService.interceptors.response.use(
   (response) => ({
@@ -41,15 +41,15 @@ apiService.interceptors.response.use(
     },
   }),
   onResponseError,
-);
+)
 
 // apiService.interceptors.request.use(authorizedRequest, onResponseError);
 
 // Use this endpoint when JSON API spec is not needed
 // or the response doesn't follow this format
-export const apiRawService = axios.create(defaultConfig);
+export const apiRawService = axios.create(defaultConfig)
 
-apiRawService.interceptors.response.use((response) => response, onResponseError);
+apiRawService.interceptors.response.use((response) => response, onResponseError)
 // apiRawService.interceptors.request.use(authorizedRequest, onResponseError);
 
-export default apiService;
+export default apiService

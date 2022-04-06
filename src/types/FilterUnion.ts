@@ -7,4 +7,4 @@
  * type Filtered = FilterUnion<Test, string> --> 'foo' | 'bar'
  */
 
-export type FilterUnion<Union extends any, Filter> = Union extends Filter ? Union : never
+export type FilterUnion<Union, Filter> = Union extends Filter ? Union : never
