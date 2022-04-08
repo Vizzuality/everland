@@ -12,16 +12,6 @@ export const Hero = styled('div', {
   backgroundImage: `url('/images/projects/hero-background.jpg')`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-
-  '&::before': {
-    content: ' ',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
-  },
 })
 
 export const Header = styled('header', {
@@ -51,5 +41,19 @@ export const Logo = styled('div', {
   width: '93px',
   img: {
     width: '100%',
+  },
+})
+
+export const ScrollDown = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+
+  '& > svg': {
+    transition: 'all 150ms linear',
+  },
+
+  '&:hover > svg': {
+    transform: 'translateY(8px)',
   },
 })
