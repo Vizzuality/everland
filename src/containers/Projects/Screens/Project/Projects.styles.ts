@@ -45,6 +45,8 @@ export const Logo = styled('div', {
 })
 
 export const ScrollDown = styled('div', {
+  position: 'relative',
+  zIndex: '$1',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

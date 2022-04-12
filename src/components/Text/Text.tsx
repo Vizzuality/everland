@@ -1,9 +1,10 @@
+import { CSS } from '@stitches/react'
 import { ComponentProps } from 'react'
 import { ColorTokens, styled, theme } from 'stitches.config'
 
 const color = Object.keys(theme.colors).reduce((acc, color) => {
   return { ...acc, [color]: { '&': { color: `$${color}` } } }
-}, {}) as { [key in ColorTokens]: any }
+}, {}) as { [key in ColorTokens]: CSS }
 // const size = Object.keys(theme.fontSizes).reduce((acc, fontSize) => {
 //   return { ...acc, [fontSize]: { '&': { fontSize: `$${fontSize}`, lineHeight: `$${fontSize}` } } }
 // }, {}) as { [key in keyof typeof theme.fontSizes]: any }
@@ -20,6 +21,10 @@ export const Text = styled('span', {
         fontSize: '$h1',
         lineHeight: '$h1',
         letterSpacing: '$h1',
+      },
+      body: {
+        fontSize: '16px',
+        lineHeight: '21.66px',
       },
     },
     family: {

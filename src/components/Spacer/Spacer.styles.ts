@@ -1,4 +1,4 @@
-import { styled, theme, SpaceTokens } from 'stitches.config'
+import { styled, theme } from 'stitches.config'
 
 const space = Object.keys(theme.space).reduce(
   (acc, cv) => ({
@@ -6,7 +6,7 @@ const space = Object.keys(theme.space).reduce(
     [cv]: { $$space: `$space$${cv}` },
   }),
   { 0: { $$space: 0 } },
-) as { [key in SpaceTokens | '0']: any }
+)
 
 export const Spacer = styled('div', {
   variants: {

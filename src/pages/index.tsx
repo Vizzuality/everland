@@ -1,4 +1,4 @@
-import { Projects } from 'containers/Projects/Screens/Projects'
+import { Projects } from 'containers/Projects/Screens/Project'
 import Head from 'next/head'
 
 const Home: React.FC = () => (
