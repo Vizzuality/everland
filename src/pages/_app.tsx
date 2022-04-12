@@ -1,16 +1,16 @@
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { Provider as ReduxProvider } from 'react-redux';
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { Provider as ReduxProvider } from 'react-redux'
+import { globalStyles } from 'stitches.config'
 
-import type { AppProps } from 'next/app';
+import type { AppProps } from 'next/app'
 
-import { OverlayProvider } from '@react-aria/overlays';
-import { Hydrate } from 'react-query/hydration';
+import { OverlayProvider } from '@react-aria/overlays'
+import { Hydrate } from 'react-query/hydration'
 
-import store from 'store';
+import store from 'store'
 
-import 'styles/globals.css';
-
-const queryClient = new QueryClient();
+const queryClient = new QueryClient()
+globalStyles()
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
   <ReduxProvider store={store}>
@@ -22,6 +22,6 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => (
       </Hydrate>
     </QueryClientProvider>
   </ReduxProvider>
-);
+)
 
-export default MyApp;
+export default MyApp
