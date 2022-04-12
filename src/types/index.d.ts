@@ -5,7 +5,7 @@ import type { InternalCSS } from '@stitches/react'
 // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/31245#issuecomment-780019806
 declare module 'react' {
   interface DOMAttributes<T> {
-    css?: InternalCSS
+    css?: InternalCSS<T>
   }
 }
 declare global {
@@ -18,6 +18,6 @@ declare global {
 
 declare global {
   interface Window {
-    dataLayer: Record<string, any>[]
+    dataLayer: Record<string, object>[]
   }
 }
