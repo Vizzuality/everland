@@ -13,7 +13,7 @@ const spriter = new SVGSpriter({
   dest: SPRITE_OUTPUT_FOLDER,
   shape: {
     id: {
-      generator: function (_name, file) {
+      generator: function (_name: any, file: any) {
         return file.basename.slice(0, -4)
       },
     },

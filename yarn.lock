@@ -12173,7 +12173,7 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svg-sprite@^1.5.4:
+svg-sprite@1.5.4:
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/svg-sprite/-/svg-sprite-1.5.4.tgz#974fd4734ea00d9951ce335a453ab2b66551e2d1"
   integrity sha512-3jeqAmQS4c4rAMzsQNBXo3+J/x65JIxaFl15wTyvrJdT/G0DzXd67oTMBxz5+lCb8ETsWjM6ZAyr/+R+BwXzag==
