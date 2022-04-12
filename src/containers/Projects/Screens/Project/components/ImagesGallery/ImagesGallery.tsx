@@ -20,8 +20,8 @@ export const ImagesGallery = () => {
             gridArea="horizontal1"
           />
           <ImageItem
-            title="title"
-            description="description"
+            title="Women's Empowerment"
+            description="Improving the socioeconomic outcomes of women in local communities"
             imageUrl="/images/projects/gallery-3.jpg"
             gridArea="horizontal2"
           />

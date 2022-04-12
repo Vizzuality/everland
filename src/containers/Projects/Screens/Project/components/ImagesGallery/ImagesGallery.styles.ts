@@ -11,10 +11,6 @@ export const ImagesGalleryRoot = styled('div', {
   overflow: 'auto',
 })
 
-export const Test = styled('div', {
-  backgroundColor: 'red',
-})
-
 export const GalleryBackground = styled('div', {
   backgroundColor: '$neutral-light-beige',
   backgroundImage: 'url(/images/projects/gallery-background.svg)',

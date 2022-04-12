@@ -161,48 +161,48 @@ export const {
   },
   media,
   utils: {
-    size: (value: any) => ({
+    size: (value: string) => ({
       width: value,
       height: value,
     }),
-    px: (value: any) => ({
+    px: (value: string) => ({
       paddingLeft: value,
       paddingRight: value,
     }),
-    py: (value: any) => ({
+    py: (value: string) => ({
       paddingTop: value,
       paddingBottom: value,
     }),
-    pt: (value: any) => ({
+    pt: (value: string) => ({
       paddingTop: value,
     }),
-    pl: (value: any) => ({
+    pl: (value: string) => ({
       paddingLeft: value,
     }),
-    pr: (value: any) => ({
+    pr: (value: string) => ({
       paddingRight: value,
     }),
-    pb: (value: any) => ({
+    pb: (value: string) => ({
       paddingBottom: value,
     }),
-    mx: (value: any) => ({
+    mx: (value: string) => ({
       marginLeft: value,
       marginRight: value,
     }),
-    my: (value: any) => ({
+    my: (value: string) => ({
       marginTop: value,
       marginBottom: value,
     }),
-    mt: (value: any) => ({
+    mt: (value: string) => ({
       marginTop: value,
     }),
-    mr: (value: any) => ({
+    mr: (value: string) => ({
       marginRight: value,
     }),
-    ml: (value: any) => ({
+    ml: (value: string) => ({
       marginLeft: value,
     }),
-    mb: (value: any) => ({
+    mb: (value: string) => ({
       marginBottom: value,
     }),
   },

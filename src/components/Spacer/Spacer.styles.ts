@@ -1,3 +1,4 @@
+import { CSS } from '@stitches/react'
 import { styled, theme, SpaceTokens } from 'stitches.config'
 
 const space = Object.keys(theme.space).reduce(
@@ -5,12 +6,17 @@ const space = Object.keys(theme.space).reduce(
     ...acc,
     [cv]: { $$space: `$space$${cv}` },
   }),
-  { 0: { $$space: 0 } },
-) as { [key in SpaceTokens | '0']: any }
+  {},
+) as { [key in SpaceTokens]: CSS }
 
 export const Spacer = styled('div', {
   variants: {
-    space,
+    space: {
+      ...space,
+      0: {
+        $$space: 0,
+      },
+    },
     direction: {
       row: {
         width: '$$space',
