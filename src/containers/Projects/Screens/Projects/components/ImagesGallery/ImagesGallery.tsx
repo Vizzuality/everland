@@ -1,5 +1,5 @@
 import { Container } from 'containers/components/Container/Container'
-import { ImagesGalleryRoot, Test, GalleryBackground } from './ImagesGallery.styles'
+import { ImagesGalleryRoot, GalleryBackground } from './ImagesGallery.styles'
 import { ImageItem } from '../ImageItem'
 
 export const ImagesGallery = () => {
