@@ -61,14 +61,45 @@ export const ScrollDown = styled('div', {
 
 export const SpaceBetween = styled('div', {
   display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'flex-start',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+
+  '@bp2': {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+  },
+})
+
+export const IframeContainer = styled('div', {
+  maxWidth: '617px',
+  width: 'max(60%, 617px)',
+  height: '582px',
+
+  iframe: {
+    width: '100%',
+    height: '100%',
+  },
+
+  '@bp2': {
+    width: '60%',
+  },
 })
 
 export const ScrollableText = styled('div', {
-  maxHeight: '582px',
-  maxWidth: '40%',
   overflow: 'auto',
+  marginTop: '$4',
+
+  '@bp2': {
+    marginTop: '0',
+    maxHeight: '582px',
+    maxWidth: '35%',
+  },
+
+  '@bp3': {
+    maxWidth: '40%',
+  },
 
   /* Scrollbar always visible */
   '&::-webkit-scrollbar': {
