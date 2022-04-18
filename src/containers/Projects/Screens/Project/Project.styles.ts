@@ -1,5 +1,4 @@
 import { styled } from 'stitches.config'
-export const ProjectsRoot = styled('div', {})
 
 export const Hero = styled('div', {
   position: 'relative',
@@ -57,5 +56,29 @@ export const ScrollDown = styled('div', {
 
   '&:hover > svg': {
     transform: 'translateY(8px)',
+  },
+})
+
+export const SpaceBetween = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'flex-start',
+})
+
+export const ScrollableText = styled('div', {
+  maxHeight: '582px',
+  maxWidth: '40%',
+  overflow: 'auto',
+
+  /* Scrollbar always visible */
+  '&::-webkit-scrollbar': {
+    WebkitAppearance: 'none',
+    width: '8px',
+  },
+
+  '&::-webkit-scrollbar-thumb': {
+    borderRadius: '5px',
+    backgroundColor: 'rgba(0,0,0,.5)',
+    WebkitBoxShadow: '0 0 1px rgba(255,255,255,.5)',
   },
 })

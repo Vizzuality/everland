@@ -8,7 +8,6 @@ export const ImagesGalleryRoot = styled('div', {
   gridTemplateRows: '250px',
   gridTemplateColumns: '340px 340px 340px',
   gap: '$8',
-  overflow: 'auto',
 })
 
 export const GalleryBackground = styled('div', {
@@ -16,4 +15,10 @@ export const GalleryBackground = styled('div', {
   backgroundImage: 'url(/images/projects/gallery-background.svg)',
   backgroundSize: 'contain',
   backgroundPosition: 'center',
+})
+
+export const GalleryWrapper = styled('div', {
+  display: 'flex',
+  overflow: 'auto',
+  gap: '$8',
 })

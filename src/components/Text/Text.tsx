@@ -5,9 +5,6 @@ import { ColorTokens, styled, theme } from 'stitches.config'
 const color = Object.keys(theme.colors).reduce((acc, color) => {
   return { ...acc, [color]: { '&': { color: `$${color}` } } }
 }, {}) as { [key in ColorTokens]: CSS }
-// const size = Object.keys(theme.fontSizes).reduce((acc, fontSize) => {
-//   return { ...acc, [fontSize]: { '&': { fontSize: `$${fontSize}`, lineHeight: `$${fontSize}` } } }
-// }, {}) as { [key in keyof typeof theme.fontSizes]: any }
 
 export const Text = styled('span', {
   lineHeight: 1,
@@ -17,14 +14,65 @@ export const Text = styled('span', {
   variants: {
     color,
     size: {
+      heroTitle1: {
+        fontSize: '$hero1',
+        lineHeight: '$hero1',
+      },
+      heroTitle2: {
+        fontSize: '$hero2',
+        lineHeight: '$hero2',
+      },
+      heroTitle3: {
+        fontSize: '$hero3',
+        lineHeight: '$hero3',
+      },
+      heroTitle4: {
+        fontSize: '$hero4',
+        lineHeight: '$hero4',
+      },
       h1: {
         fontSize: '$h1',
         lineHeight: '$h1',
-        letterSpacing: '$h1',
       },
-      body: {
-        fontSize: '16px',
-        lineHeight: '21.66px',
+      h2: {
+        fontSize: '$h2',
+        lineHeight: '$h1',
+      },
+      h3: {
+        fontSize: '$h3',
+        lineHeight: '$h3',
+      },
+      subtitle1: {
+        fontSize: '$subtitle1',
+        lineHeight: '$subtitle',
+      },
+      subtitle2: {
+        fontSize: '$subtitle2',
+        lineHeight: '$subtitle',
+      },
+      subtitle3: {
+        fontSize: '$subtitle3',
+        lineHeight: '$subtitle',
+      },
+      subtitle4: {
+        fontSize: '$subtitle4',
+        lineHeight: '$subtitle',
+      },
+      body1: {
+        fontSize: '$body1',
+        lineHeight: '$body1',
+      },
+      body2: {
+        fontSize: '$body2',
+        lineHeight: '$body2',
+      },
+      caption1: {
+        fontSize: '$caption1',
+        lineHeight: '$caption1',
+      },
+      caption2: {
+        fontSize: '$caption2',
+        lineHeight: '$caption2',
       },
     },
     family: {
@@ -80,6 +128,30 @@ export const Text = styled('span', {
       },
     },
   },
+
+  compoundVariants: [
+    {
+      size: 'h2',
+      weight: 'bold',
+      css: {
+        lineHeight: '$h2',
+      },
+    },
+    {
+      size: 'h2',
+      fontStyle: 'italic',
+      css: {
+        lineHeight: '$h2',
+      },
+    },
+    {
+      size: 'body1',
+      weight: 'bold',
+      css: {
+        lineHeight: '$body1bold',
+      },
+    },
+  ],
 
   defaultVariants: {
     weight: 'regular',

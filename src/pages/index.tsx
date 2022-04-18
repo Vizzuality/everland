@@ -1,4 +1,4 @@
-import { Projects } from 'containers/Projects/Screens/Project'
+import { Project } from 'containers/Projects/Screens/Project'
 import Head from 'next/head'
 
 const Home: React.FC = () => (
@@ -7,7 +7,7 @@ const Home: React.FC = () => (
       <title>Welcome</title>
     </Head>
     <main>
-      <Projects />
+      <Project />
     </main>
   </div>
 )

@@ -6,6 +6,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
+    'react/no-unescaped-entities': 0,
     'prettier/prettier': [
       'error',
       {},
