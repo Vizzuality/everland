@@ -2,11 +2,11 @@ import { styled } from 'stitches.config'
 
 export const Container = styled('div', {
   maxWidth: '1280px',
-  px: '100px',
   margin: 'auto',
+  px: '$5',
 
   '@bp1': {
-    px: '$5',
+    px: '100px',
   },
 
   '@bp2': {
