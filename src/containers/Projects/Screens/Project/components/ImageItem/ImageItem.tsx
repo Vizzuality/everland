@@ -16,10 +16,10 @@ export const ImageItem = ({ imageUrl, title, description, gridArea }: ImageItemP
       <Overlay variant="galleryItem" className="overlay" />
       <Image src={imageUrl} alt={title} layout="fill" />
       <HoverItem className="hover-item">
-        <Text size="body" family="secondary" fontStyle="italic" color="neutral-white">
+        <Text size="body1" family="secondary" fontStyle="italic" color="neutral-white">
           {title}
         </Text>
-        <Text size="body" family="primary" weight="bold" color="neutral-white">
+        <Text size="body1" family="primary" weight="bold" color="neutral-white">
           {description}
         </Text>
       </HoverItem>
