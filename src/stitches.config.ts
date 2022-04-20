@@ -173,8 +173,20 @@ export const {
     },
     borderWidths: {},
     borderStyles: {},
-    radii: {},
-    shadows: {},
+    radii: {
+      1: '4px',
+      2: '6px',
+      3: '8px',
+      4: '10px',
+      5: '12px',
+      6: '16px',
+      7: '20px',
+      pill: '999px',
+    },
+    shadows: {
+      1: '0 16px 32px 0 rgba(0,0,0, 0.15)',
+      2: '0 24px 38px 0 rgba(0,0,0, 0.2)',
+    },
     zIndices: {
       1: 100,
       2: 200,

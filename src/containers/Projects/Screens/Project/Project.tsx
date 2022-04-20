@@ -6,11 +6,14 @@ import { Text } from 'components/Text'
 import { Icon } from 'components/Icon'
 import { Spacer } from 'components/Spacer'
 import { ImagesGallery } from './components/ImagesGallery'
+import { ImpactTabs } from './components/ImpactTabs'
+
 import {
   Header,
   HeaderContent,
   Hero,
   IframeContainer,
+  Impact,
   Logo,
   ScrollableText,
   ScrollDown,
@@ -122,6 +125,18 @@ export const Project = () => {
       </Section>
       <Section>
         <ImagesGallery />
+      </Section>
+      <Section>
+        <Container>
+          <Impact>
+            <Text size="h3" weight="bold" color="primary-tuna-500">
+              Impact
+            </Text>
+
+            <Spacer direction="column" space="10" />
+            <ImpactTabs />
+          </Impact>
+        </Container>
       </Section>
     </>
   )
