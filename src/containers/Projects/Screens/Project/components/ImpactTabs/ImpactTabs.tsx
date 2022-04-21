@@ -13,116 +13,75 @@ import {
   TabTrigger,
 } from './ImpactTabs.styles'
 
-const TABS = ['Community', 'Governance', 'Biodiversity', 'Climate']
+type Tab = {
+  title: string
+  subtitle: string
+  description: string
+  imageName?: string
+}
 
-export const ImpactTabs = () => {
-  const [activeTab, setActiveTab] = useState(TABS[0])
+export type ImpactTabsProps = {
+  tabs: Tab[]
+}
 
-  const activeTabIndex = TABS.indexOf(activeTab)
-  const lastTabIndex = TABS.length - 1
+export const ImpactTabs = ({ tabs }: ImpactTabsProps) => {
+  const [activeTab, setActiveTab] = useState(tabs[0].title)
+
+  const activeTabIndex = tabs.findIndex(({ title }) => title === activeTab)
+  const lastTabIndex = tabs.length - 1
 
   const handleArrowLeftClicked = () => {
-    activeTabIndex > 0 ? setActiveTab(TABS[activeTabIndex - 1]) : setActiveTab(TABS[lastTabIndex])
+    activeTabIndex > 0
+      ? setActiveTab(tabs[activeTabIndex - 1].title)
+      : setActiveTab(tabs[lastTabIndex].title)
   }
 
   const handleArrowRightClicked = () => {
-    activeTabIndex < lastTabIndex ? setActiveTab(TABS[activeTabIndex + 1]) : setActiveTab(TABS[0])
+    activeTabIndex < lastTabIndex
+      ? setActiveTab(tabs[activeTabIndex + 1].title)
+      : setActiveTab(tabs[0].title)
   }
 
   return (
     <ImpactTabsRoot
-      defaultValue={TABS[0]}
+      defaultValue={tabs[0].title}
       orientation="vertical"
       value={activeTab}
       onValueChange={setActiveTab}
     >
       <TabsList aria-label="impact tabs">
-        {TABS.map((tab) => (
-          <TabTrigger key={tab} value={tab}>
-            {tab}
+        {tabs.map(({ title }) => (
+          <TabTrigger key={title} value={title}>
+            {title}
           </TabTrigger>
         ))}
       </TabsList>
-      <TabContainer value={TABS[0]}>
-        <Text size="h2" family="secondary" color="primary-tuna-500">
-          More than 12,000 students served in project supported schools
-        </Text>
+      {tabs.map(({ title, subtitle, description, imageName }) => (
+        <TabContainer key={title} value={title}>
+          <Text size="h2" family="secondary" color="primary-tuna-500">
+            {subtitle}
+          </Text>
 
-        <TabContent>
-          <TabContentText>
-            <Text size="body1" weight="thin">
-              In total, 1,501 women participated in project activities, and benefited from
-              improvements to access to education and health care. (Project activities will be
-              designed in a way that encourages the participation of women; moreover, all management
-              and leadership committees will contain at least one woman, with an aim of
-              transitioning to equal representation over time.
-            </Text>
-          </TabContentText>
-          <TabImage>
-            <Image src="/images/projects/impact-community.jpg" alt="community" layout="fill" />
-          </TabImage>
-        </TabContent>
-      </TabContainer>
-      <TabContainer value={TABS[1]}>
-        <Text size="h2" family="secondary" color="primary-tuna-500">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </Text>
-
-        <TabContent>
-          <TabContentText>
-            <Text size="body1" weight="thin">
-              usce iaculis ante id velit fringilla, sed sagittis orci ullamcorper. Mauris pretium,
-              velit vitae imperdiet sodales, magna nibh tristique neque, a malesuada orci diam et
-              ante. Vestibulum ornare tristique felis, ut suscipit ex fringilla non. Nullam a
-              tincidunt mauris.usce iaculis ante id velit fringilla, sed sagittis orci ullamcorper.
-              Mauris pretium, velit vitae imperdiet sodales, magna nibh tristique neque, a malesuada
-              orci diam et ante. Vestibulum ornare tristique felis, ut suscipit ex fringilla non.
-              Nullam a tincidunt mauris.
-            </Text>
-          </TabContentText>
-
-          <TabImage>
-            <Image src="/images/projects/impact-governance.jpg" alt="community" layout="fill" />
-          </TabImage>
-        </TabContent>
-      </TabContainer>
-      <TabContainer value={TABS[2]}>
-        <Text size="h2" family="secondary" color="primary-tuna-500">
-          20,000 People experiencing improved livelihoods
-        </Text>
-
-        <TabContent>
-          <TabContentText>
-            <Text size="body1" weight="thin">
-              5,827 community members engaged in productive activities or employment in micro-,
-              small- and medium-sized enterprises, and gaining improved livelihoods or income as a
-              result, as a result of project activities (I aquí si quieres podemos inventar una
-              historieta de una enterprise de ecocharcoal).
-            </Text>
-          </TabContentText>
-        </TabContent>
-      </TabContainer>
-      <TabContainer value={TABS[3]}>
-        <Text size="h2" family="secondary" color="primary-tuna-500">
-          From 2010 to 2020, Keo Seima lost 224kha of humid primary forest.
-        </Text>
-
-        <TabContent>
-          <TabContentText>
-            <Text size="body1" weight="thin">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel vero nemo repudiandae
-              quo modi exercitationem iure saepe nam adipisci dolores, fugit, magnam iste a,
-              consequatur nobis iusto doloribus libero mollitia!
-            </Text>
-          </TabContentText>
-        </TabContent>
-      </TabContainer>
+          <TabContent>
+            <TabContentText>
+              <Text size="body1" weight="thin">
+                {description}
+              </Text>
+            </TabContentText>
+            {imageName && (
+              <TabImage>
+                <Image src={`/images/projects/${imageName}.jpg`} alt="community" layout="fill" />
+              </TabImage>
+            )}
+          </TabContent>
+        </TabContainer>
+      ))}
 
       <TabArrow position="left" onClick={handleArrowLeftClicked}>
-        <Icon name="arrow-down-line" />
+        <Icon name="arrow-left" size={16} color="primary-tuna-default" />
       </TabArrow>
       <TabArrow position="right" onClick={handleArrowRightClicked}>
-        <Icon name="arrow-down-line" />
+        <Icon name="arrow-right" size={16} color="primary-tuna-default" />
       </TabArrow>
     </ImpactTabsRoot>
   )

@@ -22,6 +22,46 @@ import {
 
 import * as logo from '../../../../../public/images/common/logo.svg'
 
+const IMPACT_TABS = [
+  {
+    title: 'Community',
+    subtitle: 'More than 12,000 students served in project supported schools',
+    description: `In total, 1,501 women participated in project activities, and benefited from
+    improvements to access to education and health care. (Project activities will be
+    designed in a way that encourages the participation of women; moreover, all management
+    and leadership committees will contain at least one woman, with an aim of
+    transitioning to equal representation over time.`,
+    imageName: 'impact-community',
+  },
+  {
+    title: 'Governance',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    description: `usce iaculis ante id velit fringilla, sed sagittis orci ullamcorper. Mauris pretium,
+    velit vitae imperdiet sodales, magna nibh tristique neque, a malesuada orci diam et
+    ante. Vestibulum ornare tristique felis, ut suscipit ex fringilla non. Nullam a
+    tincidunt mauris.usce iaculis ante id velit fringilla, sed sagittis orci ullamcorper.
+    Mauris pretium, velit vitae imperdiet sodales, magna nibh tristique neque, a malesuada
+    orci diam et ante. Vestibulum ornare tristique felis, ut suscipit ex fringilla non.
+    Nullam a tincidunt mauris.`,
+    imageName: 'impact-governance',
+  },
+  {
+    title: 'Biodiversity',
+    subtitle: '20,000 People experiencing improved livelihoods',
+    description: `5,827 community members engaged in productive activities or employment in micro-,
+    small- and medium-sized enterprises, and gaining improved livelihoods or income as a
+    result, as a result of project activities (I aquí si quieres podemos inventar una
+    historieta de una enterprise de ecocharcoal).`,
+  },
+  {
+    title: 'Climate',
+    subtitle: 'From 2010 to 2020, Keo Seima lost 224kha of humid primary forest.',
+    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel vero nemo repudiandae
+    quo modi exercitationem iure saepe nam adipisci dolores, fugit, magnam iste a,
+    consequatur nobis iusto doloribus libero mollitia!`,
+  },
+]
+
 export const Project = () => {
   return (
     <>
@@ -134,7 +174,7 @@ export const Project = () => {
             </Text>
 
             <Spacer direction="column" space="10" />
-            <ImpactTabs />
+            <ImpactTabs tabs={IMPACT_TABS} />
           </Impact>
         </Container>
       </Section>
