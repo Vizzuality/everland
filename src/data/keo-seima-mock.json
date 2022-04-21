@@ -1,8 +1,10 @@
 {
   "id": "a-marvelous-id",
   "slug": "keo-seima",
-  "name": "Keo Seima",
-  "body": "<p>Keo Seima Wildlife Sanctuary (KSWS) is home to more than 950 wild species, including 75 globally threatened species. It is also the ancestral home of the indigenous Bunong people, whose unique culture and beliefs are inseparable from the forest in which they live. Originally designated as a protected area in 2002, KSWS is managed by <strong>the Royal Government of Cambodia’s Ministry of Environment</strong>, with technical and financial support from <strong>WCS Cambodia</strong>.</p><p>KSWS plays a vital role in the preservation of the region’s important and vulnerable wildlife, including the world’s largest populations of the endangered black-shanked douc and yellow-cheeked crested gibbon, as well as a nationally important population of Asian elephant and many other species.<p><p>At the same time, <strong>it supports the sustainable development of local communities</strong>, most notably through securing communities legal title to their traditional lands, and through the REDD+ Benefit Sharing Mechanism which provides significant funding to community-chosen and community-led development projects.</p>",
+  "title": "Keo Seima",
+  "subtitle": "Anim consequat proident excepteur pariatur sint dolore.",
+  "mainPicture": "/images/projects/keo-seima-header.jpg",
+  "projectInfo": "<p>Keo Seima Wildlife Sanctuary (KSWS) is home to more than 950 wild species, including 75 globally threatened species. It is also the ancestral home of the indigenous Bunong people, whose unique culture and beliefs are inseparable from the forest in which they live. Originally designated as a protected area in 2002, KSWS is managed by <strong>the Royal Government of Cambodia’s Ministry of Environment</strong>, with technical and financial support from <strong>WCS Cambodia</strong>.</p><p>KSWS plays a vital role in the preservation of the region’s important and vulnerable wildlife, including the world’s largest populations of the endangered black-shanked douc and yellow-cheeked crested gibbon, as well as a nationally important population of Asian elephant and many other species.<p><p>At the same time, <strong>it supports the sustainable development of local communities</strong>, most notably through securing communities legal title to their traditional lands, and through the REDD+ Benefit Sharing Mechanism which provides significant funding to community-chosen and community-led development projects.</p>",
   "embeddedMap": "https://www.globalforestwatch.org/embed/map/",
   "gallery": [
     {
@@ -30,6 +32,37 @@
     "centroid": [40, 3],
     "geometry": null
   },
-  "interventionModel": {},
-  "impact": {}
+  "interventionModel": {
+    "title": "Intervention model",
+    "sections": [
+      {
+        "title": "Origins",
+        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict."
+      },
+      {
+        "title": "Threats",
+        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict."
+      },
+      {
+        "title": "Solutions",
+        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict."
+      },
+      {
+        "title": "Progress",
+        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict."
+      }
+    ]
+  },
+  "impact": {},
+  "relatedProjects": [
+    {
+      "title": "Project title",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    }
+  ]
 }
