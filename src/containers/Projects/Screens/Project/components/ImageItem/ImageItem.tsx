@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import { ImageItemRoot, HoverItem } from './ImageItem.styles'
+import { ImageItemRoot, HoverItem, Description, Title } from './ImageItem.styles'
 import { Overlay } from 'components/Overlay/Overlay.styles'
-import { Text } from 'components/Text'
 
 type ImageItemProps = {
   imageUrl: string
@@ -13,15 +12,15 @@ type ImageItemProps = {
 export const ImageItem = ({ imageUrl, title, description, gridArea }: ImageItemProps) => {
   return (
     <ImageItemRoot className="imageItem" css={{ gridArea }}>
-      <Overlay variant="galleryItem" className="overlay" />
       <Image src={imageUrl} alt={title} layout="fill" />
+      <Overlay variant="galleryItem" className="overlay" />
       <HoverItem className="hover-item">
-        <Text size="body1" family="secondary" fontStyle="italic" color="neutral-white">
+        <Title size="body1" family="secondary" fontStyle="italic" color="neutral-white">
           {title}
-        </Text>
-        <Text size="body1" family="primary" weight="bold" color="neutral-white">
+        </Title>
+        <Description size="body1" family="primary" weight="bold" color="neutral-white">
           {description}
-        </Text>
+        </Description>
       </HoverItem>
     </ImageItemRoot>
   )

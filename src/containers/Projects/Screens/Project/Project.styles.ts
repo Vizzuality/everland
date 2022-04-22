@@ -113,3 +113,13 @@ export const ScrollableText = styled('div', {
     WebkitBoxShadow: '0 0 1px rgba(255,255,255,.5)',
   },
 })
+
+export const Impact = styled('div', {
+  position: 'relative',
+  backgroundColor: '$neutral-light-beige',
+  py: '$10',
+  px: '$23',
+  minHeight: '857px',
+  borderRadius: '$7',
+  boxShadow: '$2',
+})
