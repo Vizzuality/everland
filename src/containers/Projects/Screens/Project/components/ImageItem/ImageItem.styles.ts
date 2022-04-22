@@ -14,9 +14,8 @@ export const Description = styled(Text, {
 })
 
 export const HoverItem = styled('div', {
-  transition: 'opacity .15s ease-out, transform .15s ease-out',
+  transition: 'opacity .15s ease-out',
   opacity: 0,
-  transform: 'translateY(20px)',
 
   display: 'flex',
   flexDirection: 'column',

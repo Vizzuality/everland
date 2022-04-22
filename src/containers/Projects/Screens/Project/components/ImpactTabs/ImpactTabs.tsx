@@ -43,12 +43,7 @@ export const ImpactTabs = ({ tabs }: ImpactTabsProps) => {
   }
 
   return (
-    <ImpactTabsRoot
-      defaultValue={tabs[0].title}
-      orientation="vertical"
-      value={activeTab}
-      onValueChange={setActiveTab}
-    >
+    <ImpactTabsRoot defaultValue={tabs[0].title} value={activeTab} onValueChange={setActiveTab}>
       <TabsList aria-label="impact tabs">
         {tabs.map(({ title }) => (
           <TabTrigger key={title} value={title}>

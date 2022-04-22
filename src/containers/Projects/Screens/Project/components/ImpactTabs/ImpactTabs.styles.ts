@@ -51,11 +51,7 @@ export const TabImage = styled('figure', {
 })
 
 export const TabContentText = styled(Text, {
-  marginTop: '$11',
-  fontSize: '$body1',
-  lineHeight: '$body1',
   maxWidth: '403px',
-  fontWeight: '$thin',
 })
 
 export const TabArrow = styled('button', {
