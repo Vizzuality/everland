@@ -123,3 +123,8 @@ export const Impact = styled('div', {
   borderRadius: '$7',
   boxShadow: '$2',
 })
+
+export const InterventionModel = styled('div', {
+  py: '$10',
+  px: '$23',
+})

@@ -8,12 +8,15 @@ import { Spacer } from 'components/Spacer'
 import { ImagesGallery } from './components/ImagesGallery'
 import { ImpactTabs } from './components/ImpactTabs'
 
+import { IMPACT_TABS, INTERVENTION_MODEL_TABS } from './constants'
+
 import {
   Header,
   HeaderContent,
   Hero,
   IframeContainer,
   Impact,
+  InterventionModel,
   Logo,
   ScrollableText,
   ScrollDown,
@@ -21,46 +24,7 @@ import {
 } from './Project.styles'
 
 import * as logo from '../../../../../public/images/common/logo.svg'
-
-const IMPACT_TABS = [
-  {
-    title: 'Community',
-    subtitle: 'More than 12,000 students served in project supported schools',
-    description: `In total, 1,501 women participated in project activities, and benefited from
-    improvements to access to education and health care. (Project activities will be
-    designed in a way that encourages the participation of women; moreover, all management
-    and leadership committees will contain at least one woman, with an aim of
-    transitioning to equal representation over time.`,
-    imageName: 'impact-community',
-  },
-  {
-    title: 'Governance',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    description: `usce iaculis ante id velit fringilla, sed sagittis orci ullamcorper. Mauris pretium,
-    velit vitae imperdiet sodales, magna nibh tristique neque, a malesuada orci diam et
-    ante. Vestibulum ornare tristique felis, ut suscipit ex fringilla non. Nullam a
-    tincidunt mauris.usce iaculis ante id velit fringilla, sed sagittis orci ullamcorper.
-    Mauris pretium, velit vitae imperdiet sodales, magna nibh tristique neque, a malesuada
-    orci diam et ante. Vestibulum ornare tristique felis, ut suscipit ex fringilla non.
-    Nullam a tincidunt mauris.`,
-    imageName: 'impact-governance',
-  },
-  {
-    title: 'Biodiversity',
-    subtitle: '20,000 People experiencing improved livelihoods',
-    description: `5,827 community members engaged in productive activities or employment in micro-,
-    small- and medium-sized enterprises, and gaining improved livelihoods or income as a
-    result, as a result of project activities (I aquí si quieres podemos inventar una
-    historieta de una enterprise de ecocharcoal).`,
-  },
-  {
-    title: 'Climate',
-    subtitle: 'From 2010 to 2020, Keo Seima lost 224kha of humid primary forest.',
-    description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel vero nemo repudiandae
-    quo modi exercitationem iure saepe nam adipisci dolores, fugit, magnam iste a,
-    consequatur nobis iusto doloribus libero mollitia!`,
-  },
-]
+import { InterventionModelTabs } from './components/InterventionModelTabs'
 
 export const Project = () => {
   return (
@@ -79,6 +43,7 @@ export const Project = () => {
           </HeaderContent>
         </Container>
       </Header>
+
       <Section>
         <Hero>
           <Overlay />
@@ -100,6 +65,7 @@ export const Project = () => {
           </ScrollDown>
         </Hero>
       </Section>
+
       <Section>
         <Container>
           <SpaceBetween>
@@ -163,9 +129,24 @@ export const Project = () => {
           </SpaceBetween>
         </Container>
       </Section>
+
       <Section>
         <ImagesGallery />
       </Section>
+
+      <Section>
+        <Container>
+          <InterventionModel>
+            <Text size="h3" weight="bold" color="primary-tuna-500">
+              Intervention model
+            </Text>
+
+            <Spacer direction="column" space="10" />
+            <InterventionModelTabs tabs={INTERVENTION_MODEL_TABS} />
+          </InterventionModel>
+        </Container>
+      </Section>
+
       <Section>
         <Container>
           <Impact>
