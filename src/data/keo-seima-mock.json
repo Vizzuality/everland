@@ -5,21 +5,34 @@
   "subtitle": "Anim consequat proident excepteur pariatur sint dolore.",
   "mainPicture": "/images/projects/keo-seima-header.jpg",
   "projectInfo": "<p>Keo Seima Wildlife Sanctuary (KSWS) is home to more than 950 wild species, including 75 globally threatened species. It is also the ancestral home of the indigenous Bunong people, whose unique culture and beliefs are inseparable from the forest in which they live. Originally designated as a protected area in 2002, KSWS is managed by <strong>the Royal Government of Cambodia’s Ministry of Environment</strong>, with technical and financial support from <strong>WCS Cambodia</strong>.</p><p>KSWS plays a vital role in the preservation of the region’s important and vulnerable wildlife, including the world’s largest populations of the endangered black-shanked douc and yellow-cheeked crested gibbon, as well as a nationally important population of Asian elephant and many other species.<p><p>At the same time, <strong>it supports the sustainable development of local communities</strong>, most notably through securing communities legal title to their traditional lands, and through the REDD+ Benefit Sharing Mechanism which provides significant funding to community-chosen and community-led development projects.</p>",
+  "keyPeople": "lorem ipsum",
+  "wildLife": "Lorem ipsum",
+  "developer": "Lorem ipsum",
+  "standards": "Lorem ipsum",
+  "protectedArea": {
+    "value": 1832782,
+    "unit": "ha"
+  },
+  "co2Avoided": {
+    "value": 1324243,
+    "unit": "tonnes"
+  },
   "embeddedMap": "https://www.globalforestwatch.org/embed/map/",
   "gallery": [
     {
-      "title": "A monkey thinking about what to do later",
+      "alt": "A monkey thinking about what to do later",
       "src": "/images/projects/keo-seima-1.jpg",
       "caption": {
-        "category": "Wildlife",
-        "description": "Lorem ipsum"
+        "title": "Wildlife",
+        "description": "Lorem ipsum",
+        "link": null
       }
     },
     {
-      "title": "A kid",
+      "alt": "A kid",
       "src": "/images/projects/keo-seima-1.jpg",
       "caption": {
-        "category": "Women's Empowerment",
+        "title": "Women's Empowerment",
         "description": "Improving the socioeconomic outcomes of women in local communities",
         "link": "http://wikipedia.com"
       }
@@ -53,7 +66,24 @@
       }
     ]
   },
-  "impact": {},
+  "impact": [
+    {
+      "pillar": "Community",
+      "theme": "Health",
+      "data": null,
+      "story": null,
+      "photoUrl": null,
+      "title": "Lorem ipsum"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Economy",
+      "data": null,
+      "story": null,
+      "photoUrl": null,
+      "title": "Lorem ipsum"
+    }
+  ],
   "relatedProjects": [
     {
       "title": "Project title",
