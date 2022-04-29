@@ -128,3 +128,9 @@ export const InterventionModel = styled('div', {
   py: '$10',
   px: '$23',
 })
+
+export const RelatedProjects = styled('div', {
+  backgroundImage: `url('/images/projects/discover-background.jpg')`,
+  height: '473px',
+  paddingTop: '$16',
+})

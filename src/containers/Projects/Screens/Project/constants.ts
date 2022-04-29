@@ -1,3 +1,5 @@
+import MOCK_DATA from 'data/keo-seima-mock.json'
+
 export const IMPACT_TABS = [
   {
     title: 'Community',
@@ -63,3 +65,5 @@ export const INTERVENTION_MODEL_TABS = [
     imageName: 'intervention-model-2',
   },
 ]
+
+export const data = MOCK_DATA

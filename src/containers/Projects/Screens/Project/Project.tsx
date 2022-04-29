@@ -6,9 +6,11 @@ import { Text } from 'components/Text'
 import { Icon } from 'components/Icon'
 import { Spacer } from 'components/Spacer'
 import { ImagesGallery } from './components/ImagesGallery'
+import { InterventionModelTabs } from './components/InterventionModelTabs'
 import { ImpactTabs } from './components/ImpactTabs'
+import { RelatedProjectsCards } from './components/RelatedProjectsCards'
 
-import { IMPACT_TABS, INTERVENTION_MODEL_TABS } from './constants'
+import { data, IMPACT_TABS, INTERVENTION_MODEL_TABS } from './constants'
 
 import {
   Header,
@@ -21,11 +23,12 @@ import {
   ScrollableText,
   ScrollDown,
   SpaceBetween,
+  RelatedProjects,
 } from './Project.styles'
 
 import * as logo from '../../../../../public/images/common/logo.svg'
-import { InterventionModelTabs } from './components/InterventionModelTabs'
 
+const { relatedProjects } = data
 export const Project = () => {
   return (
     <>
@@ -158,6 +161,19 @@ export const Project = () => {
             <ImpactTabs tabs={IMPACT_TABS} />
           </Impact>
         </Container>
+      </Section>
+
+      <Section>
+        <RelatedProjects>
+          <Container>
+            <Text size="body1" weight="bold" color="neutral-light-beige">
+              Discover other projects:
+            </Text>
+          </Container>
+          <Spacer direction="column" space="10" />
+
+          <RelatedProjectsCards relatedProjects={relatedProjects} />
+        </RelatedProjects>
       </Section>
     </>
   )
