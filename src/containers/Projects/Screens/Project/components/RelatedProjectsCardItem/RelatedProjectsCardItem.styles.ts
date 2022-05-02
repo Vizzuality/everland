@@ -1,6 +1,7 @@
 import { styled } from 'stitches.config'
 
 export const RelatedProjectsCardItemRoot = styled('a', {
+  cursor: 'pointer',
   maxWidth: '373px',
   height: '284px',
   backgroundColor: '$neutral-white',
