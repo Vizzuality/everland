@@ -129,6 +129,11 @@ export const InterventionModel = styled('div', {
   px: '$23',
 })
 
+export const Video = styled('video', {
+  width: '100%',
+  height: '100%',
+})
+
 export const RelatedProjects = styled('div', {
   backgroundImage: `url('/images/projects/discover-background.jpg')`,
   height: '473px',

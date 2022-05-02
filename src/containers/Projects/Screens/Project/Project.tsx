@@ -24,12 +24,29 @@ import {
   ScrollDown,
   SpaceBetween,
   RelatedProjects,
+  Video,
 } from './Project.styles'
 
 import * as logo from '../../../../../public/images/common/logo.svg'
+import { useRef } from 'react'
 
 const { relatedProjects } = data
 export const Project = () => {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  const handlePlayVideo = () => {
+    const video = videoRef.current
+    video.muted = true
+    video.controls = true
+    video.play()
+  }
+
+  const handleStopVideo = () => {
+    const video = videoRef.current
+    video.controls = false
+    video.load()
+  }
+
   return (
     <>
       <Header>
@@ -160,6 +177,19 @@ export const Project = () => {
             <Spacer direction="column" space="10" />
             <ImpactTabs tabs={IMPACT_TABS} />
           </Impact>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <Video
+            poster="images/projects/video-poster-play.jpg"
+            ref={videoRef}
+            onMouseLeave={handleStopVideo}
+            onMouseEnter={handlePlayVideo}
+          >
+            <source src="videos/keo-seima.mp4" type="video/mp4" />
+          </Video>
         </Container>
       </Section>
 
