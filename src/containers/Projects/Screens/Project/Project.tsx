@@ -9,8 +9,9 @@ import { ImagesGallery } from './components/ImagesGallery'
 import { InterventionModelTabs } from './components/InterventionModelTabs'
 import { ImpactTabs } from './components/ImpactTabs'
 import { RelatedProjectsCards } from './components/RelatedProjectsCards'
+import { Navbar } from './components/Navbar'
 
-import { data, IMPACT_TABS, INTERVENTION_MODEL_TABS } from './constants'
+import { data, IMPACT_TABS, INTERVENTION_MODEL_TABS, NAV_SECTIONS } from './constants'
 
 import {
   Header,
@@ -30,7 +31,8 @@ import {
 import * as logo from '../../../../../public/images/common/logo.svg'
 import { useRef } from 'react'
 
-const { relatedProjects } = data
+const { relatedProjects, video } = data
+
 export const Project = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
 
@@ -150,11 +152,14 @@ export const Project = () => {
         </Container>
       </Section>
 
-      <Section>
+      <Section id={NAV_SECTIONS[0].name}>
         <ImagesGallery />
       </Section>
 
-      <Section>
+      <Section
+        id={NAV_SECTIONS[1].name}
+        onScrollCapture={(data) => console.log(data, NAV_SECTIONS[1].name)}
+      >
         <Container>
           <InterventionModel>
             <Text size="h3" weight="bold" color="primary-tuna-500">
@@ -167,7 +172,7 @@ export const Project = () => {
         </Container>
       </Section>
 
-      <Section>
+      <Section id={NAV_SECTIONS[2].name}>
         <Container>
           <Impact>
             <Text size="h3" weight="bold" color="primary-tuna-500">
@@ -188,7 +193,7 @@ export const Project = () => {
             onMouseLeave={handleStopVideo}
             onMouseEnter={handlePlayVideo}
           >
-            <source src="videos/keo-seima.mp4" type="video/mp4" />
+            <source src={video} type="video/mp4" />
           </Video>
         </Container>
       </Section>
@@ -205,6 +210,8 @@ export const Project = () => {
           <RelatedProjectsCards relatedProjects={relatedProjects} />
         </RelatedProjects>
       </Section>
+
+      <Navbar sections={NAV_SECTIONS} />
     </>
   )
 }

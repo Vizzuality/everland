@@ -66,4 +66,10 @@ export const INTERVENTION_MODEL_TABS = [
   },
 ]
 
+export const NAV_SECTIONS = [
+  { name: 'media', label: 'Media' },
+  { name: 'intervention-model', label: 'Intervention model' },
+  { name: 'impact', label: 'Impact' },
+]
+
 export const data = MOCK_DATA

@@ -170,6 +170,8 @@ export const {
       23: '92px',
       24: '96px',
       25: '100px',
+      26: '104px',
+      27: '108px',
     },
     borderWidths: {},
     borderStyles: {},
@@ -246,6 +248,9 @@ export const {
 })
 
 export const globalStyles = stitchesGlobal({
+  html: {
+    scrollBehavior: 'smooth',
+  },
   '*': {
     boxSizing: 'border-box',
     textDecoration: 'none',
