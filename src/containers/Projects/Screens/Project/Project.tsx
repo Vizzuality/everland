@@ -26,6 +26,7 @@ import {
   SpaceBetween,
   RelatedProjects,
   Video,
+  ProjectRoot,
 } from './Project.styles'
 
 import * as logo from '../../../../../public/images/common/logo.svg'
@@ -50,7 +51,7 @@ export const Project = () => {
   }
 
   return (
-    <>
+    <ProjectRoot>
       <Header>
         <Container>
           <HeaderContent>
@@ -212,6 +213,6 @@ export const Project = () => {
       </Section>
 
       <Navbar sections={NAV_SECTIONS} />
-    </>
+    </ProjectRoot>
   )
 }
