@@ -99,17 +99,19 @@ export const Project = () => {
               />
             </IframeContainer>
             <ScrollableText>
-              <Text size="body1" weight="thin">
-                Keo Seima Wildlife Sanctuary (KSWS) is home to more than 950 wild species, including
-                75 globally threatened species. It is also the ancestral home of the indigenous
-                Bunong people, whose unique culture and beliefs are inseparable from the forest in
-                which they live. Originally designated as a protected area in 2002, KSWS is managed
-                by the Royal Government of Cambodia's Ministry of Environment, with technical and
-                financial support from WCS Cambodia.
+              <Text size="body1">
+                Keo Seima Wildlife Sanctuary (KSWS) is home to more than{' '}
+                <Text weight="bold">950 wild species,</Text> including 75 globally threatened
+                species. It is also the ancestral home of{' '}
+                <Text weight="bold">the indigenous Bunong people,</Text> whose unique culture and
+                beliefs are inseparable from the forest in which they live. Originally designated as
+                a protected area in 2002, KSWS is managed by the{' '}
+                <Text weight="bold">Royal Government of Cambodia's Ministry of Environment,</Text>{' '}
+                with technical and financial support from <Text weight="bold">WCS Cambodia.</Text>
               </Text>
 
               <Spacer direction="column" space="4" />
-              <Text size="body1" weight="thin">
+              <Text size="body1">
                 KSWS plays a vital role in the preservation of the region's important and vulnerable
                 wildlife, including the world's largest populations of the endangered black-shanked
                 douc and yellow-cheeked crested gibbon, as well as a nationally important population
@@ -117,24 +119,27 @@ export const Project = () => {
               </Text>
 
               <Spacer direction="column" space="4" />
-              <Text size="body1" weight="thin">
+              <Text size="body1">
                 At the same time, it supports the sustainable development of local communities, most
                 notably through securing communities legal title to their traditional lands, and
                 through the REDD+ Benefit Sharing Mechanism which provides significant funding to
                 community-chosen and community-led development projects.
               </Text>
 
-              <Text size="body1" weight="thin">
-                Keo Seima Wildlife Sanctuary (KSWS) is home to more than 950 wild species, including
-                75 globally threatened species. It is also the ancestral home of the indigenous
-                Bunong people, whose unique culture and beliefs are inseparable from the forest in
-                which they live. Originally designated as a protected area in 2002, KSWS is managed
-                by the Royal Government of Cambodia's Ministry of Environment, with technical and
-                financial support from WCS Cambodia.
+              <Spacer direction="column" space="4" />
+              <Text size="body1">
+                Keo Seima Wildlife Sanctuary (KSWS) is home to more than{' '}
+                <Text weight="bold">950 wild species,</Text> including 75 globally threatened
+                species. It is also the ancestral home of{' '}
+                <Text weight="bold">the indigenous Bunong people,</Text> whose unique culture and
+                beliefs are inseparable from the forest in which they live. Originally designated as
+                a protected area in 2002, KSWS is managed by the{' '}
+                <Text weight="bold">Royal Government of Cambodia's Ministry of Environment,</Text>{' '}
+                with technical and financial support from <Text weight="bold">WCS Cambodia.</Text>
               </Text>
 
               <Spacer direction="column" space="4" />
-              <Text size="body1" weight="thin">
+              <Text size="body1">
                 KSWS plays a vital role in the preservation of the region's important and vulnerable
                 wildlife, including the world's largest populations of the endangered black-shanked
                 douc and yellow-cheeked crested gibbon, as well as a nationally important population
@@ -142,7 +147,7 @@ export const Project = () => {
               </Text>
 
               <Spacer direction="column" space="4" />
-              <Text size="body1" weight="thin">
+              <Text size="body1">
                 At the same time, it supports the sustainable development of local communities, most
                 notably through securing communities legal title to their traditional lands, and
                 through the REDD+ Benefit Sharing Mechanism which provides significant funding to
