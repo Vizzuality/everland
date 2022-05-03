@@ -19,7 +19,7 @@ export const RelatedProjectsCardItem = ({ title, location }: RelatedProject) => 
         <Location>
           <Icon name="marker" size={6} color="neutral-white" />
           <Spacer space="3" direction="row" />
-          <Text size="body" family="secondary" fontStyle="italic" color="neutral-white">
+          <Text size="body1" family="secondary" fontStyle="italic" color="neutral-white">
             {title}
           </Text>
         </Location>
