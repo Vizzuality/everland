@@ -6,9 +6,12 @@ import { Text } from 'components/Text'
 import { Icon } from 'components/Icon'
 import { Spacer } from 'components/Spacer'
 import { ImagesGallery } from './components/ImagesGallery'
+import { InterventionModelTabs } from './components/InterventionModelTabs'
 import { ImpactTabs } from './components/ImpactTabs'
+import { RelatedProjectsCards } from './components/RelatedProjectsCards'
+import { Navbar } from './components/Navbar'
 
-import { IMPACT_TABS, INTERVENTION_MODEL_TABS } from './constants'
+import { data, IMPACT_TABS, INTERVENTION_MODEL_TABS, NAV_SECTIONS } from './constants'
 
 import {
   Header,
@@ -21,14 +24,34 @@ import {
   ScrollableText,
   ScrollDown,
   SpaceBetween,
+  RelatedProjects,
+  Video,
+  ProjectRoot,
 } from './Project.styles'
 
 import * as logo from '../../../../../public/images/common/logo.svg'
-import { InterventionModelTabs } from './components/InterventionModelTabs'
+import { useRef } from 'react'
+
+const { relatedProjects, video } = data
 
 export const Project = () => {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  const handlePlayVideo = () => {
+    const video = videoRef.current
+    video.muted = true
+    video.controls = true
+    video.play()
+  }
+
+  const handleStopVideo = () => {
+    const video = videoRef.current
+    video.controls = false
+    video.load()
+  }
+
   return (
-    <>
+    <ProjectRoot>
       <Header>
         <Container>
           <HeaderContent>
@@ -130,11 +153,14 @@ export const Project = () => {
         </Container>
       </Section>
 
-      <Section>
+      <Section id={NAV_SECTIONS[0].name}>
         <ImagesGallery />
       </Section>
 
-      <Section>
+      <Section
+        id={NAV_SECTIONS[1].name}
+        onScrollCapture={(data) => console.log(data, NAV_SECTIONS[1].name)}
+      >
         <Container>
           <InterventionModel>
             <Text size="h3" weight="bold" color="primary-tuna-500">
@@ -147,7 +173,7 @@ export const Project = () => {
         </Container>
       </Section>
 
-      <Section>
+      <Section id={NAV_SECTIONS[2].name}>
         <Container>
           <Impact>
             <Text size="h3" weight="bold" color="primary-tuna-500">
@@ -159,6 +185,34 @@ export const Project = () => {
           </Impact>
         </Container>
       </Section>
-    </>
+
+      <Section>
+        <Container>
+          <Video
+            poster="images/projects/video-poster-play.jpg"
+            ref={videoRef}
+            onMouseLeave={handleStopVideo}
+            onMouseEnter={handlePlayVideo}
+          >
+            <source src={video} type="video/mp4" />
+          </Video>
+        </Container>
+      </Section>
+
+      <Section>
+        <RelatedProjects>
+          <Container>
+            <Text size="body1" weight="bold" color="neutral-light-beige">
+              Discover other projects:
+            </Text>
+          </Container>
+          <Spacer direction="column" space="10" />
+
+          <RelatedProjectsCards relatedProjects={relatedProjects} />
+        </RelatedProjects>
+      </Section>
+
+      <Navbar sections={NAV_SECTIONS} />
+    </ProjectRoot>
   )
 }

@@ -1,5 +1,9 @@
 import { styled } from 'stitches.config'
 
+export const ProjectRoot = styled('div', {
+  paddingBottom: '142px',
+})
+
 export const Hero = styled('div', {
   position: 'relative',
   display: 'flex',
@@ -127,4 +131,15 @@ export const Impact = styled('div', {
 export const InterventionModel = styled('div', {
   py: '$10',
   px: '$23',
+})
+
+export const Video = styled('video', {
+  width: '100%',
+  height: '100%',
+})
+
+export const RelatedProjects = styled('div', {
+  backgroundImage: `url('/images/projects/discover-background.jpg')`,
+  height: '473px',
+  paddingTop: '$16',
 })
