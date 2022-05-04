@@ -1,15 +1,17 @@
-import { Project } from 'containers/Projects/Screens/Project'
-import Head from 'next/head'
+import React, { useEffect } from 'react'
 
-const Home: React.FC = () => (
-  <div>
-    <Head>
-      <title>Welcome</title>
-    </Head>
-    <main>
-      <Project />
-    </main>
-  </div>
-)
+import { useRouter } from 'next/router'
+
+const REDIRECT_URL = '/projects'
+
+const Home: React.FC = () => {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.push(REDIRECT_URL)
+  }, [router])
+
+  return <></>
+}
 
 export default Home

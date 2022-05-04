@@ -1,5 +1,5 @@
-import { createStitches } from '@stitches/react'
 import { FilterUnion } from 'types/FilterUnion'
+import { createStitches } from '@stitches/react'
 
 const media = {
   mobile: '(min-width: 320px)',
@@ -280,7 +280,12 @@ export const globalStyles = stitchesGlobal({
     },
     {
       fontFamily: 'Cardo',
-      fontWeight: 300,
+      fontWeight: 400,
+      src: 'url("fonts/cardo/Cardo-Regular.ttf")',
+    },
+    {
+      fontFamily: 'Cardo',
+      fontWeight: 700,
       src: 'url("fonts/cardo/Cardo-Bold.ttf")',
     },
   ],
