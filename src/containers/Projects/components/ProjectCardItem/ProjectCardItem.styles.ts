@@ -2,7 +2,7 @@ import { styled } from 'stitches.config'
 
 export const ProjectCardItemRoot = styled('a', {
   cursor: 'pointer',
-  height: '284px',
+  minHeight: '284px',
   backgroundColor: '$neutral-white',
   flexShrink: 0,
 })

@@ -7,6 +7,8 @@ export const ICON_NAMES = [
   'arrow-right',
   'land',
   'marker',
+  'sort-down',
+  'sort-up',
   'world',
 ] as const
 

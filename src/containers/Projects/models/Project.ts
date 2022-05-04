@@ -9,4 +9,5 @@ export type Project = {
   id: string
   title: string
   location: Location
+  hashtags?: string[]
 }

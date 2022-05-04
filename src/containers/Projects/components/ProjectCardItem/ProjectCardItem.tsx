@@ -12,7 +12,7 @@ import { Spacer } from 'components/Spacer'
 import { Text } from 'components/Text'
 import { useRouter } from 'next/router'
 
-export const ProjectCardItem = ({ id, title, location }: Project) => {
+export const ProjectCardItem = ({ id, title, location, hashtags }: Project) => {
   const router = useRouter()
 
   const { iso } = location
@@ -43,6 +43,16 @@ export const ProjectCardItem = ({ id, title, location }: Project) => {
         <Text size="subtitle1" weight="bold">
           {title}
         </Text>
+        {hashtags && (
+          <>
+            <Spacer space="6" direction="column" />
+            {hashtags.map((hashtag) => (
+              <Text key={hashtag} color="primary-jasper-default">
+                {hashtag}{' '}
+              </Text>
+            ))}
+          </>
+        )}
       </TextContainer>
     </ProjectCardItemRoot>
   )
