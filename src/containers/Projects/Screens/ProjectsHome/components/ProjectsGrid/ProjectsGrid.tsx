@@ -7,7 +7,16 @@ type ProjectsGridProps = {
 
 export const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
   return (
-    <Box css={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
+    <Box
+      css={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        gap: '$3',
+        padding: '$3',
+        backgroundColor: 'white',
+        overflowY: 'auto',
+      }}
+    >
       {projects.map((project) => (
         <ProjectCardItem
           id={project.id}

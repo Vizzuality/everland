@@ -22,7 +22,12 @@ export const ProjectCardItem = ({ id, title, location }: Project) => {
   return (
     <ProjectCardItemRoot onClick={handleClick}>
       <ImageContainer>
-        <Image src={`/images/projects/discover-card-1.jpg`} alt={title} height={173} width={353} />
+        <Image
+          src={`/images/projects/discover-card-1.jpg`}
+          alt={title}
+          layout="fill"
+          objectFit="cover"
+        />
         <Location>
           <Icon name="marker" size={6} color="neutral-white" />
           <Spacer space="3" direction="row" />

@@ -1,16 +1,20 @@
 import * as everlandLogo from '../../../public/images/common/logo.svg'
 
 import { HeaderContent, HeaderRoot } from './Header.styles'
+import React, { ComponentProps } from 'react'
 
 import { Container } from 'containers/components/Container/Container'
 import Image from 'next/image'
 import { Logo } from 'components/Logo'
-import React from 'react'
 import { Text } from 'components/Text'
 
-export const Header = () => {
+type HeaderOwnProps = ComponentProps<typeof HeaderRoot>
+
+type HeaderProps = HeaderOwnProps
+
+export const Header = (props: HeaderProps) => {
   return (
-    <HeaderRoot>
+    <HeaderRoot {...props}>
       <Container>
         <HeaderContent>
           <Logo>

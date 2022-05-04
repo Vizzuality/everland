@@ -1,12 +1,19 @@
 import { styled } from 'stitches.config'
 
 export const HeaderRoot = styled('header', {
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  zIndex: '$4',
   px: '100px',
   width: '100%',
+
+  variants: {
+    fixed: {
+      true: {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        zIndex: '$4',
+      },
+    },
+  },
 })
 
 export const HeaderContent = styled('div', {
