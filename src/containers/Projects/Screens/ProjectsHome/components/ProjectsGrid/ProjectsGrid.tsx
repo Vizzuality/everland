@@ -11,6 +11,7 @@ enum Sorting {
 }
 
 type ProjectsGridProps = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   projects: Record<string, any>[]
 }
 

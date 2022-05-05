@@ -31,9 +31,7 @@ export const InterventionModelTabs = ({ tabs }: InterventionModelTabsProps) => {
       </TabsList>
       {tabs.map(({ title, description, imageName }) => (
         <TabContainer key={title} value={title}>
-          <Text size="body1" weight="thin">
-            {description}
-          </Text>
+          <Text size="body1">{description}</Text>
           {imageName && (
             <TabImage>
               <Image src={`/images/projects/${imageName}.png`} alt="community" layout="fill" />

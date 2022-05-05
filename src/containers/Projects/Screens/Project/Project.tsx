@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Container } from 'containers/components/Container/Container'
 import { Section } from 'components/Section/Section.styles'
 import { Overlay } from 'components/Overlay/Overlay.styles'
@@ -14,23 +13,21 @@ import { Navbar } from './components/Navbar'
 import { data, IMPACT_TABS, INTERVENTION_MODEL_TABS, NAV_SECTIONS } from './constants'
 
 import {
-  Header,
-  HeaderContent,
   Hero,
   IframeContainer,
   Impact,
   InterventionModel,
-  Logo,
   ScrollableText,
   ScrollDown,
   SpaceBetween,
   RelatedProjects,
   Video,
   ProjectRoot,
+  HeroContent,
 } from './Project.styles'
 
-import * as logo from '../../../../../public/images/common/logo.svg'
 import { useRef } from 'react'
+import { Header } from 'components/Header'
 
 const { relatedProjects, video } = data
 
@@ -52,40 +49,28 @@ export const Project = () => {
 
   return (
     <ProjectRoot>
-      <Header>
-        <Container>
-          <HeaderContent>
-            <Logo>
-              <Image src={logo} alt="Logo" />
-            </Logo>
-            <nav>
-              <Text color="neutral-white">PROJECT</Text>
-              <Text color="neutral-white">CONTACT US</Text>
-              <Text color="neutral-white">ABOUT US</Text>
-            </nav>
-          </HeaderContent>
-        </Container>
-      </Header>
-
       <Section>
         <Hero>
           <Overlay />
-          <Text as="h1" size="heroTitle4" weight="bold" color="neutral-white" align="center">
-            Keo Seima
-          </Text>
-          <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
-            Cambodia
-          </Text>
-
-          <Spacer space="8" direction="column" />
-
-          <ScrollDown>
-            <Text size="caption2" color="neutral-white">
-              SCROLL DOWN
+          <Header />
+          <HeroContent>
+            <Text as="h1" size="heroTitle4" weight="bold" color="neutral-white" align="center">
+              Keo Seima
+            </Text>
+            <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
+              Cambodia
             </Text>
 
-            <Icon name="arrow-down-line" color="neutral-white" />
-          </ScrollDown>
+            <Spacer space="8" direction="column" />
+
+            <ScrollDown>
+              <Text size="caption2" color="neutral-white">
+                SCROLL DOWN
+              </Text>
+
+              <Icon name="arrow-down-line" color="neutral-white" />
+            </ScrollDown>
+          </HeroContent>
         </Hero>
       </Section>
 
@@ -194,7 +179,7 @@ export const Project = () => {
       <Section>
         <Container>
           <Video
-            poster="images/projects/video-poster-play.jpg"
+            poster="../../../images/projects/video-poster-play.jpg"
             ref={videoRef}
             onMouseLeave={handleStopVideo}
             onMouseEnter={handlePlayVideo}
