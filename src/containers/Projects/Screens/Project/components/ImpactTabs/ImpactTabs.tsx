@@ -4,6 +4,9 @@ import Image from 'next/image'
 import { useState } from 'react'
 import {
   ImpactTabsRoot,
+  Dropdown,
+  DropdownContent,
+  DropdownTrigger,
   TabArrow,
   TabContainer,
   TabContent,
@@ -11,13 +14,19 @@ import {
   TabImage,
   TabsList,
   TabTrigger,
+  DropdownItem,
 } from './ImpactTabs.styles'
 
-type Tab = {
+type TabSection = {
   title: string
   subtitle: string
   description: string
   imageName?: string
+}
+
+type Tab = {
+  title: string
+  sections: TabSection[]
 }
 
 export type ImpactTabsProps = {
@@ -25,43 +34,64 @@ export type ImpactTabsProps = {
 }
 
 export const ImpactTabs = ({ tabs }: ImpactTabsProps) => {
-  const [activeTab, setActiveTab] = useState(tabs[0].title)
+  const firstTabSection = tabs[0].sections[0]
 
-  const activeTabIndex = tabs.findIndex(({ title }) => title === activeTab)
-  const lastTabIndex = tabs.length - 1
+  const [activeTab, setActiveTab] = useState(firstTabSection.title)
+
+  const tabsSections = tabs.reduce((acc: TabSection[], { sections }) => {
+    return [...acc, ...sections.map((section) => section)]
+  }, [])
+
+  const activeTabIndex = tabsSections.findIndex(({ title }) => title === activeTab)
+  const lastTabIndex = tabsSections.length - 1
 
   const handleArrowLeftClicked = () => {
     activeTabIndex > 0
-      ? setActiveTab(tabs[activeTabIndex - 1].title)
-      : setActiveTab(tabs[lastTabIndex].title)
+      ? setActiveTab(tabsSections[activeTabIndex - 1].title)
+      : setActiveTab(tabsSections[lastTabIndex].title)
   }
 
   const handleArrowRightClicked = () => {
     activeTabIndex < lastTabIndex
-      ? setActiveTab(tabs[activeTabIndex + 1].title)
-      : setActiveTab(tabs[0].title)
+      ? setActiveTab(tabsSections[activeTabIndex + 1].title)
+      : setActiveTab(tabsSections[0].title)
   }
 
   return (
-    <ImpactTabsRoot defaultValue={tabs[0].title} value={activeTab} onValueChange={setActiveTab}>
+    <ImpactTabsRoot
+      defaultValue={tabs[0].title}
+      value={activeTab}
+      onValueChange={setActiveTab}
+      onChange={console.log}
+    >
       <TabsList aria-label="impact tabs">
-        {tabs.map(({ title }) => (
-          <TabTrigger key={title} value={title}>
-            {title}
-          </TabTrigger>
-        ))}
+        {tabs.map(({ title, sections }) => {
+          const isActive = sections.some(({ title }) => title === activeTab)
+          return (
+            <Dropdown key={title}>
+              <DropdownTrigger isActive={isActive}>{title}</DropdownTrigger>
+              <DropdownContent align="start" sideOffset={4}>
+                {sections.map(({ title: sectionTitle }) => (
+                  <DropdownItem key={sectionTitle}>
+                    <TabTrigger key={title} value={sectionTitle}>
+                      {sectionTitle}
+                    </TabTrigger>
+                  </DropdownItem>
+                ))}
+              </DropdownContent>
+            </Dropdown>
+          )
+        })}
       </TabsList>
-      {tabs.map(({ title, subtitle, description, imageName }) => (
-        <TabContainer key={title} value={title}>
+      {tabsSections.map(({ title: sectionTitle, subtitle, description, imageName }) => (
+        <TabContainer key={sectionTitle} value={sectionTitle}>
           <Text size="h2" family="secondary" color="primary-tuna-500">
             {subtitle}
           </Text>
 
           <TabContent>
             <TabContentText>
-              <Text size="body1" weight="thin">
-                {description}
-              </Text>
+              <Text size="body1">{description}</Text>
             </TabContentText>
             {imageName && (
               <TabImage>

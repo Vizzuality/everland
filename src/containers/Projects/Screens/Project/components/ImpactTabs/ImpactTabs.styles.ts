@@ -1,5 +1,6 @@
 import { styled } from 'stitches.config'
 
+import * as RadixDropdown from '@radix-ui/react-dropdown-menu'
 import * as Tabs from '@radix-ui/react-tabs'
 import { Text } from 'components/Text'
 
@@ -16,21 +17,23 @@ export const TabTrigger = styled(Tabs.Trigger, {
   backgroundColor: 'transparent',
   border: 'none',
   textAlign: 'inherit',
+  outline: 'none',
 
-  transition: 'color 0.2s ease-out',
+  transition: 'background-color 0.2s ease-out, color 0.2s ease-out',
 
-  marginLeft: '$12',
+  minHeight: '$6',
   cursor: 'pointer',
-  minWidth: '175px',
-  borderBottom: '1px solid $primary-jasper-500',
+  width: '100%',
 
-  fontFamily: '$secondary',
-  fontSize: '$subtitle2',
-  lineHeight: '$subtitle',
+  fontFamily: '$primary',
+  fontSize: '$caption1',
+  lineHeight: '$caption1',
   color: '$primary-tuna-500',
+  padding: '$1',
 
   '&:hover, &[data-state="active"]': {
-    color: '$primary-jasper-500',
+    color: '$primary-jasper-700',
+    backgroundColor: '$primary-jasper-200',
   },
 })
 
@@ -49,6 +52,50 @@ export const TabImage = styled('figure', {
   height: '380px',
   width: '273px',
 })
+
+export const Dropdown = styled(RadixDropdown.Root)
+
+export const DropdownTrigger = styled(RadixDropdown.Trigger, {
+  // Reset
+  appearance: 'none',
+  backgroundColor: 'transparent',
+  border: 'none',
+  textAlign: 'inherit',
+  outline: 'none',
+
+  transition: 'color 0.2s ease-out',
+
+  marginLeft: '$12',
+  cursor: 'pointer',
+  minWidth: '175px',
+  borderBottom: '1px solid $primary-jasper-500',
+
+  fontFamily: '$secondary',
+  fontSize: '$subtitle2',
+  lineHeight: '$subtitle',
+  color: '$primary-tuna-500',
+
+  '&:hover, &[data-state="active"]': {
+    color: '$primary-jasper-500',
+  },
+
+  variants: {
+    isActive: {
+      true: {
+        color: '$primary-jasper-500',
+      },
+    },
+  },
+})
+
+export const DropdownContent = styled(RadixDropdown.Content, {
+  paddding: '$6 $4',
+  backgroundColor: '$primary-jasper-100',
+  padding: '$2',
+  maxWidth: '175px',
+})
+
+export const DropdownItem = styled(RadixDropdown.DropdownMenuItem)
 
 export const TabContentText = styled(Text, {
   maxWidth: '403px',

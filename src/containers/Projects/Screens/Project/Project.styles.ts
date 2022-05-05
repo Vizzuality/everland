@@ -6,15 +6,19 @@ export const ProjectRoot = styled('div', {
 
 export const Hero = styled('div', {
   position: 'relative',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
   width: '100vw',
   height: '100vh',
   backgroundImage: `url('/images/projects/hero-background.jpg')`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
+})
+
+export const HeroContent = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  height: 'calc(100vh - 100px)',
 })
 
 export const Header = styled('header', {
