@@ -261,6 +261,9 @@ export const globalStyles = stitchesGlobal({
   },
   body: {
     fontFamily: '$primary',
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale',
+    textRendering: 'optimizeLegibility',
   },
   '@font-face': [
     {
