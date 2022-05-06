@@ -26,25 +26,15 @@ import {
   HeroContent,
 } from './Project.styles'
 
-import { useRef } from 'react'
 import { Header } from 'components/Header'
 
 const { relatedProjects, video } = data
 
 export const Project = () => {
-  const videoRef = useRef<HTMLVideoElement>(null)
-
-  const handlePlayVideo = () => {
-    const video = videoRef.current
-    video.muted = true
-    video.controls = true
-    video.play()
-  }
-
-  const handleStopVideo = () => {
-    const video = videoRef.current
-    video.controls = false
-    video.load()
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handlePlayOrPauseVideo = (e: any) => {
+    e.target.paused && !e.target.controls && e.target.play()
+    e.target.controls = true
   }
 
   return (
@@ -180,9 +170,7 @@ export const Project = () => {
         <Container>
           <Video
             poster="../../../images/projects/video-poster-play.jpg"
-            ref={videoRef}
-            onMouseLeave={handleStopVideo}
-            onMouseEnter={handlePlayVideo}
+            onClick={handlePlayOrPauseVideo}
           >
             <source src={video} type="video/mp4" />
           </Video>
