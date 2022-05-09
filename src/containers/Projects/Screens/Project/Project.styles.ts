@@ -137,9 +137,65 @@ export const InterventionModel = styled('div', {
   px: '$23',
 })
 
+export const VideoPlayIcon = styled('div', {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  height: '$16',
+  width: '$16',
+  pointerEvents: 'none',
+  zIndex: '$1',
+
+  '&:after': {
+    transition: 'transform 0.3s ease-out, opacity 0.2s ease-out',
+    content: ' ',
+    position: 'absolute',
+    height: '$19',
+    width: '$19',
+    left: -8,
+    top: -8,
+    border: '2px dotted white',
+    transform: 'rotateZ(360deg) scale(.5)',
+    borderRadius: '$pill',
+    opacity: 0,
+  },
+})
+
+export const VideoContainer = styled('div', {
+  position: 'relative',
+})
+
+export const VideoOverlay = styled('div', {
+  transition: 'opacity 0.3s ease-out',
+  opacity: 0,
+  position: 'absolute',
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
+  backgroundColor: 'rgba(0,0,0, 0.2)',
+  pointerEvents: 'none',
+})
+
 export const Video = styled('video', {
   width: '100%',
   height: '100%',
+  cursor: 'pointer',
+  display: 'block',
+
+  '&:hover ~': {
+    [`${VideoPlayIcon}`]: {
+      '&:after': {
+        transform: 'rotateZ(0deg) scale(1)',
+        opacity: 1,
+      },
+    },
+
+    [`${VideoOverlay}`]: {
+      opacity: 1,
+    },
+  },
 })
 
 export const RelatedProjects = styled('div', {

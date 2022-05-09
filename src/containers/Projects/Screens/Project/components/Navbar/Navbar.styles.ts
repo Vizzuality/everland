@@ -37,6 +37,16 @@ export const Nav = styled('span', {
   },
 })
 
+export const SectionLink = styled('a', {
+  variants: {
+    active: {
+      true: {
+        backgroundColor: '$primary-jasper-200',
+      },
+    },
+  },
+})
+
 export const Footer = styled('footer', {
   backgroundColor: '$neutral-white',
   marginTop: '$2',

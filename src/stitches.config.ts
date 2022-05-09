@@ -269,22 +269,22 @@ export const globalStyles = stitchesGlobal({
     {
       fontFamily: 'StagSans',
       fontWeight: 300,
-      src: 'url("../../fonts/stag-sans/StagSans-thin.ttf")',
+      src: 'url("/fonts/stag-sans/StagSans-thin.ttf")',
     },
     {
       fontFamily: 'StagSans',
       fontWeight: 400,
-      src: 'url("../../fonts/stag-sans/StagSans-Regular.ttf")',
+      src: 'url("/fonts/stag-sans/StagSans-Regular.ttf")',
     },
     {
       fontFamily: 'StagSans',
       fontWeight: 700,
-      src: 'url("../../fonts/stag-sans/StagSans-Bold.ttf")',
+      src: 'url("/fonts/stag-sans/StagSans-Bold.ttf")',
     },
     {
       fontFamily: 'Cardo',
       fontWeight: 400,
-      src: 'url("../../fonts/cardo/Cardo-Regular.ttf")',
+      src: 'url("/fonts/cardo/Cardo-Regular.ttf")',
     },
     {
       fontFamily: 'Cardo',
