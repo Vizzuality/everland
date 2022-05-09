@@ -1,63 +1,51 @@
 import { Container } from 'containers/components/Container/Container'
 import { ImagesGalleryRoot, GalleryBackground, GalleryWrapper } from './ImagesGallery.styles'
 import { ImageItem } from '../ImageItem'
+import { GalleryItem } from 'hooks/fetchProjectDetail'
 
-export const ImagesGallery = () => {
+type ImagesGalleryProps = {
+  gallery: GalleryItem[]
+}
+
+export const ImagesGallery = ({ gallery }: ImagesGalleryProps) => {
+  const gridAreaMapper = (index: number) => {
+    if (index === 0) return 'vertical1'
+    if (index === 1) return 'horizontal1'
+    if (index === 2) return 'horizontal2'
+    if (index === 3) return 'vertical2'
+  }
+
   return (
     <GalleryBackground>
       <Container>
         <GalleryWrapper>
           <ImagesGalleryRoot>
-            <ImageItem
-              title="title"
-              description="description"
-              imageUrl="/images/projects/gallery-1.jpg"
-              gridArea="vertical1"
-            />
-            <ImageItem
-              title="title"
-              description="description"
-              imageUrl="/images/projects/gallery-2.jpg"
-              gridArea="horizontal1"
-            />
-            <ImageItem
-              title="Women's Empowerment"
-              description="Improving the socioeconomic outcomes of women in local communities"
-              imageUrl="/images/projects/gallery-3.jpg"
-              gridArea="horizontal2"
-            />
-            <ImageItem
-              title="title"
-              description="description"
-              imageUrl="/images/projects/gallery-4.jpg"
-              gridArea="vertical2"
-            />
+            {gallery.slice(0, 4).map((galleryItem, index) => {
+              return (
+                <ImageItem
+                  title={galleryItem.caption.title}
+                  description={galleryItem.caption.description}
+                  imageUrl={galleryItem.src}
+                  alt={galleryItem.alt}
+                  gridArea={gridAreaMapper(index)}
+                  key={galleryItem.caption.title}
+                />
+              )
+            })}
           </ImagesGalleryRoot>
           <ImagesGalleryRoot>
-            <ImageItem
-              title="title"
-              description="description"
-              imageUrl="/images/projects/gallery-1.jpg"
-              gridArea="vertical1"
-            />
-            <ImageItem
-              title="title"
-              description="description"
-              imageUrl="/images/projects/gallery-2.jpg"
-              gridArea="horizontal1"
-            />
-            <ImageItem
-              title="Women's Empowerment"
-              description="Improving the socioeconomic outcomes of women in local communities"
-              imageUrl="/images/projects/gallery-3.jpg"
-              gridArea="horizontal2"
-            />
-            <ImageItem
-              title="title"
-              description="description"
-              imageUrl="/images/projects/gallery-4.jpg"
-              gridArea="vertical2"
-            />
+            {gallery.slice(4, 8).map((galleryItem, index) => {
+              return (
+                <ImageItem
+                  title={galleryItem.caption.title}
+                  description={galleryItem.caption.description}
+                  imageUrl={galleryItem.src}
+                  alt={galleryItem.alt}
+                  gridArea={gridAreaMapper(index)}
+                  key={galleryItem.caption.title}
+                />
+              )
+            })}
           </ImagesGalleryRoot>
         </GalleryWrapper>
       </Container>

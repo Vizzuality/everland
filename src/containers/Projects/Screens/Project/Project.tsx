@@ -10,7 +10,7 @@ import { ImpactTabs } from './components/ImpactTabs'
 import { RelatedProjectsCards } from './components/RelatedProjectsCards'
 import { Navbar } from './components/Navbar'
 import * as playIcon from '../../../../../public/images/projects/play.svg'
-import { data, IMPACT_TABS, INTERVENTION_MODEL_TABS, NAV_SECTIONS, SECTION_NAME } from './constants'
+import { IMPACT_TABS, NAV_SECTIONS, SECTION_NAME } from './constants'
 
 import {
   Hero,
@@ -32,12 +32,28 @@ import {
 import { Header } from 'components/Header'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-
-const { relatedProjects, video } = data
+import { useFetchProjectDetail } from 'hooks/fetchProjectDetail'
 
 export const Project = () => {
   const [activeSection, setActiveSection] = useState<SECTION_NAME>()
   const [isVideoTouched, setIsVideoTouched] = useState(false)
+
+  const { data: project, status } = useFetchProjectDetail()
+
+  useEffect(() => {
+    const navSectionsCopy = [...NAV_SECTIONS]
+    const _eventListener = () => {
+      navSectionsCopy.reverse().forEach(({ name }) => {
+        if (isElementVisible(`#${name}`)) {
+          setActiveSection(name)
+        }
+      })
+    }
+
+    document.addEventListener('scroll', _eventListener)
+
+    return () => document.removeEventListener('scroll', _eventListener)
+  }, [])
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handlePlayOrPauseVideo = (e: any) => {
@@ -63,20 +79,7 @@ export const Project = () => {
     )
   }
 
-  useEffect(() => {
-    const navSectionsCopy = [...NAV_SECTIONS]
-    const _eventListener = () => {
-      navSectionsCopy.reverse().forEach(({ name }) => {
-        if (isElementVisible(`#${name}`)) {
-          setActiveSection(name)
-        }
-      })
-    }
-
-    document.addEventListener('scroll', _eventListener)
-
-    return () => document.removeEventListener('scroll', _eventListener)
-  }, [])
+  if (status === 'loading') return null
 
   return (
     <ProjectRoot>
@@ -86,10 +89,10 @@ export const Project = () => {
           <Header />
           <HeroContent>
             <Text as="h1" size="heroTitle4" weight="bold" color="neutral-white" align="center">
-              Keo Seima
+              {project.title}
             </Text>
             <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
-              Cambodia
+              {project.location.name}
             </Text>
 
             <Spacer space="8" direction="column" />
@@ -109,87 +112,28 @@ export const Project = () => {
         <Container>
           <SpaceBetween>
             <IframeContainer>
-              <iframe
-                frameBorder="0"
-                src="https://www.globalforestwatch.org/embed/map/geostore/0bf1cdda0d6da36baa6deaba0e3bc761/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&mainMap=eyJzaG93QW5hbHlzaXMiOnRydWV9&map=eyJjZW50ZXIiOnsibGF0IjozNC4wNDkwMTAwOTcwOTI1NiwibG5nIjo2Ny42OTk1Mjc3NDAwNDEyOX0sInpvb20iOjMuOTI1NzA5NTU3NTkzMDAwNiwiY2FuQm91bmQiOmZhbHNlLCJkYXRhc2V0cyI6W3sib3BhY2l0eSI6MC43LCJ2aXNpYmlsaXR5Ijp0cnVlLCJkYXRhc2V0IjoicHJpbWFyeS1mb3Jlc3RzIiwibGF5ZXJzIjpbInByaW1hcnktZm9yZXN0cy0yMDAxIl19LHsiZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwiYm91bmRhcnkiOnRydWUsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWV9LHsiZGF0YXNldCI6InRyZWUtY292ZXItbG9zcyIsImxheWVycyI6WyJ0cmVlLWNvdmVyLWxvc3MiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwidGltZWxpbmVQYXJhbXMiOnsic3RhcnREYXRlIjoiMjAwMi0wMS0wMSIsImVuZERhdGUiOiIyMDIwLTEyLTMxIiwidHJpbUVuZERhdGUiOiIyMDIwLTEyLTMxIn0sInBhcmFtcyI6eyJ0aHJlc2hvbGQiOjMwLCJ2aXNpYmlsaXR5Ijp0cnVlfX1dfQ%3D%3D&mapPrompts=eyJvcGVuIjp0cnVlLCJzdGVwc0tleSI6InN1YnNjcmliZVRvQXJlYSJ9"
-              />
+              <iframe frameBorder="0" src={project.embeddedMap} />
             </IframeContainer>
             <ScrollableText>
-              <Text size="body1">
-                Keo Seima Wildlife Sanctuary (KSWS) is home to more than{' '}
-                <Text weight="bold">950 wild species,</Text> including 75 globally threatened
-                species. It is also the ancestral home of{' '}
-                <Text weight="bold">the indigenous Bunong people,</Text> whose unique culture and
-                beliefs are inseparable from the forest in which they live. Originally designated as
-                a protected area in 2002, KSWS is managed by the{' '}
-                <Text weight="bold">Royal Government of Cambodia's Ministry of Environment,</Text>{' '}
-                with technical and financial support from <Text weight="bold">WCS Cambodia.</Text>
-              </Text>
-
-              <Spacer direction="column" space="4" />
-              <Text size="body1">
-                KSWS plays a vital role in the preservation of the region's important and vulnerable
-                wildlife, including the world's largest populations of the endangered black-shanked
-                douc and yellow-cheeked crested gibbon, as well as a nationally important population
-                of Asian elephant and many other species.
-              </Text>
-
-              <Spacer direction="column" space="4" />
-              <Text size="body1">
-                At the same time, it supports the sustainable development of local communities, most
-                notably through securing communities legal title to their traditional lands, and
-                through the REDD+ Benefit Sharing Mechanism which provides significant funding to
-                community-chosen and community-led development projects.
-              </Text>
-
-              <Spacer direction="column" space="4" />
-              <Text size="body1">
-                Keo Seima Wildlife Sanctuary (KSWS) is home to more than{' '}
-                <Text weight="bold">950 wild species,</Text> including 75 globally threatened
-                species. It is also the ancestral home of{' '}
-                <Text weight="bold">the indigenous Bunong people,</Text> whose unique culture and
-                beliefs are inseparable from the forest in which they live. Originally designated as
-                a protected area in 2002, KSWS is managed by the{' '}
-                <Text weight="bold">Royal Government of Cambodia's Ministry of Environment,</Text>{' '}
-                with technical and financial support from <Text weight="bold">WCS Cambodia.</Text>
-              </Text>
-
-              <Spacer direction="column" space="4" />
-              <Text size="body1">
-                KSWS plays a vital role in the preservation of the region's important and vulnerable
-                wildlife, including the world's largest populations of the endangered black-shanked
-                douc and yellow-cheeked crested gibbon, as well as a nationally important population
-                of Asian elephant and many other species.
-              </Text>
-
-              <Spacer direction="column" space="4" />
-              <Text size="body1">
-                At the same time, it supports the sustainable development of local communities, most
-                notably through securing communities legal title to their traditional lands, and
-                through the REDD+ Benefit Sharing Mechanism which provides significant funding to
-                community-chosen and community-led development projects.
-              </Text>
+              <Text size="body1" dangerouslySetInnerHTML={{ __html: project.projectInfo }} />
             </ScrollableText>
           </SpaceBetween>
         </Container>
       </Section>
 
       <Section id={NAV_SECTIONS[0].name}>
-        <ImagesGallery />
+        <ImagesGallery gallery={project.gallery} />
       </Section>
 
-      <Section
-        id={NAV_SECTIONS[1].name}
-        onScrollCapture={(data) => console.log(data, NAV_SECTIONS[1].name)}
-      >
+      <Section id={NAV_SECTIONS[1].name}>
         <Container>
           <InterventionModel>
             <Text size="h3" weight="bold" color="primary-tuna-500">
-              Intervention model
+              {project.interventionModel.title}
             </Text>
 
             <Spacer direction="column" space="10" />
-            <InterventionModelTabs tabs={INTERVENTION_MODEL_TABS} />
+            <InterventionModelTabs tabs={project.interventionModel.sections} />
           </InterventionModel>
         </Container>
       </Section>
@@ -215,7 +159,7 @@ export const Project = () => {
               controls={isVideoTouched}
               onClick={handlePlayOrPauseVideo}
             >
-              <source src={video} type="video/mp4" />
+              <source src={project.video} type="video/mp4" />
             </Video>
             {!isVideoTouched && (
               <>
@@ -238,11 +182,11 @@ export const Project = () => {
           </Container>
           <Spacer direction="column" space="10" />
 
-          <RelatedProjectsCards relatedProjects={relatedProjects} />
+          <RelatedProjectsCards relatedProjects={project.relatedProjects} />
         </RelatedProjects>
       </Section>
 
-      <Navbar sections={NAV_SECTIONS} activeSection={activeSection} />
+      <Navbar sections={NAV_SECTIONS} project={project} activeSection={activeSection} />
     </ProjectRoot>
   )
 }

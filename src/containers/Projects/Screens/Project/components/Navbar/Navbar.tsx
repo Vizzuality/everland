@@ -1,4 +1,5 @@
 import { Text } from 'components/Text'
+import { ProjectDetail } from 'hooks/fetchProjectDetail'
 import Link from 'next/link'
 import { SECTION_NAME } from '../../constants'
 import {
@@ -21,9 +22,10 @@ export type NavbarSection = {
 export type NavbarProps = {
   sections: NavbarSection[]
   activeSection: SECTION_NAME
+  project: ProjectDetail
 }
 
-export const Navbar = ({ sections, activeSection }: NavbarProps) => {
+export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
   return (
     <NavbarRoot>
       <NavContainer>
@@ -45,7 +47,7 @@ export const Navbar = ({ sections, activeSection }: NavbarProps) => {
                 Key people:
               </Text>
               <Text family="secondary" color="primary-tuna-default">
-                [...]
+                {project.keyPeople}
               </Text>
             </FooterItem>
             <FooterItem>
@@ -53,7 +55,7 @@ export const Navbar = ({ sections, activeSection }: NavbarProps) => {
                 Wildlife:
               </Text>
               <Text family="secondary" color="primary-tuna-default">
-                [...]
+                {project.wildLife}
               </Text>
             </FooterItem>
           </FooterColumn>
@@ -61,13 +63,15 @@ export const Navbar = ({ sections, activeSection }: NavbarProps) => {
             <FooterItem>
               <FooterIcon name="land" />
               <Text family="secondary" color="primary-tuna-default">
-                820,000 ha of tropical dry broadleaf forest protected
+                {project.protectedArea.value.toLocaleString()} {project.protectedArea.unit} of
+                tropical dry broadleaf forest protected
               </Text>
             </FooterItem>
             <FooterItem>
               <FooterIcon name="world" />
               <Text family="secondary" color="primary-tuna-default">
-                13,736,390 tCO2e emissions avoided to date
+                {project.co2Avoided.value.toLocaleString()} {project.co2Avoided.unit} emissions
+                avoided to date
               </Text>
             </FooterItem>
           </FooterColumn>
@@ -77,7 +81,7 @@ export const Navbar = ({ sections, activeSection }: NavbarProps) => {
                 Developer:
               </Text>
               <Text family="secondary" color="primary-tuna-default">
-                Wildlife Conservation Society
+                {project.developer}
               </Text>
             </FooterItem>
             <FooterItem>
@@ -85,7 +89,7 @@ export const Navbar = ({ sections, activeSection }: NavbarProps) => {
                 Standards:
               </Text>
               <Text family="secondary" color="primary-tuna-default">
-                VCS, CCB
+                {project.standards}
               </Text>
             </FooterItem>
           </FooterColumn>
