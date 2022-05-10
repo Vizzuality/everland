@@ -81,8 +81,7 @@ export const SpaceBetween = styled('div', {
 })
 
 export const IframeContainer = styled('div', {
-  maxWidth: '617px',
-  width: 'max(60%, 617px)',
+  width: '100vw',
   height: '582px',
 
   iframe: {
@@ -91,7 +90,7 @@ export const IframeContainer = styled('div', {
   },
 
   '@bp2': {
-    width: '60%',
+    maxWidth: '617px',
   },
 })
 

@@ -1,7 +1,11 @@
 import { Icon } from 'components/Icon'
+import { Spacer } from 'components/Spacer'
 import { Text } from 'components/Text'
+import { Impact } from 'hooks/fetchProjectDetail'
+import { groupBy } from 'lodash'
 import Image from 'next/image'
 import { useState } from 'react'
+import { data } from '../../constants'
 import {
   ImpactTabsRoot,
   Dropdown,
@@ -30,13 +34,30 @@ type Tab = {
 }
 
 export type ImpactTabsProps = {
-  tabs: Tab[]
+  impact: Impact[]
 }
 
-export const ImpactTabs = ({ tabs }: ImpactTabsProps) => {
+export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
+  const groupedTabs = groupBy(impact, 'pillar')
+
+  const tabs = Object.values(groupedTabs).map((impactItem) => {
+    return {
+      title: impactItem[0].pillar,
+      sections: impactItem.map((section) => {
+        return {
+          title: section.theme,
+          subtitle: section.data.subtitle,
+          description: section.data.description,
+          imageName: section.photoUrl,
+        }
+      }),
+    }
+  })
+
   const firstTabSection = tabs[0].sections[0]
 
   const [activeTab, setActiveTab] = useState(firstTabSection.title)
+  const [openTab, setOpenTab] = useState<string>()
 
   const tabsSections = tabs.reduce((acc: TabSection[], { sections }) => {
     return [...acc, ...sections.map((section) => section)]
@@ -57,28 +78,33 @@ export const ImpactTabs = ({ tabs }: ImpactTabsProps) => {
       : setActiveTab(tabsSections[0].title)
   }
 
+  const onValueChange = (value: string) => {
+    setActiveTab(value)
+    setTimeout(() => setOpenTab(undefined), 100) // NOTE: delay for UX
+  }
+
   return (
-    <ImpactTabsRoot
-      defaultValue={tabs[0].title}
-      value={activeTab}
-      onValueChange={setActiveTab}
-      onChange={console.log}
-    >
+    <ImpactTabsRoot defaultValue={tabs[0].title} value={activeTab} onValueChange={onValueChange}>
       <TabsList aria-label="impact tabs">
         {tabs.map(({ title, sections }) => {
           const isActive = sections.some(({ title }) => title === activeTab)
           return (
-            <Dropdown key={title}>
-              <DropdownTrigger isActive={isActive}>{title}</DropdownTrigger>
-              <DropdownContent align="start" sideOffset={4}>
-                {sections.map(({ title: sectionTitle }) => (
-                  <DropdownItem key={sectionTitle}>
-                    <TabTrigger key={title} value={sectionTitle}>
-                      {sectionTitle}
-                    </TabTrigger>
-                  </DropdownItem>
-                ))}
-              </DropdownContent>
+            <Dropdown open={openTab === title} key={title} modal={false}>
+              <div onMouseOver={() => setOpenTab(title)} onMouseLeave={() => setOpenTab(undefined)}>
+                <DropdownTrigger isActive={isActive}>{title}</DropdownTrigger>
+
+                <Spacer space={1} direction="column" />
+
+                <DropdownContent align="start" sideOffset={4}>
+                  {sections.map(({ title: sectionTitle }) => (
+                    <DropdownItem key={sectionTitle}>
+                      <TabTrigger key={title} value={sectionTitle}>
+                        {sectionTitle}
+                      </TabTrigger>
+                    </DropdownItem>
+                  ))}
+                </DropdownContent>
+              </div>
             </Dropdown>
           )
         })}

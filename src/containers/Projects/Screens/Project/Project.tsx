@@ -10,7 +10,7 @@ import { ImpactTabs } from './components/ImpactTabs'
 import { RelatedProjectsCards } from './components/RelatedProjectsCards'
 import { Navbar } from './components/Navbar'
 import * as playIcon from '../../../../../public/images/projects/play.svg'
-import { IMPACT_TABS, NAV_SECTIONS, SECTION_NAME } from './constants'
+import { NAV_SECTIONS, SECTION_NAME } from './constants'
 
 import {
   Hero,
@@ -73,8 +73,8 @@ export const Project = () => {
 
     return (
       rect.top >= 0 &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 400 &&
       rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     )
   }
@@ -114,6 +114,9 @@ export const Project = () => {
             <IframeContainer>
               <iframe frameBorder="0" src={project.embeddedMap} />
             </IframeContainer>
+
+            <Spacer space="8" direction="row" />
+
             <ScrollableText>
               <Text size="body1" dangerouslySetInnerHTML={{ __html: project.projectInfo }} />
             </ScrollableText>
@@ -146,7 +149,7 @@ export const Project = () => {
             </Text>
 
             <Spacer direction="column" space="10" />
-            <ImpactTabs tabs={IMPACT_TABS} />
+            <ImpactTabs impact={project.impact} />
           </Impact>
         </Container>
       </Section>
