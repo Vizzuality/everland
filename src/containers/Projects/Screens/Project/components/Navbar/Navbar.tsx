@@ -1,6 +1,7 @@
 import { Text } from 'components/Text'
 import { ProjectDetail } from 'hooks/fetchProjectDetail'
 import Link from 'next/link'
+import { SECTION_NAME } from '../../constants'
 import {
   NavbarRoot,
   Nav,
@@ -10,28 +11,30 @@ import {
   FooterColumn,
   FooterIcon,
   FooterItem,
+  SectionLink,
 } from './Navbar.styles'
 
 export type NavbarSection = {
-  name: string
+  name: SECTION_NAME
   label: string
 }
 
 export type NavbarProps = {
   sections: NavbarSection[]
+  activeSection: SECTION_NAME
   project: ProjectDetail
 }
 
-export const Navbar = ({ sections, project }: NavbarProps) => {
+export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
   return (
     <NavbarRoot>
       <NavContainer>
         <Nav>
           {sections.map(({ name, label }) => (
-            <Link key={name} href={`#${name}`}>
-              <a>
+            <Link key={name} href={`#${name}`} passHref>
+              <SectionLink active={name === activeSection}>
                 <Text size="caption1">{label}</Text>
-              </a>
+              </SectionLink>
             </Link>
           ))}
         </Nav>

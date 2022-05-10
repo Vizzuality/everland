@@ -1,5 +1,11 @@
 import MOCK_DATA from 'data/keo-seima-mock.json'
 
+export enum SECTION_NAME {
+  MEDIA = 'media',
+  INTERVENTION_MODEL = 'intervention-model',
+  IMPACT = 'impact',
+}
+
 export const IMPACT_TABS = [
   {
     title: 'Community',
@@ -110,9 +116,9 @@ export const INTERVENTION_MODEL_TABS = [
 ]
 
 export const NAV_SECTIONS = [
-  { name: 'media', label: 'Media' },
-  { name: 'intervention-model', label: 'Intervention model' },
-  { name: 'impact', label: 'Impact' },
+  { name: SECTION_NAME.MEDIA, label: 'Media' },
+  { name: SECTION_NAME.INTERVENTION_MODEL, label: 'Intervention model' },
+  { name: SECTION_NAME.IMPACT, label: 'Impact' },
 ]
 
 export const data = MOCK_DATA

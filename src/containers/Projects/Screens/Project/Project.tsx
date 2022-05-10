@@ -9,8 +9,8 @@ import { InterventionModelTabs } from './components/InterventionModelTabs'
 import { ImpactTabs } from './components/ImpactTabs'
 import { RelatedProjectsCards } from './components/RelatedProjectsCards'
 import { Navbar } from './components/Navbar'
-
-import { data, IMPACT_TABS, INTERVENTION_MODEL_TABS, NAV_SECTIONS } from './constants'
+import * as playIcon from '../../../../../public/images/projects/play.svg'
+import { IMPACT_TABS, NAV_SECTIONS, SECTION_NAME } from './constants'
 
 import {
   Hero,
@@ -24,22 +24,59 @@ import {
   Video,
   ProjectRoot,
   HeroContent,
+  VideoPlayIcon,
+  VideoOverlay,
+  VideoContainer,
 } from './Project.styles'
 
 import { Header } from 'components/Header'
-import { MouseEvent, MouseEventHandler } from 'react'
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { useFetchProjectDetail } from 'hooks/fetchProjectDetail'
 
-const { relatedProjects, video } = data
-
 export const Project = () => {
+  const [activeSection, setActiveSection] = useState<SECTION_NAME>()
+  const [isVideoTouched, setIsVideoTouched] = useState(false)
+
   const { data: project, status } = useFetchProjectDetail()
 
-  const handlePlayOrPauseVideo = (
-    e: MouseEvent<HTMLVideoElement> & { target: HTMLVideoElement },
-  ) => {
-    e.target.paused && !e.target.controls && e.target.play()
-    e.target.controls = true
+  useEffect(() => {
+    const navSectionsCopy = [...NAV_SECTIONS]
+    const _eventListener = () => {
+      navSectionsCopy.reverse().forEach(({ name }) => {
+        if (isElementVisible(`#${name}`)) {
+          setActiveSection(name)
+        }
+      })
+    }
+
+    document.addEventListener('scroll', _eventListener)
+
+    return () => document.removeEventListener('scroll', _eventListener)
+  }, [])
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handlePlayOrPauseVideo = (e: any) => {
+    if (!isVideoTouched) {
+      e.target.play()
+      setTimeout(() => {
+        e.target.controls = true
+        setIsVideoTouched(true)
+      }, 100)
+    }
+  }
+
+  const isElementVisible = (querySelector: string) => {
+    const rect = document.querySelector(querySelector)?.getBoundingClientRect()
+
+    if (!rect) return
+
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    )
   }
 
   if (status === 'loading') return null
@@ -116,12 +153,23 @@ export const Project = () => {
 
       <Section>
         <Container>
-          <Video
-            poster="../../../images/projects/video-poster-play.jpg"
-            onClick={handlePlayOrPauseVideo}
-          >
-            <source src={project.video} type="video/mp4" />
-          </Video>
+          <VideoContainer>
+            <Video
+              poster="/images/projects/video-poster.jpg"
+              controls={isVideoTouched}
+              onClick={handlePlayOrPauseVideo}
+            >
+              <source src={project.video} type="video/mp4" />
+            </Video>
+            {!isVideoTouched && (
+              <>
+                <VideoOverlay />
+                <VideoPlayIcon>
+                  <Image src={playIcon} alt="play" />
+                </VideoPlayIcon>
+              </>
+            )}
+          </VideoContainer>
         </Container>
       </Section>
 
@@ -138,7 +186,7 @@ export const Project = () => {
         </RelatedProjects>
       </Section>
 
-      <Navbar sections={NAV_SECTIONS} project={project} />
+      <Navbar sections={NAV_SECTIONS} project={project} activeSection={activeSection} />
     </ProjectRoot>
   )
 }
