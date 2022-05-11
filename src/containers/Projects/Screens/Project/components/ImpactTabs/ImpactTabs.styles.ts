@@ -36,6 +36,19 @@ export const TabTrigger = styled(Tabs.Trigger, {
     color: '$primary-jasper-700',
     backgroundColor: '$primary-jasper-200',
     fontWeight: '$regular',
+    outline: 'none',
+    border: 'none',
+  },
+
+  '&:disabled': {
+    color: '$primary-tuna-300',
+    cursor: 'not-allowed',
+
+    '&:hover': {
+      color: '$primary-tuna-300',
+      backgroundColor: 'transparent',
+      fontWeight: '$thin',
+    },
   },
 })
 
