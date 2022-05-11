@@ -28,12 +28,14 @@ export const TabTrigger = styled(Tabs.Trigger, {
   fontFamily: '$primary',
   fontSize: '$caption1',
   lineHeight: '$caption1',
+  fontWeight: '$thin',
   color: '$primary-tuna-500',
   padding: '$1',
 
   '&:hover, &[data-state="active"]': {
     color: '$primary-jasper-700',
     backgroundColor: '$primary-jasper-200',
+    fontWeight: '$regular',
   },
 })
 
@@ -83,6 +85,7 @@ export const DropdownTrigger = styled(RadixDropdown.Trigger, {
     isActive: {
       true: {
         color: '$primary-jasper-500',
+        fontWeight: '$bold',
       },
     },
   },
@@ -116,9 +119,15 @@ export const TabArrow = styled('button', {
   backgroundColor: '$neutral-light-beige',
   boxShadow: '$1',
   borderRadius: '$pill',
+  cursor: 'pointer',
 
   top: '50%',
   transform: 'translateY(-50%)',
+
+  '&:hover use': {
+    stroke: '$primary-tuna-default',
+    strokeWidth: '1px',
+  },
 
   variants: {
     position: {

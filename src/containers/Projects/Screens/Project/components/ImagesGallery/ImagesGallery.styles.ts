@@ -21,4 +21,5 @@ export const GalleryWrapper = styled('div', {
   display: 'flex',
   overflow: 'auto',
   gap: '$8',
+  scrollBehavior: 'smooth',
 })

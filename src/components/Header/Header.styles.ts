@@ -1,7 +1,6 @@
 import { styled } from 'stitches.config'
 
 export const HeaderRoot = styled('header', {
-  px: '100px',
   width: '100%',
 
   variants: {

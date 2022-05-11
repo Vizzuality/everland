@@ -5,10 +5,6 @@ export const Container = styled('div', {
   margin: 'auto',
   px: '$5',
 
-  '@bp1': {
-    px: '100px',
-  },
-
   '@bp2': {
     px: '$16',
   },
