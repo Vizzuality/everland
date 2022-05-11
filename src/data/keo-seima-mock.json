@@ -38,7 +38,13 @@
       }
     }
   ],
-  "video": "/videos/keo-seima.mp4",
+  "video": {
+    "url": "/videos/keo-seima.mp4",
+    "thumbnail": {
+      "alt": "A description of the image",
+      "src": "/images/projects/keo-seima-video-thumbnail.jpg"
+    }
+  },
   "location": {
     "iso": "KHM",
     "name": "Cambodia",
@@ -50,19 +56,35 @@
     "sections": [
       {
         "title": "Origins",
-        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict."
+        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
+        "image": {
+          "alt": "A description of the image",
+          "src": "/images/projects/keo-seima-origins.jpg"
+        }
       },
       {
         "title": "Threats",
-        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict."
+        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
+        "image": {
+          "alt": "A description of the image",
+          "src": "/images/projects/keo-seima-threats.jpg"
+        }
       },
       {
         "title": "Solutions",
-        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict."
+        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
+        "image": {
+          "alt": "A description of the image",
+          "src": "/images/projects/keo-seima-solutions.jpg"
+        }
       },
       {
         "title": "Progress",
-        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict."
+        "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
+        "image": {
+          "alt": "A description of the image",
+          "src": "/images/projects/keo-seima-progress.jpg"
+        }
       }
     ]
   },
@@ -70,16 +92,14 @@
     {
       "pillar": "Community",
       "theme": "Health",
-      "data": null,
-      "story": null,
+      "description": null,
       "photoUrl": null,
       "title": "Lorem ipsum"
     },
     {
       "pillar": "Community",
       "theme": "Economy",
-      "data": null,
-      "story": null,
+      "description": null,
       "photoUrl": null,
       "title": "Lorem ipsum"
     }
