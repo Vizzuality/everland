@@ -92,16 +92,14 @@
     {
       "pillar": "Community",
       "theme": "Health",
-      "data": null,
-      "story": null,
+      "description": null,
       "photoUrl": null,
       "title": "Lorem ipsum"
     },
     {
       "pillar": "Community",
       "theme": "Economy",
-      "data": null,
-      "story": null,
+      "description": null,
       "photoUrl": null,
       "title": "Lorem ipsum"
     }
