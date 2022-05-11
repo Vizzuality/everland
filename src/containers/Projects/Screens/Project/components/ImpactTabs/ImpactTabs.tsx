@@ -102,7 +102,11 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                   <DropdownContent align="start" sideOffset={4}>
                     {sections.map((section) => (
                       <DropdownItem key={section.title}>
-                        <TabTrigger key={title} value={section.title}>
+                        <TabTrigger
+                          key={title}
+                          value={section.title}
+                          disabled={!section.description && !section.photoUrl && !section.subtitle}
+                        >
                           {section.title}
                         </TabTrigger>
                       </DropdownItem>
@@ -125,10 +129,9 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             <TabContentText>
               <Text size="body1">{description}</Text>
             </TabContentText>
-
             {photoUrl && (
               <TabImage>
-                <Image src={photoUrl} alt="community" layout="fill" />
+                <Image src={photoUrl} alt="" layout="fill" />
               </TabImage>
             )}
           </TabContent>
