@@ -59,7 +59,7 @@
         "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
         "image": {
           "alt": "A description of the image",
-          "src": "/images/projects/keo-seima-origins.jpg"
+          "src": "/images/projects/keo-seima-origins.png"
         }
       },
       {
@@ -83,7 +83,7 @@
         "description": "Illegal land clearance is currently KSWS’s greatest threat. Driven by expansion of cash crops and land speculation, KSWS sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
         "image": {
           "alt": "A description of the image",
-          "src": "/images/projects/keo-seima-progress.jpg"
+          "src": "/images/projects/keo-seima-progress.png"
         }
       }
     ]
@@ -92,16 +92,16 @@
     {
       "pillar": "Community",
       "theme": "Health",
-      "description": null,
+      "description": "",
       "photoUrl": null,
       "title": "Lorem ipsum"
     },
     {
       "pillar": "Community",
       "theme": "Economy",
-      "description": null,
-      "photoUrl": null,
-      "title": "Lorem ipsum"
+      "description": "In total, 1,501 women participated in project activities, and benefited from improvements to access to education and health care. (Project activities will be designed in a way that encourages the participation of women; moreover, all management and leadership committees will contain at least one woman, with an aim of transitioning to equal representation over time.",
+      "photoUrl": "/images/projects/impact-community.jpg",
+      "title": "More than 12,000 students served in project supported schools"
     }
   ],
   "relatedProjects": [
