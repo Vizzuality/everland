@@ -5,6 +5,7 @@ export const ICON_NAMES = [
   'arrow-down-line',
   'arrow-left',
   'arrow-right',
+  'chevron-down',
   'land',
   'marker',
   'sort-down',

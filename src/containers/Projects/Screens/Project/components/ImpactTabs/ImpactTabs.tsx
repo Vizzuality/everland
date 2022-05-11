@@ -94,7 +94,10 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                 onMouseOver={() => setOpenMenu(title)}
                 onMouseLeave={() => setOpenMenu(undefined)}
               >
-                <DropdownTrigger isActive={isActive}>{title}</DropdownTrigger>
+                <DropdownTrigger isActive={isActive}>
+                  <span>{title}</span>
+                  <Icon name="chevron-down" />
+                </DropdownTrigger>
 
                 <Spacer space={1} direction="column" />
 
