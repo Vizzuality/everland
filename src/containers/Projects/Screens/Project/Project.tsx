@@ -84,7 +84,7 @@ export const Project = () => {
   return (
     <ProjectRoot>
       <Section>
-        <Hero>
+        <Hero css={{ $$mainPicture: `url(${project.mainPicture})` }}>
           <Overlay />
           <Header />
           <HeroContent>
@@ -158,11 +158,11 @@ export const Project = () => {
         <Container>
           <VideoContainer>
             <Video
-              poster="/images/projects/video-poster.jpg"
+              poster={project.video.thumbnail.src}
               controls={isVideoTouched}
               onClick={handlePlayOrPauseVideo}
             >
-              <source src={project.video} type="video/mp4" />
+              <source src={project.video.url} type="video/mp4" />
             </Video>
             {!isVideoTouched && (
               <>

@@ -12,7 +12,10 @@ import {
 type Tab = {
   title: string
   description: string
-  imageUrl?: string
+  image?: {
+    alt: string
+    src: string
+  }
 }
 
 export type InterventionModelTabsProps = {
@@ -29,12 +32,12 @@ export const InterventionModelTabs = ({ tabs }: InterventionModelTabsProps) => {
           </TabTrigger>
         ))}
       </TabsList>
-      {tabs.map(({ title, description, imageUrl }) => (
+      {tabs.map(({ title, description, image }) => (
         <TabContainer key={title} value={title}>
           <Text size="body1">{description}</Text>
-          {imageUrl && (
+          {image && (
             <TabImage>
-              <Image src={imageUrl} alt="community" layout="fill" />
+              <Image src={image.src} alt={image.alt} layout="fill" />
             </TabImage>
           )}
         </TabContainer>

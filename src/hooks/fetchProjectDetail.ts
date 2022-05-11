@@ -25,8 +25,7 @@ export type Section = {
 export type Impact = {
   pillar: string
   theme: string
-  data: any
-  story: any
+  description: string
   photoUrl: any
   title: string
 }
@@ -56,7 +55,13 @@ export type ProjectDetail = {
   co2Avoided: ValueUnit
   embeddedMap: string
   gallery: GalleryItem[]
-  video: string
+  video: {
+    url: string
+    thumbnail: {
+      alt: string
+      src: string
+    }
+  }
   location: {
     iso: string
     name: string

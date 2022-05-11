@@ -269,7 +269,7 @@ export const globalStyles = stitchesGlobal({
     {
       fontFamily: 'StagSans',
       fontWeight: 300,
-      src: 'url("/fonts/stag-sans/StagSans-thin.ttf")',
+      src: 'url("/fonts/stag-sans/StagSans-Light.ttf")',
     },
     {
       fontFamily: 'StagSans',
