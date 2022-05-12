@@ -2,10 +2,10 @@ import { Icon } from 'components/Icon'
 import { Spacer } from 'components/Spacer'
 import { Text } from 'components/Text'
 import { useFetchImpactTree } from 'hooks/fetchImpactTree'
-import { Impact } from 'hooks/fetchProjectDetail'
 import { groupBy } from 'lodash'
 import Image from 'next/image'
 import { useState } from 'react'
+import { Impact } from 'types/Project'
 import {
   ImpactTabsRoot,
   Dropdown,

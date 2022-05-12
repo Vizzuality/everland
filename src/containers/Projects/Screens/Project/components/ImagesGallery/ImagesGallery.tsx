@@ -1,8 +1,8 @@
 import { Container } from 'containers/components/Container/Container'
 import { ImagesGalleryRoot, GalleryBackground, GalleryWrapper } from './ImagesGallery.styles'
 import { ImageItem } from '../ImageItem'
-import { GalleryItem } from 'hooks/fetchProjectDetail'
 import { useEffect } from 'react'
+import { GalleryItem } from 'types/Project'
 
 type ImagesGalleryProps = {
   gallery: GalleryItem[]
