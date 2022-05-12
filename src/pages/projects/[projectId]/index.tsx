@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Project } from 'containers/Projects/screens/Project'
+import { Project } from 'containers/Projects/Screens/Project'
 
 const ProjectDetail: React.FC = () => (
   <div>

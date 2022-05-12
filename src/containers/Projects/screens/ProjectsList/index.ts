@@ -1,1 +1,1 @@
-export { ProjectsList as ProjectsHome } from './ProjectsList'
+export { ProjectsList } from './ProjectsList'
