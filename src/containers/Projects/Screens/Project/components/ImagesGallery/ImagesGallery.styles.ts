@@ -19,6 +19,7 @@ export const GalleryBackground = styled('div', {
 
 export const GalleryWrapper = styled('div', {
   display: 'flex',
+  overflowX: 'auto',
   overflow: 'auto',
   gap: '$8',
   scrollBehavior: 'smooth',
