@@ -31,6 +31,10 @@ export const ImageItemRoot = styled('div', {
   alignItems: 'flex-end',
   justifyContent: 'flex-start',
 
+  '& img': {
+    pointerEvents: 'none',
+  },
+
   [`& .overlay`]: {
     transition: 'opacity .15s ease-out',
     opacity: 0,
