@@ -19,7 +19,11 @@ export const GalleryBackground = styled('div', {
 
 export const GalleryWrapper = styled('div', {
   display: 'flex',
-  overflow: 'auto',
+  overflowX: 'auto',
+  cursor: 'grab',
   gap: '$8',
-  scrollBehavior: 'smooth',
+
+  '&.dragging': {
+    cursor: 'grabbing',
+  },
 })

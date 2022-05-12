@@ -8,6 +8,7 @@ export const Hero = styled('div', {
   position: 'relative',
   width: '100vw',
   height: '100vh',
+  maxWidth: '100%',
   backgroundImage: '$$mainPicture',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
