@@ -1,6 +1,6 @@
 import { Text } from 'components/Text'
-import { ProjectDetail } from 'hooks/fetchProjectDetail'
 import Link from 'next/link'
+import { ProjectDetail } from 'types/Project'
 import { SECTION_NAME } from '../../constants'
 import {
   NavbarRoot,

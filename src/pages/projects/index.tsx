@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { ProjectsHome } from 'containers/Projects/Screens/ProjectsHome'
+import { ProjectsList } from 'containers/Projects/Screens/ProjectsList'
 import React from 'react'
 
 const Home: React.FC = () => (
@@ -8,7 +8,7 @@ const Home: React.FC = () => (
       <title>Projects</title>
     </Head>
     <main>
-      <ProjectsHome />
+      <ProjectsList />
     </main>
   </div>
 )

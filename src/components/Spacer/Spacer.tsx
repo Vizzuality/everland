@@ -19,6 +19,7 @@ export const Spacer = styled('div', {
     },
     direction: {
       row: {
+        display: 'inline-block',
         width: '$$space',
       },
       column: {
