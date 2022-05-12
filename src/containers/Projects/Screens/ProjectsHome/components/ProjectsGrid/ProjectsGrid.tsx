@@ -49,7 +49,7 @@ export const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
             id={project.id}
             title={project.title}
             location={project.location}
-            hashtags={['#hashtag1', '#hashtag2']}
+            hashtags={['theme1', 'theme2']}
             key={project.id}
           />
         ))}

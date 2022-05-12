@@ -7,6 +7,7 @@ import { Container } from 'containers/components/Container/Container'
 import Image from 'next/image'
 import { Logo } from 'components/Logo'
 import { Text } from 'components/Text'
+import Link from 'next/link'
 
 type HeaderOwnProps = ComponentProps<typeof HeaderRoot>
 
@@ -21,7 +22,11 @@ export const Header = (props: HeaderProps) => {
             <Image src={everlandLogo} alt="Logo" />
           </Logo>
           <nav>
-            <Text color="neutral-white">PROJECT</Text>
+            <Link href="/projects" passHref>
+              <Text as="a" color="neutral-white">
+                PROJECTS
+              </Text>
+            </Link>
             <Text color="neutral-white">CONTACT US</Text>
             <Text color="neutral-white">ABOUT US</Text>
           </nav>
