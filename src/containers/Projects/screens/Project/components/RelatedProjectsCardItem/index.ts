@@ -1,0 +1,1 @@
+export { RelatedProjectsCardItem } from './RelatedProjectsCardItem'
