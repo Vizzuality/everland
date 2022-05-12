@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { ProjectsHome } from 'containers/Projects/Screens/ProjectsHome'
+import { ProjectsHome } from 'containers/Projects/screens/ProjectsList'
 import React from 'react'
 
 const Home: React.FC = () => (

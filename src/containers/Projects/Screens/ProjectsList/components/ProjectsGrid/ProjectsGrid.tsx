@@ -4,6 +4,7 @@ import React, { useMemo, useState } from 'react'
 import { Icon } from 'components/Icon'
 import { ProjectCardItem } from 'containers/Projects/components/ProjectCardItem'
 import { Text } from 'components/Text'
+import { ProjectSummary } from 'types/Project'
 
 enum Sorting {
   ASC = 'asc',
@@ -11,8 +12,7 @@ enum Sorting {
 }
 
 type ProjectsGridProps = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  projects: Record<string, any>[]
+  projects: ProjectSummary[]
 }
 
 export const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
@@ -45,13 +45,7 @@ export const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
       </SortingContainer>
       <Grid>
         {sortedProjects.map((project) => (
-          <ProjectCardItem
-            id={project.id}
-            title={project.title}
-            location={project.location}
-            hashtags={['#hashtag1', '#hashtag2']}
-            key={project.id}
-          />
+          <ProjectCardItem {...project} key={project.id} />
         ))}
       </Grid>
     </>

@@ -20,6 +20,7 @@ export const Spacer = styled('div', {
     direction: {
       row: {
         width: '$$space',
+        display: 'inline-block',
       },
       column: {
         height: '$$space',
