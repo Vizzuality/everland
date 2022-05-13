@@ -2,7 +2,7 @@ import { FilterUnion } from 'types/FilterUnion'
 import { createStitches } from '@stitches/react'
 
 const media = {
-  mobile: '(min-width: 320px)',
+  mobile: '(min-width: 0px)',
   bp1: '(min-width: 520px)',
   bp2: '(min-width: 900px)',
   bp3: '(min-width: 1200px)',

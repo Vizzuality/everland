@@ -2,11 +2,16 @@ import { Icon } from 'components/Icon'
 import { styled } from 'stitches.config'
 
 export const NavbarRoot = styled('div', {
+  display: 'none',
   position: 'fixed',
   bottom: 0,
   left: 0,
   right: 0,
   zIndex: '$2',
+
+  '@bp2': {
+    display: 'block',
+  },
 })
 
 export const NavContainer = styled('div', {

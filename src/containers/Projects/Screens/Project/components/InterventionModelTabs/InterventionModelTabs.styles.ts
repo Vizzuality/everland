@@ -6,7 +6,10 @@ export const InterventionModelTabsRoot = styled(Tabs.Root, {
   position: 'relative',
   display: 'flex',
   justifyContent: 'space-between',
-  minHeight: '622px',
+
+  '@bp2': {
+    minHeight: '622px',
+  },
 })
 
 export const TabsList = styled(Tabs.List, {
@@ -24,10 +27,10 @@ export const TabTrigger = styled(Tabs.Trigger, {
   transition: 'color 0.2s ease-out',
   cursor: 'pointer',
   fontFamily: '$secondary',
-  fontSize: '$h2',
-  lineHeight: 'h2',
+  fontSize: '$subtitle1',
+  lineHeight: '$subtitle1',
   color: '$primary-tuna-500',
-  minWidth: '212px',
+  minWidth: '112px',
 
   '&:after': {
     transition: 'opacity .2s ease-out, width .2s ease-out',
@@ -40,8 +43,8 @@ export const TabTrigger = styled(Tabs.Trigger, {
     top: '-$1',
     display: 'block',
     height: '$5',
-    backgroundImage: 'url(/images/projects/tab-underline.png)',
-    backgroundSize: '212px 100%',
+    backgroundImage: 'url(/images/projects/tab-underline.svg)',
+    backgroundSize: '100px 100%',
   },
 
   '&:hover, &[data-state="active"]': {
@@ -50,12 +53,31 @@ export const TabTrigger = styled(Tabs.Trigger, {
 
   '&[data-state="active"]:after': {
     opacity: 1,
-    width: '212px',
+    width: '100px',
+  },
+
+  '@bp2': {
+    fontSize: '$h2',
+    lineHeight: '$h2',
+    minWidth: '147px',
+    marginBottom: '$2',
+
+    '&[data-state="active"]:after': {
+      opacity: 1,
+      width: '147px',
+    },
+
+    '&:after': {
+      backgroundSize: '147px 100%',
+      top: '$1',
+    },
   },
 })
 
 export const TabContainer = styled(Tabs.Content, {
-  maxWidth: '433px',
+  '@bp2': {
+    maxWidth: '433px',
+  },
 })
 
 export const TabImage = styled('figure', {
@@ -64,4 +86,9 @@ export const TabImage = styled('figure', {
   left: 0,
   height: '253px',
   width: '320px',
+  display: 'none',
+
+  '@bp2': {
+    display: 'block',
+  },
 })

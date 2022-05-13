@@ -6,6 +6,10 @@ import { Text } from 'components/Text'
 
 export const ImpactTabsRoot = styled(Tabs.Root)
 
+export const TabsListContainer = styled(Tabs.List, {
+  overflow: 'auto',
+})
+
 export const TabsList = styled(Tabs.List, {
   display: 'flex',
   marginLeft: '-$12',
@@ -58,14 +62,22 @@ export const TabContainer = styled(Tabs.Content, {
 
 export const TabContent = styled('div', {
   marginTop: '$14',
-  display: 'flex',
-  justifyContent: 'space-between',
+
+  '@bp2': {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
 })
 
 export const TabImage = styled('figure', {
   position: 'relative',
   height: '380px',
   width: '273px',
+  margin: 'auto',
+
+  '@bp2': {
+    margin: 0,
+  },
 })
 
 export const Dropdown = styled(RadixDropdown.Root)
@@ -118,7 +130,15 @@ export const DropdownContent = styled(RadixDropdown.Content, {
 export const DropdownItem = styled(RadixDropdown.DropdownMenuItem)
 
 export const TabContentText = styled(Text, {
-  maxWidth: '403px',
+  '@mobile': {
+    display: 'block',
+    marginBottom: '$8',
+  },
+
+  '@bp2': {
+    marginBottom: 0,
+    maxWidth: '403px',
+  },
 })
 
 export const TabArrow = styled('button', {
@@ -138,21 +158,25 @@ export const TabArrow = styled('button', {
   borderRadius: '$pill',
   cursor: 'pointer',
 
-  top: '50%',
-  transform: 'translateY(-50%)',
+  bottom: '$25',
+  transform: 'translateY(50%)',
 
   '&:hover use': {
     stroke: '$primary-tuna-default',
     strokeWidth: '1px',
   },
 
+  '@bp2': { bottom: '50%' },
+
   variants: {
     position: {
       left: {
-        left: '-$12',
+        left: '$14',
+        '@bp2': { left: '-$12' },
       },
       right: {
-        right: '-$12',
+        right: '$14',
+        '@bp2': { right: '-$12' },
       },
     },
   },
