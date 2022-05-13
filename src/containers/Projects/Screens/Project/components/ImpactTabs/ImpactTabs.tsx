@@ -19,6 +19,7 @@ import {
   TabsList,
   TabTrigger,
   DropdownItem,
+  TabsListContainer,
 } from './ImpactTabs.styles'
 
 type TabSection = {
@@ -84,47 +85,55 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
   return (
     <ImpactTabsRoot defaultValue={impact[0].theme} value={activeTab} onValueChange={onValueChange}>
-      <TabsList aria-label="impact tabs">
-        {tabs?.map(({ title, sections }) => {
-          const isActive = sections.some(({ title }) => title === activeTab)
+      <TabsListContainer>
+        <TabsList aria-label="impact tabs">
+          {tabs?.map(({ title, sections }) => {
+            const isActive = sections.some(({ title }) => title === activeTab)
 
-          return (
-            <Dropdown open={openMenu === title} key={title} modal={false}>
-              <div
-                onMouseOver={() => setOpenMenu(title)}
-                onMouseLeave={() => setOpenMenu(undefined)}
-              >
-                <DropdownTrigger isActive={isActive}>
-                  <span>{title}</span>
-                  <Icon name="chevron-down" />
-                </DropdownTrigger>
+            return (
+              <Dropdown open={openMenu === title} key={title} modal={false}>
+                <div
+                  onMouseOver={() => setOpenMenu(title)}
+                  onMouseLeave={() => setOpenMenu(undefined)}
+                >
+                  <DropdownTrigger isActive={isActive}>
+                    <span>{title}</span>
+                    <Icon name="chevron-down" />
+                  </DropdownTrigger>
 
-                <Spacer space={1} direction="column" />
+                  <Spacer space={1} direction="column" />
 
-                {sections.length > 0 && (
-                  <DropdownContent align="start" sideOffset={4}>
-                    {sections.map((section) => (
-                      <DropdownItem key={section.title}>
-                        <TabTrigger
-                          key={title}
-                          value={section.title}
-                          disabled={!section.description && !section.photoUrl && !section.subtitle}
-                        >
-                          {section.title}
-                        </TabTrigger>
-                      </DropdownItem>
-                    ))}
-                  </DropdownContent>
-                )}
-              </div>
-            </Dropdown>
-          )
-        })}
-      </TabsList>
+                  {sections.length > 0 && (
+                    <DropdownContent align="start" sideOffset={4}>
+                      {sections.map((section) => (
+                        <DropdownItem key={section.title}>
+                          <TabTrigger
+                            key={title}
+                            value={section.title}
+                            disabled={
+                              !section.description && !section.photoUrl && !section.subtitle
+                            }
+                          >
+                            {section.title}
+                          </TabTrigger>
+                        </DropdownItem>
+                      ))}
+                    </DropdownContent>
+                  )}
+                </div>
+              </Dropdown>
+            )
+          })}
+        </TabsList>
+      </TabsListContainer>
 
       {tabsSections?.map(({ title: sectionTitle, subtitle, description, photoUrl }) => (
         <TabContainer key={sectionTitle} value={sectionTitle}>
-          <Text size="h2" family="secondary" color="primary-tuna-500">
+          <Text
+            size={{ '@mobile': 'h3', '@bp2': 'h2' }}
+            family="secondary"
+            color="primary-tuna-500"
+          >
             {subtitle}
           </Text>
 

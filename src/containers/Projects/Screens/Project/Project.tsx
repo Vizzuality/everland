@@ -131,7 +131,11 @@ export const Project = () => {
       <Section id={NAV_SECTIONS[1].name}>
         <Container>
           <InterventionModel>
-            <Text size="h3" weight="bold" color="primary-tuna-500">
+            <Text
+              size={{ '@mobile': 'subtitle1', '@bp2': 'h3' }}
+              weight="bold"
+              color="primary-tuna-500"
+            >
               {project.interventionModel.title}
             </Text>
 
@@ -142,9 +146,18 @@ export const Project = () => {
       </Section>
 
       <Section id={NAV_SECTIONS[2].name}>
-        <Container>
+        <Container
+          css={{
+            '@mobile': { paddingLeft: 0, paddingRight: 0 },
+            '@bp2': { paddingLeft: '$16', paddingRight: '$16' },
+          }}
+        >
           <Impact>
-            <Text size="h3" weight="bold" color="primary-tuna-500">
+            <Text
+              size={{ '@mobile': 'subtitle1', '@bp2': 'h3' }}
+              weight="bold"
+              color="primary-tuna-500"
+            >
               Impact
             </Text>
 

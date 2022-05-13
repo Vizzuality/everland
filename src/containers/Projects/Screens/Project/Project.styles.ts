@@ -125,16 +125,32 @@ export const ScrollableText = styled('div', {
 export const Impact = styled('div', {
   position: 'relative',
   backgroundColor: '$neutral-light-beige',
-  py: '$10',
-  px: '$23',
+  paddingTop: '$10',
+  paddingBottom: '190px',
+  px: '$6',
   minHeight: '857px',
-  borderRadius: '$7',
   boxShadow: '$2',
+
+  '@bp2': {
+    paddingBottom: '$10',
+    px: '$10',
+    borderRadius: '$7',
+  },
+  '@bp3': {
+    px: '$23',
+  },
 })
 
 export const InterventionModel = styled('div', {
   py: '$10',
-  px: '$23',
+
+  '@bp2': {
+    px: '$10',
+  },
+
+  '@bp3': {
+    px: '$23',
+  },
 })
 
 export const VideoPlayIcon = styled('div', {
@@ -200,6 +216,10 @@ export const Video = styled('video', {
 
 export const RelatedProjects = styled('div', {
   backgroundImage: `url('/images/projects/discover-background.jpg')`,
-  height: '473px',
-  paddingTop: '$16',
+  py: '$10',
+
+  '@bp2': {
+    paddingTop: '$16',
+    height: '473px',
+  },
 })
