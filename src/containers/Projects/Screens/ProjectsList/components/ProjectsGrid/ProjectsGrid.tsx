@@ -1,4 +1,4 @@
-import { Grid, SortButton, SortingContainer } from './ProjectsGrid.styles'
+import { Grid, GridContainer, SortButton, SortingContainer } from './ProjectsGrid.styles'
 import React, { useMemo, useState } from 'react'
 
 import { Icon } from 'components/Icon'
@@ -43,11 +43,13 @@ export const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
           <Icon name="sort-up" size="7" />
         </SortButton>
       </SortingContainer>
-      <Grid>
-        {sortedProjects.map((project) => (
-          <ProjectCardItem {...project} key={project.id} />
-        ))}
-      </Grid>
+      <GridContainer>
+        <Grid>
+          {sortedProjects.map((project) => (
+            <ProjectCardItem {...project} key={project.id} />
+          ))}
+        </Grid>
+      </GridContainer>
     </>
   )
 }

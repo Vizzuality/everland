@@ -28,11 +28,32 @@ export const SortButton = styled('button', {
 
 export const Grid = styled('div', {
   display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
+  gridTemplateColumns: 'repeat(auto-fill, 327px)',
   gap: '$3',
   padding: '$3',
-  backgroundColor: 'white',
   overflowY: 'auto',
+
+  '@media screen and (max-width: 730px)': {
+    padding: '$2',
+    gap: '$20',
+  },
+})
+
+export const GridContainer = styled('div', {
+  margin: 'auto',
+  backgroundColor: 'white',
+
+  '@media screen and (max-width: 730px)': {
+    maxWidth: '343px',
+  },
+
+  '@media screen and (min-width: 730px)': {
+    maxWidth: '690px',
+  },
+
+  '@media screen and (min-width: 1156px)': {
+    maxWidth: '1030px',
+  },
 })
 
 export const SortingContainer = styled('div', {
