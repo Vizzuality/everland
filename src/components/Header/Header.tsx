@@ -1,6 +1,6 @@
 import * as everlandLogo from '../../../public/images/common/logo.svg'
 
-import { Desktop, HeaderContent, HeaderRoot, Menu, Nav } from './Header.styles'
+import { HeaderContent, HeaderRoot, Menu, Nav } from './Header.styles'
 import React, { ComponentProps, useState } from 'react'
 
 import { Container } from 'containers/components/Container/Container'
@@ -9,7 +9,6 @@ import { Logo } from 'components/Logo'
 import { Text } from 'components/Text'
 import Link from 'next/link'
 import { Icon } from 'components/Icon'
-import { Dialog } from 'components/Dialog'
 import { NavMenuDialog } from 'components/NavMenuDialog/NavMenuDialog'
 
 type HeaderOwnProps = ComponentProps<typeof HeaderRoot>
