@@ -21,11 +21,36 @@ export const HeaderContent = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  height: '100px',
-  nav: {
+  paddingTop: '$12',
+})
+
+export const Nav = styled('nav', {
+  display: 'none',
+  gap: '35px',
+  margin: 'auto',
+  paddingRight: '93px',
+
+  '@bp2': {
     display: 'flex',
-    gap: '35px',
-    margin: 'auto',
-    paddingRight: '93px',
+  },
+})
+
+export const Menu = styled('button', {
+  size: '$16',
+  backgroundColor: '$neutral-light-beige',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  border: 'none',
+  margin: 0,
+  padding: 0,
+  cursor: 'pointer',
+
+  '&:hover': {
+    backgroundColor: '$neutral-dark-beige',
+  },
+
+  '@bp2': {
+    display: 'none',
   },
 })

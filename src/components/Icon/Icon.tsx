@@ -35,7 +35,7 @@ export type IconProps = IconOwnProps & {
 export const Icon = ({ name, label, color, css, ...props }: IconProps) => {
   return (
     <IconRoot
-      css={{ fill: color ? `$${color}` : undefined, ...css }}
+      css={{ color: color ? `$${color}` : undefined, ...css }}
       role={label ? 'img' : 'presentation'}
       data-testid={`icon-${name}`}
       {...props}
