@@ -15,48 +15,103 @@ export const Text = styled('span', {
     color,
     size: {
       heroTitle1: {
-        fontSize: '$hero1',
-        lineHeight: '$hero1',
+        fontSize: '$hero1Mobile',
+        lineHeight: '$hero1Mobile',
+
+        '@bp2': {
+          fontSize: '$hero1',
+          lineHeight: '$hero1',
+        },
       },
       heroTitle2: {
-        fontSize: '$hero2',
-        lineHeight: '$hero2',
+        fontSize: '$hero2Mobile',
+        lineHeight: '$hero2Mobile',
+
+        '@bp2': {
+          fontSize: '$hero2',
+          lineHeight: '$hero2',
+        },
       },
       heroTitle3: {
-        fontSize: '$hero3',
-        lineHeight: '$hero3',
+        fontSize: '$hero3Mobile',
+        lineHeight: '$hero3Mobile',
+
+        '@bp2': {
+          fontSize: '$hero3',
+          lineHeight: '$hero3',
+        },
       },
       heroTitle4: {
-        fontSize: '$hero4',
-        lineHeight: '$hero4',
+        fontSize: '$hero4Mobile',
+        lineHeight: '$hero4Mobile',
+
+        '@bp2': {
+          fontSize: '$hero4',
+          lineHeight: '$hero4',
+        },
       },
       h1: {
-        fontSize: '$h1',
-        lineHeight: '$h1',
+        fontSize: '$h1Mobile',
+        lineHeight: '$h1Mobile',
+
+        '@bp2': {
+          fontSize: '$h1',
+          lineHeight: '$h1',
+        },
       },
       h2: {
-        fontSize: '$h2',
-        lineHeight: '$h1',
+        fontSize: '$h2Mobile',
+        lineHeight: '$h2Mobile',
+
+        '@bp2': {
+          fontSize: '$h2',
+          lineHeight: '$h1',
+        },
       },
       h3: {
-        fontSize: '$h3',
-        lineHeight: '$h3',
+        fontSize: '$h3Mobile',
+        lineHeight: '$h3Mobile',
+
+        '@bp2': {
+          fontSize: '$h3',
+          lineHeight: '$h3',
+        },
       },
       subtitle1: {
-        fontSize: '$subtitle1',
-        lineHeight: '$subtitle',
+        fontSize: '$subtitleMobile',
+        lineHeight: '$subtitle1Mobile',
+
+        '@bp2': {
+          fontSize: '$subtitle1',
+          lineHeight: '$subtitle',
+        },
       },
       subtitle2: {
-        fontSize: '$subtitle2',
-        lineHeight: '$subtitle',
+        fontSize: '$subtitleMobile',
+        lineHeight: '$subtitle2Mobile',
+
+        '@bp2': {
+          fontSize: '$subtitle2',
+          lineHeight: '$subtitle',
+        },
       },
       subtitle3: {
-        fontSize: '$subtitle3',
-        lineHeight: '$subtitle',
+        fontSize: '$subtitleMobile',
+        lineHeight: '$subtitle3Mobile',
+
+        '@bp2': {
+          fontSize: '$subtitle3',
+          lineHeight: '$subtitle',
+        },
       },
       subtitle4: {
-        fontSize: '$subtitle4',
-        lineHeight: '$subtitle',
+        fontSize: '$subtitle4Mobile',
+        lineHeight: '$subtitle4Mobile',
+
+        '@bp2': {
+          fontSize: '$subtitle4',
+          lineHeight: '$subtitle',
+        },
       },
       body1: {
         fontSize: '$body1',

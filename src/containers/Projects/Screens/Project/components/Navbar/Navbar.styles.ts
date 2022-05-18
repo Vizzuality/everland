@@ -1,17 +1,13 @@
 import { Icon } from 'components/Icon'
+import { Text } from 'components/Text'
 import { styled } from 'stitches.config'
 
 export const NavbarRoot = styled('div', {
-  display: 'none',
   position: 'fixed',
   bottom: 0,
   left: 0,
   right: 0,
   zIndex: '$2',
-
-  '@bp2': {
-    display: 'block',
-  },
 })
 
 export const NavContainer = styled('div', {
@@ -99,4 +95,60 @@ export const FooterItem = styled('span', {
 export const FooterIcon = styled(Icon, {
   color: '$primary-jasper-default',
   marginRight: '$4',
+})
+
+export const Desktop = styled('div', {
+  display: 'none',
+
+  '@bp1': {
+    display: 'block',
+  },
+})
+
+export const Mobile = styled('div', {
+  display: 'block',
+
+  '@bp1': {
+    display: 'none',
+  },
+})
+
+export const MobileNav = styled('nav', {
+  backgroundColor: '$neutral-white',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+})
+
+export const NavItem = styled('a', {
+  // reset
+  padding: 0,
+  margin: 0,
+  border: 'none',
+  backgroundColor: 'transparent',
+
+  minWidth: '92px',
+  height: '$15',
+  paddingTop: '$2',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'flex-start',
+  flexDirection: 'column',
+  flex: 1,
+  borderTop: '2px solid $primary-tuna-500',
+  color: '$primary-tuna-500',
+
+  variants: {
+    isActive: {
+      true: {
+        backgroundColor: '$primary-jasper-100',
+        borderColor: '$primary-jasper-500',
+        color: '$primary-jasper-500',
+
+        '& > span': {
+          color: '$primary-jasper-500',
+        },
+      },
+    },
+  },
 })

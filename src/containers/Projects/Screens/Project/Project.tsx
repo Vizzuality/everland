@@ -41,13 +41,23 @@ export const Project = () => {
   const { data: project, status } = useFetchProjectDetail()
 
   useEffect(() => {
-    const navSectionsCopy = [...NAV_SECTIONS]
-    const _eventListener = () => {
-      navSectionsCopy.reverse().forEach(({ name }) => {
-        if (isElementVisible(`#${name}`)) {
-          setActiveSection(name)
-        }
+    const _eventListener = (e) => {
+      const visiblePercentages = NAV_SECTIONS.map(({ name }) => {
+        const visiblePercentage = calculateVisiblePercentage(`#${name}`)
+        return visiblePercentage
       })
+
+      const areAllZero = visiblePercentages.every((percentage) => percentage === 0)
+
+      if (areAllZero) {
+        setActiveSection(undefined)
+        return
+      }
+
+      const max = Math.max(...visiblePercentages)
+
+      const index = visiblePercentages.indexOf(max)
+      setActiveSection(NAV_SECTIONS[index].name)
     }
 
     document.addEventListener('scroll', _eventListener)
@@ -66,17 +76,23 @@ export const Project = () => {
     }
   }
 
-  const isElementVisible = (querySelector: string) => {
+  const calculateVisiblePercentage = (querySelector: string) => {
     const rect = document.querySelector(querySelector)?.getBoundingClientRect()
 
     if (!rect) return
 
-    return (
-      rect.top >= 0 &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 400 &&
-      rect.left >= 0 &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    )
+    const top = Math.min(0, rect.top)
+
+    const bottom =
+      (rect.bottom > window.innerHeight
+        ? window.innerHeight - rect.bottom
+        : Math.min(0, rect.bottom)) - 96
+
+    const visibleHeight = rect.height + top + bottom
+
+    const visiblePercentage = Math.max((visibleHeight / rect.height) * 100, 0)
+
+    return visiblePercentage
   }
 
   if (status === 'loading') return null
