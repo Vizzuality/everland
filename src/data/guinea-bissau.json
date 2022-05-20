@@ -20,7 +20,7 @@
   "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/4ad88cfedb3cf77f77b8e3cd07964c84/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&lang=en&map=eyJjZW50ZXIiOnsibGF0IjoxMS43NjExNTIyNzg0ODk1MTUsImxuZyI6LTE2LjIwMjI5NzIyMjk4NjA3Nn0sInpvb20iOjcuOTc2NzYxODE1MTI2Mjg0NSwiZGF0YXNldHMiOlt7ImRhdGFzZXQiOiJwb2xpdGljYWwtYm91bmRhcmllcyIsImxheWVycyI6WyJkaXNwdXRlZC1wb2xpdGljYWwtYm91bmRhcmllcyIsInBvbGl0aWNhbC1ib3VuZGFyaWVzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWV9LHsiZGF0YXNldCI6InRyZWUtY292ZXItbG9zcyIsImxheWVycyI6WyJ0cmVlLWNvdmVyLWxvc3MiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwidGltZWxpbmVQYXJhbXMiOnsic3RhcnREYXRlIjoiMjAxMS0wMS0wMSIsImVuZERhdGUiOiIyMDIxLTEyLTMxIiwidHJpbUVuZERhdGUiOiIyMDIxLTEyLTMxIn0sInBhcmFtcyI6eyJ0aHJlc2giOiIyMCIsInRocmVzaG9sZCI6MjB9fSx7ImRhdGFzZXQiOiJ1bWQtdHJlZS1oZWlnaHQiLCJvcGFjaXR5IjowLjcsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJ1bWQtdHJlZS1oZWlnaHQtMjAyMCJdfSx7ImRhdGFzZXQiOiJnbG9iYWwtbWFuZ3JvdmUtZXh0ZW50Iiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImdsb2JhbC1tYW5ncm92ZS1leHRlbnQtMjAxNiJdfV19&mapMenu=eyJkYXRhc2V0Q2F0ZWdvcnkiOiJsYW5kQ292ZXIiLCJleHBsb3JlVHlwZSI6InN0b3JpZXMifQ%3D%3D",
   "gallery": [
     {
-      "alt": "Students reading",
+      "alt": "",
       "src": "/images/projects/guinea-bissau/gallery-1.jpg",
       "caption": {
         "title": "",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "alt": "Lions",
+      "alt": "",
       "src": "/images/projects/guinea-bissau/gallery-2.jpg",
       "caption": {
         "title": "",
@@ -38,7 +38,7 @@
       }
     },
     {
-      "alt": "Students in classroom",
+      "alt": "",
       "src": "/images/projects/guinea-bissau/gallery-3.jpg",
       "caption": {
         "title": "",
@@ -47,7 +47,7 @@
       }
     },
     {
-      "alt": "Rangers in the field",
+      "alt": "",
       "src": "/images/projects/guinea-bissau/gallery-4.jpg",
       "caption": {
         "title": "",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "alt": "Cheetahs",
+      "alt": "",
       "src": "/images/projects/guinea-bissau/gallery-6.jpg",
       "caption": {
         "title": "",
@@ -74,7 +74,7 @@
       }
     },
     {
-      "alt": "Elephant",
+      "alt": "",
       "src": "/images/projects/guinea-bissau/gallery-7.jpg",
       "caption": {
         "title": "",
@@ -92,7 +92,7 @@
       }
     },
     {
-      "alt": "Women in greenhouse",
+      "alt": "",
       "src": "/images/projects/guinea-bissau/gallery-9.jpg",
       "caption": {
         "title": "",
@@ -101,7 +101,7 @@
       }
     },
     {
-      "alt": "Greenhouse",
+      "alt": "",
       "src": "/images/projects/guinea-bissau/gallery-10.jpg",
       "caption": {
         "title": "",
