@@ -46,45 +46,58 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
             </Text>
           </NavItem>
 
-          <Link href={'#media'} passHref>
-            <NavItem isActive={activeSection === 'media'}>
-              <Icon name="home" />
-              <Text align="center" size="subtitle4">
-                Media
-              </Text>
-            </NavItem>
-          </Link>
+          {project.gallery && (
+            <Link href={'#media'} passHref>
+              <NavItem isActive={activeSection === 'media'}>
+                <Icon name="home" />
+                <Text align="center" size="subtitle4">
+                  Media
+                </Text>
+              </NavItem>
+            </Link>
+          )}
 
-          <Link href={'#intervention-model'} passHref>
-            <NavItem isActive={activeSection === 'intervention-model'}>
-              <Icon name="home" />
-              <Text align="center" size="subtitle4">
-                Intervention model
-              </Text>
-            </NavItem>
-          </Link>
+          {project.interventionModel && (
+            <Link href={'#intervention-model'} passHref>
+              <NavItem isActive={activeSection === 'intervention-model'}>
+                <Icon name="home" />
+                <Text align="center" size="subtitle4">
+                  Intervention model
+                </Text>
+              </NavItem>
+            </Link>
+          )}
 
-          <Link href={'#impact'} passHref>
-            <NavItem isActive={activeSection === 'impact'}>
-              <Icon name="home" />
-              <Text align="center" size="subtitle4">
-                Impact
-              </Text>
-            </NavItem>
-          </Link>
+          {project.impact && (
+            <Link href={'#impact'} passHref>
+              <NavItem isActive={activeSection === 'impact'}>
+                <Icon name="home" />
+                <Text align="center" size="subtitle4">
+                  Impact
+                </Text>
+              </NavItem>
+            </Link>
+          )}
         </MobileNav>
       </Mobile>
 
       <Desktop>
         <NavContainer>
           <Nav>
-            {sections.map(({ name, label }) => (
-              <Link key={name} href={`#${name}`} passHref>
-                <SectionLink active={name === activeSection}>
-                  <Text size="caption1">{label}</Text>
-                </SectionLink>
-              </Link>
-            ))}
+            {sections.map(({ name, label }) => {
+              if (name === SECTION_NAME.MEDIA && !project.gallery) return null
+              if (name === SECTION_NAME.IMPACT && !project.impact) return null
+              if (name === SECTION_NAME.INTERVENTION_MODEL && !project.interventionModel)
+                return null
+
+              return (
+                <Link key={name} href={`#${name}`} passHref>
+                  <SectionLink active={name === activeSection}>
+                    <Text size="caption1">{label}</Text>
+                  </SectionLink>
+                </Link>
+              )
+            })}
           </Nav>
         </NavContainer>
         <Footer>
@@ -111,8 +124,9 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
               <FooterItem>
                 <FooterIcon name="land" />
                 <Text family="secondary" color="primary-tuna-default">
-                  {project.protectedArea.value.toLocaleString()} {project.protectedArea.unit} of
-                  tropical dry broadleaf forest protected
+                  {`${project.protectedArea.value.toLocaleString()}${project.protectedArea.unit} ${
+                    project.protectedArea.type ? 'of ' + project.protectedArea.type + ' ' : ''
+                  }protected`}
                 </Text>
               </FooterItem>
               <FooterItem>

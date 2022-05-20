@@ -77,12 +77,23 @@ export const TabTrigger = styled(Tabs.Trigger, {
 export const TabContainer = styled(Tabs.Content, {
   '@bp2': {
     maxWidth: '433px',
+    paddingBottom: '390px',
+  },
+
+  variants: {
+    isShort: {
+      true: {
+        '@bp2': {
+          paddingBottom: '200px',
+        },
+      },
+    },
   },
 })
 
 export const TabImage = styled('figure', {
   position: 'absolute',
-  top: '300px',
+  bottom: '0',
   right: 0,
   width: '334px',
   height: '375px',

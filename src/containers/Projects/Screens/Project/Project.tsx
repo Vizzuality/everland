@@ -33,18 +33,23 @@ import { Header } from 'components/Header'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useFetchProjectDetail } from 'hooks/fetchProjectDetail'
+import { useRouter } from 'next/router'
 
 export const Project = () => {
   const [activeSection, setActiveSection] = useState<SECTION_NAME>()
   const [isVideoTouched, setIsVideoTouched] = useState(false)
+  const router = useRouter()
 
-  const { data: project, status } = useFetchProjectDetail()
+  const { projectId } = router.query as { projectId: string }
+
+  const { data: project, status } = useFetchProjectDetail(projectId)
 
   useEffect(() => {
     const _eventListener = (e) => {
       const visiblePercentages = NAV_SECTIONS.map(({ name }) => {
         const visiblePercentage = calculateVisiblePercentage(`#${name}`)
-        return visiblePercentage
+
+        return visiblePercentage ?? 0
       })
 
       const areAllZero = visiblePercentages.every((percentage) => percentage === 0)
@@ -57,6 +62,8 @@ export const Project = () => {
       const max = Math.max(...visiblePercentages)
 
       const index = visiblePercentages.indexOf(max)
+
+      if (index === -1) return
       setActiveSection(NAV_SECTIONS[index].name)
     }
 
@@ -108,7 +115,7 @@ export const Project = () => {
               {project.title}
             </Text>
             <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
-              {project.location.name}
+              {project.subtitle}
             </Text>
 
             <Spacer space="8" direction="column" />
@@ -140,70 +147,78 @@ export const Project = () => {
         </Container>
       </Section>
 
-      <Section id={NAV_SECTIONS[0].name}>
-        <ImagesGallery gallery={project.gallery} />
-      </Section>
+      {project.gallery && (
+        <Section id={NAV_SECTIONS[0].name}>
+          <ImagesGallery gallery={project.gallery} />
+        </Section>
+      )}
 
-      <Section id={NAV_SECTIONS[1].name}>
-        <Container>
-          <InterventionModel>
-            <Text
-              size={{ '@mobile': 'subtitle1', '@bp2': 'h3' }}
-              weight="bold"
-              color="primary-tuna-500"
-            >
-              {project.interventionModel.title}
-            </Text>
+      {project.interventionModel && (
+        <Section id={NAV_SECTIONS[1].name}>
+          <Container>
+            <InterventionModel>
+              <Text
+                size={{ '@mobile': 'subtitle1', '@bp2': 'h3' }}
+                weight="bold"
+                color="primary-tuna-500"
+              >
+                {project.interventionModel.title}
+              </Text>
 
-            <Spacer direction="column" space="10" />
-            <InterventionModelTabs tabs={project.interventionModel.sections} />
-          </InterventionModel>
-        </Container>
-      </Section>
+              <Spacer direction="column" space="10" />
+              <InterventionModelTabs tabs={project.interventionModel.sections} />
+            </InterventionModel>
+          </Container>
+        </Section>
+      )}
 
-      <Section id={NAV_SECTIONS[2].name}>
-        <Container
-          css={{
-            '@mobile': { paddingLeft: 0, paddingRight: 0 },
-            '@bp2': { paddingLeft: '$16', paddingRight: '$16' },
-          }}
-        >
-          <Impact>
-            <Text
-              size={{ '@mobile': 'subtitle1', '@bp2': 'h3' }}
-              weight="bold"
-              color="primary-tuna-500"
-            >
-              Impact
-            </Text>
+      {project.impact && (
+        <Section id={NAV_SECTIONS[2].name}>
+          <Container
+            css={{
+              '@mobile': { paddingLeft: 0, paddingRight: 0 },
+              '@bp2': { paddingLeft: '$16', paddingRight: '$16' },
+            }}
+          >
+            <Impact>
+              <Text
+                size={{ '@mobile': 'subtitle1', '@bp2': 'h3' }}
+                weight="bold"
+                color="primary-tuna-500"
+              >
+                Impact
+              </Text>
 
-            <Spacer direction="column" space="10" />
-            <ImpactTabs impact={project.impact} />
-          </Impact>
-        </Container>
-      </Section>
+              <Spacer direction="column" space="10" />
+              <ImpactTabs impact={project.impact} />
+            </Impact>
+          </Container>
+        </Section>
+      )}
 
-      <Section>
-        <Container>
-          <VideoContainer>
-            <Video
-              poster={project.video.thumbnail.src}
-              controls={isVideoTouched}
-              onClick={handlePlayOrPauseVideo}
-            >
-              <source src={project.video.url} type="video/mp4" />
-            </Video>
-            {!isVideoTouched && (
-              <>
-                <VideoOverlay />
-                <VideoPlayIcon>
-                  <Image src={playIcon} alt="play" />
-                </VideoPlayIcon>
-              </>
-            )}
-          </VideoContainer>
-        </Container>
-      </Section>
+      {project.video && (
+        <Section>
+          <Container>
+            <VideoContainer>
+              <Video
+                poster={project.video.thumbnail.src}
+                controls={isVideoTouched}
+                onClick={handlePlayOrPauseVideo}
+              >
+                <source src={project.video.url} type="video/mp4" />
+              </Video>
+              {!isVideoTouched && (
+                <>
+                  <VideoOverlay />
+                  <VideoPlayIcon>
+                    <Image src={playIcon} alt="play" />
+                  </VideoPlayIcon>
+                </>
+              )}
+            </VideoContainer>
+          </Container>
+        </Section>
+      )}
 
       <Section>
         <RelatedProjects>

@@ -1,205 +1,85 @@
 [
   {
-    "id": "a-marvelous-id",
-    "slug": "keo-seima",
-    "title": "Keo Seima",
-    "mainPicture": "/images/projects/keo-seima-header.jpg",
-    "standards": "Lorem ipsum",
+    "id": "kasigau-id",
+    "slug": "kasigau",
+    "title": "Kasigau",
+    "mainPicture": "/images/projects/kasigau/catalogue.jpg",
+    "standards": "VCS, CCB",
     "location": {
-      "iso": "KHM",
-      "name": "Cambodia",
-      "centroid": [40, 3],
+      "iso": "KEN",
+      "name": "Kenya",
+      "centroid": [-1.286389, 36.817223],
       "geometry": null
     },
-    "impact": [
-      {
-        "pillar": "Community",
-        "theme": "Health",
-        "description": "",
-        "photoUrl": null,
-        "title": "Lorem ipsum"
-      },
-      {
-        "pillar": "Community",
-        "theme": "Economy",
-        "description": "In total, 1,501 women participated in project activities, and benefited from improvements to access to education and health care. (Project activities will be designed in a way that encourages the participation of women; moreover, all management and leadership committees will contain at least one woman, with an aim of transitioning to equal representation over time.",
-        "photoUrl": "/images/projects/impact-community.jpg",
-        "title": "More than 12,000 students served in project supported schools"
-      }
-    ]
+    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
   },
   {
-    "id": "a-marvelous-id",
+    "id": "keo-seima-id",
     "slug": "keo-seima",
-    "title": "Keo Seima",
-    "mainPicture": "/images/projects/keo-seima-header.jpg",
-    "standards": "Lorem ipsum",
+    "title": "Keo Seima Wildlife Sanctuary",
+    "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
+    "standards": "VCS, CCB",
     "location": {
       "iso": "KHM",
       "name": "Cambodia",
-      "centroid": [40, 3],
+      "centroid": [11.562108, 104.888535],
       "geometry": null
     },
-    "impact": [
-      {
-        "pillar": "Community",
-        "theme": "Health",
-        "description": "",
-        "photoUrl": null,
-        "title": "Lorem ipsum"
-      },
-      {
-        "pillar": "Community",
-        "theme": "Economy",
-        "description": "In total, 1,501 women participated in project activities, and benefited from improvements to access to education and health care. (Project activities will be designed in a way that encourages the participation of women; moreover, all management and leadership committees will contain at least one woman, with an aim of transitioning to equal representation over time.",
-        "photoUrl": "/images/projects/impact-community.jpg",
-        "title": "More than 12,000 students served in project supported schools"
-      }
-    ]
+    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
   },
   {
-    "id": "a-marvelous-id",
-    "slug": "keo-seima",
-    "title": "Keo Seima",
-    "mainPicture": "/images/projects/keo-seima-header.jpg",
-    "standards": "Lorem ipsum",
+    "id": "mai-ndombe-id",
+    "slug": "mai-ndombe",
+    "title": "Mai Ndombe",
+    "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
+    "standards": "VCS, CCB",
     "location": {
-      "iso": "KHM",
-      "name": "Cambodia",
-      "centroid": [40, 3],
+      "iso": "COD",
+      "name": "Democratic Republic of the Congo",
+      "centroid": [-4.643601, 26.362312],
       "geometry": null
     },
-    "impact": [
-      {
-        "pillar": "Community",
-        "theme": "Health",
-        "description": "",
-        "photoUrl": null,
-        "title": "Lorem ipsum"
-      },
-      {
-        "pillar": "Community",
-        "theme": "Economy",
-        "description": "In total, 1,501 women participated in project activities, and benefited from improvements to access to education and health care. (Project activities will be designed in a way that encourages the participation of women; moreover, all management and leadership committees will contain at least one woman, with an aim of transitioning to equal representation over time.",
-        "photoUrl": "/images/projects/impact-community.jpg",
-        "title": "More than 12,000 students served in project supported schools"
-      }
-    ]
+    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
   },
   {
-    "id": "a-marvelous-id",
-    "slug": "keo-seima",
-    "title": "Keo Seima",
-    "mainPicture": "/images/projects/keo-seima-header.jpg",
-    "standards": "Lorem ipsum",
+    "id": "southern-cardamom-id",
+    "slug": "southern-cardamom-id",
+    "title": "Southern Cardamom",
+    "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
+    "standards": "VCS, CCB",
     "location": {
       "iso": "KHM",
       "name": "Cambodia",
-      "centroid": [40, 3],
+      "centroid": [11.562108, 104.888535],
       "geometry": null
     },
-    "impact": [
-      {
-        "pillar": "Community",
-        "theme": "Health",
-        "description": "",
-        "photoUrl": null,
-        "title": "Lorem ipsum"
-      },
-      {
-        "pillar": "Community",
-        "theme": "Economy",
-        "description": "In total, 1,501 women participated in project activities, and benefited from improvements to access to education and health care. (Project activities will be designed in a way that encourages the participation of women; moreover, all management and leadership committees will contain at least one woman, with an aim of transitioning to equal representation over time.",
-        "photoUrl": "/images/projects/impact-community.jpg",
-        "title": "More than 12,000 students served in project supported schools"
-      }
-    ]
+    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
   },
   {
-    "id": "a-marvelous-id",
-    "slug": "keo-seima",
-    "title": "Keo Seima",
-    "mainPicture": "/images/projects/keo-seima-header.jpg",
-    "standards": "Lorem ipsum",
+    "id": "tumring-id",
+    "slug": "tumring",
+    "title": "Tumring",
+    "mainPicture": "/images/projects/tumring/catalogue.jpg",
+    "standards": "VCS, CCB",
     "location": {
       "iso": "KHM",
       "name": "Cambodia",
-      "centroid": [40, 3],
+      "centroid": [11.562108, 104.888535],
       "geometry": null
     },
-    "impact": [
-      {
-        "pillar": "Community",
-        "theme": "Health",
-        "description": "",
-        "photoUrl": null,
-        "title": "Lorem ipsum"
-      },
-      {
-        "pillar": "Community",
-        "theme": "Economy",
-        "description": "In total, 1,501 women participated in project activities, and benefited from improvements to access to education and health care. (Project activities will be designed in a way that encourages the participation of women; moreover, all management and leadership committees will contain at least one woman, with an aim of transitioning to equal representation over time.",
-        "photoUrl": "/images/projects/impact-community.jpg",
-        "title": "More than 12,000 students served in project supported schools"
-      }
-    ]
+    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
   },
   {
-    "id": "a-marvelous-id",
-    "slug": "keo-seima",
-    "title": "Keo Seima",
-    "mainPicture": "/images/projects/keo-seima-header.jpg",
-    "standards": "Lorem ipsum",
+    "id": "guinea-bissau-id",
+    "slug": "guinea-bissau",
+    "title": "Guinea Bissau",
+    "mainPicture": "/images/projects/guinea-bissau/catalogue.jpg",
+    "standards": "",
     "location": {
-      "iso": "KHM",
-      "name": "Cambodia",
-      "centroid": [40, 3],
+      "iso": "ARE",
+      "name": "National Park Mangroves",
+      "centroid": [25.276987, 55.296249],
       "geometry": null
-    },
-    "impact": [
-      {
-        "pillar": "Community",
-        "theme": "Health",
-        "description": "",
-        "photoUrl": null,
-        "title": "Lorem ipsum"
-      },
-      {
-        "pillar": "Community",
-        "theme": "Economy",
-        "description": "In total, 1,501 women participated in project activities, and benefited from improvements to access to education and health care. (Project activities will be designed in a way that encourages the participation of women; moreover, all management and leadership committees will contain at least one woman, with an aim of transitioning to equal representation over time.",
-        "photoUrl": "/images/projects/impact-community.jpg",
-        "title": "More than 12,000 students served in project supported schools"
-      }
-    ]
-  },
-  {
-    "id": "a-marvelous-id",
-    "slug": "keo-seima",
-    "title": "Keo Seima",
-    "mainPicture": "/images/projects/keo-seima-header.jpg",
-    "standards": "Lorem ipsum",
-    "location": {
-      "iso": "KHM",
-      "name": "Cambodia",
-      "centroid": [40, 3],
-      "geometry": null
-    },
-    "impact": [
-      {
-        "pillar": "Community",
-        "theme": "Health",
-        "description": "",
-        "photoUrl": null,
-        "title": "Lorem ipsum"
-      },
-      {
-        "pillar": "Community",
-        "theme": "Economy",
-        "description": "In total, 1,501 women participated in project activities, and benefited from improvements to access to education and health care. (Project activities will be designed in a way that encourages the participation of women; moreover, all management and leadership committees will contain at least one woman, with an aim of transitioning to equal representation over time.",
-        "photoUrl": "/images/projects/impact-community.jpg",
-        "title": "More than 12,000 students served in project supported schools"
-      }
-    ]
+    }
   }
 ]

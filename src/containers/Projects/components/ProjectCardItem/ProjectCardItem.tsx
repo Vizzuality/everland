@@ -13,10 +13,8 @@ import { Text } from 'components/Text'
 import { useRouter } from 'next/router'
 import { ProjectSummary } from 'types/Project'
 
-export const ProjectCardItem = ({ id, title, location, impact, mainPicture }: ProjectSummary) => {
+export const ProjectCardItem = ({ id, title, standards, impact, mainPicture }: ProjectSummary) => {
   const router = useRouter()
-
-  const { iso } = location
 
   const handleClick = () => router.push(`/projects/${id}`)
 
@@ -34,18 +32,18 @@ export const ProjectCardItem = ({ id, title, location, impact, mainPicture }: Pr
       </ImageContainer>
       <TextContainer>
         <Text>Standards: </Text>
-        <Text weight="thin">{iso}</Text>
+        <Text weight="thin">{standards}</Text>
         <Spacer space="3" direction="column" />
-        <Text size="subtitle1" weight="bold">
+        <Text size="subtitle1" weight="bold" css={{ minHeight: '$14', display: 'block' }}>
           {title}
         </Text>
-        {impact.length > 0 && (
+        {impact && impact.length > 0 && (
           <>
             <Spacer space="6" direction="column" />
-            {impact.map((impactItem) => (
+            {impact.slice(0, 2).map((impactItem) => (
               <>
                 <Text key={impactItem.pillar} color="primary-jasper-default">
-                  {impactItem.pillar}
+                  {impactItem}
                 </Text>
                 <Spacer space={4} direction="row" />
               </>

@@ -3,6 +3,7 @@ import { Impact } from 'containers/Projects/Screens/Project/Project.styles'
 export type ValueUnit = {
   value: number
   unit: string
+  type?: string
 }
 
 export type GalleryItem = {
@@ -27,11 +28,16 @@ export type Section = {
   description: string
 }
 
+export type Photo = {
+  url: string
+  altText: string
+}
+
 export type Impact = {
   pillar: string
   theme: string
   description: string
-  photoUrl: any
+  photo?: Photo
   title: string
 }
 
@@ -60,15 +66,15 @@ export type ProjectDetail = {
   co2Avoided: ValueUnit
   embeddedMap: string
   gallery: GalleryItem[]
-  video: {
+  video?: {
     url: string
     thumbnail: {
       alt: string
       src: string
     }
   }
-  location: Location
-  interventionModel: {
+  location?: Location
+  interventionModel?: {
     title: string
     sections: Section[]
   }

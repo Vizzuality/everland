@@ -1,0 +1,243 @@
+{
+  "id": "kasigau-id",
+  "slug": "kasigau",
+  "title": "Kasigau",
+  "subtitle": "Kenya",
+  "mainPicture": "/images/projects/kasigau/main-picture.jpg",
+  "projectInfo": "A vital wildlife corridor between Tsavo East and West National Parks, the Kasigau Corridor REDD+ Project, protects over 200,000-ha of dryland forest with over 11,000 wild elephants that live in this ecosystem. In an area where wildlife and human survival were at odds, the project provides social programs that impact 120,000 people and provides the local community of the Kasigau Corridor region with long-term jobs that replace unsustainable sources of income such as poaching, subsistence agriculture and illegal tree harvesting.",
+  "keyPeople": "Local Landowners (6000 individual shareholders + community of 120,000 people)",
+  "wildLife": "African elephant, Grevy's zebra, Cheetah, Lion, African wild dog, Giraffe",
+  "developer": "Wildlife Works",
+  "standards": "VCS, CCB",
+  "protectedArea": {
+    "value": 200000,
+    "unit": "ha",
+    "type": "dryland forest"
+  },
+  "co2Avoided": {
+    "value": 14829689,
+    "unit": "tonnes"
+  },
+  "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/a48bb278abfcd81c640432cd892ce71d/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjotMy44NjY3Nzg0NzY4MTMxMzEyLCJsbmciOjM4Ljc0NzkwMzQ1MDQ5NTg5fSwiem9vbSI6OC41MjI1MjIyMTMyNjE5OTcsImNhbkJvdW5kIjpmYWxzZSwiZGF0YXNldHMiOlt7ImRhdGFzZXQiOiJwb2xpdGljYWwtYm91bmRhcmllcyIsImxheWVycyI6WyJkaXNwdXRlZC1wb2xpdGljYWwtYm91bmRhcmllcyIsInBvbGl0aWNhbC1ib3VuZGFyaWVzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWV9LHsiZGF0YXNldCI6InRyZWUtY292ZXItbG9zcyIsImxheWVycyI6WyJ0cmVlLWNvdmVyLWxvc3MiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwidGltZWxpbmVQYXJhbXMiOnsic3RhcnREYXRlIjoiMjAwNS0wMS0wMSIsImVuZERhdGUiOiIyMDIxLTEyLTMxIiwidHJpbUVuZERhdGUiOiIyMDIxLTEyLTMxIn0sInBhcmFtcyI6eyJ0aHJlc2giOiIxMCIsInRocmVzaG9sZCI6MTB9fSx7ImRhdGFzZXQiOiJ1bWQtdHJlZS1oZWlnaHQiLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsidW1kLXRyZWUtaGVpZ2h0LTIwMjAiXX0seyJkYXRhc2V0Ijoia2V5LWJpb2RpdmVyc2l0eS1hcmVhcyIsIm9wYWNpdHkiOjAuMiwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImtleS1iaW9kaXZlcnNpdHktYXJlYXMtMjAxOSJdfV19&mapMenu=eyJkYXRhc2V0Q2F0ZWdvcnkiOiJiaW9kaXZlcnNpdHkiLCJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
+  "gallery": [
+    {
+      "alt": "Students reading",
+      "src": "/images/projects/kasigau/gallery-1.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Lions",
+      "src": "/images/projects/kasigau/gallery-2.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Students in classroom",
+      "src": "/images/projects/kasigau/gallery-3.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Rangers in the field",
+      "src": "/images/projects/kasigau/gallery-4.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "",
+      "src": "/images/projects/kasigau/gallery-5.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Cheetahs",
+      "src": "/images/projects/kasigau/gallery-6.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Elephant",
+      "src": "/images/projects/kasigau/gallery-7.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "",
+      "src": "/images/projects/kasigau/gallery-8.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Women in greenhouse",
+      "src": "/images/projects/kasigau/gallery-9.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Greenhouse",
+      "src": "/images/projects/kasigau/gallery-10.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    }
+  ],
+  "interventionModel": {
+    "title": "Intervention model",
+    "sections": [
+      {
+        "title": "Origins",
+        "description": "Community and wildlife were at odds when Wildlife Works first encountered Rukinga over 20 years ago. For many years, the land between Tsavo East and Tsavo West National Parks served as both the main migration corridor for local wildlife and a home to a slowly failing cattle ranch. Rukinga had become a bruised, balding and barren land with fields grazed to dust, poachers easily accessing the ranch and trees vanishing along a critical rainwater basin. In 1998 the local community supported our plan to establish the Rukinga Wildlife Sanctuary that covers 80,000 acres of forest. We established a community works project so local residents had an alternative income stream in place of poaching and clear cutting​. We brought on locally hired rangers and trained them to be wilderness guardians. We convinced the owners of the cattle to remove the cattle from the land to reduce conflict over resources.",
+        "image": {
+          "alt": "A description of the image",
+          "src": "/images/projects/origins.png"
+        }
+      },
+      {
+        "title": "Threats",
+        "description": "Poaching, clear-cutting for subsistence agriculture and production of charcoal, unsustainable cattle grazing",
+        "image": {
+          "alt": "A description of the image",
+          "src": "/images/projects/origins.png"
+        }
+      },
+      {
+        "title": "Solutions",
+        "description": "The foundation of the project is job creation. Through carbon sales, Wildlife Works partners with the local community of the Kasigau Corridor region in Southeast Kenya to help create enterprises and long-term jobs that replace unsustainable sources of income such as poaching, subsistence agriculture and illegal tree harvesting.  This includes jobs supporting education, making eco-friendly products, protecting wildlife, managing the project, helping farmers and growing trees. Through an innovative model of community governance, the communities of Kasigau also establish their own priorities for utilizing proceeds from the sale of verified emissions reductions, resulting in sustained community-driven investments in scholarships for children, schools and school infrastructure, water infrastructure, and other programs to improve the economy, health, and well-being of the community.",
+        "image": {
+          "alt": "A description of the image",
+          "src": "/images/projects/solutions.png"
+        }
+      },
+      {
+        "title": "Progress",
+        "description": "The area protected has now expanded to over 200,00 hectares, which will generate approximately 1.7 million tons of CO2 emissions per year over the next 30 years. The Kasigau Corridor REDD+ project, with the dryland Acacia-Commiphora forest under its protection and its original biodiversity restored, received Gold level status by the Community and Biodiversity Standard for exceptional biodiversity and climate benefits. The project area is home to an incredibly diverse population of wildlife including more than 20 species of bats, over 50 species of large mammals, over 300 species of birds and important populations of IUCN Red List species, including over 2,000 African Elephants, African Wild Dog, Cheetah, and Grevy’s Zebra. With a long track record of steady, high-impact work, the project is beginning to see indicators of a transition towards a durable, long-term impact for the community, forest, and wildlife.",
+        "image": {
+          "alt": "A description of the image",
+          "src": "/images/projects/solutions.png"
+        }
+      }
+    ]
+  },
+  "impact": [
+    {
+      "pillar": "Community",
+      "theme": "Health",
+      "description": "A pilot health education initiative was rolled out in 10 primary schools across the project area, which combined the gender-inclusive sport of volleyball with reproductive health education. This afterschool program reached over 1,200 students, was implemented by a team of 6 local volunteers and focused on a variety of subjects including gender-based violence, female health, STIs and HIV. A second phase of this program is set to launch in 2022, focussed on an older cohort of children in their mid-teens.",
+      "photo": {
+        "url": "/images/projects/kasigau/impact-health.jpg",
+        "altText": "Volleyball"
+      },
+      "title": ">1200 students people provided with health education"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Economy",
+      "description": "Local community members are hired for various roles within the Kasigau Corridor REDD+ project, including many unarmed rangers for the Kasigau enforcement program.The Kasigau enforcement program provides employment opportunities for the local community members while protecting wildlife in the project zone. In the latter half of 2021, 42 additional rangers were hired after undergoing a rigorous fitness assessment and recruitment process.  Most of the applicants were previously unemployed or employed through part time casual businesses (e.g. motorbike delivery services), so they are very excited about the prospect of successfully securing a full-time position with the project",
+      "photo": {
+        "url": "/images/projects/kasigau/impact-economy.jpg",
+        "altText": "Rangers in training"
+      },
+      "title": ">340 locally hired employees, 1/3 of which are women"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Education",
+      "description": "Community revenue sharing has been allocated to the renovation of existing schools and building of new schools across the project zone. This includes the creation of new classrooms, administration blocks, kitchens and staff houses as well as new water tanks and toilet blocks to improve access to water and sanitation.  These updates have improved the learning environments, helped retain teachers and provided students with high education standards - together enhancing students' health, behaviour, engagement, learning and growth.",
+      "photo": {
+        "url": "/images/projects/kasigau/impact-education.jpg",
+        "altText": "Students at Kasigau"
+      },
+      "title": ">12,000 students served in project supported schools"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Women's empowerment",
+      "description": "Weaving baskets is a tradition in native Taita culture, a tribe of people living in the hills in South Eastern Kenya. The project supports basket weaving womens groups in the project zone, to provide women with an alternative livelihood option, connecting them to external markets, building capacity and impoving product quality of local craft groups. The Kasigau REDD+ Project provides facilities and logistical assistance, supporting over 1700 women in the weaving venture.",
+      "photo": {
+        "url": "/images/projects/kasigau/impact-womens-empowerment.jpg",
+        "altText": "Womens' hadithi basket weaving"
+      },
+      "title": ">1700 women involved in the Hadithi craft venture"
+    },
+    {
+      "pillar": "Governance",
+      "theme": "Community Benefits Sharing",
+      "description": "The Locational Carbon Committees (LCCs) is the governance structure through which the communities directly allocate carbon revenue towards community driven initiatives. The LCCs have approved budget spending on various community projects, including the building and renovation of 24 classrooms, the awarding of bursaries for >5000 students and the distribution of thousands of facemasks and cleaning supplies for COVID protection in the latter half of 2021 alone. This continued targeted expenditure has positively impacted community morale and buy-in to the REDD+ program.",
+      "photo": {
+        "url": "/images/projects/kasigau/impact-community-benefits-sharing.jpg",
+        "altText": "COVID supplies from LLC committees"
+      },
+      "title": "Thousands of students benefit from the distribution of benefits sharing through the Locational Carbon Committees (LCCs)"
+    },
+    {
+      "pillar": "Biodiversity",
+      "theme": "Wildlife",
+      "description": "The Kasigau Corridor is home to more than 20 species of bats, over 50 species of large mammals, over 300 species of birds and important populations of IUCN Red List species, including African Elephants, African Wild Dog, Cheetah, Grevy’s Zebra and Lion. The project has been working since 2013 on long term research and development of agricultural practices and systems to reduce Human-Wildlife Conflict, especially with elephants which regularly destroy smallholder crops that are essential to household food security and livelihoods.",
+      "photo": {
+        "url": "/images/projects/kasigau/impact-wildlife.jpg",
+        "altText": "Elephants across landscape"
+      },
+      "title": "4 IUCN Red List Species actively protected"
+    },
+    {
+      "pillar": "Climate",
+      "theme": "Climate Change",
+      "description": "To protect the vast dryland forests in the Kasigau Corridor, security teams coordinate regular aerial and foot patrols, collaborating with the local communities, the Kenya Wildlife Service and other NGOs operating in the area. This is particularly important during the fire season, to ensure a coordinated response actively prevents fire outbreaks. In addition to protecting existing forests, the project has planted nearly 100,000 tree seedlings through the Community Greenhouse Program.",
+      "photo": {
+        "url": "/images/projects/kasigau/impact-climate-change.jpg",
+        "altText": "Rangers in the field "
+      },
+      "title": ">200,000 ha of forest protected"
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "Project title",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    },
+    {
+      "title": "Project title 2",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    }
+  ]
+}

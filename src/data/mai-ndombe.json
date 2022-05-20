@@ -1,0 +1,205 @@
+{
+  "id": "mai-ndombe-id",
+  "slug": "mai-ndombe",
+  "title": "Mai Ndombe",
+  "subtitle": "Democratic Republic of the Congo",
+  "mainPicture": "/images/projects/mai-ndombe/main-picture.jpg",
+  "projectInfo": "The Mai Ndombe REDD+ Project protects 300,000 hectares  of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities, which are among the most impoverished in the world. Such investments include building and renovating schools, providing healthcare services (such as access to immunizations), supporting food security and nutrition (such as through agricultural diversification), and providing capacity building activities that empower local communities.",
+  "keyPeople": "180,000 people",
+  "wildLife": "African forest elephant, Bonobo, Okapi & Leopard",
+  "developer": "Wildlife Works",
+  "standards": "VCS, CCB",
+  "protectedArea": {
+    "value": 300000,
+    "unit": "ha"
+  },
+  "co2Avoided": {
+    "value": 24263207,
+    "unit": "tonnes"
+  },
+  "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/66f733c23e5eda1fb68dc01939c92780/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjotMS45ODI3NDAwMDM4NTkyMzI5LCJsbmciOjE3LjU4ODkyMzA3ODYyMTg1M30sInpvb20iOjguNjg0NDg5ODc1MTY2NjM1LCJkYXRhc2V0cyI6W3siZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZX0seyJkYXRhc2V0IjoidHJlZS1jb3Zlci1sb3NzIiwibGF5ZXJzIjpbInRyZWUtY292ZXItbG9zcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJ0aW1lbGluZVBhcmFtcyI6eyJzdGFydERhdGUiOiIyMDExLTAxLTAxIiwiZW5kRGF0ZSI6IjIwMjEtMTItMzEiLCJ0cmltRW5kRGF0ZSI6IjIwMjEtMTItMzEifSwicGFyYW1zIjp7InRocmVzaCI6IjEwIiwidGhyZXNob2xkIjoxMH19LHsiZGF0YXNldCI6InVtZC10cmVlLWhlaWdodCIsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJ1bWQtdHJlZS1oZWlnaHQtMjAyMCJdfSx7ImRhdGFzZXQiOiJnbG9iYWwtcGVhdGxhbmQiLCJvcGFjaXR5IjowLjc1LCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsiZ2xvYmFsLXBlYXRsYW5kIl19LHsiZGF0YXNldCI6ImtleS1iaW9kaXZlcnNpdHktYXJlYXMiLCJvcGFjaXR5IjowLjIsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJrZXktYmlvZGl2ZXJzaXR5LWFyZWFzLTIwMTkiXX0seyJkYXRhc2V0IjoibG9nZ2luZy1jb25jZXNzaW9ucyIsIm9wYWNpdHkiOjAuNzUsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJsb2dnaW5nLWNvbmNlc3Npb25zLTIwMTgiXX1dfQ%3D%3D&mapMenu=eyJkYXRhc2V0Q2F0ZWdvcnkiOiJsYW5kVXNlIiwiZXhwbG9yZVR5cGUiOiJzdG9yaWVzIn0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
+  "gallery": [
+    {
+      "alt": "Students reading",
+      "src": "/images/projects/mai-ndombe/gallery-1.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Lions",
+      "src": "/images/projects/mai-ndombe/gallery-2.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Students in classroom",
+      "src": "/images/projects/mai-ndombe/gallery-3.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Rangers in the field",
+      "src": "/images/projects/mai-ndombe/gallery-4.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "",
+      "src": "/images/projects/mai-ndombe/gallery-5.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Cheetahs",
+      "src": "/images/projects/mai-ndombe/gallery-6.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Elephant",
+      "src": "/images/projects/mai-ndombe/gallery-7.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "",
+      "src": "/images/projects/mai-ndombe/gallery-8.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Women in greenhouse",
+      "src": "/images/projects/mai-ndombe/gallery-9.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Greenhouse",
+      "src": "/images/projects/mai-ndombe/gallery-10.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    }
+  ],
+  "impact": [
+    {
+      "pillar": "Community",
+      "theme": "Health",
+      "description": "Improved healthcare is one of the most important activities in the Mai Ndombe REDD+ project given the very poor health and nutritional status of community members across the project area. Over ⅓ of children under 5 are malnourished and many are at high risk from malaria, together leading to a high mortality rate of 220 per 1000 children. To alleviate this healthcare crisis, new facilities are continuing to be built in the project zone. A healthcare clinic has finished construction in Ibali over the final two quarters of 2021.",
+      "photo": {
+        "url": "/images/projects/mai-ndombe/impact-health.jpg",
+        "altText": ""
+      },
+      "title": "8 medical facilities supported, providing healthcare to >5500 local community members"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Economy",
+      "description": "Farming of fish is not traditionally undertaken by the local communities. Whilst some villages are home to fisherman, they pre- dominantly use the wild caught method and as such, aquaculture is a very new concept. Unfortunately, traditional wild-caught fishing has proved to be unsustainable in the Mai Ndombe region, leading to depletion of the wild populations as a result of over-fishing. To sustain their food supply and potential income, the local communities have decided to continue to utilise their carbon offset benefit share towards expanding and transforming the fish pond initiatives. Tilapias, which were introduced into the new ponds in early 2021, are now flourishing and ready to be harvested. An initial harvesting showcase was undertaken in late 2021 to demonstrate the potential income and new food source for the community.",
+      "photo": {
+        "url": "/images/projects/mai-ndombe/impact-economy.jpg",
+        "altText": ""
+      },
+      "title": ">1700 people provided with new livelihood opportunities due to the project"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Education",
+      "description": "Educational facilities are non-existent or very insuicient in most villages across the project zone. A lack of education in the region has been directly correlated with increased deforestation and negative health outcomes (including child mortality, malnutrition and respiratory infection). Construction of new and improved schools has continued across the project area, totalling 18 schools serving 5655 students.",
+      "photo": {
+        "url": "/images/projects/mai-ndombe/impact-education.jpg",
+        "altText": ""
+      },
+      "title": "18 schools have been built or renovated as a result of the project"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Women's empowerment",
+      "description": "The Gender Empowerment Team has taken the lead for increased crop yield and agriculture intensification activities in the project area, with women being instrumental in developing the cassava agricultural plantations across numerous villages in the project area. A few decades ago, fungi were destroying the cassava crops around Mai Ndombe, leading to crop failures around the country. A university study was conducted to explore other cassava varieties more resistant to fungi and found one specific species named “Obama” which proved to be both resistant as well as highly productive. Further testing of the Obama cassava has been undertaken in the Kinshasa region, leading to a 6-fold improvement in yield over the traditional varieties. The women-led community organizations have utilized this variety, already demonstrating a significant improvement in the cassava production, securing food and income for the community.",
+      "photo": {
+        "url": "/images/projects/mai-ndombe/impact-womens-empowerment.jpg",
+        "altText": ""
+      },
+      "title": ">600 women have improved access to alternative income streams"
+    },
+    {
+      "pillar": "Governance",
+      "theme": "Forest Governance",
+      "description": "Local Development Committees have been established as key structures for local governance within the project area. Project activities are selected in consultation with the local communities as well as other key stakeholders and officials from different levels of government. The committees enable communities to determine project activities, increase the ability to respond to community issues at the local level, and provide an institutional framework for local governance, administration and problem solving at the project. They have been created in each village and now, elected committees exist for each Groupement (a group of villages): Ntomb'eNzale, Ngongo and Lokanga.",
+      "photo": {
+        "url": "/images/projects/mai-ndombe/impact-forest-governance.jpg",
+        "altText": ""
+      },
+      "title": ">500 community members engaged in forest planning sessions"
+    },
+    {
+      "pillar": "Biodiversity",
+      "theme": "Wildlife",
+      "description": "A team specialized in biodiversity monitoring tracks high biodiversity areas twice a month, along with local community members who have been trained for that purpose. The project monitored the growth of both elephant and Bonobo populations — with elephants specifically at a high pace.  Camera traps have revealed that elephants seem to be slowly returning to the area, migrating from Yumbi and Lukolela into the project zone. The movement of endangered species represents an improved connectivity of the landscape.",
+      "photo": {
+        "url": "/images/projects/mai-ndombe/impact-wildlife.jpg",
+        "altText": "Elephants across landscape"
+      },
+      "title": ""
+    },
+    {
+      "pillar": "Climate",
+      "theme": "Climate Change",
+      "description": "Over 300,000 ha of rainforest along edge of Lake Mai Ndombe in DRC was previously zoned for commercial timber extraction. The REDD+ project prevented the reinstatement of logging contracts and instead established sustainable development for the local community while protecting an important rainforest and wetland landscape. Agroforestry nurseries and sustainable farming crops and techniques have been introduced to relieve deforestation pressure on the local community.",
+      "photo": {
+        "url": "/images/projects/mai-ndombe/impact-climate-change.jpg",
+        "altText": ""
+      },
+      "title": ">300,000 ha of forest protected"
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "Project title",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    },
+    {
+      "title": "Project title 2",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    }
+  ]
+}

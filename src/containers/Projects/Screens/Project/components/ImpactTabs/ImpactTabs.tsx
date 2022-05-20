@@ -5,7 +5,7 @@ import { useFetchImpactTree } from 'hooks/fetchImpactTree'
 import { groupBy } from 'lodash'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Impact } from 'types/Project'
+import { Impact, Photo } from 'types/Project'
 import {
   ImpactTabsRoot,
   Dropdown,
@@ -26,7 +26,7 @@ type TabSection = {
   title: string
   subtitle: string
   description: string
-  photoUrl?: string
+  photo?: Photo
 }
 
 export type ImpactTabsProps = {
@@ -38,21 +38,29 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
   const groupedTabs = groupBy(impact, 'pillar')
 
-  const tabs = impactTree?.data.map((pillar) => {
-    return {
-      title: pillar.title,
-      sections: pillar.children.map((theme) => {
-        const themeData = groupedTabs[pillar.title]?.find((data) => data.theme === theme.title)
+  const tabs = impactTree?.data
+    .map((pillar) => {
+      const sections = pillar.children
+        .map((theme) => {
+          const themeData = groupedTabs[pillar.title]?.find((data) => data.theme === theme.title)
+          if (!themeData) return
+          return {
+            title: theme.title,
+            subtitle: themeData?.title,
+            description: themeData?.description,
+            photo: themeData?.photo,
+          }
+        })
+        .filter((data) => data)
 
-        return {
-          title: theme.title,
-          subtitle: themeData?.title,
-          description: themeData?.description,
-          photoUrl: themeData?.photoUrl,
-        }
-      }),
-    }
-  })
+      if (sections.length === 0) return
+
+      return {
+        title: pillar.title,
+        sections,
+      }
+    })
+    .filter((data) => data)
 
   const firstTabSection = tabs?.[0].sections[0]
 
@@ -105,19 +113,19 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
                   {sections.length > 0 && (
                     <DropdownContent align="start" sideOffset={4}>
-                      {sections.map((section) => (
-                        <DropdownItem key={section.title}>
-                          <TabTrigger
-                            key={title}
-                            value={section.title}
-                            disabled={
-                              !section.description && !section.photoUrl && !section.subtitle
-                            }
-                          >
-                            {section.title}
-                          </TabTrigger>
-                        </DropdownItem>
-                      ))}
+                      {sections.map((section) => {
+                        return (
+                          <DropdownItem key={section.title}>
+                            <TabTrigger
+                              key={title}
+                              value={section.title}
+                              disabled={!section.description && !section.photo && !section.subtitle}
+                            >
+                              {section.title}
+                            </TabTrigger>
+                          </DropdownItem>
+                        )
+                      })}
                     </DropdownContent>
                   )}
                 </div>
@@ -127,7 +135,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
         </TabsList>
       </TabsListContainer>
 
-      {tabsSections?.map(({ title: sectionTitle, subtitle, description, photoUrl }) => (
+      {tabsSections?.map(({ title: sectionTitle, subtitle, description, photo }) => (
         <TabContainer key={sectionTitle} value={sectionTitle}>
           <Text
             size={{ '@mobile': 'h3', '@bp2': 'h2' }}
@@ -141,9 +149,9 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             <TabContentText>
               <Text size="body1">{description}</Text>
             </TabContentText>
-            {photoUrl && (
+            {photo && (
               <TabImage>
-                <Image src={photoUrl} alt="" layout="fill" />
+                <Image src={photo.url} alt={photo.altText} layout="fill" objectFit="contain" />
               </TabImage>
             )}
           </TabContent>
