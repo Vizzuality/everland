@@ -124,9 +124,9 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
               <FooterItem>
                 <FooterIcon name="land" />
                 <Text family="secondary" color="primary-tuna-default">
-                  {`${project.protectedArea.value.toLocaleString()} ${
-                    project.protectedArea.unit
-                  } of ${project.protectedArea.type} protected`}
+                  {`${project.protectedArea.value.toLocaleString()}${project.protectedArea.unit} ${
+                    project.protectedArea.type ? 'of ' + project.protectedArea.type + ' ' : ''
+                  }protected`}
                 </Text>
               </FooterItem>
               <FooterItem>
