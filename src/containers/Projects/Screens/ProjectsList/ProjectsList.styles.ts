@@ -6,7 +6,7 @@ export const ProjectsListRoot = styled('div', {
   backgroundPosition: 'center',
   pb: '$6',
 
-  '@media screen and (max-width: 730px)': {
+  '@media screen and (max-width: 781px)': {
     backgroundSize: '100vw 100vh',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top',

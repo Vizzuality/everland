@@ -13,8 +13,9 @@ type ImageItemProps = {
 export const ImageItem = ({ imageUrl, title, alt, description, gridArea }: ImageItemProps) => {
   return (
     <ImageItemRoot className="imageItem" css={{ gridArea }}>
-      <Image src={imageUrl} alt={alt} layout="fill" />
-      <Overlay variant="galleryItem" className="overlay" />
+      <Image src={imageUrl} alt={alt} layout="fill" objectFit="cover" />
+      {(title || description) && <Overlay variant="galleryItem" className="overlay" />}
+
       <HoverItem className="hover-item">
         <Title size="body1" family="secondary" fontStyle="italic" color="neutral-white">
           {title}

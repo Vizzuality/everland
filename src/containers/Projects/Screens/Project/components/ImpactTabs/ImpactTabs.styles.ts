@@ -72,7 +72,7 @@ export const TabContent = styled('div', {
 export const TabImage = styled('figure', {
   position: 'relative',
   height: '380px',
-  width: '273px',
+  width: '325px',
   margin: 'auto',
 
   '@bp2': {

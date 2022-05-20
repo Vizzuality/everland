@@ -113,6 +113,15 @@
         "centroid": [40, 3],
         "geometry": null
       }
+    },
+    {
+      "title": "Project title 2",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
     }
   ]
 }

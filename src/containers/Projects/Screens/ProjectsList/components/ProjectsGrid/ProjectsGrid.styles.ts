@@ -28,14 +28,16 @@ export const SortButton = styled('button', {
 
 export const Grid = styled('div', {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, 327px)',
+  gridTemplateColumns: 'repeat(auto-fill, 353px)',
   gap: '$3',
   padding: '$3',
   overflowY: 'auto',
+  placeContent: 'center',
 
-  '@media screen and (max-width: 730px)': {
-    padding: '$2',
-    gap: '$20',
+  '@media screen and (max-width: 781px)': {
+    padding: '$1',
+    gap: '$15',
+    backgroundColor: 'white',
   },
 })
 
@@ -43,16 +45,12 @@ export const GridContainer = styled('div', {
   margin: 'auto',
   backgroundColor: 'white',
 
-  '@media screen and (max-width: 730px)': {
-    maxWidth: '343px',
-  },
-
-  '@media screen and (min-width: 730px)': {
-    maxWidth: '690px',
+  '@media screen and (max-width: 781px)': {
+    backgroundColor: 'transparent',
   },
 
   '@media screen and (min-width: 1156px)': {
-    maxWidth: '1030px',
+    maxWidth: '1280px',
   },
 })
 
@@ -60,5 +58,5 @@ export const SortingContainer = styled('div', {
   marginBottom: '$2',
   display: 'flex',
   flexDirection: 'row',
-  alignItems: 'center',
+  alignItems: 'ceflter',
 })

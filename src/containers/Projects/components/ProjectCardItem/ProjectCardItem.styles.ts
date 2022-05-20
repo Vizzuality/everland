@@ -6,6 +6,11 @@ export const ProjectCardItemRoot = styled('a', {
   width: '327px',
   backgroundColor: '$neutral-white',
   flexShrink: 0,
+  margin: '0 auto',
+
+  '@tablet': {
+    width: '353px',
+  },
 })
 
 export const ImageContainer = styled('div', {

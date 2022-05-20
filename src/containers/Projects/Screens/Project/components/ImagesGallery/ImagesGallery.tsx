@@ -45,7 +45,6 @@ export const ImagesGallery = ({ gallery }: ImagesGalleryProps) => {
       const x = e.pageX - slider.offsetLeft
       const walk = (x - startX) * 3 //scroll-fast
       slider.scrollLeft = scrollLeft - walk
-      console.log(walk)
     }
 
     slider.addEventListener('mousedown', _onMouseDown)
@@ -65,36 +64,24 @@ export const ImagesGallery = ({ gallery }: ImagesGalleryProps) => {
     <GalleryBackground>
       <Container>
         <GalleryWrapper className="galleryWrapper">
-          <ImagesGalleryRoot>
-            {gallery.slice(0, 4).map((galleryItem, index) => {
-              return (
-                <ImageItem
-                  title={galleryItem.caption.title}
-                  description={galleryItem.caption.description}
-                  imageUrl={galleryItem.src}
-                  alt={galleryItem.alt}
-                  gridArea={gridAreaMapper(index)}
-                  key={galleryItem.caption.title}
-                />
-              )
-            })}
-          </ImagesGalleryRoot>
-          {gallery.length > 4 && (
-            <ImagesGalleryRoot>
-              {gallery.slice(4, 8).map((galleryItem, index) => {
-                return (
-                  <ImageItem
-                    title={galleryItem.caption.title}
-                    description={galleryItem.caption.description}
-                    imageUrl={galleryItem.src}
-                    alt={galleryItem.alt}
-                    gridArea={gridAreaMapper(index)}
-                    key={galleryItem.caption.title}
-                  />
-                )
-              })}
-            </ImagesGalleryRoot>
-          )}
+          {[...Array(Math.ceil(gallery.length / 4))].map((_, index) => {
+            return (
+              <ImagesGalleryRoot key={`${index}-gallery`}>
+                {gallery.slice(index * 4, (index + 1) * 4).map((galleryItem, index) => {
+                  return (
+                    <ImageItem
+                      title={galleryItem.caption.title}
+                      description={galleryItem.caption.description}
+                      imageUrl={galleryItem.src}
+                      alt={galleryItem.alt}
+                      gridArea={gridAreaMapper(index)}
+                      key={index + galleryItem.caption.title}
+                    />
+                  )
+                })}
+              </ImagesGalleryRoot>
+            )
+          })}
         </GalleryWrapper>
       </Container>
     </GalleryBackground>

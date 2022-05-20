@@ -1,0 +1,234 @@
+{
+  "id": "keo-seima-id",
+  "slug": "keo-seima",
+  "title": "Keo Seima Wildlife Sanctuary",
+  "subtitle": "Cambodia",
+  "mainPicture": "/images/projects/keoseima/main-picture.jpg",
+  "projectInfo": "Keo Seima Wildlife Sanctuary (KSWS) is a uniquely diverse rainforest protected area under advancing threat of illegal land clearance. It is home to more than 950 wild species, including 75 globally threatened species, and is also the ancestral home of the indigenous Bunong people, whose unique culture and beliefs are inseparable from the forest in which they live. Originally designated as a protected area in 2002, KSWS is managed by the Royal Government of Cambodia’s Ministry of Environment, with technical and financial support from WCS Cambodia.",
+  "keyPeople": "Indigenous Bunong people",
+  "wildLife": "Asian elephant, Malayan pangolin, Yellow-cheeked gibbon",
+  "developer": "Wildlife Conservation Society",
+  "standards": "VCS, CCB",
+  "protectedArea": {
+    "value": 166983,
+    "unit": "ha"
+  },
+  "co2Avoided": {
+    "value": 16378529,
+    "unit": "tonnes"
+  },
+  "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/059456e07b143f725e12735e35c45cf6/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjoxMi4yOTI0MTc2NTEyMDc2NTcsImxuZyI6MTA2Ljg5MjE5MTY1Njc5MTIxfSwiem9vbSI6OS4xNjcyODk1MDA2Mzc3NTksImRhdGFzZXRzIjpbeyJkYXRhc2V0IjoicG9saXRpY2FsLWJvdW5kYXJpZXMiLCJsYXllcnMiOlsiZGlzcHV0ZWQtcG9saXRpY2FsLWJvdW5kYXJpZXMiLCJwb2xpdGljYWwtYm91bmRhcmllcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfSx7ImRhdGFzZXQiOiJ0cmVlLWNvdmVyLWxvc3MiLCJsYXllcnMiOlsidHJlZS1jb3Zlci1sb3NzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsInRpbWVsaW5lUGFyYW1zIjp7InN0YXJ0RGF0ZSI6IjIwMTAtMDEtMDEiLCJlbmREYXRlIjoiMjAyMS0xMi0zMSIsInRyaW1FbmREYXRlIjoiMjAyMS0xMi0zMSJ9LCJwYXJhbXMiOnsidGhyZXNoIjoiMzAiLCJ0aHJlc2hvbGQiOjMwfX0seyJkYXRhc2V0IjoiY2FtYm9kaWEtZWNvbm9taWMtbGFuZC1jb25jZXNzaW9ucyIsIm9wYWNpdHkiOjAuNSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImNhbWJvZGlhLWVjb25vbWljLWxhbmQtY29uY2Vzc2lvbnMiXSwiaXNvIjoiS0hNIn0seyJkYXRhc2V0IjoidW1kLXRyZWUtaGVpZ2h0Iiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbInVtZC10cmVlLWhlaWdodC0yMDIwIl19LHsiZGF0YXNldCI6ImtleS1iaW9kaXZlcnNpdHktYXJlYXMiLCJvcGFjaXR5IjowLjIsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJrZXktYmlvZGl2ZXJzaXR5LWFyZWFzLTIwMTkiXX1dfQ%3D%3D&mapMenu=eyJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
+  "gallery": [
+    {
+      "alt": "Students reading",
+      "src": "/images/projects/keo-seima/gallery-1.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Lions",
+      "src": "/images/projects/keo-seima/gallery-2.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Students in classroom",
+      "src": "/images/projects/keo-seima/gallery-3.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Rangers in the field",
+      "src": "/images/projects/keo-seima/gallery-4.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "",
+      "src": "/images/projects/keo-seima/gallery-5.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Cheetahs",
+      "src": "/images/projects/keo-seima/gallery-6.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Elephant",
+      "src": "/images/projects/keo-seima/gallery-7.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "",
+      "src": "/images/projects/keo-seima/gallery-8.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Women in greenhouse",
+      "src": "/images/projects/keo-seima/gallery-9.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Greenhouse",
+      "src": "/images/projects/keo-seima/gallery-10.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    }
+  ],
+  "interventionModel": {
+    "title": "Intervention model",
+    "sections": [
+      {
+        "title": "Origins",
+        "description": "In the early 1970s most of the population of the 20 villages within the project area (then almost entirely made up of Bunong families) was relocated out of the area during the Khmer Rouge regime, with survivors and their children returning progressively as security improved during 1979–1998.  In-migration of Khmer people has taken place along with the return of the Bunong to their traditional lands, in response to employment opportunities stemming from logging concession activities, and the demobilization of around 200 ex-Khmer Rouge families in the late 1990s. Subsequently road improvements, ineffective enforcement of forest protection laws by the local authorities and other factors have promoted continued growth. The project area was formerly a logging concession, which ceased operations in 1999 as part of a national moratorium on logging concession operations. Subsequently, the area was placed under conservation protection through the creation of the Seima Protected Forest, . This has been reinforced by the 2009 Sub-decree declaring the SPF which reassigns the whole area to Protection Forest, a land category that does not permit timber concession operations. The existence of the concession contract is not believed to entitle Samling International to any role in the management or benefit-sharing arrangements for the Seima REDD+ project, a step that enabled REDD+ activities to commence in January 2010. Subsequently, in early 2016 the Royal Government of Cambodia issued a Sub-Decree No. 83 to establish the Keo Seima Wildlife Santuary (KSWS), and to transfer management authority for the areas to the Ministry of Environment (MoE). ",
+        "image": {
+          "alt": "",
+          "src": "/images/projects/origins.png"
+        }
+      },
+      {
+        "title": "Threats",
+        "description": "Driven by expansion of cash crops and land speculation, Keo Seima sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area and continues to advance. Illegal land clearance associated with this deforestation wave is currently Keo Seima’s greatest threat. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
+        "image": {
+          "alt": "",
+          "src": "/images/projects/origins.png"
+        }
+      },
+      {
+        "title": "Solutions",
+        "description": "Key components of this multi-faceted conservation project include reducing illegal activity through direct law enforcement; establishing community tenure and sustainable use of land and natural resources; supporting alternative livelihoods that reduce pressure on the forest; and developing legal and planning frameworks to guide long term management of the area. These are supported by effective monitoring and evaluation, effective administration to reduce overhead costs, and sustainable finance mechanisms to ensure long-term support. With long-term technical support from WCS, a clear set of goals, targets, and objectives have been defined for effective, equitable, and inclusive management of the protected area. Community teams support sustainable development by helping indigenous communities secure tenure; providing agriculture training; supporting alternative sustainable livelihoods such as ecotourism; and supporting education. Law enforcement teams apply Cambodia’s legal frameworks to reduce illegal activity. World class biodiversity monitoring and GIS teams measure the impact and effectiveness of these interventions on forest cover and wildlife populations, providing protected area mangers high quality data to inform management decisions.",
+        "image": {
+          "alt": "",
+          "src": "/images/projects/solutions.png"
+        }
+      }
+    ]
+  },
+  "impact": [
+    {
+      "pillar": "Community",
+      "theme": "Health",
+      "description": "Many villages in the Keo Seima Wildlife Sanctuary area are remote and travel to clinics can be very diicult - especially for the elderly or unwell - and some treatments can be prohibitively expensive. 500 residents in 5 indigenous villages in KSWS benefited from mobile clinics over the last two quarters of 2021. The mobile health clinics were selected as high priority actions by the 5 participating villages (Pu Tang, Pu Keh, Gati, Pu Char and Pu Nhav), who funded the clinics with their REDD+ benefit sharing funds. Providing “free at the point of use” healthcare on-site in each village has significant positive impacts on the well-being of these communities, while also addressing an underlying driver of deforestation: medical debt.",
+      "photo": {
+        "url": "/images/projects/keo-seima/impact-health.jpg",
+        "altText": ""
+      },
+      "title": ">3600 people served in project-supported medical facilities"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Economy",
+      "description": "IBIS Rice is a Wildlife Conservation Society initiative, successfully connecting conservation outcomes with economic incentives. It provides communities motivation to engage in conservation, offering 1,500 wildlife-friendly farmers a premium for organic jasmine rice. Farmers commit to no logging, hunting, or pesticides, protecting the landscape and its species. The rice is sold globally at a higher premium and provides a win-win scenario for communities and conservation, helping to diminish poverty and reducing deforestation by 75% where IBIS Rice farmers work. In KSWS, the IBIS Rice program is currently active in 3 REDD+ villages: Pu Kong, Pu Char and Ou Chra, with a total of 79 farmer households having joined the program and 13 successfully selling to IBIS Rice already.",
+      "photo": {
+        "url": "/images/projects/keo-seima/impact-economy.jpg",
+        "altText": ""
+      },
+      "title": "5800 people have a new livelihood opportunity"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Women's empowerment",
+      "description": "Women are being recognized and celebrated as leaders in KSWS through new livelihoods and leadership opportunities. The efforts to strengthen tenure rights and reduce landlessness is being led by a young Indigenous woman, Danh Salon from the Indigenous Community Land area of O Chra. Through her work, the project is supporting Indigenous communities to register their traditional land as well as protecting and conserving their natural resources. After taking on her new role, Salon brought her community together to discuss the risk of their communal land ownership and encouraged them to stay united in efforts to protect their community land from being grabbed through the land demarcation process.",
+      "photo": {
+        "url": "/images/projects/keo-seima/impact-womens-empowerment.jpg",
+        "altText": ""
+      },
+      "title": ">1700 women with access to alternative livelihood opportunity and a sustainable income stream"
+    },
+    {
+      "pillar": "Governance",
+      "theme": "Forest Governance",
+      "description": "Formal recognition of land rights is a crucial part of supporting communities to protect and maintain areas they have stewarded for generations. These ancestral forests are particularly important to the indigenous Bunong community for spiritual and burial purposes as well as for traditional botanical medicine and sustainable extraction of non-timber forest products. The deforestation frontier that is expanding in the region continues to add pressure to the southern area of the KSWS. Without formal recognition of their land, communities are vulnerable to land grabbing and displacement. A total of seven KSWS REDD+ target villages have Indigenous Community Land Titles (ICTs), formally recognizing the legal land rights of the indigenous Bunong people who live within the project area. Pu Nhav’s recognition now brings the total number of Community Protected Areas to three.",
+      "photo": {
+        "url": "/images/projects/keo-seima/impact-community-benefits-sharing.jpg",
+        "altText": ""
+      },
+      "title": "7 villages have secured Indigenous Community Land Titles (ICTs)"
+    },
+    {
+      "pillar": "Governance",
+      "theme": "Community Benefits Sharing",
+      "description": "Directly funding communities to implement their development activities is a core part of the KSWS REDD+ model. To date, more than $400,000 has been provided to communities, who have used funds for clean water systems, mobile health clinics, school feeding programs, community meeting halls, repairing bridges and roads, and sanitation. Following successful sales in 2021 - with an 80-fold increase in sales between 2020-2020 - significantly more funds are available to communities.",
+      "photo": {
+        "url": "/images/projects/keo-seima/impact-community-benefits-sharing.jpg",
+        "altText": ""
+      },
+      "title": ">$400,000 of carbon revenues have flowed through community benefit sharing mechanisms"
+    },
+    {
+      "pillar": "Biodiversity",
+      "theme": "Wildlife",
+      "description": "The population of 11 key species in the Keo Seima Wildlife Sanctuary (KSWS) were monitored between 2010 — 2020 using line transects. The report shows that populations of green peafowl and pig-tailed macaque are increasing, that populations of black-shanked douc langur, yellow-cheeked crested gibbon, long-tailed macaque, and wild pig are stable, and that populations of Germain’s silvered langur, stump-tailed macaque, and all ungulates except wild pig are decreasing. More than 80% of species trends matched or improved on the anticipated trends set in 2010 in the REDD+ Project Document. These results highlight the success and impacts of the project, while spotlighting where new conservation interventions are most urgently needed.",
+      "photo": {
+        "url": "/images/projects/keo-seima/impact-wildlife.jpg",
+        "altText": "Elephants across landscape"
+      },
+      "title": "75 IUCN Red List Species protected and 888 monitored species benefiting from reduced threats"
+    },
+    {
+      "pillar": "Climate",
+      "theme": "Climate Change",
+      "description": "Community Protected Areas (CPA) within the KSWS are continuously improving the protection of their borders - including the installation of signboards marking their CPA boundary in order to improve management and to deter illegal encroachment and other crimes. The signboards serve to inform people of the CPA boundaries, detail prohibited activities, and explain the importance and the need to protect natural resources.",
+      "photo": {
+        "url": "/images/projects/keo-seima/impact-climate-change.jpg",
+        "altText": ""
+      },
+      "title": "188,000 ha of forest protected"
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "Project title",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    },
+    {
+      "title": "Project title 2",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    }
+  ]
+}

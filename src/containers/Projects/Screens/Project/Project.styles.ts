@@ -1,7 +1,9 @@
 import { styled } from 'stitches.config'
 
 export const ProjectRoot = styled('div', {
-  paddingBottom: '142px',
+  '@bp2': {
+    paddingBottom: '142px',
+  },
 })
 
 export const Hero = styled('div', {

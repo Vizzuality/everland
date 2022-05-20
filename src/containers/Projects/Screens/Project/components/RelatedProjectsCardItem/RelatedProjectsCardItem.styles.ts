@@ -2,11 +2,15 @@ import { styled } from 'stitches.config'
 
 export const RelatedProjectsCardItemRoot = styled('a', {
   cursor: 'pointer',
-  maxWidth: '373px',
+  width: '278px',
   height: '284px',
   backgroundColor: '$neutral-white',
   padding: '$3',
   flexShrink: 0,
+
+  '@bp2': {
+    width: '373px',
+  },
 })
 
 export const ImageContainer = styled('div', {
