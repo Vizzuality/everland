@@ -1,0 +1,204 @@
+{
+  "id": "souther-cardamom-id",
+  "slug": "souther-cardamom",
+  "title": "Southern Cardamom",
+  "subtitle": "Cambodia",
+  "mainPicture": "/images/projects/southern-cardamom/main-picture.jpg",
+  "projectInfo": "The Cardamom Rainforest Landscape is one of the last unfragmented rainforests remaining in Southeast Asia and is a critical part of the Indo-Burma Biodiversity Hotspot at threat from relentless illegal logging and poaching. This area is globally significant for ecosystem servicing, wildlife conservation, and community livelihoods and serves as the region’s most important watershed, climate regulator and carbon sink.",
+  "keyPeople": "29 indigenous communities",
+  "wildLife": "Forest elephants, Sunbears, Pangolins, Banteng & Cloud leopards",
+  "developer": "Wildlife Alliance",
+  "standards": "VCS, CCB",
+  "protectedArea": {
+    "value": 497000,
+    "unit": "ha"
+  },
+  "co2Avoided": {
+    "value": 27605489,
+    "unit": "tonnes"
+  },
+  "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/66f733c23e5eda1fb68dc01939c92780/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjotMS44MTgxODkzMjAzMjc4MTIzLCJsbmciOjE4LjcwNjM5NDMxNTQ1NzMzNH0sInpvb20iOjcuMzI1MTIwMjE2ODg2NzM3LCJkYXRhc2V0cyI6W3siZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZX0seyJkYXRhc2V0IjoidHJlZS1jb3Zlci1sb3NzIiwibGF5ZXJzIjpbInRyZWUtY292ZXItbG9zcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJ0aW1lbGluZVBhcmFtcyI6eyJzdGFydERhdGUiOiIyMDE1LTAxLTAxIiwiZW5kRGF0ZSI6IjIwMjEtMTItMzEiLCJ0cmltRW5kRGF0ZSI6IjIwMjEtMTItMzEifSwicGFyYW1zIjp7InRocmVzaCI6IjMwIiwidGhyZXNob2xkIjozMH19LHsiZGF0YXNldCI6InVtZC10cmVlLWhlaWdodCIsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJ1bWQtdHJlZS1oZWlnaHQtMjAyMCJdfSx7ImRhdGFzZXQiOiJrZXktYmlvZGl2ZXJzaXR5LWFyZWFzIiwib3BhY2l0eSI6MC4yLCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsia2V5LWJpb2RpdmVyc2l0eS1hcmVhcy0yMDE5Il19LHsiZGF0YXNldCI6ImNhbWJvZGlhLWVjb25vbWljLWxhbmQtY29uY2Vzc2lvbnMiLCJvcGFjaXR5IjowLjUsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJjYW1ib2RpYS1lY29ub21pYy1sYW5kLWNvbmNlc3Npb25zIl0sImlzbyI6IktITSJ9XX0%3D&mapMenu=eyJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
+  "gallery": [
+    {
+      "alt": "Languar",
+      "src": "/images/projects/southern-cardamom/gallery-1.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Fishing cat",
+      "src": "/images/projects/southern-cardamom/gallery-2.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Asian elephant",
+      "src": "/images/projects/southern-cardamom/gallery-3.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Pangolin",
+      "src": "/images/projects/southern-cardamom/gallery-4.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Lesser adjutant",
+      "src": "/images/projects/southern-cardamom/gallery-5.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Community garden",
+      "src": "/images/projects/southern-cardamom/gallery-6.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "Stork billed king fisher",
+      "src": "/images/projects/southern-cardamom/gallery-7.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "River landscape",
+      "src": "/images/projects/southern-cardamom/gallery-8.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "River landscape",
+      "src": "/images/projects/southern-cardamom/gallery-9.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "",
+      "src": "/images/projects/southern-cardamom/gallery-10.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    },
+    {
+      "alt": "WA ranger in the field",
+      "src": "/images/projects/southern-cardamom/gallery-11.jpg",
+      "caption": {
+        "title": "",
+        "description": "",
+        "link": null
+      }
+    }
+  ],
+  "impact": [
+    {
+      "pillar": "Community",
+      "theme": "Health",
+      "description": "Water resources in the Cardamom rainforest landscape have been drying up over the past decade as a result of climate change and deforestation. Families in some communities have to travel up to 5-km to collect safe drinking water from one of the few operational wells as the only other safe alternative is purchasing very expensive bottled water. Some community members have even resorted to collecting nearby river water, which is very often tainted by chemicals originating from upstream plantations. Through the project’s benefit sharing program, 18 solar-powered water wells have been distributed to 423 families in 2021 with a further 25 wells scheduled to be completed in 2022. These wells have and will be distributed through 7 communes in 11 villages in and around the SC REDD+ project area.",
+      "photo": {
+        "url": "/images/projects/southern-cardamom/impact-health.jpg",
+        "altText": "Health clinic"
+      },
+      "title": ">80,000 people with improved access to clean water"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Economy",
+      "description": "The project directly manages more than 150 law enforcement rangers who operate 24/7 out of 11 fully- equipped ranger stations and patrol across more than 5,000-km2 of the landscape. Rangers are well paid and receive life insurance and full health benefits, have the capacity and equipment to work effectively and safely, and are led and motivated by inspirational supervisors. This is critical to the success of the project, where a culture of excellence in conservation, zero tolerance for corruption and achieving high performance has been cultivated.",
+      "photo": {
+        "url": "/images/projects/southern-cardamom/impact-economy.jpg",
+        "altText": "Chainsaw collection"
+      },
+      "title": "Nearly 500 people are employed in project activities"
+    },
+    {
+      "pillar": "Community",
+      "theme": "Education",
+      "description": "The SC REDD+ scholarship award program was launched in 2021, resulting in the distribution of five full scholarships to universities in Phnom Penh.  These scholarships include four years of annual tuition, school materials, accommodation, food stipend and health insurance, totalling $6,852 per year. Limited education in the SC project area is directly correlated with increased deforestation due to the lack of alternative, sustainable livelihood opportunities. Once educated at the university level, these students will be able to raise awareness on forest conservation and establish new business ventures for their home communities, thereby reducing pressure on the SC rainforest.",
+      "photo": {
+        "url": "/images/projects/southern-cardamom/impact-education.jpg",
+        "altText": "Scholarship students"
+      },
+      "title": ">$240,000 in bursaries granted"
+    },
+    {
+      "pillar": "Governance",
+      "theme": "Community Benefits Sharing",
+      "description": "In October 2020, heavy rains caused massive flooding throughout Cambodia, particularly in the north- west; villages of Pursat in Pramouy, Rokay and Bak Chenhchean communes, in the leakage zone to the north of the REDD+ Project, were badly affected. To alleviate the suffering these communities were facing, a Wildlife Alliance relief mission, supported by the Southern Cardamom REDD+ Project, travelled to the communities from Phnom Penh with crucial supplies to give to the villagers, including rice, dried fish, instant noodles and tents to the affected communities, giving aid to 453 families. Additional benefits sharing has been allocated to the development of new roads in 2021, as the current road network has been heavily eroded due to regular flooding and limited upkeep. An 18-km stretch of road from Por Boeung to Sre Ambel - which is particularly dangerous during the rainy season -  has been reconstructed at higher elevation with a new drainage system, allowing villages to access the Sre Ambel marketplace, district health facilities and the local secondary school.",
+      "photo": {
+        "url": "/images/projects/southern-cardamom/impact-community-benefits-sharing.jpg",
+        "altText": "Flood relief"
+      },
+      "title": "Disaster relief aid provided to >450 families"
+    },
+    {
+      "pillar": "Biodiversity",
+      "theme": "Wildlife",
+      "description": "The ranger and enforcement team in SC is constructing a tiger reintroduction station, which includes ponds for swimming, wild pig enclosures for tiger prey, workers house and a veterinary station. By 2023, the Indian government will begin the reintegration process by donating at least 10 tigers, giving them the opportunity to roam free in SC’s dense rainforests under the legal protection of SC REDD+ rangers. The network of protected areas from SC to Tatai and Phnom Samkos wildlife sanctuaries represents an ideal landscape to implement the national tiger recovery program; the first of it’s kind to be initiated in Cambodia.",
+      "photo": {
+        "url": "/images/projects/southern-cardamom/impact-wildlife.jpg",
+        "altText": "Tiger sanctuary"
+      },
+      "title": "52 IUCN Red List Species protected"
+    },
+    {
+      "pillar": "Climate",
+      "theme": "Climate Change",
+      "description": "As part of protecting the 443,000ha of rainforest in Southern Cardamom, the project team stopped the construction of a High Voltage Power Line through the heart of the REDD+ Project. A high voltage power line had been planned to bring electricity from 4 hydro-power dams to Phnom Penh, which would have sliced through 4 National Parks and pristine, untouched rainforest over a 100 km distance. Not only would this fragment the wild habitat, but it would create access to previously remote rainforest, leaving much of the landscape vulnerable to land grabbing, logging and poaching. Wildlife Alliance engaged with government officials at the highest level and published an Environmental Impact Assessment that recommends an identified alternate route around the rainforest that is far less environmentally destructive. Thanks to Wildlife Alliance’s intervention, the Power Line project is currently halted and under review.",
+      "photo": {
+        "url": "/images/projects/southern-cardamom/impact-climate-change.jpg",
+        "altText": "Trees"
+      },
+      "title": "443,000ha of forest protected"
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "Project title",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    },
+    {
+      "title": "Project title 2",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [40, 3],
+        "geometry": null
+      }
+    }
+  ]
+}
