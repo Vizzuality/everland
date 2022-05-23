@@ -12,7 +12,12 @@ export const Text = styled('span', {
   fontVariantNumeric: 'tabular-nums',
 
   variants: {
-    color,
+    color: {
+      ...color,
+      currentColor: {
+        '&': { color: 'currentColor' },
+      },
+    },
     size: {
       heroTitle1: {
         fontSize: '$hero1Mobile',
