@@ -1,6 +1,6 @@
 import { styled } from 'stitches.config'
 
-export const Section = styled('section', {
+export const SectionRoot = styled('section', {
   scrollMarginTop: '$4',
   pb: '$16',
 
