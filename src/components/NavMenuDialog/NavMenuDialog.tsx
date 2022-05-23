@@ -29,12 +29,6 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
                 PROJECTS
               </Text>
             </Link>
-            <Text size="h1" color="neutral-light-beige">
-              CONTACT US
-            </Text>
-            <Text size="h1" color="neutral-light-beige">
-              ABOUT US
-            </Text>
           </Nav>
         </NavMenuDialogRoot>
       </Desktop>
