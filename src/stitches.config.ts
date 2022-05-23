@@ -210,6 +210,7 @@ export const {
     shadows: {
       1: '0 16px 32px 0 rgba(0,0,0, 0.15)',
       2: '0 24px 38px 0 rgba(0,0,0, 0.2)',
+      3: '0 -8px 8px 0 rgba(0,0,0, 0.2)',
     },
     zIndices: {
       1: 100,

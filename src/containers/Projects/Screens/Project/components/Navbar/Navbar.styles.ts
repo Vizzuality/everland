@@ -51,6 +51,7 @@ export const SectionLink = styled('a', {
 export const Footer = styled('footer', {
   backgroundColor: '$neutral-white',
   marginTop: '$2',
+  boxShadow: '$3',
 })
 
 export const FooterContainer = styled('div', {
