@@ -19,7 +19,6 @@ import {
   TabsList,
   TabTrigger,
   DropdownItem,
-  TabsListContainer,
   DropdownContainer,
 } from './ImpactTabs.styles'
 
