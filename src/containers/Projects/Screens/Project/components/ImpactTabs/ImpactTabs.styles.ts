@@ -6,13 +6,17 @@ import { Text } from 'components/Text'
 
 export const ImpactTabsRoot = styled(Tabs.Root)
 
-export const TabsListContainer = styled(Tabs.List, {
-  overflow: 'auto',
-})
-
 export const TabsList = styled(Tabs.List, {
   display: 'flex',
   marginLeft: '-$12',
+
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+
+  '@bp2': {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
 })
 
 export const TabTrigger = styled(Tabs.Trigger, {
@@ -82,6 +86,11 @@ export const TabImage = styled('figure', {
 
 export const Dropdown = styled(RadixDropdown.Root)
 
+export const DropdownContainer = styled('div', {
+  display: 'flex',
+  width: '100%',
+})
+
 export const DropdownTrigger = styled(RadixDropdown.Trigger, {
   // Reset
   appearance: 'none',
@@ -93,6 +102,7 @@ export const DropdownTrigger = styled(RadixDropdown.Trigger, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+  width: '100%',
 
   transition: 'color 0.2s ease-out',
 
@@ -105,6 +115,12 @@ export const DropdownTrigger = styled(RadixDropdown.Trigger, {
   fontSize: '$subtitle2',
   lineHeight: '$subtitle',
   color: '$primary-tuna-500',
+
+  mb: '$4',
+
+  '@bp2': {
+    mb: '0px',
+  },
 
   '&:hover, &[data-state="active"]': {
     color: '$primary-jasper-500',
