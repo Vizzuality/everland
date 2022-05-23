@@ -26,9 +26,11 @@ export const Header = (props: HeaderProps) => {
     <HeaderRoot {...props}>
       <Container>
         <HeaderContent>
-          <Logo>
-            <Image src={everlandLogo} alt="Logo" />
-          </Logo>
+          <Link href="/projects" passHref>
+            <Logo>
+              <Image src={everlandLogo} alt="Logo" />
+            </Logo>
+          </Link>
 
           <Nav>
             <Link href="/projects" passHref>

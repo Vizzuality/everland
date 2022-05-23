@@ -137,6 +137,7 @@ export const NavItem = styled('a', {
   flex: 1,
   borderTop: '2px solid $primary-tuna-500',
   color: '$primary-tuna-500',
+  cursor: 'pointer',
 
   variants: {
     isActive: {
