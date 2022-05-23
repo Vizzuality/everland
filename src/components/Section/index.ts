@@ -1,1 +1,1 @@
-export { Section } from './Section.styles'
+export { Section } from './Section'

@@ -1,5 +1,5 @@
 import { Container } from 'containers/components/Container/Container'
-import { Section } from 'components/Section/Section.styles'
+import { Section } from 'components/Section/Section'
 import { Overlay } from 'components/Overlay/Overlay.styles'
 import { Text } from 'components/Text'
 import { Icon } from 'components/Icon'
@@ -34,6 +34,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useFetchProjectDetail } from 'hooks/fetchProjectDetail'
 import { useRouter } from 'next/router'
+import { ScrollToTop } from 'components/ScrollToTop/ScrollToTop'
 
 export const Project = () => {
   const [activeSection, setActiveSection] = useState<SECTION_NAME>()
@@ -106,7 +107,7 @@ export const Project = () => {
 
   return (
     <ProjectRoot>
-      <Section>
+      <Section scrollToTop={false}>
         <Hero css={{ $$mainPicture: `url(${project.mainPicture})` }}>
           <Overlay />
           <Header />
@@ -131,7 +132,7 @@ export const Project = () => {
         </Hero>
       </Section>
 
-      <Section>
+      <Section scrollDistance="3">
         <Container>
           <SpaceBetween>
             <IframeContainer>
@@ -148,7 +149,7 @@ export const Project = () => {
       </Section>
 
       {project.gallery && (
-        <Section id={NAV_SECTIONS[0].name}>
+        <Section scrollDistance="10" id={NAV_SECTIONS[0].name}>
           <ImagesGallery gallery={project.gallery} />
         </Section>
       )}
@@ -197,7 +198,7 @@ export const Project = () => {
       )}
 
       {project.video && (
-        <Section>
+        <Section scrollDistance="7">
           <Container>
             <VideoContainer>
               <Video
@@ -220,7 +221,7 @@ export const Project = () => {
         </Section>
       )}
 
-      <Section>
+      <Section scrollToTop={false}>
         <RelatedProjects>
           <Container>
             <Text size="body1" weight="bold" color="neutral-light-beige">
@@ -230,6 +231,9 @@ export const Project = () => {
           <Spacer direction="column" space="10" />
 
           <RelatedProjectsCards relatedProjects={project.relatedProjects} />
+
+          <ScrollToTop scrollDistance="5" isWhite />
+          <Spacer direction="column" space="5" />
         </RelatedProjects>
       </Section>
 

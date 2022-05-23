@@ -219,9 +219,11 @@ export const Video = styled('video', {
 export const RelatedProjects = styled('div', {
   backgroundImage: `url('/images/projects/discover-background.jpg')`,
   py: '$10',
+  paddingBottom: '$5',
 
   '@bp2': {
     paddingTop: '$16',
+    paddingBottom: '$20',
     height: '473px',
   },
 })
