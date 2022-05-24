@@ -3,5 +3,6 @@ import { format } from 'prettier'
 import prettierConfig from '../../.prettierrc.json'
 
 export function writeFormattedFile(path: string, content: string, parser = 'typescript') {
-  writeFileSync(path, format(content, { parser, ...prettierConfig }))
+  const config = prettierConfig as any
+  writeFileSync(path, format(content, { parser, ...config }))
 }
