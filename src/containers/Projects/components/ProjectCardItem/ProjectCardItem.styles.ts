@@ -3,14 +3,10 @@ import { styled } from 'stitches.config'
 export const ProjectCardItemRoot = styled('a', {
   cursor: 'pointer',
   minHeight: '284px',
-  width: '327px',
   backgroundColor: '$neutral-white',
   flexShrink: 0,
   margin: '0 auto',
-
-  '@tablet': {
-    width: '353px',
-  },
+  width: '100%',
 })
 
 export const ImageContainer = styled('div', {

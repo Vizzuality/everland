@@ -34,7 +34,7 @@ export const InterventionModelTabs = ({ tabs }: InterventionModelTabsProps) => {
       </TabsList>
       {tabs.map(({ title, description, image }, index) => (
         <TabContainer key={title} value={title} isShort={index < 2}>
-          <Text size="body1">{description}</Text>
+          <Text size="body1" dangerouslySetInnerHTML={{ __html: description }} />
           {image && (
             <TabImage>
               <Image src={image.src} alt={image.alt} layout="fill" />

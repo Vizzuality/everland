@@ -4,7 +4,7 @@ import { Text } from 'components/Text'
 import { useFetchImpactTree } from 'hooks/fetchImpactTree'
 import { groupBy } from 'lodash'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Impact, Photo } from 'types/Project'
 import {
   ImpactTabsRoot,
@@ -35,6 +35,7 @@ export type ImpactTabsProps = {
 
 export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
   const { data: impactTree } = useFetchImpactTree()
+  const dropdownRef = useRef<HTMLButtonElement>(null)
 
   const groupedTabs = groupBy(impact, 'pillar')
 
@@ -66,6 +67,19 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
   const [activeTab, setActiveTab] = useState(firstTabSection?.title)
   const [openMenu, setOpenMenu] = useState<string>()
+  const [optionsWidth, setOptionsWidth] = useState<number>(undefined)
+
+  useEffect(() => {
+    if (!dropdownRef.current) return
+
+    const observer = new ResizeObserver((entries) => {
+      setOptionsWidth(entries[0].contentRect.width)
+    })
+
+    observer.observe(dropdownRef.current)
+
+    return () => observer.disconnect()
+  }, [dropdownRef.current])
 
   const tabsSections = tabs?.reduce((acc: TabSection[], { sections }) => {
     return [...acc, ...sections.map((section) => section)]
@@ -103,18 +117,22 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                 onMouseOver={() => setOpenMenu(title)}
                 onMouseLeave={() => setOpenMenu(undefined)}
               >
-                <DropdownTrigger isActive={isActive}>
+                <DropdownTrigger ref={dropdownRef} isActive={isActive}>
                   <span>{title}</span>
                   <Icon name="chevron-down" />
                 </DropdownTrigger>
 
-                <Spacer space={1} direction="column" />
+                <Spacer space={2} direction="column" />
 
                 {sections.length > 0 && (
-                  <DropdownContent align="start" sideOffset={4}>
+                  <DropdownContent
+                    align="start"
+                    sideOffset={4}
+                    css={{ width: optionsWidth, maxWidth: optionsWidth }}
+                  >
                     {sections.map((section) => {
                       return (
-                        <DropdownItem key={section.title}>
+                        <DropdownItem key={section.title} onClick={() => setOpenMenu(undefined)}>
                           <TabTrigger
                             key={title}
                             value={section.title}
@@ -128,6 +146,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                   </DropdownContent>
                 )}
               </DropdownContainer>
+              <Spacer space="2" direction="row" />
             </Dropdown>
           )
         })}
