@@ -28,14 +28,14 @@ export const SortButton = styled('button', {
 
 export const Grid = styled('div', {
   display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, 353px)',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(353px, 1fr))',
   gap: '$3',
   padding: '$3',
   overflowY: 'auto',
   placeContent: 'center',
 
   '@media screen and (max-width: 781px)': {
-    padding: '$1',
+    padding: '$2',
     gap: '$15',
     backgroundColor: 'white',
   },

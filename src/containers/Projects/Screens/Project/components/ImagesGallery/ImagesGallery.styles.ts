@@ -11,8 +11,8 @@ export const ImagesGalleryRoot = styled('div', {
 })
 
 export const GalleryBackground = styled('div', {
-  backgroundColor: '$neutral-light-beige',
-  backgroundImage: 'url(/images/projects/gallery-background.svg)',
+  backgroundImage:
+    'url(/images/projects/gallery-background.svg), linear-gradient(180deg, #FFFFFF 0%, $colors$neutral-light-beige 50%, #FFFFFF 100%)',
   backgroundSize: 'contain',
   backgroundPosition: 'center',
 })

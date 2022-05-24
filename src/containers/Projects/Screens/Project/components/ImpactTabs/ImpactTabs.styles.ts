@@ -16,6 +16,7 @@ export const TabsList = styled(Tabs.List, {
   '@bp2': {
     flexDirection: 'row',
     alignItems: 'center',
+    gap: '$2',
   },
 })
 
@@ -88,6 +89,7 @@ export const Dropdown = styled(RadixDropdown.Root)
 
 export const DropdownContainer = styled('div', {
   display: 'flex',
+  flexDirection: 'column',
   width: '100%',
 })
 

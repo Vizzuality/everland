@@ -75,6 +75,11 @@ export const TabTrigger = styled(Tabs.Trigger, {
 })
 
 export const TabContainer = styled(Tabs.Content, {
+  '& li': {
+    marginTop: '$4',
+    listStyle: 'disc',
+  },
+
   '@bp2': {
     maxWidth: '433px',
     paddingBottom: '390px',
