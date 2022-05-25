@@ -5,11 +5,7 @@ import * as Tabs from '@radix-ui/react-tabs'
 export const InterventionModelTabsRoot = styled(Tabs.Root, {
   position: 'relative',
   display: 'flex',
-  justifyContent: 'space-between',
-
-  '@bp2': {
-    minHeight: '622px',
-  },
+  gap: '$1',
 })
 
 export const TabsList = styled(Tabs.List, {
@@ -30,7 +26,7 @@ export const TabTrigger = styled(Tabs.Trigger, {
   fontSize: '$subtitle1',
   lineHeight: '$subtitle1',
   color: '$primary-tuna-500',
-  minWidth: '112px',
+  width: '299px',
 
   '&:after': {
     transition: 'opacity .2s ease-out, width .2s ease-out',
@@ -82,27 +78,17 @@ export const TabContainer = styled(Tabs.Content, {
 
   '@bp2': {
     maxWidth: '433px',
-    paddingBottom: '390px',
-  },
-
-  variants: {
-    isShort: {
-      true: {
-        '@bp2': {
-          paddingBottom: '200px',
-        },
-      },
-    },
   },
 })
 
 export const TabImage = styled('figure', {
   position: 'absolute',
-  bottom: '0',
-  right: 0,
+  top: '$10',
+  right: '-120px',
   width: '334px',
   height: '375px',
   display: 'none',
+  zIndex: -1,
 
   '@bp2': {
     display: 'block',
