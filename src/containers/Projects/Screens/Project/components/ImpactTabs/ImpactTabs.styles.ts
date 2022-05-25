@@ -102,9 +102,9 @@ export const DropdownTrigger = styled(RadixDropdown.Trigger, {
   outline: 'none',
 
   display: 'flex',
+  flex: 1,
   alignItems: 'center',
   justifyContent: 'space-between',
-  width: '100%',
 
   transition: 'color 0.2s ease-out',
 
