@@ -221,21 +221,23 @@ export const Project = () => {
         </Section>
       )}
 
-      <Section scrollToTop={false}>
-        <RelatedProjects>
-          <Container>
-            <Text size="body1" weight="bold" color="neutral-light-beige">
-              Discover other projects:
-            </Text>
-          </Container>
-          <Spacer direction="column" space="10" />
+      {project.relatedProjects && (
+        <Section scrollToTop={false}>
+          <RelatedProjects>
+            <Container>
+              <Text size="body1" weight="bold" color="neutral-light-beige">
+                Discover other projects:
+              </Text>
+            </Container>
+            <Spacer direction="column" space="10" />
 
-          <RelatedProjectsCards relatedProjects={project.relatedProjects} />
+            <RelatedProjectsCards relatedProjects={project.relatedProjects} />
 
-          <ScrollToTop scrollDistance="5" isWhite />
-          <Spacer direction="column" space="5" />
-        </RelatedProjects>
-      </Section>
+            <ScrollToTop scrollDistance="5" isWhite />
+            <Spacer direction="column" space="5" />
+          </RelatedProjects>
+        </Section>
+      )}
 
       <Navbar sections={NAV_SECTIONS} project={project} activeSection={activeSection} />
     </ProjectRoot>

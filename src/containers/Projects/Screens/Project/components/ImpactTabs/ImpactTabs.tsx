@@ -168,7 +168,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             </TabContentText>
             {photo && (
               <TabImage>
-                <Image src={photo.url} alt={photo.altText} layout="fill" objectFit="contain" />
+                <Image src={photo.url} alt={photo.altText} layout="fill" objectFit="cover" />
               </TabImage>
             )}
           </TabContent>

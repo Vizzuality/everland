@@ -136,6 +136,10 @@
       "pillar": "Biodiversity",
       "theme": "Wildlife",
       "description": "21 degraded wildlife habitat sites have been identified and integrated into the targeted biodiversity restoration program. These and other sites within the project area are being continuously monitored by 45 members of the forestry patrol, who complete an average of 110 patrols per year. Such patrols have led to the recovery of hundreds of snares and confiscation of thousands of illegal items in a bid to reduce threats from illegal logging and poaching. 91 species recorded in transects and patrols, of which 11 were under threat based on IUCN’s Red List, including the black giant squirred, pileated gibbon, sambar deer, sun bear and sunda pangolin.",
+      "photo": {
+        "url": "/images/projects/tumring/impact-wildlife.jpg",
+        "altText": "Images of Thailand by User:Rushenb"
+      },
       "title": "11 IUCN Red List species actively protected"
     },
     {
@@ -147,26 +151,6 @@
         "altText": ""
       },
       "title": "67,791ha of tropical forest protected in a highly threatened landscape"
-    }
-  ],
-  "relatedProjects": [
-    {
-      "title": "Project title",
-      "location": {
-        "iso": "KHM",
-        "name": "Cambodia",
-        "centroid": [40, 3],
-        "geometry": null
-      }
-    },
-    {
-      "title": "Project title 2",
-      "location": {
-        "iso": "KHM",
-        "name": "Cambodia",
-        "centroid": [40, 3],
-        "geometry": null
-      }
     }
   ]
 }
