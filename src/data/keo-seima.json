@@ -4,8 +4,8 @@
   "title": "Keo Seima Wildlife Sanctuary",
   "subtitle": "Cambodia",
   "mainPicture": "/images/projects/keo-seima/main-picture.jpg",
-  "projectInfo": "Keo Seima Wildlife Sanctuary (KSWS) is a uniquely diverse rainforest protected area under advancing threat of illegal land clearance. It is home to more than 950 wild species, including 75 globally threatened species, and is also the ancestral home of the indigenous Bunong people, whose unique culture and beliefs are inseparable from the forest in which they live. Originally designated as a protected area in 2002, KSWS is managed by the Royal Government of Cambodia’s Ministry of Environment, with technical and financial support from WCS Cambodia.",
-  "keyPeople": "Indigenous Bunong people",
+  "projectInfo": "Keo Seima Wildlife Sanctuary (KSWS) is a uniquely diverse rainforest protected area under advancing threat of illegal land clearance. The project area is home to more than 950 wild species, including 75 globally threatened species, and is also the ancestral home of the indigenous Bunong people, whose unique culture and beliefs are inseparable from the forest in which they live. Originally designated as a protected area in 2002, KSWS is managed by the Royal Government of Cambodia’s Ministry of Environment, with technical and financial support from WCS Cambodia.<br /><br />KSWS plays a vital role in the preservation of the region’s important and vulnerable wildlife, including the world’s largest populations of endemic primates. The project also supports the sustainable development of local communities, notably through securing legal title to their traditional lands, and through the REDD+ Benefit Sharing Mechanism which provides significant funding to community-led development projects.",
+  "keyPeople": ">12,000 Indigenous Bunong and Stieng people from 20 villages",
   "wildLife": "Asian elephant, Malayan pangolin, Yellow-cheeked gibbon",
   "developer": "Wildlife Conservation Society",
   "standards": "VCS, CCB",
@@ -15,12 +15,12 @@
   },
   "co2Avoided": {
     "value": 16378529,
-    "unit": "tonnes"
+    "unit": "tCO2e"
   },
   "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/059456e07b143f725e12735e35c45cf6/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjoxMi4yOTI0MTc2NTEyMDc2NTcsImxuZyI6MTA2Ljg5MjE5MTY1Njc5MTIxfSwiem9vbSI6OS4xNjcyODk1MDA2Mzc3NTksImRhdGFzZXRzIjpbeyJkYXRhc2V0IjoicG9saXRpY2FsLWJvdW5kYXJpZXMiLCJsYXllcnMiOlsiZGlzcHV0ZWQtcG9saXRpY2FsLWJvdW5kYXJpZXMiLCJwb2xpdGljYWwtYm91bmRhcmllcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfSx7ImRhdGFzZXQiOiJ0cmVlLWNvdmVyLWxvc3MiLCJsYXllcnMiOlsidHJlZS1jb3Zlci1sb3NzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsInRpbWVsaW5lUGFyYW1zIjp7InN0YXJ0RGF0ZSI6IjIwMTAtMDEtMDEiLCJlbmREYXRlIjoiMjAyMS0xMi0zMSIsInRyaW1FbmREYXRlIjoiMjAyMS0xMi0zMSJ9LCJwYXJhbXMiOnsidGhyZXNoIjoiMzAiLCJ0aHJlc2hvbGQiOjMwfX0seyJkYXRhc2V0IjoiY2FtYm9kaWEtZWNvbm9taWMtbGFuZC1jb25jZXNzaW9ucyIsIm9wYWNpdHkiOjAuNSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImNhbWJvZGlhLWVjb25vbWljLWxhbmQtY29uY2Vzc2lvbnMiXSwiaXNvIjoiS0hNIn0seyJkYXRhc2V0IjoidW1kLXRyZWUtaGVpZ2h0Iiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbInVtZC10cmVlLWhlaWdodC0yMDIwIl19LHsiZGF0YXNldCI6ImtleS1iaW9kaXZlcnNpdHktYXJlYXMiLCJvcGFjaXR5IjowLjIsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJrZXktYmlvZGl2ZXJzaXR5LWFyZWFzLTIwMTkiXX1dfQ%3D%3D&mapMenu=eyJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
   "gallery": [
     {
-      "alt": "Asian elephant",
+      "alt": "Fewer than 500 endangered Asian Elephants (Elephas maximus) are found in Cambodia",
       "src": "/images/projects/keo-seima/gallery-1.jpg",
       "caption": {
         "title": "",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "alt": "Biodiversity monitoring team ",
+      "alt": "Nearly 1000 species have been recorded through biological monitoring of KSWS, including 15 species new to science",
       "src": "/images/projects/keo-seima/gallery-2.jpg",
       "caption": {
         "title": "",
@@ -38,7 +38,7 @@
       }
     },
     {
-      "alt": "Black-shanked douc",
+      "alt": "Nearly 25,000 individual Black shanked doucs (Pygathrix nigripes) have been recorded in KSWS",
       "src": "/images/projects/keo-seima/gallery-3.jpg",
       "caption": {
         "title": "",
@@ -47,7 +47,7 @@
       }
     },
     {
-      "alt": "Frog-legged leaf beetle",
+      "alt": "The Frog-Legged Beetle (Sagra buqueti) native to south Asian forests",
       "src": "/images/projects/keo-seima/gallery-4.jpg",
       "caption": {
         "title": "",
@@ -56,7 +56,7 @@
       }
     },
     {
-      "alt": "Germain's silver langur",
+      "alt": "The endangered Germain's silver langur have been declining worldwide due to poaching and use in traditional medicine",
       "src": "/images/projects/keo-seima/gallery-5.jpg",
       "caption": {
         "title": "",
@@ -65,7 +65,7 @@
       }
     },
     {
-      "alt": "Giant ibis",
+      "alt": "The Giant Ibis (Thaumatibis gigantea) is critically endangered, predominantly found in northeast Cambodia through sightings are rare",
       "src": "/images/projects/keo-seima/gallery-6.jpg",
       "caption": {
         "title": "",
@@ -74,7 +74,7 @@
       }
     },
     {
-      "alt": "Local community members",
+      "alt": "Revenue sharing launch at Pou Char commune",
       "src": "/images/projects/keo-seima/gallery-7.jpg",
       "caption": {
         "title": "",
@@ -83,7 +83,7 @@
       }
     },
     {
-      "alt": "Hypothemis azuraea bird",
+      "alt": "The azure-blue black-naped monarch (Hypothemis azuraea) found in tropical forests",
       "src": "/images/projects/keo-seima/gallery-8.jpg",
       "caption": {
         "title": "",
@@ -97,7 +97,7 @@
     "sections": [
       {
         "title": "Origins",
-        "description": "In the early 1970s most of the population of the 20 villages within the project area (then almost entirely made up of Bunong families) was relocated out of the area during the Khmer Rouge regime, with survivors and their children returning progressively as security improved during 1979–1998. In-migration of Khmer people has taken place along with the return of the Bunong to their traditional lands, in response to employment opportunities stemming from logging concession activities, and the demobilization of around 200 ex-Khmer Rouge families in the late 1990s. Subsequently road improvements, ineffective enforcement of forest protection laws by the local authorities and other factors have promoted continued growth.<br/ ><br />The project area was formerly a logging concession, which ceased operations in 1999 as part of a national moratorium on logging concession operations. Subsequently, the area was placed under conservation protection through the creation of the Seima Protected Forest, . This has been reinforced by the 2009 Sub-decree declaring the SPF which reassigns the whole area to Protection Forest, a land category that does not permit timber concession operations. The existence of the concession contract is not believed to entitle Samling International to any role in the management or benefit-sharing arrangements for the Seima REDD+ project, a step that enabled REDD+ activities to commence in January 2010. Subsequently, in early 2016 the Royal Government of Cambodia issued a Sub-Decree No. 83 to establish the Keo Seima Wildlife Santuary (KSWS), and to transfer management authority for the areas to the Ministry of Environment (MoE).",
+        "description": "In the early 1970s most of the population of the 20 villages within the project area (then almost entirely made up of Bunong families) was relocated out of the area during the Khmer Rouge regime, with survivors and their children returning progressively as security improved during 1979–1998.  In-migration of Khmer people has taken place along with the return of the Bunong to their traditional lands, in response to employment opportunities stemming from logging concession activities, and the demobilization of around 200 ex-Khmer Rouge families in the late 1990s. Subsequently road improvements, ineffective enforcement of forest protection laws by the local authorities and other factors have promoted continued growth.<br /><br />The project area was formerly a logging concession, which ceased operations in 1999 as part of a national moratorium on logging concession operations. Subsequently, the area was placed under conservation protection through the creation of the Seima Protected Forest, and its protected status was further reinforced in 2009 by a sub-decree establishing it as a Protection Forest. This step, which does not permit timber concession operations to take place, enabled REDD+ activities to commence in January 2010. Subsequently, in early 2016 the Royal Government of Cambodia issued a Sub-Decree No. 83 to establish the Keo Seima Wildlife Santuary (KSWS), and to transfer management authority for the areas to the Ministry of Environment (MoE).",
         "image": {
           "alt": "",
           "src": "/images/projects/origins.png"
@@ -105,7 +105,7 @@
       },
       {
         "title": "Threats",
-        "description": "Driven by expansion of cash crops and land speculation, Keo Seima sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area and continues to advance. Illegal land clearance associated with this deforestation wave is currently Keo Seima’s greatest threat. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
+        "description": "Driven by expansion of cash crops and land speculation, Keo Seima sits at the frontier of a wave of deforestation that has swept through an adjacent, unsupported protected area and continues to advance throughout the landscape. Illegal land clearance associated with this deforestation wave is currently Keo Seima’s greatest threat. Illegal hunting with guns, dogs, and snares is also a direct threat to wildlife species, and illegal targeted logging of valuable timber threatens rare tree species and causes community conflict.",
         "image": {
           "alt": "",
           "src": "/images/projects/origins.png"
@@ -113,7 +113,7 @@
       },
       {
         "title": "Solutions",
-        "description": "Key components of this multi-faceted conservation project include reducing illegal activity through direct law enforcement; establishing community tenure and sustainable use of land and natural resources; supporting alternative livelihoods that reduce pressure on the forest; and developing legal and planning frameworks to guide long term management of the area. These are supported by effective monitoring and evaluation, effective administration to reduce overhead costs, and sustainable finance mechanisms to ensure long-term support.<br /><br />With long-term technical support from WCS, a clear set of goals, targets, and objectives have been defined for effective, equitable, and inclusive management of the protected area. Community teams support sustainable development by helping indigenous communities secure tenure; providing agriculture training; supporting alternative sustainable livelihoods such as ecotourism; and supporting education. Law enforcement teams apply Cambodia’s legal frameworks to reduce illegal activity. World class biodiversity monitoring and GIS teams measure the impact and effectiveness of these interventions on forest cover and wildlife populations, providing protected area mangers high quality data to inform management decisions.",
+        "description": "With long-term technical support from WCS, a clear set of goals, targets, and objectives have been defined for effective, equitable, and inclusive management of the protected area. Community teams support sustainable development by helping indigenous communities secure tenure; providing agriculture training; supporting alternative sustainable livelihoods such as ecotourism; and supporting education. Law enforcement teams apply Cambodia’s legal frameworks to reduce illegal activity, supported further by community-based patrols.  The project is also developing legal and planning frameworks to guide long term management of the area.  World class biodiversity monitoring and GIS teams measure the impact and effectiveness of these interventions on forest cover and wildlife populations, providing protected area mangers high quality data to inform management decisions.",
         "image": {
           "alt": "",
           "src": "/images/projects/solutions.png"
@@ -203,20 +203,38 @@
   ],
   "relatedProjects": [
     {
-      "title": "Project title",
+      "id": "kasigau-id",
+      "title": "Kasigau",
+      "mainPicture": "/images/projects/kasigau/catalogue.jpg",
+      "standards": "VCS, CCB",
       "location": {
-        "iso": "KHM",
-        "name": "Cambodia",
-        "centroid": [40, 3],
+        "iso": "KEN",
+        "name": "Kenya",
+        "centroid": [-1.286389, 36.817223],
         "geometry": null
       }
     },
     {
-      "title": "Project title 2",
+      "id": "mai-ndombe-id",
+      "title": "Mai Ndombe",
+      "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
+      "standards": "VCS, CCB",
+      "location": {
+        "iso": "COD",
+        "name": "Democratic Republic of the Congo",
+        "centroid": [-4.643601, 26.362312],
+        "geometry": null
+      }
+    },
+    {
+      "id": "southern-cardamom-id",
+      "title": "Southern Cardamom",
+      "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
+      "standards": "VCS, CCB",
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [40, 3],
+        "centroid": [11.562108, 104.888535],
         "geometry": null
       }
     }
