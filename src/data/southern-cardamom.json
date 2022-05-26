@@ -9,6 +9,12 @@
   "wildLife": "Forest elephants, Sunbears, Pangolins, Banteng & Cloud leopards",
   "developer": "Wildlife Alliance",
   "standards": "VCS, CCB",
+  "location": {
+    "iso": "KHM",
+    "name": "Cambodia",
+    "centroid": [11.562108, 104.888535],
+    "geometry": null
+  },
   "protectedArea": {
     "value": 497000,
     "unit": "ha"
