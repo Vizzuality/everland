@@ -83,15 +83,15 @@ export const TabContainer = styled(Tabs.Content, {
 })
 
 export const TabImage = styled('figure', {
-  position: 'absolute',
-  top: '$10',
-  right: '-120px',
+  position: 'relative',
+  margin: 'auto',
   width: '334px',
   height: '375px',
-  display: 'none',
   zIndex: -1,
 
   '@bp2': {
-    display: 'block',
+    position: 'absolute',
+    top: '$10',
+    right: '-120px',
   },
 })
