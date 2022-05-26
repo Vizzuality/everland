@@ -26,7 +26,7 @@ export const TabTrigger = styled(Tabs.Trigger, {
   fontSize: '$subtitle1',
   lineHeight: '$subtitle1',
   color: '$primary-tuna-500',
-  width: '120px',
+  width: '100px',
 
   '&:after': {
     transition: 'opacity .2s ease-out, width .2s ease-out',
@@ -72,9 +72,15 @@ export const TabTrigger = styled(Tabs.Trigger, {
 })
 
 export const TabContainer = styled(Tabs.Content, {
+  maxWidth: '220px',
+
   '& li': {
     marginTop: '$4',
     listStyle: 'disc',
+  },
+
+  '@bp1': {
+    maxWidth: 'initial',
   },
 
   '@bp2': {
@@ -84,6 +90,7 @@ export const TabContainer = styled(Tabs.Content, {
 
 export const TabImage = styled('figure', {
   position: 'relative',
+  right: '155px',
   margin: 'auto',
   width: '334px',
   height: '375px',
