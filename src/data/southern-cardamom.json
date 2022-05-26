@@ -4,8 +4,8 @@
   "title": "Southern Cardamom",
   "subtitle": "Cambodia",
   "mainPicture": "/images/projects/southern-cardamom/main-picture.jpg",
-  "projectInfo": "The Cardamom Rainforest Landscape is one of the last unfragmented rainforests remaining in Southeast Asia and is a critical part of the Indo-Burma Biodiversity Hotspot at threat from relentless illegal logging and poaching. This area is globally significant for ecosystem servicing, wildlife conservation, and community livelihoods and serves as the region’s most important watershed, climate regulator and carbon sink.",
-  "keyPeople": "29 indigenous communities",
+  "projectInfo": "The Cardamom Rainforest Landscape is one of the last unfragmented rainforests remaining in Southeast Asia and is a critical part of the Indo-Burma Biodiversity Hotspot at threat from relentless illegal logging and poaching. This area is globally significant for ecosystem servicing, wildlife conservation, and community livelihoods and serves as the region’s most important watershed, climate regulator and carbon sink. Using global best practices for forest protection and community development, the Southern Cardamom REDD+ project protects 497,000 hectares of this crucial tropical rainforest ecosystem in Southwest Cambodia.",
+  "keyPeople": ">16,000 local people in 21 villages, including an indigenous community in Chhay Arieng",
   "wildLife": "Forest elephants, Sunbears, Pangolins, Banteng & Cloud leopards",
   "developer": "Wildlife Alliance",
   "standards": "VCS, CCB",
@@ -21,16 +21,16 @@
   },
   "co2Avoided": {
     "value": 27605489,
-    "unit": "tonnes"
+    "unit": "tCO2e"
   },
   "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/3354fb9d606d44734ffc67cb6ab1737f/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&mainMap=eyJzaG93QW5hbHlzaXMiOnRydWV9&map=eyJjZW50ZXIiOnsibGF0IjoxMS41NTQ1ODMzNDUzNzQwNCwibG5nIjoxMDMuMzA2MjE1ODE0NjgyNzZ9LCJ6b29tIjo4LjA2NjE0ODM2NjUxODE1NiwiY2FuQm91bmQiOmZhbHNlLCJkYXRhc2V0cyI6W3siZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZX0seyJkYXRhc2V0IjoidHJlZS1jb3Zlci1sb3NzIiwibGF5ZXJzIjpbInRyZWUtY292ZXItbG9zcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJ0aW1lbGluZVBhcmFtcyI6eyJzdGFydERhdGUiOiIyMDExLTAxLTAxIiwiZW5kRGF0ZSI6IjIwMjEtMTItMzEiLCJ0cmltRW5kRGF0ZSI6IjIwMjEtMTItMzEifSwicGFyYW1zIjp7InRocmVzaCI6IjEwIiwidGhyZXNob2xkIjoxMH19LHsiZGF0YXNldCI6InVtZC10cmVlLWhlaWdodCIsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJ1bWQtdHJlZS1oZWlnaHQtMjAyMCJdfSx7ImRhdGFzZXQiOiJnbG9iYWwtcGVhdGxhbmQiLCJvcGFjaXR5IjowLjc1LCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsiZ2xvYmFsLXBlYXRsYW5kIl19LHsiZGF0YXNldCI6ImtleS1iaW9kaXZlcnNpdHktYXJlYXMiLCJvcGFjaXR5IjowLjIsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJrZXktYmlvZGl2ZXJzaXR5LWFyZWFzLTIwMTkiXX0seyJkYXRhc2V0IjoibG9nZ2luZy1jb25jZXNzaW9ucyIsIm9wYWNpdHkiOjAuNzUsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJsb2dnaW5nLWNvbmNlc3Npb25zLTIwMTgiXX1dfQ%3D%3D&mapMenu=eyJkYXRhc2V0Q2F0ZWdvcnkiOiJsYW5kVXNlIiwiZXhwbG9yZVR5cGUiOiJzdG9yaWVzIn0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
   "gallery": [
     {
-      "alt": "Languar",
+      "alt": "Langur",
       "src": "/images/projects/southern-cardamom/gallery-1.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The endangered Germain's silver langur have been declining worldwide due to poaching and use in traditional medicine",
         "link": null
       }
     },
@@ -39,7 +39,7 @@
       "src": "/images/projects/southern-cardamom/gallery-2.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The Fishing Cat (Prionailurus viverrinus) is a vulnerable water-loving cat often found alongside rivers, wetlands and mangroves",
         "link": null
       }
     },
@@ -48,7 +48,7 @@
       "src": "/images/projects/southern-cardamom/gallery-3.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Fewer than 500 endangered Asian Elephants (Elephas maximus) are found in Cambodia",
         "link": null
       }
     },
@@ -57,7 +57,7 @@
       "src": "/images/projects/southern-cardamom/gallery-4.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The critically endangered Sunda pangolin (Manis javanica) are rescued and released into the Cardamom rainforest to ensure protection against poaching",
         "link": null
       }
     },
@@ -66,7 +66,7 @@
       "src": "/images/projects/southern-cardamom/gallery-5.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The vulerable lesser adjutant (Leptoptilos javanicus) is a large stork living in the wetlands of Cambodia and southeast Asia",
         "link": null
       }
     },
@@ -75,7 +75,7 @@
       "src": "/images/projects/southern-cardamom/gallery-6.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Sustainable agriculture programs have been initiated best suited to communities' preferences, soil quality and microclimate ",
         "link": null
       }
     },
@@ -84,7 +84,7 @@
       "src": "/images/projects/southern-cardamom/gallery-7.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The stork-billed kingfisher (Pelargopsis capensis) frequent wetlands in the Southern Cardamom",
         "link": null
       }
     },
@@ -93,7 +93,7 @@
       "src": "/images/projects/southern-cardamom/gallery-8.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The project contains vital habitats for many IUCN Red List species including the Asian elephant, Sun bear and Clouded leopard",
         "link": null
       }
     },
@@ -102,7 +102,7 @@
       "src": "/images/projects/southern-cardamom/gallery-9.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The communities of Southern Cardamom rely on the river system for resources and transportation",
         "link": null
       }
     },
@@ -116,7 +116,7 @@
       }
     },
     {
-      "alt": "WA ranger in the field",
+      "alt": "WA in the field",
       "src": "/images/projects/southern-cardamom/gallery-11.jpg",
       "caption": {
         "title": "",
@@ -130,7 +130,7 @@
     "sections": [
       {
         "title": "Origins",
-        "description": "In 2001, there was a tiger and elephant hunting crisis in the Cardamom Rainforest Landscape where 29 tigers and 39 elephants were poached as a result of the construction of a new highway.  At the same time, anarchic slash and burn cultivation was destroying thousands of hectares of the forest area each month, leaving the Cardamom Rainforest on the brink of destruction. It was at this time that the Wildlife Alliance came to the project area to conduct emergency interventions.<br /><br />Following the success of this work in reducing threats to the forest and wildlife, the Wildlife Alliance was asked to help design and implement a long term Protected Area Management Plan by the Royal Government of Cambodia to help protect the landscape, its forests and its wildlife.",
+        "description": "At the start of the 2000s there was a tiger and elephant hunting crisis in the Cardamom Rainforest Landscape, where 29 tigers and 39 elephants were poached as a result of the construction of a new highway.  At the same time, anarchic slash and burn cultivation was destroying thousands of hectares of the forest area each month, leaving the Cardamom Rainforest on the brink of destruction. Tigers became entirely extinct from the landscape. It was at this time that the Wildlife Alliance came to the project area to conduct emergency interventions.<br /><br />Following the success of its initial work in reducing threats to the forest and wildlife, the Wildlife Alliance was asked to help design and implement a long term Protected Area Management Plan by the Royal Government of Cambodia to help protect the landscape, its forests and its wildlife.",
         "image": {
           "alt": "",
           "src": "/images/projects/origins.png"
@@ -138,7 +138,7 @@
       },
       {
         "title": "Threats",
-        "description": "Since 2014, the threats to the Cardamoms have accelerated, driven by massive Chinese investment in Cambodia as part of their national Belt and Road Initiative. Small scale land grabbing for speculative purposes, illegal logging, conversion for small scale agriculture, poaching and snaring are constant threats, as are illegal or corrupt land concessions.",
+        "description": "Since 2014, the threats to the Cardamoms have accelerated, driven by massive Chinese investment in Cambodia as part of their national Belt and Road Initiative. Small scale land grabbing for speculative purposes, illegal logging, conversion for small scale agriculture, poaching and snaring are constant threats, as are illegal or corrupt land concessions. The Cardamom Rainforest Landscape is under perennial threat from these relentless forces.",
         "image": {
           "alt": "",
           "src": "/images/projects/origins.png"
@@ -195,6 +195,16 @@
     },
     {
       "pillar": "Governance",
+      "theme": "Forest Governance",
+      "description": "The project has established an effective boots-on-the-ground protection of this highly threatened foret landscape.  Since 2006, the project has achieved zero poaching of Asian elephants and supported significant recovery of ungulates and carnivore populations. The project employs over 350 rangers, who have conducted nearly 30,000 patrols since 2015 resulting in the removal of >200,000 snares, confiscation of >10,000 chainsaws and logging/poaching vehicles and the rescue of 3250 live animals.",
+      "photo": {
+        "url": "/images/projects/southern-cardamom/impact-forest-governance.jpg",
+        "altText": "Flood relief"
+      },
+      "title": "Nearly 30,000 enforcement patrols have been conducted since 2015"
+    },
+    {
+      "pillar": "Governance",
       "theme": "Community Benefits Sharing",
       "description": "In October 2020, heavy rains caused massive flooding throughout Cambodia, particularly in the north- west; villages of Pursat in Pramouy, Rokay and Bak Chenhchean communes, in the leakage zone to the north of the REDD+ Project, were badly affected. To alleviate the suffering these communities were facing, a Wildlife Alliance relief mission, supported by the Southern Cardamom REDD+ Project, travelled to the communities from Phnom Penh with crucial supplies to give to the villagers, including rice, dried fish, instant noodles and tents to the affected communities, giving aid to 453 families. Additional benefits sharing has been allocated to the development of new roads in 2021, as the current road network has been heavily eroded due to regular flooding and limited upkeep. An 18-km stretch of road from Por Boeung to Sre Ambel - which is particularly dangerous during the rainy season -  has been reconstructed at higher elevation with a new drainage system, allowing villages to access the Sre Ambel marketplace, district health facilities and the local secondary school.",
       "photo": {
@@ -222,6 +232,44 @@
         "altText": "Trees"
       },
       "title": "443,000ha of forest protected"
+    }
+  ],
+  "relatedProjects": [
+    {
+      "id": "kasigau-id",
+      "title": "Kasigau",
+      "mainPicture": "/images/projects/kasigau/catalogue.jpg",
+      "standards": "VCS, CCB",
+      "location": {
+        "iso": "KEN",
+        "name": "Kenya",
+        "centroid": [-1.286389, 36.817223],
+        "geometry": null
+      }
+    },
+    {
+      "id": "keo-seima-id",
+      "title": "Keo Seima Wildlife Sanctuary",
+      "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
+      "standards": "VCS, CCB",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [11.562108, 104.888535],
+        "geometry": null
+      }
+    },
+    {
+      "id": "tumring-id",
+      "title": "Tumring",
+      "mainPicture": "/images/projects/tumring/catalogue.jpg",
+      "standards": "VCS, CCB",
+      "location": {
+        "iso": "KHM",
+        "name": "Cambodia",
+        "centroid": [11.562108, 104.888535],
+        "geometry": null
+      }
     }
   ]
 }
