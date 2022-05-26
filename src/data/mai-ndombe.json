@@ -4,8 +4,8 @@
   "title": "Mai Ndombe",
   "subtitle": "Democratic Republic of the Congo",
   "mainPicture": "/images/projects/mai-ndombe/main-picture.jpg",
-  "projectInfo": "The Mai Ndombe REDD+ Project protects 300,000 hectares  of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities, which are among the most impoverished in the world. Such investments include building and renovating schools, providing healthcare services (such as access to immunizations), supporting food security and nutrition (such as through agricultural diversification), and providing capacity building activities that empower local communities.",
-  "keyPeople": "180,000 people",
+  "projectInfo": "The Mai Ndombe REDD+ Project protects 300,000 hectares  of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities, which are among the least economically developed in the world. Such investments include building and renovating schools, providing healthcare services (such as access to immunizations), supporting food security and nutrition (such as through agricultural diversification), and providing capacity building activities that empower local communities.",
+  "keyPeople": ">30,000 local people within three tribal groups (Ntomba, Bolia, and Sengele) spanning across 23 villages",
   "wildLife": "African forest elephant, Bonobo, Okapi & Leopard",
   "developer": "Wildlife Works",
   "standards": "VCS, CCB",
@@ -14,8 +14,8 @@
     "unit": "ha"
   },
   "co2Avoided": {
-    "value": 24263207,
-    "unit": "tonnes"
+    "value": 35908885,
+    "unit": "tCO2e"
   },
   "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/66f733c23e5eda1fb68dc01939c92780/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjotMS45ODI3NDAwMDM4NTkyMzI5LCJsbmciOjE3LjU4ODkyMzA3ODYyMTg1M30sInpvb20iOjguNjg0NDg5ODc1MTY2NjM1LCJkYXRhc2V0cyI6W3siZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZX0seyJkYXRhc2V0IjoidHJlZS1jb3Zlci1sb3NzIiwibGF5ZXJzIjpbInRyZWUtY292ZXItbG9zcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJ0aW1lbGluZVBhcmFtcyI6eyJzdGFydERhdGUiOiIyMDExLTAxLTAxIiwiZW5kRGF0ZSI6IjIwMjEtMTItMzEiLCJ0cmltRW5kRGF0ZSI6IjIwMjEtMTItMzEifSwicGFyYW1zIjp7InRocmVzaCI6IjEwIiwidGhyZXNob2xkIjoxMH19LHsiZGF0YXNldCI6InVtZC10cmVlLWhlaWdodCIsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJ1bWQtdHJlZS1oZWlnaHQtMjAyMCJdfSx7ImRhdGFzZXQiOiJnbG9iYWwtcGVhdGxhbmQiLCJvcGFjaXR5IjowLjc1LCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsiZ2xvYmFsLXBlYXRsYW5kIl19LHsiZGF0YXNldCI6ImtleS1iaW9kaXZlcnNpdHktYXJlYXMiLCJvcGFjaXR5IjowLjIsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJrZXktYmlvZGl2ZXJzaXR5LWFyZWFzLTIwMTkiXX0seyJkYXRhc2V0IjoibG9nZ2luZy1jb25jZXNzaW9ucyIsIm9wYWNpdHkiOjAuNzUsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJsb2dnaW5nLWNvbmNlc3Npb25zLTIwMTgiXX1dfQ%3D%3D&mapMenu=eyJkYXRhc2V0Q2F0ZWdvcnkiOiJsYW5kVXNlIiwiZXhwbG9yZVR5cGUiOiJzdG9yaWVzIn0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
   "gallery": [
@@ -24,16 +24,16 @@
       "src": "/images/projects/mai-ndombe/gallery-1.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Forests are vital for the livelihoods of indigenous individuals living along Lake Mai Ndombe",
         "link": null
       }
     },
     {
-      "alt": "River drinking water",
+      "alt": "Forest spring drinking water",
       "src": "/images/projects/mai-ndombe/gallery-2.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Many community members rely on forest springs for safe drinking water",
         "link": null
       }
     },
@@ -42,7 +42,7 @@
       "src": "/images/projects/mai-ndombe/gallery-3.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The majority of the population in the project area are living alongside the shores of Lake Mai Ndombe",
         "link": null
       }
     },
@@ -51,7 +51,7 @@
       "src": "/images/projects/mai-ndombe/gallery-4.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Lake Mai Ndombe offers diverse food sources and vital transportation links to the capital of Kinshasa",
         "link": null
       }
     },
@@ -60,7 +60,7 @@
       "src": "/images/projects/mai-ndombe/gallery-5.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "New schools built have already been supporting >5000 students",
         "link": null
       }
     },
@@ -69,7 +69,7 @@
       "src": "/images/projects/mai-ndombe/gallery-6.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Women are leading the cassava planting movement, securing alternative, reliable food sources for the community",
         "link": null
       }
     },
@@ -78,7 +78,7 @@
       "src": "/images/projects/mai-ndombe/gallery-7.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Water wells have been built at 7 villages in the project zone, with a total of 100 wells planned",
         "link": null
       }
     },
@@ -87,7 +87,7 @@
       "src": "/images/projects/mai-ndombe/gallery-8.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Catfish are an important food source for those living along Lake Mai Ndombe",
         "link": null
       }
     },
@@ -96,7 +96,7 @@
       "src": "/images/projects/mai-ndombe/gallery-9.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "The project area includes the Cuvette Centrale peatlands, which stores thirty billion metric tons of carbon",
         "link": null
       }
     }
@@ -212,20 +212,38 @@
   ],
   "relatedProjects": [
     {
-      "title": "Project title",
+      "id": "southern-cardamom-id",
+      "title": "Southern Cardamom",
+      "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
+      "standards": "VCS, CCB",
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [40, 3],
+        "centroid": [11.562108, 104.888535],
         "geometry": null
       }
     },
     {
-      "title": "Project title 2",
+      "id": "tumring-id",
+      "title": "Tumring",
+      "mainPicture": "/images/projects/tumring/catalogue.jpg",
+      "standards": "VCS, CCB",
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [40, 3],
+        "centroid": [11.562108, 104.888535],
+        "geometry": null
+      }
+    },
+    {
+      "id": "guinea-bissau-id",
+      "title": "Guinea Bissau",
+      "mainPicture": "/images/projects/guinea-bissau/catalogue.jpg",
+      "standards": "",
+      "location": {
+        "iso": "ARE",
+        "name": "National Park Mangroves",
+        "centroid": [25.276987, 55.296249],
         "geometry": null
       }
     }
