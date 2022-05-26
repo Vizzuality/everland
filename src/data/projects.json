@@ -2,7 +2,7 @@
   {
     "id": "kasigau-id",
     "slug": "kasigau",
-    "title": "Kasigau",
+    "title": "Kasigau Corridor",
     "mainPicture": "/images/projects/kasigau/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
@@ -72,12 +72,12 @@
   {
     "id": "guinea-bissau-id",
     "slug": "guinea-bissau",
-    "title": "Guinea Bissau",
+    "title": "Guinea Bissau Avoided Deforestation",
     "mainPicture": "/images/projects/guinea-bissau/catalogue.jpg",
     "standards": "",
     "location": {
-      "iso": "ARE",
-      "name": "National Park Mangroves",
+      "iso": "GB",
+      "name": "Guinea Bissau",
       "centroid": [25.276987, 55.296249],
       "geometry": null
     }
