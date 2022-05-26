@@ -27,38 +27,38 @@
   "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/a48bb278abfcd81c640432cd892ce71d/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjotMy44NjY3Nzg0NzY4MTMxMzEyLCJsbmciOjM4Ljc0NzkwMzQ1MDQ5NTg5fSwiem9vbSI6OC41MjI1MjIyMTMyNjE5OTcsImNhbkJvdW5kIjpmYWxzZSwiZGF0YXNldHMiOlt7ImRhdGFzZXQiOiJwb2xpdGljYWwtYm91bmRhcmllcyIsImxheWVycyI6WyJkaXNwdXRlZC1wb2xpdGljYWwtYm91bmRhcmllcyIsInBvbGl0aWNhbC1ib3VuZGFyaWVzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWV9LHsiZGF0YXNldCI6InRyZWUtY292ZXItbG9zcyIsImxheWVycyI6WyJ0cmVlLWNvdmVyLWxvc3MiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwidGltZWxpbmVQYXJhbXMiOnsic3RhcnREYXRlIjoiMjAwNS0wMS0wMSIsImVuZERhdGUiOiIyMDIxLTEyLTMxIiwidHJpbUVuZERhdGUiOiIyMDIxLTEyLTMxIn0sInBhcmFtcyI6eyJ0aHJlc2giOiIxMCIsInRocmVzaG9sZCI6MTB9fSx7ImRhdGFzZXQiOiJ1bWQtdHJlZS1oZWlnaHQiLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsidW1kLXRyZWUtaGVpZ2h0LTIwMjAiXX0seyJkYXRhc2V0Ijoia2V5LWJpb2RpdmVyc2l0eS1hcmVhcyIsIm9wYWNpdHkiOjAuMiwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImtleS1iaW9kaXZlcnNpdHktYXJlYXMtMjAxOSJdfV19&mapMenu=eyJkYXRhc2V0Q2F0ZWdvcnkiOiJiaW9kaXZlcnNpdHkiLCJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
   "gallery": [
     {
-      "alt": "Students supported in new educational facilities",
+      "alt": "Students reading",
       "src": "/images/projects/kasigau/gallery-1.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Students supported in new educational facilities",
         "link": null
       }
     },
     {
-      "alt": "African lions (Panthera leo) benefiting from enhanced protection",
+      "alt": "Lions",
       "src": "/images/projects/kasigau/gallery-2.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "African lions (Panthera leo) benefiting from enhanced protection",
         "link": null
       }
     },
     {
-      "alt": "Community benefits sharing providing bursaries for thousands of students",
+      "alt": "Students in classroom",
       "src": "/images/projects/kasigau/gallery-3.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Community benefits sharing providing bursaries for thousands of students",
         "link": null
       }
     },
     {
-      "alt": "Rangers noting wildlife sightings during regular patrolling",
+      "alt": "Rangers in the field",
       "src": "/images/projects/kasigau/gallery-4.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Rangers noting wildlife sightings during regular patrolling",
         "link": null
       }
     },
@@ -72,20 +72,20 @@
       }
     },
     {
-      "alt": "East African cheetah (Acinonyx jubatus jubatus) native to the grasslands and savannahs in the Kasigau Corridor",
+      "alt": "Cheetahs",
       "src": "/images/projects/kasigau/gallery-6.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "East African cheetah (Acinonyx jubatus jubatus) native to the grasslands and savannahs in the Kasigau Corridor",
         "link": null
       }
     },
     {
-      "alt": "Human-wildlife conflict management improves the conservation of African Elephants (Loxodonta)",
+      "alt": "Elephant",
       "src": "/images/projects/kasigau/gallery-7.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Human-wildlife conflict management improves the conservation of African Elephants (Loxodonta)",
         "link": null
       }
     },
@@ -99,20 +99,20 @@
       }
     },
     {
-      "alt": "Improved food security through project-supported greenhouses",
+      "alt": "Women in greenhouse",
       "src": "/images/projects/kasigau/gallery-9.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Improved food security through project-supported greenhouses",
         "link": null
       }
     },
     {
-      "alt": "Tree saplings growing in greenhouses prior to planting for afforestation activities",
+      "alt": "Greenhouse",
       "src": "/images/projects/kasigau/gallery-10.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Tree saplings growing in greenhouses prior to planting for afforestation activities",
         "link": null
       }
     }

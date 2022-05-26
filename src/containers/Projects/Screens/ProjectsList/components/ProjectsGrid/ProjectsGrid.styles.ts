@@ -38,6 +38,7 @@ export const Grid = styled('div', {
     padding: '$2',
     gap: '$15',
     backgroundColor: 'white',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(319px, 1fr))',
   },
 })
 
