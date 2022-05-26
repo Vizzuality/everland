@@ -65,10 +65,20 @@ export const FooterContainer = styled('div', {
 
 export const FooterColumn = styled('span', {
   position: 'relative',
-  px: '$6',
+  px: '$4',
   display: 'flex',
   flexDirection: 'column',
   gap: '$4',
+
+  '& .short': {
+    minWidth: '$15',
+    maxWidth: '$15',
+  },
+
+  '& .large': {
+    minWidth: '$18',
+    maxWidth: '$18',
+  },
 
   '&:before': {
     content: ' ',

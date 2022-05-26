@@ -71,6 +71,7 @@ export const TabContent = styled('div', {
   '@bp2': {
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems: 'center',
   },
 })
 
