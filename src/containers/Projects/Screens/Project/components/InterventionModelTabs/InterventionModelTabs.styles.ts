@@ -26,7 +26,7 @@ export const TabTrigger = styled(Tabs.Trigger, {
   fontSize: '$subtitle1',
   lineHeight: '$subtitle1',
   color: '$primary-tuna-500',
-  width: '299px',
+  width: '120px',
 
   '&:after': {
     transition: 'opacity .2s ease-out, width .2s ease-out',
@@ -57,6 +57,7 @@ export const TabTrigger = styled(Tabs.Trigger, {
     lineHeight: '$h2',
     minWidth: '147px',
     marginBottom: '$2',
+    width: '299px',
 
     '&[data-state="active"]:after': {
       opacity: 1,
