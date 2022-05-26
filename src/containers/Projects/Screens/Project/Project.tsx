@@ -233,7 +233,7 @@ export const Project = () => {
 
             <RelatedProjectsCards relatedProjects={project.relatedProjects} />
 
-            <ScrollToTop scrollDistance="5" isWhite />
+            <ScrollToTop scrollDistance="7" isWhite />
             <Spacer direction="column" space="5" />
           </RelatedProjects>
         </Section>

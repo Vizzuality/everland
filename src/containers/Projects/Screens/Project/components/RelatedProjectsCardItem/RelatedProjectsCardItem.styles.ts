@@ -3,7 +3,7 @@ import { styled } from 'stitches.config'
 export const RelatedProjectsCardItemRoot = styled('a', {
   cursor: 'pointer',
   width: '278px',
-  height: '284px',
+  minHeight: '284px',
   backgroundColor: '$neutral-white',
   padding: '$3',
   flexShrink: 0,
@@ -15,6 +15,12 @@ export const RelatedProjectsCardItemRoot = styled('a', {
 
 export const ImageContainer = styled('div', {
   position: 'relative',
+  width: '258px',
+  height: '173px',
+
+  '@bp2': {
+    width: '353px',
+  },
 })
 
 export const Location = styled('div', {

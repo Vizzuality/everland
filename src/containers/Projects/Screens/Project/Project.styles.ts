@@ -2,7 +2,7 @@ import { styled } from 'stitches.config'
 
 export const ProjectRoot = styled('div', {
   '@bp2': {
-    paddingBottom: '142px',
+    paddingBottom: '$16',
   },
 })
 
@@ -223,7 +223,6 @@ export const RelatedProjects = styled('div', {
 
   '@bp2': {
     paddingTop: '$16',
-    paddingBottom: '$20',
-    height: '473px',
+    minHeight: '453px',
   },
 })

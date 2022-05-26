@@ -1,23 +1,13 @@
+import { ProjectSummary } from 'types/Project'
 import { RelatedProjectsCardItem } from '../RelatedProjectsCardItem'
 import { CardsWrapper, RelatedProjectsCardsRoot } from './RelatedProjectsCards.styles'
 
-type Location = {
-  iso: string
-  name: string
-  centroid: number[]
-  geometry: unknown
-}
-
-export type RelatedProject = {
-  title: string
-  location: Location
-}
-
 type RelatedProjectsProps = {
-  relatedProjects: RelatedProject[]
+  relatedProjects: ProjectSummary[]
 }
 
 export const RelatedProjectsCards = ({ relatedProjects }: RelatedProjectsProps) => {
+  console.log(relatedProjects)
   return (
     <RelatedProjectsCardsRoot>
       <CardsWrapper>

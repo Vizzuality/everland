@@ -1,27 +1,33 @@
 {
   "id": "kasigau-id",
   "slug": "kasigau",
-  "title": "Kasigau",
+  "title": "Kasigau Corridor",
   "subtitle": "Kenya",
   "mainPicture": "/images/projects/kasigau/main-picture.jpg",
-  "projectInfo": "A vital wildlife corridor between Tsavo East and West National Parks, the Kasigau Corridor REDD+ Project, protects over 200,000-ha of dryland forest with over 11,000 wild elephants that live in this ecosystem. In an area where wildlife and human survival were at odds, the project provides social programs that impact 120,000 people and provides the local community of the Kasigau Corridor region with long-term jobs that replace unsustainable sources of income such as poaching, subsistence agriculture and illegal tree harvesting.",
+  "projectInfo": "A vital wildlife corridor between Tsavo East and West National Parks, the Kasigau Corridor REDD+ Project protects over 200,000 hectares of dryland forest, with over 11,000 wild elephants living in the ecosystem - of whom 2000+ of those elephants call Rukinga their permanent home.<br /><br />In an area where wildlife and human survival were at odds, the Kasigau Corridor REDD+ Project has transformed the paradigm of conflict between humans and nature through a a market-driven solution to wildlife conservation. The world's pioneering REDD+ project addresses the threats of poaching, subsistence agriculture and illegal tree harvesting through a comprehensive, community-governed benefit sharing model that has directly touched the lives of 120,000 people living in the area through investments in health, education, water and other infrastructure, income-generating enterprise, and direct job creation.",
   "keyPeople": "Local Landowners (6000 individual shareholders + community of 120,000 people)",
   "wildLife": "African elephant, Grevy's zebra, Cheetah, Lion, African wild dog, Giraffe",
   "developer": "Wildlife Works",
   "standards": "VCS, CCB",
+  "location": {
+    "iso": "KEN",
+    "name": "Kenya",
+    "centroid": [-1.286389, 36.817223],
+    "geometry": null
+  },
   "protectedArea": {
     "value": 200000,
     "unit": "ha",
     "type": "dryland forest"
   },
   "co2Avoided": {
-    "value": 14829689,
-    "unit": "tonnes"
+    "value": 16567128,
+    "unit": "tCO2e"
   },
   "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/a48bb278abfcd81c640432cd892ce71d/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjotMy44NjY3Nzg0NzY4MTMxMzEyLCJsbmciOjM4Ljc0NzkwMzQ1MDQ5NTg5fSwiem9vbSI6OC41MjI1MjIyMTMyNjE5OTcsImNhbkJvdW5kIjpmYWxzZSwiZGF0YXNldHMiOlt7ImRhdGFzZXQiOiJwb2xpdGljYWwtYm91bmRhcmllcyIsImxheWVycyI6WyJkaXNwdXRlZC1wb2xpdGljYWwtYm91bmRhcmllcyIsInBvbGl0aWNhbC1ib3VuZGFyaWVzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWV9LHsiZGF0YXNldCI6InRyZWUtY292ZXItbG9zcyIsImxheWVycyI6WyJ0cmVlLWNvdmVyLWxvc3MiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwidGltZWxpbmVQYXJhbXMiOnsic3RhcnREYXRlIjoiMjAwNS0wMS0wMSIsImVuZERhdGUiOiIyMDIxLTEyLTMxIiwidHJpbUVuZERhdGUiOiIyMDIxLTEyLTMxIn0sInBhcmFtcyI6eyJ0aHJlc2giOiIxMCIsInRocmVzaG9sZCI6MTB9fSx7ImRhdGFzZXQiOiJ1bWQtdHJlZS1oZWlnaHQiLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsidW1kLXRyZWUtaGVpZ2h0LTIwMjAiXX0seyJkYXRhc2V0Ijoia2V5LWJpb2RpdmVyc2l0eS1hcmVhcyIsIm9wYWNpdHkiOjAuMiwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImtleS1iaW9kaXZlcnNpdHktYXJlYXMtMjAxOSJdfV19&mapMenu=eyJkYXRhc2V0Q2F0ZWdvcnkiOiJiaW9kaXZlcnNpdHkiLCJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
   "gallery": [
     {
-      "alt": "Students reading",
+      "alt": "Students supported in new educational facilities",
       "src": "/images/projects/kasigau/gallery-1.jpg",
       "caption": {
         "title": "",
@@ -30,7 +36,7 @@
       }
     },
     {
-      "alt": "Lions",
+      "alt": "African lions (Panthera leo) benefiting from enhanced protection",
       "src": "/images/projects/kasigau/gallery-2.jpg",
       "caption": {
         "title": "",
@@ -39,7 +45,7 @@
       }
     },
     {
-      "alt": "Students in classroom",
+      "alt": "Community benefits sharing providing bursaries for thousands of students",
       "src": "/images/projects/kasigau/gallery-3.jpg",
       "caption": {
         "title": "",
@@ -48,7 +54,7 @@
       }
     },
     {
-      "alt": "Rangers in the field",
+      "alt": "Rangers noting wildlife sightings during regular patrolling",
       "src": "/images/projects/kasigau/gallery-4.jpg",
       "caption": {
         "title": "",
@@ -66,7 +72,7 @@
       }
     },
     {
-      "alt": "Cheetahs",
+      "alt": "East African cheetah (Acinonyx jubatus jubatus) native to the grasslands and savannahs in the Kasigau Corridor",
       "src": "/images/projects/kasigau/gallery-6.jpg",
       "caption": {
         "title": "",
@@ -75,7 +81,7 @@
       }
     },
     {
-      "alt": "Elephant",
+      "alt": "Human-wildlife conflict management improves the conservation of African Elephants (Loxodonta)",
       "src": "/images/projects/kasigau/gallery-7.jpg",
       "caption": {
         "title": "",
@@ -93,7 +99,7 @@
       }
     },
     {
-      "alt": "Women in greenhouse",
+      "alt": "Improved food security through project-supported greenhouses",
       "src": "/images/projects/kasigau/gallery-9.jpg",
       "caption": {
         "title": "",
@@ -102,7 +108,7 @@
       }
     },
     {
-      "alt": "Greenhouse",
+      "alt": "Tree saplings growing in greenhouses prior to planting for afforestation activities",
       "src": "/images/projects/kasigau/gallery-10.jpg",
       "caption": {
         "title": "",
@@ -116,7 +122,7 @@
     "sections": [
       {
         "title": "Origins",
-        "description": "Community and wildlife were at odds when Wildlife Works first encountered Rukinga over 20 years ago. For many years, the land between Tsavo East and Tsavo West National Parks served as both the main migration corridor for local wildlife and a home to a slowly failing cattle ranch. Rukinga had become a bruised, balding and barren land with fields grazed to dust, poachers easily accessing the ranch and trees vanishing along a critical rainwater basin.<br /><br />In 1998 the local community supported our plan to establish the Rukinga Wildlife Sanctuary that covers 80,000 acres of forest. We established a community works project so local residents had an alternative income stream in place of poaching and clear cutting​. We brought on locally hired rangers and trained them to be wilderness guardians. We convinced the owners of the cattle to remove the cattle from the land to reduce conflict over resources.",
+        "description": "Community and wildlife were at odds when Wildlife Works first encountered Rukinga over 20 years ago. For many years, the land between Tsavo East and Tsavo West National Parks served as both the main migration corridor for local wildlife and a home to a slowly failing cattle ranch. Rukinga had become a bruised, balding and barren land with fields grazed to dust, poachers easily accessing the ranch and trees vanishing along a critical rainwater basin.<br /><br />In 1998 the local community supported the project's plans to establish the Rukinga Wildlife Sanctuary, covering 80,000 acres of forest. In these early years, the project established a community works project so local residents had an alternative income stream in place of poaching and clear cutting​; trained and hired local rangers to be wilderness guardians; and convinced the owners of the cattle to remove the cattle from the land to reduce conflict over resources. From this foundation, the project that would eventually become the Kasigau Corridor REDD+ Project was born.",
         "image": {
           "alt": "A description of the image",
           "src": "/images/projects/origins.png"
@@ -215,27 +221,45 @@
       "description": "To protect the vast dryland forests in the Kasigau Corridor, security teams coordinate regular aerial and foot patrols, collaborating with the local communities, the Kenya Wildlife Service and other NGOs operating in the area. This is particularly important during the fire season, to ensure a coordinated response actively prevents fire outbreaks. In addition to protecting existing forests, the project has planted nearly 100,000 tree seedlings through the Community Greenhouse Program.",
       "photo": {
         "url": "/images/projects/kasigau/impact-climate-change.jpg",
-        "altText": "Rangers in the field "
+        "altText": "Rangers in the field"
       },
       "title": ">200,000 ha of forest protected"
     }
   ],
   "relatedProjects": [
     {
-      "title": "Project title",
+      "id": "keo-seima-id",
+      "title": "Keo Seima Wildlife Sanctuary",
+      "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
+      "standards": "VCS, CCB",
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [40, 3],
+        "centroid": [11.562108, 104.888535],
         "geometry": null
       }
     },
     {
-      "title": "Project title 2",
+      "id": "mai-ndombe-id",
+      "title": "Mai Ndombe",
+      "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
+      "standards": "VCS, CCB",
+      "location": {
+        "iso": "COD",
+        "name": "Democratic Republic of the Congo",
+        "centroid": [-4.643601, 26.362312],
+        "geometry": null
+      }
+    },
+    {
+      "id": "southern-cardamom-id",
+      "title": "Southern Cardamom",
+      "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
+      "standards": "VCS, CCB",
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [40, 3],
+        "centroid": [11.562108, 104.888535],
         "geometry": null
       }
     }

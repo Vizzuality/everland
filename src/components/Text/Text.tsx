@@ -83,7 +83,7 @@ export const Text = styled('span', {
         },
       },
       subtitle1: {
-        fontSize: '$subtitleMobile',
+        fontSize: '$subtitle1Mobile',
         lineHeight: '$subtitle1Mobile',
 
         '@bp2': {
@@ -92,8 +92,8 @@ export const Text = styled('span', {
         },
       },
       subtitle2: {
-        fontSize: '$subtitleMobile',
-        lineHeight: '$subtitle2Mobile',
+        fontSize: '$subtitle2Mobile',
+        lineHeight: '$subtitleMobile',
 
         '@bp2': {
           fontSize: '$subtitle2',
@@ -101,8 +101,8 @@ export const Text = styled('span', {
         },
       },
       subtitle3: {
-        fontSize: '$subtitleMobile',
-        lineHeight: '$subtitle3Mobile',
+        fontSize: '$subtitle3Mobile',
+        lineHeight: '$subtitleMobile',
 
         '@bp2': {
           fontSize: '$subtitle3',
