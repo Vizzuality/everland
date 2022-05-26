@@ -128,18 +128,19 @@ export const Impact = styled('div', {
   position: 'relative',
   backgroundColor: '$neutral-light-beige',
   paddingTop: '$10',
-  paddingBottom: '190px',
   px: '$6',
   minHeight: '857px',
   boxShadow: '$2',
+  paddingBottom: '190px',
 
   '@bp2': {
-    paddingBottom: '$10',
+    paddingBottom: '$14',
     px: '$10',
     borderRadius: '$7',
   },
   '@bp3': {
     px: '$23',
+    paddingBottom: '$14',
   },
 })
 
