@@ -9,6 +9,12 @@
   "wildLife": "Asian elephant, Malayan pangolin, Yellow-cheeked gibbon",
   "developer": "Wildlife Conservation Society",
   "standards": "VCS, CCB",
+  "location": {
+    "iso": "KHM",
+    "name": "Cambodia",
+    "centroid": [11.562108, 104.888535],
+    "geometry": null
+  },
   "protectedArea": {
     "value": 166983,
     "unit": "ha"

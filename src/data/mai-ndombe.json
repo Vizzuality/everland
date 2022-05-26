@@ -9,6 +9,12 @@
   "wildLife": "African forest elephant, Bonobo, Okapi & Leopard",
   "developer": "Wildlife Works",
   "standards": "VCS, CCB",
+  "location": {
+    "iso": "COD",
+    "name": "Democratic Republic of the Congo",
+    "centroid": [-4.643601, 26.362312],
+    "geometry": null
+  },
   "protectedArea": {
     "value": 300000,
     "unit": "ha"
