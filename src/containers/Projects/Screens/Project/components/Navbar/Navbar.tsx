@@ -104,7 +104,7 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
           <FooterContainer>
             <FooterColumn>
               <FooterItem>
-                <Text family="secondary" color="primary-jasper-default">
+                <Text family="secondary" color="primary-jasper-default" className="short">
                   Key people:
                 </Text>
                 <Text family="secondary" color="primary-tuna-default">
@@ -112,7 +112,7 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
                 </Text>
               </FooterItem>
               <FooterItem>
-                <Text family="secondary" color="primary-jasper-default">
+                <Text family="secondary" color="primary-jasper-default" className="short">
                   Wildlife:
                 </Text>
                 <Text family="secondary" color="primary-tuna-default">
@@ -139,7 +139,7 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
             </FooterColumn>
             <FooterColumn>
               <FooterItem>
-                <Text family="secondary" color="primary-jasper-default">
+                <Text family="secondary" color="primary-jasper-default" className="large">
                   Developer:
                 </Text>
                 <Text family="secondary" color="primary-tuna-default">
@@ -147,7 +147,7 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
                 </Text>
               </FooterItem>
               <FooterItem>
-                <Text family="secondary" color="primary-jasper-default">
+                <Text family="secondary" color="primary-jasper-default" className="large">
                   Standards:
                 </Text>
                 <Text family="secondary" color="primary-tuna-default">
