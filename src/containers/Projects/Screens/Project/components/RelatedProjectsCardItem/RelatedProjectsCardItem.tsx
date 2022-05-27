@@ -11,9 +11,13 @@ import {
   TextContainer,
 } from './RelatedProjectsCardItem.styles'
 
-export const RelatedProjectsCardItem = ({ id, title, location, mainPicture }: ProjectSummary) => {
-  const { iso } = location
-
+export const RelatedProjectsCardItem = ({
+  id,
+  title,
+  location,
+  mainPicture,
+  standards,
+}: ProjectSummary) => {
   return (
     <Link href={`/projects/${id}`} passHref>
       <RelatedProjectsCardItemRoot>
@@ -29,7 +33,7 @@ export const RelatedProjectsCardItem = ({ id, title, location, mainPicture }: Pr
         </ImageContainer>
         <TextContainer>
           <Text>Standards: </Text>
-          <Text weight="thin">{iso}</Text>
+          <Text weight="thin">{standards}</Text>
           <Spacer space="3" direction="column" />
           <Text size="subtitle1" weight="bold">
             {title}

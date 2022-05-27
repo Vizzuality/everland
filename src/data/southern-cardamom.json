@@ -39,7 +39,7 @@
       "src": "/images/projects/southern-cardamom/gallery-2.jpg",
       "caption": {
         "title": "",
-        "description": "The Fishing Cat (Prionailurus viverrinus) is a vulnerable water-loving cat often found alongside rivers, wetlands and mangroves",
+        "description": "The Fishing Cat (<span class=\"italic\">Prionailurus viverrinus</span>) is a vulnerable water-loving cat often found alongside rivers, wetlands and mangroves",
         "link": null
       }
     },
@@ -48,7 +48,7 @@
       "src": "/images/projects/southern-cardamom/gallery-3.JPG",
       "caption": {
         "title": "",
-        "description": "Fewer than 500 endangered Asian Elephants (Elephas maximus) are found in Cambodia",
+        "description": "Fewer than 500 endangered Asian Elephants (<span class=\"italic\">Elephas maximus</span>) are found in Cambodia",
         "link": null
       }
     },
@@ -57,7 +57,7 @@
       "src": "/images/projects/southern-cardamom/gallery-4.JPG",
       "caption": {
         "title": "",
-        "description": "The critically endangered Sunda pangolin (Manis javanica) are rescued and released into the Cardamom rainforest to ensure protection against poaching",
+        "description": "The critically endangered Sunda pangolin (<span class=\"italic\">Manis javanica</span>) are rescued and released into the Cardamom rainforest to ensure protection against poaching",
         "link": null
       }
     },
@@ -66,7 +66,7 @@
       "src": "/images/projects/southern-cardamom/gallery-5.jpg",
       "caption": {
         "title": "",
-        "description": "The vulerable lesser adjutant (Leptoptilos javanicus) is a large stork living in the wetlands of Cambodia and southeast Asia",
+        "description": "The vulerable lesser adjutant (<span class=\"italic\">Leptoptilos javanicus</span>) is a large stork living in the wetlands of Cambodia and southeast Asia",
         "link": null
       }
     },
@@ -84,7 +84,7 @@
       "src": "/images/projects/southern-cardamom/gallery-7.jpg",
       "caption": {
         "title": "",
-        "description": "The stork-billed kingfisher (Pelargopsis capensis) frequent wetlands in the Southern Cardamom",
+        "description": "The stork-billed kingfisher (<span class=\"italic\">Pelargopsis capensis</span>) frequent wetlands in the Southern Cardamom",
         "link": null
       }
     },
@@ -166,7 +166,7 @@
     {
       "pillar": "Community",
       "theme": "Health",
-      "description": "Water resources in the Cardamom rainforest landscape have been drying up over the past decade as a result of climate change and deforestation. Families in some communities have to travel up to 5-km to collect safe drinking water from one of the few operational wells as the only other safe alternative is purchasing very expensive bottled water. Some community members have even resorted to collecting nearby river water, which is very often tainted by chemicals originating from upstream plantations. Through the project’s benefit sharing program, 18 solar-powered water wells have been distributed to 423 families in 2021 with a further 25 wells scheduled to be completed in 2022. These wells have and will be distributed through 7 communes in 11 villages in and around the SC REDD+ project area.",
+      "description": "Water resources in the Cardamom rainforest landscape have been drying up over the past decade as a result of climate change and deforestation. Families in some communities have to travel up to 5-km to collect safe drinking water from one of the few operational wells as the only other safe alternative is purchasing very expensive bottled water. Some community members have even resorted to collecting nearby river water, which is very often tainted by chemicals originating from upstream plantations. Through the reduction of deforestation, management of the project zone watershed and installation of water wells, >80,000 people living in the area have access to water resources. In 2021 alone, 18 solar-powered water wells have been distributed to 423 families in 2021 with a further 25 wells scheduled to be completed in 2022. These wells will be further distributed through 7 communes in 11 villages in and around the Southern Cardamom REDD+ project area.",
       "photo": {
         "url": "/images/projects/southern-cardamom/impact-health.jpg",
         "altText": "Health clinic"
@@ -186,7 +186,7 @@
     {
       "pillar": "Community",
       "theme": "Education",
-      "description": "The SC REDD+ scholarship award program was launched in 2021, resulting in the distribution of five full scholarships to universities in Phnom Penh.  These scholarships include four years of annual tuition, school materials, accommodation, food stipend and health insurance, totalling $6,852 per year. Limited education in the SC project area is directly correlated with increased deforestation due to the lack of alternative, sustainable livelihood opportunities. Once educated at the university level, these students will be able to raise awareness on forest conservation and establish new business ventures for their home communities, thereby reducing pressure on the SC rainforest.",
+      "description": "The SC REDD+ scholarship award program has distributed >$240,000 in bursaries. For example, five full scholarships to universities in Phnom Penh were awarded in 2021. These scholarships include four years of annual tuition, school materials, accommodation, food stipend and health insurance, totalling $6,852 per year. Limited education in the Southern Cardamom project area is directly correlated with increased deforestation due to the lack of alternative, sustainable livelihood opportunities. Once educated at the university level, these students will be able to raise awareness on forest conservation and establish new business ventures for their home communities, thereby reducing pressure on the Southern Cardamom rainforest.",
       "photo": {
         "url": "/images/projects/southern-cardamom/impact-education.jpg",
         "altText": "Scholarship students"
@@ -216,7 +216,7 @@
     {
       "pillar": "Biodiversity",
       "theme": "Wildlife",
-      "description": "The ranger and enforcement team in SC is constructing a tiger reintroduction station, which includes ponds for swimming, wild pig enclosures for tiger prey, workers house and a veterinary station. By 2023, the Indian government will begin the reintegration process by donating at least 10 tigers, giving them the opportunity to roam free in SC’s dense rainforests under the legal protection of SC REDD+ rangers. The network of protected areas from SC to Tatai and Phnom Samkos wildlife sanctuaries represents an ideal landscape to implement the national tiger recovery program; the first of it’s kind to be initiated in Cambodia.",
+      "description": "The ranger and enforcement team in Southern Cardamom is constructing a tiger reintroduction station, which includes ponds for swimming, wild pig enclosures for tiger prey, workers house and a veterinary station. By 2023, the Indian government will begin the reintegration process by donating at least 10 tigers, giving them the opportunity to roam free in  Southern Cardamom’s dense rainforests under the legal protection of SC REDD+ rangers. The network of protected areas from  Southern Cardamom to Tatai and Phnom Samkos wildlife sanctuaries represents an ideal landscape to implement the national tiger recovery program; the first of its kind to be initiated in Cambodia.",
       "photo": {
         "url": "/images/projects/southern-cardamom/impact-wildlife.jpg",
         "altText": "Tiger sanctuary"
@@ -226,12 +226,12 @@
     {
       "pillar": "Climate",
       "theme": "Climate Change",
-      "description": "As part of protecting the 443,000ha of rainforest in Southern Cardamom, the project team stopped the construction of a High Voltage Power Line through the heart of the REDD+ Project. A high voltage power line had been planned to bring electricity from 4 hydro-power dams to Phnom Penh, which would have sliced through 4 National Parks and pristine, untouched rainforest over a 100 km distance. Not only would this fragment the wild habitat, but it would create access to previously remote rainforest, leaving much of the landscape vulnerable to land grabbing, logging and poaching. Wildlife Alliance engaged with government officials at the highest level and published an Environmental Impact Assessment that recommends an identified alternate route around the rainforest that is far less environmentally destructive. Thanks to Wildlife Alliance’s intervention, the Power Line project is currently halted and under review.",
+      "description": "The project relentlessly defends 497,000ha of forest in a highly threatened landscape. For example, recently the project team stopped the construction of a High Voltage Power Line through the heart of the REDD+ Project. A high voltage power line had been planned to bring electricity from 4 hydro-power dams to Phnom Penh, which would have sliced through 4 National Parks and pristine, untouched rainforest over a 100 km distance. Not only would this fragment the wild habitat, but it would create access to previously remote rainforest, leaving much of the landscape vulnerable to land grabbing, logging and poaching. Wildlife Alliance engaged with government officials at the highest level and published an Environmental Impact Assessment that recommends an identified alternate route around the rainforest that is far less environmentally destructive. Thanks to Wildlife Alliance’s intervention, the Power Line project is currently halted and under review.",
       "photo": {
         "url": "/images/projects/southern-cardamom/impact-climate-change.jpg",
         "altText": "Trees"
       },
-      "title": "443,000ha of forest protected"
+      "title": "497,000ha of forest protected"
     }
   ],
   "relatedProjects": [

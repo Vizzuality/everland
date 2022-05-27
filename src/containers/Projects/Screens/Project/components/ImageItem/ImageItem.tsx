@@ -20,9 +20,13 @@ export const ImageItem = ({ imageUrl, title, alt, description, gridArea }: Image
         <Title size="body1" family="secondary" fontStyle="italic" color="neutral-white">
           {title}
         </Title>
-        <Description size="body1" family="primary" weight="bold" color="neutral-white">
-          {description}
-        </Description>
+        <Description
+          size="body1"
+          family="primary"
+          weight="bold"
+          color="neutral-white"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       </HoverItem>
     </ImageItemRoot>
   )
