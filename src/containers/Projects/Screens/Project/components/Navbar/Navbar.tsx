@@ -46,6 +46,15 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
             </Text>
           </NavItem>
 
+          <Link href={'#overview'} passHref>
+            <NavItem isActive={activeSection === 'overview'}>
+              <Icon name="eye" />
+              <Text align="center" size="subtitle4">
+                Overview
+              </Text>
+            </NavItem>
+          </Link>
+
           {project.gallery && (
             <Link href={'#media'} passHref>
               <NavItem isActive={activeSection === 'media'}>
@@ -59,7 +68,7 @@ export const Navbar = ({ sections, project, activeSection }: NavbarProps) => {
 
           {project.interventionModel && (
             <Link href={'#intervention-model'} passHref>
-              <NavItem isActive={activeSection === 'intervention-model'}>
+              <NavItem isActive={activeSection === 'intervention-model'} isLonger>
                 <Icon name="file" />
                 <Text align="center" size="subtitle4">
                   Intervention model

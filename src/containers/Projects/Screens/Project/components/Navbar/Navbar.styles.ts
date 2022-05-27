@@ -137,8 +137,7 @@ export const NavItem = styled('a', {
   margin: 0,
   border: 'none',
   backgroundColor: 'transparent',
-
-  minWidth: '92px',
+  minWidth: '68px',
   height: '$15',
   paddingTop: '$2',
   display: 'flex',
@@ -160,6 +159,11 @@ export const NavItem = styled('a', {
         '& > span': {
           color: '$primary-jasper-500',
         },
+      },
+    },
+    isLonger: {
+      true: {
+        minWidth: '92px',
       },
     },
   },
