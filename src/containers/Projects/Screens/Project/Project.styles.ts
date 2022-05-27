@@ -134,7 +134,7 @@ export const Impact = styled('div', {
   paddingBottom: '190px',
 
   '@bp2': {
-    paddingBottom: '$14',
+    paddingBottom: '$20',
     px: '$10',
     borderRadius: '$7',
   },
