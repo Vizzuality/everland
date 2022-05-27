@@ -83,6 +83,7 @@ export const TabImage = styled('figure', {
 
   '@bp2': {
     margin: 0,
+    marginRight: '$9',
   },
 })
 
