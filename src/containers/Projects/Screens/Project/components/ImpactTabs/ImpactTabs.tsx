@@ -158,9 +158,8 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             size={{ '@mobile': 'h3', '@bp2': 'h2' }}
             family="secondary"
             color="primary-tuna-500"
-          >
-            {subtitle}
-          </Text>
+            dangerouslySetInnerHTML={{ __html: subtitle }}
+          />
 
           <TabContent>
             <TabContentText>

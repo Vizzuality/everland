@@ -40,7 +40,7 @@
       "src": "/images/projects/kasigau/gallery-2.jpg",
       "caption": {
         "title": "",
-        "description": "African lions (Panthera leo) benefiting from enhanced protection",
+        "description": "African lions (<span class=\"italic\">Panthera leo</span>) benefiting from enhanced protection",
         "link": null
       }
     },
@@ -90,11 +90,11 @@
       }
     },
     {
-      "alt": "",
+      "alt": "Kori Bustard (Ardeotis arabs)",
       "src": "/images/projects/kasigau/gallery-8.jpg",
       "caption": {
         "title": "",
-        "description": "",
+        "description": "Kori Bustards (<span class=\"italic\">Ardeotis arabs</span>) roaming the Kasigau Corridor drylands",
         "link": null
       }
     },
@@ -193,7 +193,7 @@
         "url": "/images/projects/kasigau/impact-womens-empowerment.jpg",
         "altText": "Womens' hadithi basket weaving"
       },
-      "title": ">1,700 women involved in the Hadithi craft venture generating $250,000 in annual profit"
+      "title": ">1,700 women involved in the Hadithi craft venture generating <strong>$250,000 in annual profit</strong>"
     },
     {
       "pillar": "Governance",
