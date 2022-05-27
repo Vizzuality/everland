@@ -1,5 +1,10 @@
 import { Container } from 'containers/components/Container/Container'
-import { ImagesGalleryRoot, GalleryBackground, GalleryWrapper } from './ImagesGallery.styles'
+import {
+  ImagesGalleryRoot,
+  GalleryBackground,
+  GalleryWrapper,
+  getGridByElementsNumber,
+} from './ImagesGallery.styles'
 import { ImageItem } from '../ImageItem'
 import { useEffect } from 'react'
 import { GalleryItem } from 'types/Project'
@@ -60,14 +65,21 @@ export const ImagesGallery = ({ gallery }: ImagesGalleryProps) => {
     }
   }, [])
 
+  const numberOfGrids = gallery.length / 4
+
   return (
     <GalleryBackground>
       <Container>
         <GalleryWrapper className="galleryWrapper">
-          {[...Array(Math.ceil(gallery.length / 4))].map((_, index) => {
+          {[...Array(Math.ceil(numberOfGrids))].map((_, index) => {
+            const gallerySlice = gallery.slice(index * 4, (index + 1) * 4)
+
             return (
-              <ImagesGalleryRoot key={`${index}-gallery`}>
-                {gallery.slice(index * 4, (index + 1) * 4).map((galleryItem, index) => {
+              <ImagesGalleryRoot
+                key={`${index}-gallery`}
+                css={getGridByElementsNumber(gallerySlice.length)}
+              >
+                {gallerySlice.map((galleryItem, index) => {
                   return (
                     <ImageItem
                       title={galleryItem.caption.title}
