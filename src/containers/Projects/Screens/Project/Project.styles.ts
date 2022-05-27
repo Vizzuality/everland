@@ -134,7 +134,7 @@ export const Impact = styled('div', {
   boxShadow: '$2',
 
   '@bp2': {
-    paddingBottom: '$10',
+    paddingBottom: '$20',
     px: '$10',
     borderRadius: '$7',
   },

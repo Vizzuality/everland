@@ -38,8 +38,12 @@ export const Header = (props: HeaderProps) => {
                 PROJECTS
               </Text>
             </Link>
-            <Text color="neutral-white">CONTACT US</Text>
-            <Text color="neutral-white">ABOUT US</Text>
+            <a href="https://everland.earth/contact/" rel="noreferrer" target="_blank">
+              <Text color="neutral-white">CONTACT US</Text>
+            </a>
+            <a href="https://everland.earth/who-we-are" rel="noreferrer" target="_blank">
+              <Text color="neutral-white">ABOUT US</Text>
+            </a>
           </Nav>
 
           <Menu onClick={toggleMenu}>

@@ -29,6 +29,18 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
                 PROJECTS
               </Text>
             </Link>
+
+            <a href="https://everland.earth/contact/" rel="noreferrer" target="_blank">
+              <Text size="h1" color="neutral-light-beige">
+                CONTACT US
+              </Text>
+            </a>
+
+            <a href="https://everland.earth/who-we-are" rel="noreferrer" target="_blank">
+              <Text size="h1" color="neutral-light-beige">
+                ABOUT US
+              </Text>
+            </a>
           </Nav>
         </NavMenuDialogRoot>
       </Desktop>
