@@ -33,6 +33,11 @@
       "title": "Governance",
       "children": [
         {
+          "id": "2-0",
+          "slug": "land-rights",
+          "title": "Land Rights"
+        },
+        {
           "id": "2-1",
           "slug": "forest-governance",
           "title": "Forest Governance"

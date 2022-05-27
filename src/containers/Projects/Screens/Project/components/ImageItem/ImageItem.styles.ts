@@ -11,6 +11,10 @@ export const Description = styled(Text, {
   transition: 'opacity .2s ease-out .15s, transform .2s ease-out .15s',
   transform: 'translateY(20px)',
   opacity: 0,
+
+  '& > .italic': {
+    fontStyle: 'italic',
+  },
 })
 
 export const HoverItem = styled('div', {
