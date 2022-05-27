@@ -132,7 +132,7 @@ export const Project = () => {
         </Hero>
       </Section>
 
-      <Section scrollDistance="3">
+      <Section scrollDistance="3" id={NAV_SECTIONS[0].name}>
         <Container>
           <SpaceBetween>
             <IframeContainer>
@@ -149,13 +149,13 @@ export const Project = () => {
       </Section>
 
       {project.gallery && (
-        <Section scrollDistance="10" id={NAV_SECTIONS[0].name}>
+        <Section scrollDistance="10" id={NAV_SECTIONS[1].name}>
           <ImagesGallery gallery={project.gallery} />
         </Section>
       )}
 
       {project.interventionModel && (
-        <Section id={NAV_SECTIONS[1].name}>
+        <Section id={NAV_SECTIONS[2].name}>
           <Container>
             <InterventionModel>
               <Text
@@ -174,7 +174,7 @@ export const Project = () => {
       )}
 
       {project.impact && (
-        <Section id={NAV_SECTIONS[2].name}>
+        <Section id={NAV_SECTIONS[3].name}>
           <Container
             css={{
               '@mobile': { paddingLeft: 0, paddingRight: 0 },

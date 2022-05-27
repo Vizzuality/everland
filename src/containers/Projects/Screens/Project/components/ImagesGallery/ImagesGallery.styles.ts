@@ -1,12 +1,40 @@
 import { styled } from 'stitches.config'
 
-export const ImagesGalleryRoot = styled('div', {
-  height: '500px',
-  display: 'grid',
+export const getGridByElementsNumber = (length: number) => {
+  if (length === 1) return oneElementsGrid
+  if (length === 2) return twoElementsGrid
+  if (length === 3) return threeElementsGrid
+  if (length === 4) return fullGrid
+}
+
+const fullGrid = {
   gridTemplateAreas: `"vertical1 horizontal1 vertical2"
                       "vertical1 horizontal2 vertical2"`,
-  gridTemplateRows: '250px',
   gridTemplateColumns: '340px 340px 340px',
+}
+
+const threeElementsGrid = {
+  gridTemplateAreas: `"vertical1 horizontal1"
+                      "vertical1 horizontal2"`,
+  gridTemplateColumns: '340px 340px',
+}
+
+const twoElementsGrid = {
+  gridTemplateAreas: `"vertical1 horizontal1"
+                      "vertical1 ."`,
+  gridTemplateColumns: '340px 340px',
+}
+
+const oneElementsGrid = {
+  gridTemplateAreas: `"vertical1"
+                      "vertical1"`,
+  gridTemplateColumns: '340px',
+}
+
+export const ImagesGalleryRoot = styled('div', fullGrid, {
+  height: '500px',
+  display: 'grid',
+  gridTemplateRows: '250px',
   gap: '$8',
 })
 
