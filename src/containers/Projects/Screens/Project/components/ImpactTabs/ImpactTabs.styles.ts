@@ -208,3 +208,13 @@ export const TabArrow = styled('button', {
     },
   },
 })
+
+export const TabTitleText = styled(Text, {
+  '@mobile': {
+    fontSize: '$h1Mobile',
+  },
+
+  '@bp2': {
+    fontSize: '$h3',
+  },
+})
