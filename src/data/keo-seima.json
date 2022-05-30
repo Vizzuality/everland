@@ -12,7 +12,10 @@
   "location": {
     "iso": "KHM",
     "name": "Cambodia",
-    "centroid": [11.562108, 104.888535],
+    "centroid": [
+      11.562108,
+      104.888535
+    ],
     "geometry": null
   },
   "protectedArea": {
@@ -81,7 +84,7 @@
     },
     {
       "alt": "Local community members",
-      "src": "/images/projects/keo-seima/gallery-7.jpg",
+      "src": "/images/projects/keo-seima/gallery-7.png",
       "caption": {
         "title": "",
         "description": "Revenue sharing launch at Pou Char commune",
@@ -216,7 +219,10 @@
       "location": {
         "iso": "KEN",
         "name": "Kenya",
-        "centroid": [-1.286389, 36.817223],
+        "centroid": [
+          -1.286389,
+          36.817223
+        ],
         "geometry": null
       }
     },
@@ -228,7 +234,10 @@
       "location": {
         "iso": "COD",
         "name": "Democratic Republic of the Congo",
-        "centroid": [-4.643601, 26.362312],
+        "centroid": [
+          -4.643601,
+          26.362312
+        ],
         "geometry": null
       }
     },
@@ -240,7 +249,10 @@
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [11.562108, 104.888535],
+        "centroid": [
+          11.562108,
+          104.888535
+        ],
         "geometry": null
       }
     }
