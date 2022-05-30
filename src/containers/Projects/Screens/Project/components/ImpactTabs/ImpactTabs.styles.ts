@@ -67,11 +67,16 @@ export const TabContainer = styled(Tabs.Content, {
 
 export const TabContent = styled('div', {
   marginTop: '$14',
+  display: 'grid',
+  gridTemplateColumns: '1fr',
+  gridTemplateRows: '1fr 1fr',
 
   '@bp2': {
     display: 'grid',
     gridTemplateColumns: '1fr 1fr',
+    gridTemplateRows: '1fr',
     justifyContent: 'space-between',
+    gap: '$8',
     alignItems: 'center',
   },
 })
@@ -79,6 +84,7 @@ export const TabContent = styled('div', {
 export const TabImage = styled('figure', {
   position: 'relative',
   height: '100%',
+  width: '100%',
   margin: 'auto',
 
   '@bp2': {
