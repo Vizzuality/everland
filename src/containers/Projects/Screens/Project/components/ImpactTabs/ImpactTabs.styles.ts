@@ -16,7 +16,6 @@ export const TabsList = styled(Tabs.List, {
   '@bp2': {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: '$2',
   },
 })
 
