@@ -155,7 +155,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
       {tabsSections?.map(({ title: sectionTitle, subtitle, description, photo }) => (
         <TabContainer key={sectionTitle} value={sectionTitle}>
           <Text
-            size={{ '@mobile': 'h3', '@bp2': 'h2' }}
+            size={{ '@mobile': 'h3', '@bp2': 'h3' }}
             family="secondary"
             color="primary-tuna-500"
             dangerouslySetInnerHTML={{ __html: subtitle }}
