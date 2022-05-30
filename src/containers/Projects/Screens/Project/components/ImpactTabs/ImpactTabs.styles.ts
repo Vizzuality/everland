@@ -69,7 +69,8 @@ export const TabContent = styled('div', {
   marginTop: '$14',
 
   '@bp2': {
-    display: 'flex',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
@@ -77,8 +78,7 @@ export const TabContent = styled('div', {
 
 export const TabImage = styled('figure', {
   position: 'relative',
-  height: '380px',
-  width: '273px',
+  height: '100%',
   margin: 'auto',
 
   '@bp2': {

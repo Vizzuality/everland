@@ -46,6 +46,7 @@ export const Project = () => {
   const { data: project, status } = useFetchProjectDetail(projectId)
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const _eventListener = (e) => {
       const visiblePercentages = NAV_SECTIONS.map(({ name }) => {
         const visiblePercentage = calculateVisiblePercentage(`#${name}`)

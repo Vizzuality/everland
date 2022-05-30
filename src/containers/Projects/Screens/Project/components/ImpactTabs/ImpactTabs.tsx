@@ -79,6 +79,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
     observer.observe(dropdownRef.current)
 
     return () => observer.disconnect()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dropdownRef.current])
 
   const tabsSections = tabs?.reduce((acc: TabSection[], { sections }) => {
@@ -155,7 +156,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
       {tabsSections?.map(({ title: sectionTitle, subtitle, description, photo }) => (
         <TabContainer key={sectionTitle} value={sectionTitle}>
           <Text
-            size={{ '@mobile': 'h3', '@bp2': 'h2' }}
+            size={{ '@mobile': 'h3', '@bp2': 'h3' }}
             family="secondary"
             color="primary-tuna-500"
             dangerouslySetInnerHTML={{ __html: subtitle }}
@@ -167,7 +168,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             </TabContentText>
             {photo && (
               <TabImage>
-                <Image src={photo.url} alt={photo.altText} layout="fill" objectFit="cover" />
+                <Image src={photo.url} alt={photo.altText} layout="fill" objectFit="contain" />
               </TabImage>
             )}
           </TabContent>
