@@ -12,7 +12,10 @@
   "location": {
     "iso": "KHM",
     "name": "Cambodia",
-    "centroid": [11.562108, 104.888535],
+    "centroid": [
+      11.562108,
+      104.888535
+    ],
     "geometry": null
   },
   "protectedArea": {
@@ -154,7 +157,7 @@
       },
       {
         "title": "Progress",
-        "description": "Demonstrable conservation results have been achieved through the project’s intensive action-oriented and results-based approaches. Noted as the best protected body of rainforest in the region, the project area has seen a significant decline in average annual deforestation rate (-50%) in the five+ years since the REDD+ project started, in comparison to the 14 years prior to project inception, whereas deforestation rates increased substantially in adjacent protected areas including Phnom Samkos (+219%), Phnom Kravanh (+200%) and Aural (+130%) along the same timeline.<br /><br/>The project has also achieved zero poaching of Asian elephants and supported recovery of ungulates and carnivore populations, and is commencing re-introduction of tigers into the landscape. The community projects directly benefit 29,000 villagers from 15 different communities with an award-winning model of community based ecotourism.",
+        "description": "Demonstrable conservation results have been achieved through the project’s intensive action-oriented and results-based approaches. Noted as the best protected body of rainforest in the region, the project area has seen a significant decline in average annual deforestation rate (-50%) in the five+ years since the REDD+ project started, in comparison to the 14 years prior to project inception, whereas deforestation rates increased substantially in adjacent protected areas including Phnom Samkos (+219%), Phnom Kravanh (+200%) and Aural (+130%) along the same timeline. The project has also achieved zero poaching of Asian elephants and supported recovery of ungulates and carnivore populations, and is commencing re-introduction of tigers into the landscape. The community projects directly benefit 29,000 villagers from 15 different communities with an award-winning model of community based ecotourism.",
         "image": {
           "alt": "",
           "src": "/images/projects/solutions.png"
@@ -243,7 +246,10 @@
       "location": {
         "iso": "KEN",
         "name": "Kenya",
-        "centroid": [-1.286389, 36.817223],
+        "centroid": [
+          -1.286389,
+          36.817223
+        ],
         "geometry": null
       }
     },
@@ -255,7 +261,10 @@
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [11.562108, 104.888535],
+        "centroid": [
+          11.562108,
+          104.888535
+        ],
         "geometry": null
       }
     },
@@ -267,7 +276,10 @@
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [11.562108, 104.888535],
+        "centroid": [
+          11.562108,
+          104.888535
+        ],
         "geometry": null
       }
     }

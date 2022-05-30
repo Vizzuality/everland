@@ -12,7 +12,10 @@
   "location": {
     "iso": "COD",
     "name": "Democratic Republic of the Congo",
-    "centroid": [-4.643601, 26.362312],
+    "centroid": [
+      -4.643601,
+      26.362312
+    ],
     "geometry": null
   },
   "protectedArea": {
@@ -203,7 +206,7 @@
         "url": "/images/projects/mai-ndombe/impact-wildlife.jpg",
         "altText": "Bonobo"
       },
-      "title": ""
+      "title": ">250 local people trained in biodiversity monitoring"
     },
     {
       "pillar": "Climate",
@@ -225,7 +228,10 @@
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [11.562108, 104.888535],
+        "centroid": [
+          11.562108,
+          104.888535
+        ],
         "geometry": null
       }
     },
@@ -237,7 +243,10 @@
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [11.562108, 104.888535],
+        "centroid": [
+          11.562108,
+          104.888535
+        ],
         "geometry": null
       }
     },
@@ -249,7 +258,10 @@
       "location": {
         "iso": "ARE",
         "name": "National Park Mangroves",
-        "centroid": [25.276987, 55.296249],
+        "centroid": [
+          25.276987,
+          55.296249
+        ],
         "geometry": null
       }
     }

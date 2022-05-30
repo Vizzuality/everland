@@ -12,7 +12,10 @@
   "location": {
     "iso": "KEN",
     "name": "Kenya",
-    "centroid": [-1.286389, 36.817223],
+    "centroid": [
+      -1.286389,
+      36.817223
+    ],
     "geometry": null
   },
   "protectedArea": {
@@ -138,7 +141,7 @@
       },
       {
         "title": "Solutions",
-        "description": "The foundation of the project is job creation.<br/><br/>Through carbon sales, Wildlife Works partners with the local community of the Kasigau Corridor region in Southeast Kenya to help create enterprises and long-term jobs that replace unsustainable sources of income such as poaching, subsistence agriculture and illegal tree harvesting.  This includes jobs supporting education, making eco-friendly products, protecting wildlife, managing the project, helping farmers and growing trees.<br/><br/>Through an innovative model of community governance, the communities of Kasigau also establish their own priorities for utilizing proceeds from the sale of verified emissions reductions, resulting in sustained community-driven investments in scholarships for children, schools and school infrastructure, water infrastructure, and other programs to improve the economy, health, and well-being of the community.",
+        "description": "The foundation of the project is job creation. Through carbon sales, Wildlife Works partners with the local community of the Kasigau Corridor region in Southeast Kenya to help create enterprises and long-term jobs that replace unsustainable sources of income such as poaching, subsistence agriculture and illegal tree harvesting.  This includes jobs supporting education, making eco-friendly products, protecting wildlife, managing the project, helping farmers and growing trees. Through an innovative model of community governance, the communities of Kasigau also establish their own priorities for utilizing proceeds from the sale of verified emissions reductions, resulting in sustained community-driven investments in scholarships for children, schools and school infrastructure, water infrastructure, and other programs to improve the economy, health, and well-being of the community.",
         "image": {
           "alt": "A description of the image",
           "src": "/images/projects/solutions.png"
@@ -178,7 +181,7 @@
     {
       "pillar": "Community",
       "theme": "Education",
-      "description": "Community revenue sharing has been allocated to the renovation of 36 existing schools and building of 19 new schools across the project zone. This includes the creation of new classrooms, administration blocks, kitchens and staff houses as well as new water tanks and toilet blocks to improve access to water and sanitation.  These updates have improved the learning environments, helped retain teachers and provided students with high education standards - together enhancing students' health, behaviour, engagement, learning and growth. Additionally, 65 schools have been equipped with supplies such as books, laboratory equipment and water harvesting instruments.",
+      "description": "Community revenue sharing has been allocated to the renovation of 36 existing schools and building of 10 new schools across the project zone. This includes the creation of new classrooms, administration blocks, kitchens and staff houses as well as new water tanks and toilet blocks to improve access to water and sanitation.  These updates have improved the learning environments, helped retain teachers and provided students with high education standards - together enhancing students' health, behaviour, engagement, learning and growth. Additionally, 65 schools have been equipped with supplies such as books, laboratory equipment and water harvesting instruments.",
       "photo": {
         "url": "/images/projects/kasigau/impact-education.jpg",
         "altText": "Students at Kasigau"
@@ -235,7 +238,10 @@
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [11.562108, 104.888535],
+        "centroid": [
+          11.562108,
+          104.888535
+        ],
         "geometry": null
       }
     },
@@ -247,7 +253,10 @@
       "location": {
         "iso": "COD",
         "name": "Democratic Republic of the Congo",
-        "centroid": [-4.643601, 26.362312],
+        "centroid": [
+          -4.643601,
+          26.362312
+        ],
         "geometry": null
       }
     },
@@ -259,7 +268,10 @@
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [11.562108, 104.888535],
+        "centroid": [
+          11.562108,
+          104.888535
+        ],
         "geometry": null
       }
     }

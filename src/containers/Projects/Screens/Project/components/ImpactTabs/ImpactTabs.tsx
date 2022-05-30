@@ -16,6 +16,7 @@ import {
   TabContent,
   TabContentText,
   TabImage,
+  TabTitleText,
   TabsList,
   TabTrigger,
   DropdownItem,
@@ -155,13 +156,13 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
       {tabsSections?.map(({ title: sectionTitle, subtitle, description, photo }) => (
         <TabContainer key={sectionTitle} value={sectionTitle}>
-          <Text
-            size={{ '@mobile': 'h3', '@bp2': 'h3' }}
-            family="secondary"
-            color="primary-tuna-500"
-            dangerouslySetInnerHTML={{ __html: subtitle }}
-          />
-
+          <TabTitleText>
+            <Text
+              family="secondary"
+              color="primary-tuna-500"
+              dangerouslySetInnerHTML={{ __html: subtitle }}
+            />
+          </TabTitleText>
           <TabContent>
             <TabContentText>
               <Text size="body1">{description}</Text>
