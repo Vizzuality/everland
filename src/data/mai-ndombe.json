@@ -105,7 +105,7 @@
       "src": "/images/projects/mai-ndombe/gallery-9.jpg",
       "caption": {
         "title": "",
-        "description": "The project area includes the Cuvette Centrale peatlands, which stores thirty billion metric tons of carbon",
+        "description": "The project area includes the Cuvette Centrale peatlands, which store billions of metric tons of carbon",
         "link": null
       }
     }
@@ -123,7 +123,7 @@
       },
       {
         "title": "Threats",
-        "description": "Prior to the project, logging companies had severely damaged the environment and had largely ignored the rights and health of the community and wildlife. Logging drove already-threatened wildlife populations further down and brought lttle to no economic benefit to local people.",
+        "description": "Prior to the project, logging companies had severely damaged the environment and had largely ignored the rights and health of the community and wildlife. Logging drove already-threatened wildlife populations further down and brought little to no economic benefit to local people.",
         "image": {
           "alt": "",
           "src": "/images/projects/origins.png"
@@ -161,7 +161,7 @@
     {
       "pillar": "Community",
       "theme": "Economy",
-      "description": "Farming of fish is not traditionally undertaken by the local communities. Whilst some villages are home to fisherman, they pre- dominantly use the wild caught method and as such, aquaculture is a very new concept. To sustain their food supply and potential income, the local communities have decided to continue to utilise their carbon offset benefit share towards expanding and transforming the fish pond initiatives. This far, one fish farm with 10 individual ponds has been constructed, with a further 2 farms under construction in 2022.<br /><br />Tilapias, which were introduced into the first fish farm in early 2021, are now flourishing and ready to be harvested. An initial harvesting showcase was undertaken in late 2021 to demonstrate the potential income and new food source for the community.",
+      "description": "Farming of fish is not traditionally undertaken by the local communities. Whilst some villages are home to fisherman, they predominantly use the wild caught method and as such, aquaculture is a very new concept. To sustain their food supply and potential income, the local communities have decided to continue to utilise their carbon offset benefit share towards expanding and transforming the fish pond initiatives. Thus far, one fish farm with 10 individual ponds has been constructed, with a further 2 farms under construction in 2022. Tilapias, which were introduced into the first fish farm in early 2021, are now flourishing and ready to be harvested. An initial harvesting showcase was undertaken in late 2021 to demonstrate the potential income and new food source for the community.",
       "photo": {
         "url": "/images/projects/mai-ndombe/impact-economy.jpg",
         "altText": "Fish ponds"
@@ -171,7 +171,7 @@
     {
       "pillar": "Community",
       "theme": "Education",
-      "description": "Educational facilities are non-existent or insufficient in most villages across the project zone. A lack of education in the region has been directly correlated with increased deforestation and negative health outcomes. 11 schools have completed construction with a further 7 underway. A total of 32 schools are planned to be completed during the project period.",
+      "description": "Educational facilities have been non-existent or insufficient in most villages across the project zone. A lack of education in the region has been directly correlated with increased deforestation and negative health outcomes. 11 schools have completed construction with a further 7 underway. A total of 32 schools are planned to be completed during the project period..",
       "photo": {
         "url": "/images/projects/mai-ndombe/impact-education.jpg",
         "altText": "Classroom"
@@ -216,7 +216,7 @@
         "url": "/images/projects/mai-ndombe/impact-climate-change.jpg",
         "altText": "Forest floor"
       },
-      "title": ">300,000 ha of forest protected"
+      "title": ">300,000 hectares of forest protected"
     }
   ],
   "relatedProjects": [
