@@ -26,7 +26,7 @@
     "value": 16378529,
     "unit": "tCO2e"
   },
-  "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/059456e07b143f725e12735e35c45cf6/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjoxMi4yOTI0MTc2NTEyMDc2NTcsImxuZyI6MTA2Ljg5MjE5MTY1Njc5MTIxfSwiem9vbSI6OS4xNjcyODk1MDA2Mzc3NTksImRhdGFzZXRzIjpbeyJkYXRhc2V0IjoicG9saXRpY2FsLWJvdW5kYXJpZXMiLCJsYXllcnMiOlsiZGlzcHV0ZWQtcG9saXRpY2FsLWJvdW5kYXJpZXMiLCJwb2xpdGljYWwtYm91bmRhcmllcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlfSx7ImRhdGFzZXQiOiJ0cmVlLWNvdmVyLWxvc3MiLCJsYXllcnMiOlsidHJlZS1jb3Zlci1sb3NzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsInRpbWVsaW5lUGFyYW1zIjp7InN0YXJ0RGF0ZSI6IjIwMTAtMDEtMDEiLCJlbmREYXRlIjoiMjAyMS0xMi0zMSIsInRyaW1FbmREYXRlIjoiMjAyMS0xMi0zMSJ9LCJwYXJhbXMiOnsidGhyZXNoIjoiMzAiLCJ0aHJlc2hvbGQiOjMwfX0seyJkYXRhc2V0IjoiY2FtYm9kaWEtZWNvbm9taWMtbGFuZC1jb25jZXNzaW9ucyIsIm9wYWNpdHkiOjAuNSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImNhbWJvZGlhLWVjb25vbWljLWxhbmQtY29uY2Vzc2lvbnMiXSwiaXNvIjoiS0hNIn0seyJkYXRhc2V0IjoidW1kLXRyZWUtaGVpZ2h0Iiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbInVtZC10cmVlLWhlaWdodC0yMDIwIl19LHsiZGF0YXNldCI6ImtleS1iaW9kaXZlcnNpdHktYXJlYXMiLCJvcGFjaXR5IjowLjIsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJrZXktYmlvZGl2ZXJzaXR5LWFyZWFzLTIwMTkiXX1dfQ%3D%3D&mapMenu=eyJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
+  "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/059456e07b143f725e12735e35c45cf6/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjoxMi4zMTQxMjEwNzc2NDQwMjYsImxuZyI6MTA2Ljg1MDkwMDUwMDAwOTk4fSwiem9vbSI6OC44MDgwOTMxMDE1OTYwNiwiY2FuQm91bmQiOmZhbHNlLCJkYXRhc2V0cyI6W3siZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZX0seyJkYXRhc2V0Ijoia2V5LWJpb2RpdmVyc2l0eS1hcmVhcyIsIm9wYWNpdHkiOjAuMiwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImtleS1iaW9kaXZlcnNpdHktYXJlYXMtMjAxOSJdfSx7ImRhdGFzZXQiOiJ0cmVlLWNvdmVyLWxvc3MiLCJsYXllcnMiOlsidHJlZS1jb3Zlci1sb3NzIl0sIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsInRpbWVsaW5lUGFyYW1zIjp7InN0YXJ0RGF0ZSI6IjIwMTAtMDEtMDEiLCJlbmREYXRlIjoiMjAyMS0xMi0zMSIsInRyaW1FbmREYXRlIjoiMjAyMS0xMi0zMSJ9LCJwYXJhbXMiOnsidGhyZXNoIjoiMzAiLCJ0aHJlc2hvbGQiOjMwfX0seyJkYXRhc2V0IjoiY2FtYm9kaWEtZWNvbm9taWMtbGFuZC1jb25jZXNzaW9ucyIsIm9wYWNpdHkiOjAuNSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImNhbWJvZGlhLWVjb25vbWljLWxhbmQtY29uY2Vzc2lvbnMiXSwiaXNvIjoiS0hNIn0seyJkYXRhc2V0IjoidW1kLXRyZWUtaGVpZ2h0Iiwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbInVtZC10cmVlLWhlaWdodC0yMDIwIl19XX0%3D&mapMenu=eyJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D",
   "gallery": [
     {
       "alt": "Asian elephant",
@@ -182,12 +182,12 @@
     {
       "pillar": "Governance",
       "theme": "Community Benefits Sharing",
-      "description": "Directly funding communities to implement their development activities is a core part of the KSWS REDD+ model. To date, more than $400,000 has been provided to communities, who have used funds for clean water systems, mobile health clinics, school feeding programs, community meeting halls, repairing bridges and roads, and sanitation. Following successful sales in 2021 - with an 80-fold increase in sales between 2020-2021 - significantly more funds are available to communities.",
+      "description": "Directly funding communities to implement their development activities is a core part of the KSWS REDD+ model. As of 2020, more than $400,000 had been provided to communities, who have used funds for clean water systems, mobile health clinics, school feeding programs, community meeting halls, repairing bridges and roads, and sanitation. Following successful sales in 2021 - with an 80-fold increase in sales between 2020-2021 - significantly more funds are becoming available to communities beginning in 2022, with plans being finalized with the communities on how best to utilize the funds.",
       "photo": {
         "url": "/images/projects/keo-seima/impact-community-benefits-sharing.jpg",
         "altText": "Local community benefits sharing meeting"
       },
-      "title": ">$400,000 of carbon revenues have flowed through community benefit sharing mechanisms"
+      "title": "Significant carbon revenues have flowed through community benefit sharing mechanisms"
     },
     {
       "pillar": "Biodiversity",
@@ -207,7 +207,7 @@
         "url": "/images/projects/keo-seima/impact-climate-change.jpg",
         "altText": "KSWS landscape"
       },
-      "title": "188,000 ha of forest protected"
+      "title": "188,000 hectares of forest protected"
     }
   ],
   "relatedProjects": [
