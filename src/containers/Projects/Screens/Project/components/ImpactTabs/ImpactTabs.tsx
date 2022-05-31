@@ -165,7 +165,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
           </TabTitleText>
           <TabContent>
             <TabContentText>
-              <Text size="body1">{description}</Text>
+              <Text size="body1" dangerouslySetInnerHTML={{ __html: description }} />
             </TabContentText>
             {photo && (
               <TabImage>
