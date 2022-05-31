@@ -16,6 +16,10 @@ export const Hero = styled('div', {
   backgroundPosition: 'center',
 })
 export const HeroTitle = styled('div', {
+  '@bp3': {
+    paddingRight: '150px',
+    paddingLeft: '150px',
+  },
   '@bp4': {
     paddingRight: '350px',
     paddingLeft: '350px',
