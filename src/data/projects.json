@@ -2,58 +2,90 @@
   {
     "id": "kasigau-id",
     "slug": "kasigau",
-    "title": "Kasigau Corridor",
+    "title": "The Wildlife Works Kasigau Project",
     "mainPicture": "/images/projects/kasigau/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
       "iso": "KEN",
       "name": "Kenya",
-      "centroid": [-1.286389, 36.817223],
+      "centroid": [
+        -1.286389,
+        36.817223
+      ],
       "geometry": null
     },
-    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
+    "impact": [
+      "Community",
+      "Governance",
+      "Biodiversity",
+      "Climate"
+    ]
   },
   {
     "id": "keo-seima-id",
     "slug": "keo-seima",
-    "title": "Keo Seima Wildlife Sanctuary",
+    "title": "The Wildlife Conservation Society Keo Seima Project",
     "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
       "iso": "KHM",
       "name": "Cambodia",
-      "centroid": [11.562108, 104.888535],
+      "centroid": [
+        11.562108,
+        104.888535
+      ],
       "geometry": null
     },
-    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
+    "impact": [
+      "Community",
+      "Governance",
+      "Biodiversity",
+      "Climate"
+    ]
   },
   {
     "id": "mai-ndombe-id",
     "slug": "mai-ndombe",
-    "title": "Mai Ndombe",
+    "title": "The Wildlife Works Mai Ndombe Project",
     "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
       "iso": "COD",
       "name": "Democratic Republic of the Congo",
-      "centroid": [-4.643601, 26.362312],
+      "centroid": [
+        -4.643601,
+        26.362312
+      ],
       "geometry": null
     },
-    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
+    "impact": [
+      "Community",
+      "Governance",
+      "Biodiversity",
+      "Climate"
+    ]
   },
   {
     "id": "southern-cardamom-id",
     "slug": "southern-cardamom-id",
-    "title": "Southern Cardamom",
+    "title": "The Wildlife Alliance Southern Cardamom Protect",
     "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
       "iso": "KHM",
       "name": "Cambodia",
-      "centroid": [11.562108, 104.888535],
+      "centroid": [
+        11.562108,
+        104.888535
+      ],
       "geometry": null
     },
-    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
+    "impact": [
+      "Community",
+      "Governance",
+      "Biodiversity",
+      "Climate"
+    ]
   },
   {
     "id": "tumring-id",
@@ -64,10 +96,18 @@
     "location": {
       "iso": "KHM",
       "name": "Cambodia",
-      "centroid": [11.562108, 104.888535],
+      "centroid": [
+        11.562108,
+        104.888535
+      ],
       "geometry": null
     },
-    "impact": ["Community", "Governance", "Biodiversity", "Climate"]
+    "impact": [
+      "Community",
+      "Governance",
+      "Biodiversity",
+      "Climate"
+    ]
   },
   {
     "id": "guinea-bissau-id",
@@ -78,7 +118,10 @@
     "location": {
       "iso": "GB",
       "name": "Guinea Bissau",
-      "centroid": [25.276987, 55.296249],
+      "centroid": [
+        25.276987,
+        55.296249
+      ],
       "geometry": null
     }
   }

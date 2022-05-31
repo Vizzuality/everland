@@ -14,6 +14,7 @@ import { NAV_SECTIONS, SECTION_NAME } from './constants'
 
 import {
   Hero,
+  HeroTitle,
   IframeContainer,
   Impact,
   InterventionModel,
@@ -113,9 +114,11 @@ export const Project = () => {
           <Overlay />
           <Header />
           <HeroContent>
-            <Text as="h1" size="heroTitle4" weight="bold" color="neutral-white" align="center">
-              {project.title}
-            </Text>
+            <HeroTitle>
+              <Text as="h1" size="heroTitle4" weight="bold" color="neutral-white" align="center">
+                {project.title}
+              </Text>
+            </HeroTitle>
             <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
               {project.subtitle}
             </Text>

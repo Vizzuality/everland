@@ -1,7 +1,7 @@
 {
   "id": "mai-ndombe-id",
   "slug": "mai-ndombe",
-  "title": "Mai Ndombe",
+  "title": "The Wildlife Works Mai Ndombe Project",
   "subtitle": "Democratic Republic of the Congo",
   "mainPicture": "/images/projects/mai-ndombe/main-picture.jpg",
   "projectInfo": "The Mai Ndombe REDD+ Project protects 300,000 hectares  of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities, which are among the least economically developed in the world. Such investments include building and renovating schools, providing healthcare services (such as access to immunizations), supporting food security and nutrition (such as through agricultural diversification), and providing capacity building activities that empower local communities.",
@@ -118,7 +118,7 @@
         "description": "The Democratic Republic of the Congo (DRC) has experienced prolonged instability and civil unrest. Before the Mai Ndombe REDD+ project started, almost 250,000 hectares of peat-rich rainforest that is highly valued by logging companies were zoned for commercial timber extraction. In 2008, following a governmental revision of the DRC National Forest Code, 91 of 156 then-existing logging contracts were suspended in an effort to address corruption in the sector. Minimum legal and environmental standards were not being met, which resulted in severe environmental damage. Furthermore, communities in these areas were largely ignored by the logging companies and received little to no economic benefit.",
         "image": {
           "alt": "",
-          "src": "/images/projects/origins.png"
+          "src": "/images/projects/tree.png"
         }
       },
       {
@@ -126,7 +126,7 @@
         "description": "Prior to the project, logging companies had severely damaged the environment and had largely ignored the rights and health of the community and wildlife. Logging drove already-threatened wildlife populations further down and brought little to no economic benefit to local people.",
         "image": {
           "alt": "",
-          "src": "/images/projects/origins.png"
+          "src": "/images/projects/tree.png"
         }
       },
       {
@@ -134,7 +134,7 @@
         "description": "Two timber concessions along the western shore of Lake Mai Ndombe, containing over 3.5 million cubic meters of prized hardwood, were among those suspended for review during the 2008 moratorium.  In February 2010, a formal request was made to the DRC government to manage these concessions for the purpose of protecting the area from destructive logging practices, legal and illegal - using carbon revenues to promote environmental conservation and sustainable development.  In 2011, the two concession contracts were reassigned to ERA Congo, the founding project developer, via a Forest Conservation Contract. Today, ERA Congo is a Wildlife Works subsidiary and continues to operate the Mai Ndombe project under the same agreements with the DRC government.<br /><br />Under the REDD+ conservation strategy, revenues from the sale of verified emissions reductions are used to finance sustainable development opportunities for the local community while protecting the area from deforestation.",
         "image": {
           "alt": "",
-          "src": "/images/projects/solutions.png"
+          "src": "/images/projects/tree.png"
         }
       },
       {
@@ -142,7 +142,7 @@
         "description": "<div>Since the launch of the project in 2011, logging in the area has halted and with the help of reforestation programs, deforested areas have regenerated, bringing back important biodiversity and allowing for wildlife to thrive. The project has made substantial progress in its efforts to partner with the communities in the project area to meet basic needs and deliver social services. Key results to date include:</div><ul><li>Education: 12 schools have been built in remote villages.</li><li>Healthcare: 6 mobile clinics and 1 healthcare facility were built and have provided medical care to >2500 people</li><li>Transport: 5 new boats have been purchased to provide reliable lake transportation for >600 people</li><li>Clean water: Water well drilling equipment was purchased and 7 new potable water wells have been constructed providing clean water to >1900 people</li><li>Agricultural intensification: 56 agricultural workshops have been undertaken, training >1200 community members; 3 demonstration farms and 20 hectares of agroforestry fields have been established, and improved varietals of Cassava have been demonstrated and widely distributed.</li><li>Improved livelihoods: 399 jobs have been created</li>",
         "image": {
           "alt": "",
-          "src": "/images/projects/solutions.png"
+          "src": "/images/projects/tree.png"
         }
       }
     ]
@@ -222,7 +222,7 @@
   "relatedProjects": [
     {
       "id": "southern-cardamom-id",
-      "title": "Southern Cardamom",
+      "title": "The Wildlife Alliance Southern Cardamom Protect",
       "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
