@@ -1,7 +1,7 @@
 {
   "id": "keo-seima-id",
   "slug": "keo-seima",
-  "title": "Keo Seima Wildlife Sanctuary",
+  "title": "The Wildlife Conservation Society Keo Seima Project",
   "subtitle": "Cambodia",
   "mainPicture": "/images/projects/keo-seima/main-picture.jpg",
   "projectInfo": "Keo Seima Wildlife Sanctuary (KSWS) is a uniquely diverse rainforest protected area under advancing threat of illegal land clearance. The project area is home to more than 950 wild species, including 75 globally threatened species, and is also the ancestral home of the indigenous Bunong people, whose unique culture and beliefs are inseparable from the forest in which they live. Originally designated as a protected area in 2002, KSWS is managed by the Royal Government of Cambodia’s Ministry of Environment, with technical and financial support from WCS Cambodia.<br /><br />KSWS plays a vital role in the preservation of the region’s important and vulnerable wildlife, including the world’s largest populations of endemic primates. The project also supports the sustainable development of local communities, notably through securing legal title to their traditional lands, and through the REDD+ Benefit Sharing Mechanism which provides significant funding to community-led development projects.",
@@ -213,7 +213,7 @@
   "relatedProjects": [
     {
       "id": "kasigau-id",
-      "title": "Kasigau",
+      "title": "The Wildlife Works Kasigau Project",
       "mainPicture": "/images/projects/kasigau/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
@@ -228,7 +228,7 @@
     },
     {
       "id": "mai-ndombe-id",
-      "title": "Mai Ndombe",
+      "title": "The Wildlife Works Mai Ndombe Project",
       "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
@@ -243,7 +243,7 @@
     },
     {
       "id": "southern-cardamom-id",
-      "title": "Southern Cardamom",
+      "title": "The Wildlife Alliance Southern Cardamom Protect",
       "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {

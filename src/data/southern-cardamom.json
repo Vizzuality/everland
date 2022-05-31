@@ -1,7 +1,7 @@
 {
   "id": "souther-cardamom-id",
   "slug": "souther-cardamom",
-  "title": "Southern Cardamom",
+  "title": "The Wildlife Alliance Southern Cardamom Protect",
   "subtitle": "Cambodia",
   "mainPicture": "/images/projects/southern-cardamom/main-picture.jpg",
   "projectInfo": "The Cardamom Rainforest Landscape is one of the last unfragmented rainforests remaining in Southeast Asia and is a critical part of the Indo-Burma Biodiversity Hotspot at threat from relentless illegal logging and poaching. This area is globally significant for ecosystem servicing, wildlife conservation, and community livelihoods and serves as the region’s most important watershed, climate regulator and carbon sink. Using global best practices for forest protection and community development, the Southern Cardamom REDD+ project protects 497,000 hectares of this crucial tropical rainforest ecosystem in Southwest Cambodia.",
@@ -240,7 +240,7 @@
   "relatedProjects": [
     {
       "id": "kasigau-id",
-      "title": "Kasigau",
+      "title": "The Wildlife Works Kasigau Project",
       "mainPicture": "/images/projects/kasigau/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
@@ -255,7 +255,7 @@
     },
     {
       "id": "keo-seima-id",
-      "title": "Keo Seima Wildlife Sanctuary",
+      "title": "The Wildlife Conservation Society Keo Seima Project",
       "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {

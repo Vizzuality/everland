@@ -1,7 +1,7 @@
 {
   "id": "kasigau-id",
   "slug": "kasigau",
-  "title": "Kasigau Corridor",
+  "title": "The Wildlife Works Kasigau Project",
   "subtitle": "Kenya",
   "mainPicture": "/images/projects/kasigau/main-picture.jpg",
   "projectInfo": "A vital wildlife corridor between Tsavo East and West National Parks, the Kasigau Corridor REDD+ Project protects over 200,000 hectares of dryland forest, with over 11,000 wild elephants living in the ecosystem - of whom 2000+ of those elephants call Rukinga their permanent home.<br /><br />In an area where wildlife and human survival were at odds, the Kasigau Corridor REDD+ Project has transformed the paradigm of conflict between humans and nature through a a market-driven solution to wildlife conservation. The world's pioneering REDD+ project addresses the threats of poaching, subsistence agriculture and illegal tree harvesting through a comprehensive, community-governed benefit sharing model that has directly touched the lives of 120,000 people living in the area through investments in health, education, water and other infrastructure, income-generating enterprise, and direct job creation.",
@@ -232,7 +232,7 @@
   "relatedProjects": [
     {
       "id": "keo-seima-id",
-      "title": "Keo Seima Wildlife Sanctuary",
+      "title": "The Wildlife Conservation Society Keo Seima Project",
       "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
@@ -247,7 +247,7 @@
     },
     {
       "id": "mai-ndombe-id",
-      "title": "Mai Ndombe",
+      "title": "The Wildlife Works Mai Ndombe Project",
       "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
@@ -262,7 +262,7 @@
     },
     {
       "id": "southern-cardamom-id",
-      "title": "Southern Cardamom",
+      "title": "The Wildlife Alliance Southern Cardamom Protect",
       "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {

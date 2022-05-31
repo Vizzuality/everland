@@ -1,7 +1,7 @@
 {
   "id": "mai-ndombe-id",
   "slug": "mai-ndombe",
-  "title": "Mai Ndombe",
+  "title": "The Wildlife Works Mai Ndombe Project",
   "subtitle": "Democratic Republic of the Congo",
   "mainPicture": "/images/projects/mai-ndombe/main-picture.jpg",
   "projectInfo": "The Mai Ndombe REDD+ Project protects 300,000 hectares  of critical bonobo and forest elephant habitat within the world’s second-largest intact rainforest and some of the most important wetlands on the planet, the Congo Basin. This project reduces the principal drivers of forest and biodiversity loss and is charting a new pathway for community prosperity through comprehensive investments into the surrounding local communities, which are among the least economically developed in the world. Such investments include building and renovating schools, providing healthcare services (such as access to immunizations), supporting food security and nutrition (such as through agricultural diversification), and providing capacity building activities that empower local communities.",
@@ -222,7 +222,7 @@
   "relatedProjects": [
     {
       "id": "southern-cardamom-id",
-      "title": "Southern Cardamom",
+      "title": "The Wildlife Alliance Southern Cardamom Protect",
       "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {

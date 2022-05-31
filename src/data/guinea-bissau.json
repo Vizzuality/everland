@@ -150,7 +150,7 @@
   "relatedProjects": [
     {
       "id": "kasigau-id",
-      "title": "Kasigau",
+      "title": "The Wildlife Works Kasigau Project",
       "mainPicture": "/images/projects/kasigau/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
@@ -165,7 +165,7 @@
     },
     {
       "id": "mai-ndombe-id",
-      "title": "Mai Ndombe",
+      "title": "The Wildlife Works Mai Ndombe Project",
       "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {

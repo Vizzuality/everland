@@ -7,7 +7,6 @@ import {
 
 import { Icon } from 'components/Icon'
 import Image from 'next/image'
-import { Project } from 'containers/Projects/models/Project'
 import { Spacer } from 'components/Spacer'
 import { Text } from 'components/Text'
 import { useRouter } from 'next/router'
