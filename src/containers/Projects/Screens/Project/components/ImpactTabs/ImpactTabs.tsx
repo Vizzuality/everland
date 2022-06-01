@@ -47,8 +47,8 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
           .map((theme) => {
             const themeData = groupedTabs[pillar.title]?.find((data) => data.theme === theme.title)
             if (!themeData) return
-
             return {
+              id: theme.id,
               title: theme.title,
               subtitle: themeData?.title,
               description: themeData?.description,
@@ -119,10 +119,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
           return (
             <HoverCard.Root open={openMenu === title} key={title} openDelay={0}>
-              <HoverCardContainer
-                onMouseOver={() => setOpenMenu(title)}
-                onTouchStart={() => setOpenMenu(openMenu === title ? undefined : title)}
-              >
+              <HoverCardContainer onMouseOver={() => setOpenMenu(title)}>
                 <HoverCardTrigger ref={dropdownRef} isActive={isActive}>
                   <span>{title}</span>
                   <Icon name="chevron-down" />
@@ -141,7 +138,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                     {sections.map((section) => {
                       return (
                         <TabTrigger
-                          key={title}
+                          key={section.id}
                           value={section.title}
                           disabled={!section.description && !section.photo && !section.subtitle}
                         >
