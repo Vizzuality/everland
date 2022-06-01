@@ -106,11 +106,10 @@ export const HoverCardContainer = styled('div', {
   },
 
   '& [data-radix-popper-content-wrapper]': {
-    position: 'relative !important',
-    left: '$12 !important',
-    transform: 'none !important',
-
-    '@bp2': {
+    '@media screen and (max-width: 900px)': {
+      position: 'relative !important',
+      left: '$12 !important',
+      transform: 'none !important',
       top: '$1',
     },
   },

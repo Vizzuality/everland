@@ -72,6 +72,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
   const [activeTab, setActiveTab] = useState(firstTabSection?.title)
   const [openMenu, setOpenMenu] = useState<string>()
   const [optionsWidth, setOptionsWidth] = useState<number>(undefined)
+  const [windowWidth, setWindowWidth] = useState<number>(undefined)
 
   useEffect(() => {
     if (!dropdownRef.current) return
@@ -85,6 +86,18 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
     return () => observer.disconnect()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dropdownRef.current])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    const _onResize = () => {
+      setWindowWidth(document.body.clientWidth)
+    }
+
+    window.addEventListener('resize', _onResize)
+
+    return () => window.removeEventListener('resize', _onResize)
+  }, [window])
 
   const tabsSections = useMemo(() => {
     return tabs?.reduce((acc: TabSection[], { sections }) => {
@@ -137,7 +150,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                     sideOffset={4}
                     css={{ width: optionsWidth, maxWidth: optionsWidth }}
                     onMouseLeave={() => openMenu === title && setOpenMenu(undefined)}
-                    portalled={false}
+                    portalled={!windowWidth || windowWidth > 900}
                   >
                     {sections.map((section) => {
                       return (
