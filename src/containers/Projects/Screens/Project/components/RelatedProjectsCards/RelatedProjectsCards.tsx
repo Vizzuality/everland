@@ -7,7 +7,6 @@ type RelatedProjectsProps = {
 }
 
 export const RelatedProjectsCards = ({ relatedProjects }: RelatedProjectsProps) => {
-  console.log(relatedProjects)
   return (
     <RelatedProjectsCardsRoot>
       <CardsWrapper>
