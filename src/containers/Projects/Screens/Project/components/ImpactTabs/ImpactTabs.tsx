@@ -37,6 +37,7 @@ export type ImpactTabsProps = {
 export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
   const { data: impactTree } = useFetchImpactTree()
   const dropdownRef = useRef<HTMLAnchorElement>(null)
+  const hoverCardRef = useRef<HTMLButtonElement>(null)
 
   const groupedTabs = useMemo(() => groupBy(impact, 'pillar'), [impact])
 
@@ -109,6 +110,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
   const onValueChange = (value: string) => {
     setActiveTab(value)
+    setTimeout(() => setOpenMenu(undefined), 100) // NOTE: for UX
   }
 
   return (
@@ -121,7 +123,17 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             <HoverCard.Root open={openMenu === title} key={title} openDelay={0}>
               <HoverCardContainer
                 onMouseOver={() => setOpenMenu(title)}
-                onTouchStart={() => setOpenMenu(openMenu === title ? undefined : title)}
+                onMouseLeave={() => setOpenMenu(undefined)}
+                onTouchStart={(e) => {
+                  console.log(e.target)
+
+                  if ((e.target as HTMLElement).matches('.trigger')) {
+                    console.log('matches')
+                    return
+                  }
+
+                  setOpenMenu(openMenu === title ? undefined : title)
+                }}
               >
                 <HoverCardTrigger ref={dropdownRef} isActive={isActive}>
                   <span>{title}</span>
@@ -132,7 +144,6 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
                 {sections.length > 0 && (
                   <HoverCardContent
-                    onFocusOutside={() => openMenu === title && setOpenMenu(undefined)}
                     align="start"
                     sideOffset={4}
                     css={{ width: optionsWidth, maxWidth: optionsWidth }}
@@ -141,9 +152,11 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                     {sections.map((section) => {
                       return (
                         <TabTrigger
-                          key={title}
+                          className="trigger"
+                          key={section.title}
                           value={section.title}
                           disabled={!section.description && !section.photo && !section.subtitle}
+                          ref={hoverCardRef}
                         >
                           {section.title}
                         </TabTrigger>
