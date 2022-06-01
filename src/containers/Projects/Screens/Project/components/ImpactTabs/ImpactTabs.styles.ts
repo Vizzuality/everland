@@ -1,7 +1,6 @@
-import { styled } from 'stitches.config'
-
-import * as RadixDropdown from '@radix-ui/react-dropdown-menu'
+import * as HoverCard from '@radix-ui/react-hover-card'
 import * as Tabs from '@radix-ui/react-tabs'
+import { styled } from 'stitches.config'
 import { Text } from 'components/Text'
 
 export const ImpactTabsRoot = styled(Tabs.Root)
@@ -86,15 +85,13 @@ export const TabImage = styled('figure', {
   },
 })
 
-export const Dropdown = styled(RadixDropdown.Root)
-
-export const DropdownContainer = styled('div', {
+export const HoverCardContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   width: '100%',
 })
 
-export const DropdownTrigger = styled(RadixDropdown.Trigger, {
+export const HoverCardTrigger = styled(HoverCard.Trigger, {
   // Reset
   appearance: 'none',
   backgroundColor: 'transparent',
@@ -123,9 +120,13 @@ export const DropdownTrigger = styled(RadixDropdown.Trigger, {
 
   '@bp2': {
     mb: '0px',
+
+    '&:hover': {
+      color: '$primary-jasper-500',
+    },
   },
 
-  '&:hover, &[data-state="active"]': {
+  '&[data-state="open"]': {
     color: '$primary-jasper-500',
   },
 
@@ -139,14 +140,12 @@ export const DropdownTrigger = styled(RadixDropdown.Trigger, {
   },
 })
 
-export const DropdownContent = styled(RadixDropdown.Content, {
+export const HoverCardContent = styled(HoverCard.Content, {
   paddding: '$6 $4',
   backgroundColor: '$primary-jasper-100',
   padding: '$2',
   maxWidth: '175px',
 })
-
-export const DropdownItem = styled(RadixDropdown.DropdownMenuItem)
 
 export const TabContentText = styled(Text, {
   '@mobile': {
