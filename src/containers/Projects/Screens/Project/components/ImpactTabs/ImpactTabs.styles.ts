@@ -14,7 +14,7 @@ export const TabsList = styled(Tabs.List, {
 
   '@bp2': {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
   },
 })
 
@@ -97,6 +97,23 @@ export const HoverCardContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   width: '100%',
+  position: 'relative',
+
+  mb: '$4',
+
+  '@bp2': {
+    mb: '0px',
+  },
+
+  '& [data-radix-popper-content-wrapper]': {
+    position: 'relative !important',
+    left: '$12 !important',
+    transform: 'none !important',
+
+    '@bp2': {
+      top: '$1',
+    },
+  },
 })
 
 export const HoverCardTrigger = styled(HoverCard.Trigger, {
@@ -124,11 +141,7 @@ export const HoverCardTrigger = styled(HoverCard.Trigger, {
   lineHeight: '$subtitle',
   color: '$primary-tuna-500',
 
-  mb: '$4',
-
   '@bp2': {
-    mb: '0px',
-
     '&:hover': {
       color: '$primary-jasper-500',
     },

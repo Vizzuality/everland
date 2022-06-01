@@ -125,7 +125,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
               >
                 <HoverCardTrigger ref={dropdownRef} isActive={isActive}>
                   <span>{title}</span>
-                  <Icon name="chevron-down" />
+                  <Icon name={openMenu === title ? 'chevron-up' : 'chevron-down'} />
                 </HoverCardTrigger>
 
                 <Spacer space={2} direction="column" />
@@ -137,6 +137,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                     sideOffset={4}
                     css={{ width: optionsWidth, maxWidth: optionsWidth }}
                     onMouseLeave={() => openMenu === title && setOpenMenu(undefined)}
+                    portalled={false}
                   >
                     {sections.map((section) => {
                       return (
