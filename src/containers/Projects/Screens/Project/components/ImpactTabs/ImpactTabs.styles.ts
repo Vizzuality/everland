@@ -15,7 +15,6 @@ export const TabsList = styled(Tabs.List, {
   '@bp2': {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: '$2',
   },
 })
 
@@ -66,22 +65,31 @@ export const TabContainer = styled(Tabs.Content, {
 
 export const TabContent = styled('div', {
   marginTop: '$14',
+  display: 'grid',
+  gridTemplateColumns: '1fr',
+  gridTemplateRows: '1fr 1fr',
+  height: '100%',
 
   '@bp2': {
-    display: 'flex',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gridTemplateRows: '1fr',
     justifyContent: 'space-between',
+    gap: '$8',
     alignItems: 'center',
   },
 })
 
 export const TabImage = styled('figure', {
   position: 'relative',
-  height: '380px',
-  width: '273px',
+  height: '100%',
+  width: '100%',
   margin: 'auto',
 
   '@bp2': {
     margin: 0,
+    marginRight: '$9',
+    minHeight: '450px',
   },
 })
 
@@ -197,5 +205,15 @@ export const TabArrow = styled('button', {
         '@bp2': { right: '-$12' },
       },
     },
+  },
+})
+
+export const TabTitleText = styled(Text, {
+  '@mobile': {
+    fontSize: '$h1Mobile',
+  },
+
+  '@bp2': {
+    fontSize: '$h3',
   },
 })

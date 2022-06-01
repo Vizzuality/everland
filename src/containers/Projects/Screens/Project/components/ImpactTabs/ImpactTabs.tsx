@@ -14,6 +14,7 @@ import {
   TabContent,
   TabContentText,
   TabImage,
+  TabTitleText,
   TabsList,
   TabTrigger,
   HoverCardContainer,
@@ -82,6 +83,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
     observer.observe(dropdownRef.current)
 
     return () => observer.disconnect()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dropdownRef.current])
 
   const tabsSections = useMemo(() => {
@@ -158,21 +160,20 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
       {tabsSections?.map(({ title: sectionTitle, subtitle, description, photo }) => (
         <TabContainer key={sectionTitle} value={sectionTitle}>
-          <Text
-            size={{ '@mobile': 'h3', '@bp2': 'h2' }}
-            family="secondary"
-            color="primary-tuna-500"
-          >
-            {subtitle}
-          </Text>
-
+          <TabTitleText>
+            <Text
+              family="secondary"
+              color="primary-tuna-500"
+              dangerouslySetInnerHTML={{ __html: subtitle }}
+            />
+          </TabTitleText>
           <TabContent>
             <TabContentText>
-              <Text size="body1">{description}</Text>
+              <Text size="body1" dangerouslySetInnerHTML={{ __html: description }} />
             </TabContentText>
             {photo && (
               <TabImage>
-                <Image src={photo.url} alt={photo.altText} layout="fill" objectFit="cover" />
+                <Image src={photo.url} alt={photo.altText} layout="fill" objectFit="contain" />
               </TabImage>
             )}
           </TabContent>

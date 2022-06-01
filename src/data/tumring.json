@@ -4,7 +4,7 @@
   "title": "Tumring",
   "subtitle": "Cambodia",
   "mainPicture": "/images/projects/tumring/main-picture.jpg",
-  "projectInfo": "The Tumring REDD+ project protects 67,791 hectares of high-conservation-value tropical forest along the southwest border of the highly threatened Prey Lang Wildlife Sanctuary, a 430,000-hectare protected area that is one of Southeast Asia’s last major intact lowland forests. In a unique partnership between Cambodia’s Forestry Administration and local communities, community groups manage 14 Community Forests within the project area. Sustainable livelihoods are created from the responsible harvesting of mainly non-timber forest products. By helping local communities reap the social benefits of forest conservation and providing sustainable agriculture training and market support for families who agree to protect forests, Tumring is advancing a community-driven, market-based conservation solution that directly addresses the drivers of deforestation.",
+  "projectInfo": "The Tumring REDD+ project protects 67,791 hectares of high-conservation-value tropical forest along the southwest border of the highly threatened Prey Lang Wildlife Sanctuary, a 430,000-hectare protected area that is one of Southeast Asia’s last major intact lowland forests. In a unique partnership between Cambodia’s Forestry Administration and local communities, community groups manage 14 Community Forests within the project area. Sustainable livelihoods are created from the responsible harvesting of mainly non-timber forest products. The project is helping local communities reap the social benefits of forest conservation, providing sustainable agriculture training and providing market support for families who agree to protect forests. Through these activities, the project is advancing a community-driven, market-based conservation solution that directly addresses the drivers of deforestation.",
   "keyPeople": ">10,000 local community members, including nearly 6000 indigenous Kuy people",
   "wildLife": "Sunda pangolin, Sunbear, Sambar deer, Black giant squirrel",
   "developer": "Cambodian Forest Administration",
@@ -12,7 +12,10 @@
   "location": {
     "iso": "KHM",
     "name": "Cambodia",
-    "centroid": [11.562108, 104.888535],
+    "centroid": [
+      11.562108,
+      104.888535
+    ],
     "geometry": null
   },
   "protectedArea": {
@@ -23,7 +26,7 @@
     "value": 645410,
     "unit": "tCO2e"
   },
-  "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/7ac827fca46b515333a32cc2e581a4a0/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjoxMi45NzAxOTgyNzM1ODUyNiwibG5nIjoxMDUuNDE3MzE3OTcyNzQ4NTl9LCJ6b29tIjo4LjkxNTkyMzE0MjE4NjE1NywiY2FuQm91bmQiOmZhbHNlLCJkYXRhc2V0cyI6W3siZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZX0seyJkYXRhc2V0IjoidHJlZS1jb3Zlci1sb3NzIiwibGF5ZXJzIjpbInRyZWUtY292ZXItbG9zcyJdLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJ0aW1lbGluZVBhcmFtcyI6eyJzdGFydERhdGUiOiIyMDE1LTAxLTAxIiwiZW5kRGF0ZSI6IjIwMjEtMTItMzEiLCJ0cmltRW5kRGF0ZSI6IjIwMjEtMTItMzEifSwicGFyYW1zIjp7InRocmVzaCI6IjMwIiwidGhyZXNob2xkIjozMH19LHsiZGF0YXNldCI6InVtZC10cmVlLWhlaWdodCIsIm9wYWNpdHkiOjEsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJ1bWQtdHJlZS1oZWlnaHQtMjAyMCJdfSx7ImRhdGFzZXQiOiJrZXktYmlvZGl2ZXJzaXR5LWFyZWFzIiwib3BhY2l0eSI6MC4yLCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsia2V5LWJpb2RpdmVyc2l0eS1hcmVhcy0yMDE5Il19LHsiZGF0YXNldCI6ImNhbWJvZGlhLWVjb25vbWljLWxhbmQtY29uY2Vzc2lvbnMiLCJvcGFjaXR5IjowLjUsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJjYW1ib2RpYS1lY29ub21pYy1sYW5kLWNvbmNlc3Npb25zIl0sImlzbyI6IktITSJ9XX0%3D&mapMenu=eyJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D&mapPrompts=eyJzdGVwc0tleSI6ImFuYWx5emVBbkFyZWEiLCJzdGVwc0luZGV4IjowLCJmb3JjZSI6dHJ1ZX0%3D",
+  "embeddedMap": "https://www.globalforestwatch.org/embed/map/geostore/7ac827fca46b515333a32cc2e581a4a0/?analysis=eyJzaG93RHJhdyI6dHJ1ZX0%3D&map=eyJjZW50ZXIiOnsibGF0IjoxMi45NzAxOTgyNzM1ODUyNiwibG5nIjoxMDUuNDE3MzE3OTcyNzQ4NTl9LCJ6b29tIjo4LjkxNTkyMzE0MjE4NjE1NiwiY2FuQm91bmQiOmZhbHNlLCJkYXRhc2V0cyI6W3siZGF0YXNldCI6InBvbGl0aWNhbC1ib3VuZGFyaWVzIiwibGF5ZXJzIjpbImRpc3B1dGVkLXBvbGl0aWNhbC1ib3VuZGFyaWVzIiwicG9saXRpY2FsLWJvdW5kYXJpZXMiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZX0seyJkYXRhc2V0IjoiY2FtYm9kaWEtZWNvbm9taWMtbGFuZC1jb25jZXNzaW9ucyIsIm9wYWNpdHkiOjAuNzUsInZpc2liaWxpdHkiOnRydWUsImxheWVycyI6WyJjYW1ib2RpYS1lY29ub21pYy1sYW5kLWNvbmNlc3Npb25zIl0sImlzbyI6IktITSJ9LHsiZGF0YXNldCI6InRyZWUtY292ZXItbG9zcyIsImxheWVycyI6WyJ0cmVlLWNvdmVyLWxvc3MiXSwib3BhY2l0eSI6MSwidmlzaWJpbGl0eSI6dHJ1ZSwidGltZWxpbmVQYXJhbXMiOnsic3RhcnREYXRlIjoiMjAxNS0wMS0wMSIsImVuZERhdGUiOiIyMDIxLTEyLTMxIiwidHJpbUVuZERhdGUiOiIyMDIxLTEyLTMxIn0sInBhcmFtcyI6eyJ0aHJlc2giOiIzMCIsInRocmVzaG9sZCI6MzB9fSx7ImRhdGFzZXQiOiJ1bWQtdHJlZS1oZWlnaHQiLCJvcGFjaXR5IjoxLCJ2aXNpYmlsaXR5Ijp0cnVlLCJsYXllcnMiOlsidW1kLXRyZWUtaGVpZ2h0LTIwMjAiXX0seyJkYXRhc2V0Ijoia2V5LWJpb2RpdmVyc2l0eS1hcmVhcyIsIm9wYWNpdHkiOjAuMiwidmlzaWJpbGl0eSI6dHJ1ZSwibGF5ZXJzIjpbImtleS1iaW9kaXZlcnNpdHktYXJlYXMtMjAxOSJdfV19&mapMenu=eyJleHBsb3JlVHlwZSI6InN0b3JpZXMiLCJzZWxlY3RlZENvdW50cmllcyI6WyJLSE0iXX0%3D",
   "gallery": [
     {
       "alt": "",
@@ -102,7 +105,7 @@
       "src": "/images/projects/tumring/gallery-9.jpg",
       "caption": {
         "title": "",
-        "description": "Benefits sharing will improve school infrastructure in an areas where low education rates perpetuate the cycle of poverty and deforestation",
+        "description": "Benefit sharing will improve school infrastructure in an areas where low education rates perpetuate the cycle of poverty and deforestation",
         "link": null
       }
     }
@@ -112,34 +115,34 @@
     "sections": [
       {
         "title": "Origins",
-        "description": "The Tumring REDD+ Project covers approximately 68,000 hectares in central Cambodia, to the west of the Mekong River and serves as a buffer area for the Prey Lang Wildlife Sanctuary, which contains the largest remaining area of lowland evergreen forest in Cambodia. Part of the Indo-Burma Hotspot, one of the world’s top 34 biodiversity hotspots, Prey Lang is the primary watershed of central Cambodia that regulates water and sediment flow to the Mekong River and Tonle Sap Lake, with 700,000 Cambodians depend on these watersheds for fish, irrigation water, and non-timber forest products.<br /><br />Despite its global importance, unplanned small-scale land conversion of forests to agricultural land, driven by immigration, and conversion to large-scale agro-industrial plantations by the private sector make the Tumring area one of most threatened forest landscapes in Cambodia. The area was first formally designated as part of the Permanent Forest Estate in 1994, after which much of the project area were established as community forest and recognized as such by the Cambodian Forestry Administration between 2008 – 2010. In 2014, the Forestry Administration, in consultation with the Korean government, decided to enhance protection of the area as part of a strategy to safeguard the Prey Lang landscape, and established the Tumring REDD+ Project in 2014.",
+        "description": "The Tumring REDD+ Project covers approximately 68,000 hectares in central Cambodia, to the west of the Mekong River and serves as a buffer area for the Prey Lang Wildlife Sanctuary, which contains the largest remaining area of lowland evergreen forest in Cambodia. Part of the Indo-Burma Hotspot, one of the world’s top 34 biodiversity hotspots, Prey Lang is the primary watershed of central Cambodia that regulates water and sediment flow to the Mekong River and Tonle Sap Lake, with 700,000 Cambodians dependent on these watersheds for fish, irrigation water, and non-timber forest products.<br /><br />Despite its global importance, both unplanned small-scale land conversion of forests to agricultural land, driven by immigration, and conversion to large-scale agro-industrial plantations by the private sector make the Tumring area one of most threatened forest landscapes in Cambodia. The area was first formally designated as part of the Permanent Forest Estate in 1994, after which much of the project area was established as community forest and recognized as such by the Cambodian Forestry Administration between 2008 – 2010. In 2014, the Forestry Administration, in consultation with the Korean government, decided to enhance protection of the area as part of a strategy to safeguard the Prey Lang landscape, and established the Tumring REDD+ Project.",
         "image": {
           "alt": "",
-          "src": "/images/projects/origins.png"
+          "src": "/images/projects/tree.png"
         }
       },
       {
         "title": "Threats",
-        "description": "Deforestation in the area has been substantially higher than the national average, and the broader Prey Lang Forest landscape, within which Tumring is located, is one of the world’s most threatened biodiversity hotspots. Rural communities depend on small-scale agricultural production to support their livelihood. A lack of sufficient employment opportunities for the growing rural population combined with a lack of knowledge regarding improved agricultural techniques drive the local population to clear forests for cultivating commercial crops. In the last decade, the threats to the area have increased from immigration and private company-sponsored land clearance. New immigrants, often supported by agro-industrial companies, use slash and burn to clear the forest and create commercial crop cultivation, leading to increasing deforestation. This scenario will continue to threaten the landscape unless and until new mechanisms are put in place to add tangible economic value to the standing forest so that it can compete economically with other land uses.",
+        "description": "Deforestation in the area has been substantially higher than the national average, and the broader Prey Lang Forest landscape, within which the Tumring project is located, is one of the world’s most threatened biodiversity hotspots. Rural communities depend on small-scale agricultural production to support their livelihood. A lack of sufficient employment opportunities for the growing rural population combined with a lack of knowledge regarding improved agricultural techniques drive the local population to clear forests for cultivating commercial crops. In the last decade, the threats to the area have increased from immigration and private company-sponsored land clearance. New immigrants, often supported by agro-industrial companies, use slash and burn to clear the forest and create commercial crop cultivation, leading to increasing deforestation. This scenario will continue to threaten the landscape unless and until new mechanisms are put in place to add tangible economic value to the standing forest so that it can compete economically with other land uses.",
         "image": {
           "alt": "",
-          "src": "/images/projects/origins.png"
+          "src": "/images/projects/tree.png"
         }
       },
       {
         "title": "Solutions",
-        "description": "<div>In a unique partnership between Cambodia’s Forestry Administration and local communities, community groups manage 14 Community Forests within the project area, achieving a sustainable livelihood through responsible harvesting of mainly non-timber forest products.<br /><br />By vesting local communities in the fruits of forest conservation, and providing sustainable agriculture training and market support for families that agree not to cut down the forest, Tumring is advancing a unique community-driven, market-based conservation solution that directly addresses the drivers of deforestation in the landscape. Key activities include:</div><ul><li>Land use planning and forest land tenure security</li><li>Effective implementation of Forest Protection and Wildlife Laws</li><li>Enhance community livelihoods and income, particularly through sustainable agriculture technical assistance and market support for agricultural and non-timber forest products (particularly sustainably harvested tree resins)</li><li>Increase stakeholder participation in reducing deforestation and forest degradation, including community patrolling</li><li>Control and planning for in-migration</li></ul>",
+        "description": "<div>In a unique partnership between Cambodia’s Forestry Administration and local communities, community groups manage 14 Community Forests within the project area, achieving a sustainable livelihood through responsible harvesting of mainly non-timber forest products.<br /><br />By vesting local communities in the fruits of forest conservation, and providing sustainable agriculture training and market support for families that agree not to cut down the forest, the Tumring project is advancing a unique community-driven, market-based conservation solution that directly addresses the drivers of deforestation in the landscape. Key activities include:</div><ul><li>Land use planning and forest land tenure security</li><li>Effective implementation of Forest Protection and Wildlife Laws</li><li>Enhance community livelihoods and income, particularly through sustainable agriculture technical assistance and market support for agricultural and non-timber forest products (focus on sustainably harvested tree resins)</li><li>Increase stakeholder participation in reducing deforestation and forest degradation, including community patrolling, and</li><li>Control and planning for in-migration</li></ul>",
         "image": {
           "alt": "",
-          "src": "/images/projects/solutions.png"
+          "src": "/images/projects/tree.png"
         }
       },
       {
         "title": "Progress",
-        "description": "The project directly supports about 5,000 households of indigenous and local communities within the project area and indirectly to thousands of additional households surrounding the project area. The project has confiscated over 12,000 illegal items as part of its enforcement activities, and through training, micro-finance support, and market engagement have helped 70 households to improve their income through sustainable agriculture methods.<br /><br />The project’s community patrols have also tirelessly worked to protect the area from persistent threat: In 2020 and 2021 over 4,500 community members participated in 738 total patrols, resulting in the confiscation of 35 chainsaws, 11 tractors, 26 ox-carts, 6 motorbikes, 3 charcoal kilns, 115 snares, and more than 10 cubic meters of illegally logged timber.",
+        "description": "The project directly supports about 5,000 households of indigenous and local communities within the project area and indirectly supports thousands of additional households surrounding the project area. The project has confiscated over 12,000 illegal items as part of its enforcement activities, and through training, micro-finance support, and market engagement have helped 70 households to improve their income through the use of sustainable agriculture methods.<br /><br />The project’s community patrols have also tirelessly worked to protect the area from persistent threat: In 2020 and 2021 over 4,500 community members participated in 738 total patrols, resulting in the confiscation of 35 chainsaws, 11 tractors, 26 ox-carts, 6 motorbikes, 3 charcoal kilns, 115 snares, and more than 10 cubic meters of illegally logged timber.",
         "image": {
           "alt": "",
-          "src": "/images/projects/solutions.png"
+          "src": "/images/projects/tree.png"
         }
       }
     ]
@@ -193,7 +196,7 @@
         "url": "/images/projects/tumring/impact-climate-change.jpg",
         "altText": ""
       },
-      "title": "67,791ha of tropical forest protected in a highly threatened landscape"
+      "title": "67,791 hectares of tropical forest protected in a highly threatened landscape"
     }
   ],
   "relatedProjects": [
@@ -201,35 +204,44 @@
       "id": "guinea-bissau-id",
       "title": "Guinea Bissau",
       "mainPicture": "/images/projects/guinea-bissau/catalogue.jpg",
-      "standards": "",
+      "standards": "VCS",
       "location": {
         "iso": "ARE",
         "name": "National Park Mangroves",
-        "centroid": [25.276987, 55.296249],
+        "centroid": [
+          25.276987,
+          55.296249
+        ],
         "geometry": null
       }
     },
     {
       "id": "mai-ndombe-id",
-      "title": "Mai Ndombe",
+      "title": "The Wildlife Works Mai Ndombe Project",
       "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
         "iso": "COD",
         "name": "Democratic Republic of the Congo",
-        "centroid": [-4.643601, 26.362312],
+        "centroid": [
+          -4.643601,
+          26.362312
+        ],
         "geometry": null
       }
     },
     {
       "id": "southern-cardamom-id",
-      "title": "Southern Cardamom",
+      "title": "The Wildlife Alliance Southern Cardamom Protect",
       "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
       "standards": "VCS, CCB",
       "location": {
         "iso": "KHM",
         "name": "Cambodia",
-        "centroid": [11.562108, 104.888535],
+        "centroid": [
+          11.562108,
+          104.888535
+        ],
         "geometry": null
       }
     }

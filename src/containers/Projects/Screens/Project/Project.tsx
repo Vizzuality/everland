@@ -14,6 +14,7 @@ import { NAV_SECTIONS, SECTION_NAME } from './constants'
 
 import {
   Hero,
+  HeroTitle,
   IframeContainer,
   Impact,
   InterventionModel,
@@ -46,6 +47,7 @@ export const Project = () => {
   const { data: project, status } = useFetchProjectDetail(projectId)
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const _eventListener = (e) => {
       const visiblePercentages = NAV_SECTIONS.map(({ name }) => {
         const visiblePercentage = calculateVisiblePercentage(`#${name}`)
@@ -112,9 +114,11 @@ export const Project = () => {
           <Overlay />
           <Header />
           <HeroContent>
-            <Text as="h1" size="heroTitle4" weight="bold" color="neutral-white" align="center">
-              {project.title}
-            </Text>
+            <HeroTitle>
+              <Text as="h1" size="heroTitle4" weight="bold" color="neutral-white" align="center">
+                {project.title}
+              </Text>
+            </HeroTitle>
             <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
               {project.subtitle}
             </Text>
