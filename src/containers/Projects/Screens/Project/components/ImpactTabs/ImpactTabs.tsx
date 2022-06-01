@@ -4,13 +4,11 @@ import { Text } from 'components/Text'
 import { useFetchImpactTree } from 'hooks/fetchImpactTree'
 import { groupBy } from 'lodash'
 import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Impact, Photo } from 'types/Project'
 import {
   ImpactTabsRoot,
-  Dropdown,
-  DropdownContent,
-  DropdownTrigger,
+  HoverCardTrigger,
   TabArrow,
   TabContainer,
   TabContent,
@@ -19,9 +17,11 @@ import {
   TabTitleText,
   TabsList,
   TabTrigger,
-  DropdownItem,
-  DropdownContainer,
+  HoverCardContainer,
+  HoverCardContent,
 } from './ImpactTabs.styles'
+
+import * as HoverCard from '@radix-ui/react-hover-card'
 
 type TabSection = {
   title: string
@@ -36,33 +36,36 @@ export type ImpactTabsProps = {
 
 export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
   const { data: impactTree } = useFetchImpactTree()
-  const dropdownRef = useRef<HTMLButtonElement>(null)
+  const dropdownRef = useRef<HTMLAnchorElement>(null)
 
-  const groupedTabs = groupBy(impact, 'pillar')
+  const groupedTabs = useMemo(() => groupBy(impact, 'pillar'), [impact])
 
-  const tabs = impactTree?.data
-    .map((pillar) => {
-      const sections = pillar.children
-        .map((theme) => {
-          const themeData = groupedTabs[pillar.title]?.find((data) => data.theme === theme.title)
-          if (!themeData) return
-          return {
-            title: theme.title,
-            subtitle: themeData?.title,
-            description: themeData?.description,
-            photo: themeData?.photo,
-          }
-        })
-        .filter((data) => data)
+  const tabs = useMemo(() => {
+    return impactTree?.data
+      .map((pillar) => {
+        const sections = pillar.children
+          .map((theme) => {
+            const themeData = groupedTabs[pillar.title]?.find((data) => data.theme === theme.title)
+            if (!themeData) return
 
-      if (sections.length === 0) return
+            return {
+              title: theme.title,
+              subtitle: themeData?.title,
+              description: themeData?.description,
+              photo: themeData?.photo,
+            }
+          })
+          .filter((data) => data)
 
-      return {
-        title: pillar.title,
-        sections,
-      }
-    })
-    .filter((data) => data)
+        if (sections.length === 0) return
+
+        return {
+          title: pillar.title,
+          sections,
+        }
+      })
+      .filter((data) => data)
+  }, [impactTree, groupedTabs])
 
   const firstTabSection = tabs?.[0].sections[0]
 
@@ -83,9 +86,11 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dropdownRef.current])
 
-  const tabsSections = tabs?.reduce((acc: TabSection[], { sections }) => {
-    return [...acc, ...sections.map((section) => section)]
-  }, [])
+  const tabsSections = useMemo(() => {
+    return tabs?.reduce((acc: TabSection[], { sections }) => {
+      return [...acc, ...sections.map((section) => section)]
+    }, [])
+  }, [tabs])
 
   const activeTabIndex = tabsSections?.findIndex(({ title }) => title === activeTab)
   const lastTabIndex = tabsSections?.length - 1
@@ -104,7 +109,6 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
   const onValueChange = (value: string) => {
     setActiveTab(value)
-    setTimeout(() => setOpenMenu(undefined), 100) // NOTE: delay for UX
   }
 
   return (
@@ -114,42 +118,42 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
           const isActive = sections.some(({ title }) => title === activeTab)
 
           return (
-            <Dropdown open={openMenu === title} key={title} modal={false}>
-              <DropdownContainer
+            <HoverCard.Root open={openMenu === title} key={title} openDelay={0}>
+              <HoverCardContainer
                 onMouseOver={() => setOpenMenu(title)}
-                onMouseLeave={() => setOpenMenu(undefined)}
+                onTouchStart={() => setOpenMenu(openMenu === title ? undefined : title)}
               >
-                <DropdownTrigger ref={dropdownRef} isActive={isActive}>
+                <HoverCardTrigger ref={dropdownRef} isActive={isActive}>
                   <span>{title}</span>
                   <Icon name="chevron-down" />
-                </DropdownTrigger>
+                </HoverCardTrigger>
 
                 <Spacer space={2} direction="column" />
 
                 {sections.length > 0 && (
-                  <DropdownContent
+                  <HoverCardContent
+                    onFocusOutside={() => openMenu === title && setOpenMenu(undefined)}
                     align="start"
                     sideOffset={4}
                     css={{ width: optionsWidth, maxWidth: optionsWidth }}
+                    onMouseLeave={() => openMenu === title && setOpenMenu(undefined)}
                   >
                     {sections.map((section) => {
                       return (
-                        <DropdownItem key={section.title} onClick={() => setOpenMenu(undefined)}>
-                          <TabTrigger
-                            key={title}
-                            value={section.title}
-                            disabled={!section.description && !section.photo && !section.subtitle}
-                          >
-                            {section.title}
-                          </TabTrigger>
-                        </DropdownItem>
+                        <TabTrigger
+                          key={title}
+                          value={section.title}
+                          disabled={!section.description && !section.photo && !section.subtitle}
+                        >
+                          {section.title}
+                        </TabTrigger>
                       )
                     })}
-                  </DropdownContent>
+                  </HoverCardContent>
                 )}
-              </DropdownContainer>
+              </HoverCardContainer>
               <Spacer space="2" direction="row" />
-            </Dropdown>
+            </HoverCard.Root>
           )
         })}
       </TabsList>
