@@ -90,8 +90,10 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
   useEffect(() => {
     if (typeof window === 'undefined') return
 
+    setWindowWidth(window.screen.width)
+
     const _onResize = () => {
-      setWindowWidth(document.body.clientWidth)
+      setWindowWidth(window.screen.width)
     }
 
     window.addEventListener('resize', _onResize)
@@ -150,6 +152,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                     sideOffset={4}
                     css={{ width: optionsWidth, maxWidth: optionsWidth }}
                     onMouseLeave={() => openMenu === title && setOpenMenu(undefined)}
+                    // NOTE: only portalled in desktop
                     portalled={!windowWidth || windowWidth > 900}
                   >
                     {sections.map((section) => {
