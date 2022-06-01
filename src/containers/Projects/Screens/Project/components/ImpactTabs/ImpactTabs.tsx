@@ -121,7 +121,18 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             <HoverCard.Root open={openMenu === title} key={title} openDelay={0}>
               <HoverCardContainer
                 onMouseOver={() => setOpenMenu(title)}
-                onTouchStart={() => setOpenMenu(openMenu === title ? undefined : title)}
+                onTouchStart={(e) => {
+                  e.preventDefault()
+                  e.stopPropagation()
+
+                  if ((e.target as HTMLElement).matches('button')) {
+                    // NOTE: to avoid opening the menu behind the one you clicked
+                    setTimeout(() => setOpenMenu(undefined), 100)
+                    return
+                  }
+
+                  setOpenMenu(openMenu === title ? undefined : title)
+                }}
               >
                 <HoverCardTrigger ref={dropdownRef} isActive={isActive}>
                   <span>{title}</span>
