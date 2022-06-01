@@ -37,6 +37,7 @@ export type ImpactTabsProps = {
 export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
   const { data: impactTree } = useFetchImpactTree()
   const dropdownRef = useRef<HTMLAnchorElement>(null)
+  const hoverCardRef = useRef<HTMLButtonElement>(null)
 
   const groupedTabs = useMemo(() => groupBy(impact, 'pillar'), [impact])
 
@@ -122,11 +123,12 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             <HoverCard.Root open={openMenu === title} key={title} openDelay={0}>
               <HoverCardContainer
                 onMouseOver={() => setOpenMenu(title)}
+                onMouseLeave={() => setOpenMenu(undefined)}
                 onTouchStart={(e) => {
-                  e.preventDefault()
-                  e.stopPropagation()
+                  console.log(e.target)
 
-                  if ((e.target as HTMLElement).matches('button')) {
+                  if ((e.target as HTMLElement).matches('.trigger')) {
+                    console.log('matches')
                     return
                   }
 
@@ -142,7 +144,6 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
                 {sections.length > 0 && (
                   <HoverCardContent
-                    onFocusOutside={() => openMenu === title && setOpenMenu(undefined)}
                     align="start"
                     sideOffset={4}
                     css={{ width: optionsWidth, maxWidth: optionsWidth }}
@@ -151,9 +152,11 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                     {sections.map((section) => {
                       return (
                         <TabTrigger
-                          key={title}
+                          className="trigger"
+                          key={section.title}
                           value={section.title}
                           disabled={!section.description && !section.photo && !section.subtitle}
+                          ref={hoverCardRef}
                         >
                           {section.title}
                         </TabTrigger>
