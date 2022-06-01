@@ -109,6 +109,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
 
   const onValueChange = (value: string) => {
     setActiveTab(value)
+    setTimeout(() => setOpenMenu(undefined), 100) // NOTE: for UX
   }
 
   return (
@@ -126,8 +127,6 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
                   e.stopPropagation()
 
                   if ((e.target as HTMLElement).matches('button')) {
-                    // NOTE: to avoid opening the menu behind the one you clicked
-                    setTimeout(() => setOpenMenu(undefined), 100)
                     return
                   }
 
