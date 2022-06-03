@@ -3,6 +3,7 @@
     "id": "kasigau-id",
     "slug": "kasigau",
     "title": "The Wildlife Works Kasigau Project",
+    "shortTitle": "Kasigau",
     "mainPicture": "/images/projects/kasigau/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
@@ -25,6 +26,7 @@
     "id": "keo-seima-id",
     "slug": "keo-seima",
     "title": "The Wildlife Conservation Society Keo Seima Project",
+    "shortTitle": "Keo Seima",
     "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
@@ -47,6 +49,7 @@
     "id": "mai-ndombe-id",
     "slug": "mai-ndombe",
     "title": "The Wildlife Works Mai Ndombe Project",
+    "shortTitle": "Mai Ndombe",
     "mainPicture": "/images/projects/mai-ndombe/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
@@ -69,6 +72,7 @@
     "id": "southern-cardamom-id",
     "slug": "southern-cardamom-id",
     "title": "The Wildlife Alliance Southern Cardamom Project",
+    "shortTitle": "Southern Cardamom",
     "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
@@ -91,6 +95,7 @@
     "id": "tumring-id",
     "slug": "tumring",
     "title": "Tumring",
+    "shortTitle": "Tumring",
     "mainPicture": "/images/projects/tumring/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
@@ -113,6 +118,7 @@
     "id": "guinea-bissau-id",
     "slug": "guinea-bissau",
     "title": "Guinea Bissau Avoided Deforestation",
+    "shortTitle": "Guinea Bissau",
     "mainPicture": "/images/projects/guinea-bissau/catalogue.jpg",
     "standards": "VCS",
     "location": {

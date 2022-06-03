@@ -4,85 +4,111 @@ import Link from 'next/link'
 import { useFetchProjectsList } from 'hooks/fetchProjectsList'
 
 import { Text } from 'components/Text'
+import { Icon } from 'components/Icon'
 
-import { Nav } from './NavMenu.styles'
+import { Nav, NavItem, NavDropdown, NavDropdownItem } from './NavMenu.styles'
 
 export const NavMenu = () => {
-  const [submenu, setSubmenu] = useState([false, false])
+  const [submenu, setSubmenu] = useState([false, false, false])
 
   const { data: projectsList } = useFetchProjectsList()
 
   return (
     <Nav>
-      <div
-        onMouseEnter={() => setSubmenu([true, false])}
-        onMouseLeave={() => setSubmenu([false, false])}
-        style={{ position: 'relative', height: '30px' }}
+      <NavItem>
+        <NavDropdownItem href="https://theforestplan.earth" rel="noreferrer" target="_blank">
+          <Text as="a" color="neutral-white" weight="bold">
+            The Forest Plan
+          </Text>
+        </NavDropdownItem>
+      </NavItem>
+
+      <NavItem
+        onMouseEnter={() => setSubmenu([true, false, false])}
+        onMouseLeave={() => setSubmenu([false, false, false])}
       >
         <Text as="a" color="neutral-white" weight="bold">
           Projects
         </Text>
+        <Icon name="arrow-down-line" color="neutral-white" />
         {submenu[0] && (
-          <div
-            onMouseEnter={() => setSubmenu([true, false])}
-            onMouseLeave={() => setSubmenu([false, false])}
-            style={{
-              background: 'white',
-              position: 'absolute',
-              padding: '10px',
-              width: '150px',
-              borderRadius: '4px',
-              top: '30px',
-              left: '-10px',
-              display: 'flex',
-              flexDirection: 'column',
-            }}
+          <NavDropdown
+            onMouseEnter={() => setSubmenu([true, false, false])}
+            onMouseLeave={() => setSubmenu([false, false, false])}
           >
             {projectsList.map((p) => (
-              <div key={p.id} style={{ marginBottom: '8px' }}>
+              <NavDropdownItem key={p.id}>
                 <Link href={`/projects/${p.id}`} passHref>
                   <Text as="a" color="primary-jasper-500" weight="bold">
-                    {p.title}
+                    {p.shortTitle}
                   </Text>
                 </Link>
-              </div>
+              </NavDropdownItem>
             ))}
-          </div>
+          </NavDropdown>
         )}
-      </div>
+      </NavItem>
 
-      <a href="https://everland.earth/contact/" rel="noreferrer" target="_blank">
+      <NavItem
+        onMouseEnter={() => setSubmenu([false, true, false])}
+        onMouseLeave={() => setSubmenu([false, false, false])}
+      >
         <Text color="neutral-white" weight="bold">
-          Contact Us
+          REDD+
         </Text>
-      </a>
+        <Icon name="arrow-down-line" color="neutral-white" />
+        {submenu[1] && (
+          <NavDropdown
+            onMouseEnter={() => setSubmenu([false, true, false])}
+            onMouseLeave={() => setSubmenu([false, false, false])}
+          >
+            <NavDropdownItem
+              href="https://everland.earth/why-redd"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Text as="a" color="primary-jasper-500" weight="bold">
+                Why REDD+
+              </Text>
+            </NavDropdownItem>
 
-      <div
-        onMouseEnter={() => setSubmenu([false, true])}
-        onMouseLeave={() => setSubmenu([false, false])}
-        style={{ position: 'relative', height: '30px' }}
+            <NavDropdownItem
+              href="https://everland.earth/how-redd-works"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Text as="a" color="primary-jasper-500" weight="bold">
+                How REDD+ works
+              </Text>
+            </NavDropdownItem>
+
+            <NavDropdownItem
+              href="https://everland.earth/redd-impacts"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Text as="a" color="primary-jasper-500" weight="bold">
+                REDD+ Impacts
+              </Text>
+            </NavDropdownItem>
+          </NavDropdown>
+        )}
+      </NavItem>
+
+      <NavItem
+        onMouseEnter={() => setSubmenu([false, false, true])}
+        onMouseLeave={() => setSubmenu([false, false, false])}
       >
         <Text color="neutral-white" weight="bold">
           About Us
         </Text>
-        {submenu[1] && (
-          <div
-            onMouseEnter={() => setSubmenu([false, true])}
-            onMouseLeave={() => setSubmenu([false, false])}
-            style={{
-              background: 'white',
-              position: 'absolute',
-              padding: '10px',
-              width: '150px',
-              borderRadius: '4px',
-              top: '30px',
-              left: '-10px',
-              display: 'flex',
-              flexDirection: 'column',
-            }}
+        <Icon name="arrow-down-line" color="neutral-white" />
+        {submenu[2] && (
+          <NavDropdown
+            onMouseEnter={() => setSubmenu([false, false, true])}
+            onMouseLeave={() => setSubmenu([false, false, false])}
           >
-            <a
-              style={{ marginBottom: '8px' }}
+            <NavDropdownItem
               href="https://everland.earth/who-we-are"
               rel="noreferrer"
               target="_blank"
@@ -90,10 +116,9 @@ export const NavMenu = () => {
               <Text as="a" color="primary-jasper-500" weight="bold">
                 Who We Are
               </Text>
-            </a>
+            </NavDropdownItem>
 
-            <a
-              style={{ marginBottom: '8px' }}
+            <NavDropdownItem
               href="https://everland.earth/what-we-do"
               rel="noreferrer"
               target="_blank"
@@ -101,10 +126,9 @@ export const NavMenu = () => {
               <Text as="a" color="primary-jasper-500" weight="bold">
                 What We Do
               </Text>
-            </a>
+            </NavDropdownItem>
 
-            <a
-              style={{ marginBottom: '8px' }}
+            <NavDropdownItem
               href="https://everland.earth/our-offer"
               rel="noreferrer"
               target="_blank"
@@ -112,10 +136,18 @@ export const NavMenu = () => {
               <Text as="a" color="primary-jasper-500" weight="bold">
                 Our Offer
               </Text>
-            </a>
-          </div>
+            </NavDropdownItem>
+          </NavDropdown>
         )}
-      </div>
+      </NavItem>
+
+      <NavItem>
+        <NavDropdownItem href="https://everland.earth/news" rel="noreferrer" target="_blank">
+          <Text as="a" color="neutral-white" weight="bold">
+            News
+          </Text>
+        </NavDropdownItem>
+      </NavItem>
     </Nav>
   )
 }

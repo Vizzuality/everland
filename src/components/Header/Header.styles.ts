@@ -21,7 +21,7 @@ export const HeaderContent = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  paddingTop: '$12',
+  paddingTop: '$7',
 })
 
 export const Menu = styled('button', {
