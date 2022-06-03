@@ -24,17 +24,6 @@ export const HeaderContent = styled('div', {
   paddingTop: '$12',
 })
 
-export const Nav = styled('nav', {
-  display: 'none',
-  gap: '35px',
-  margin: 'auto',
-  paddingRight: '93px',
-
-  '@bp2': {
-    display: 'flex',
-  },
-})
-
 export const Menu = styled('button', {
   size: '$16',
   backgroundColor: '$neutral-light-beige',
