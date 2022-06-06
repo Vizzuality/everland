@@ -41,10 +41,6 @@ export const Menu = styled('button', {
   right: 20,
   top: 20,
 
-  '&:hover': {
-    backgroundColor: '$neutral-dark-beige',
-  },
-
   '@bp2': {
     display: 'none',
   },
