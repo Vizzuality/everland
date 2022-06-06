@@ -7,6 +7,7 @@ import { Text } from 'components/Text'
 import { Icon } from 'components/Icon'
 
 import { Nav, NavItem, NavDropdown, NavDropdownItem } from './NavMenu.styles'
+import { MENU_LINKS } from './constants'
 
 export const NavMenu = ({ scrolledHeader }) => {
   const [submenu, setSubmenu] = useState([false, false, false])
@@ -72,35 +73,13 @@ export const NavMenu = ({ scrolledHeader }) => {
             onMouseEnter={() => setSubmenu([false, true, false])}
             onMouseLeave={() => setSubmenu([false, false, false])}
           >
-            <NavDropdownItem
-              href="https://everland.earth/why-redd"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Text as="a" color="primary-jasper-500" weight="bold">
-                Why REDD+
-              </Text>
-            </NavDropdownItem>
-
-            <NavDropdownItem
-              href="https://everland.earth/how-redd-works"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Text as="a" color="primary-jasper-500" weight="bold">
-                How REDD+ works
-              </Text>
-            </NavDropdownItem>
-
-            <NavDropdownItem
-              href="https://everland.earth/redd-impacts"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Text as="a" color="primary-jasper-500" weight="bold">
-                REDD+ Impacts
-              </Text>
-            </NavDropdownItem>
+            {MENU_LINKS.redd.map((l, i) => (
+              <NavDropdownItem key={i} href={l.href} rel="noreferrer" target="_blank">
+                <Text as="a" color="primary-jasper-500" weight="bold">
+                  {l.title}
+                </Text>
+              </NavDropdownItem>
+            ))}
           </NavDropdown>
         )}
       </NavItem>
@@ -121,35 +100,13 @@ export const NavMenu = ({ scrolledHeader }) => {
             onMouseEnter={() => setSubmenu([false, false, true])}
             onMouseLeave={() => setSubmenu([false, false, false])}
           >
-            <NavDropdownItem
-              href="https://everland.earth/who-we-are"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Text as="a" color="primary-jasper-500" weight="bold">
-                Who We Are
-              </Text>
-            </NavDropdownItem>
-
-            <NavDropdownItem
-              href="https://everland.earth/what-we-do"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Text as="a" color="primary-jasper-500" weight="bold">
-                What We Do
-              </Text>
-            </NavDropdownItem>
-
-            <NavDropdownItem
-              href="https://everland.earth/our-offer"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Text as="a" color="primary-jasper-500" weight="bold">
-                Our Offer
-              </Text>
-            </NavDropdownItem>
+            {MENU_LINKS.about.map((l, i) => (
+              <NavDropdownItem key={i} href={l.href} rel="noreferrer" target="_blank">
+                <Text as="a" color="primary-jasper-500" weight="bold">
+                  {l.title}
+                </Text>
+              </NavDropdownItem>
+            ))}
           </NavDropdown>
         )}
       </NavItem>
