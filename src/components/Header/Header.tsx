@@ -1,14 +1,16 @@
-import * as everlandLogo from '../../../public/images/common/logo.svg'
+import React, { ComponentProps, useState, useEffect } from 'react'
 
-import { HeaderContent, HeaderRoot, Menu, Nav } from './Header.styles'
-import React, { ComponentProps, useState } from 'react'
+import * as everlandLogo from '../../../public/images/common/logo.svg'
+import everlandLogoJasper from '../../../public/images/common/logo-everland-jasper.png'
+
+import { HeaderContent, HeaderRoot, IconMenu, Menu, LoginButton } from './Header.styles'
 
 import { Container } from 'containers/components/Container/Container'
 import Image from 'next/image'
-import { Logo } from 'components/Logo'
+
 import { Text } from 'components/Text'
-import Link from 'next/link'
-import { Icon } from 'components/Icon'
+import { Logo } from 'components/Logo'
+import { NavMenu } from 'components/NavMenu'
 import { NavMenuDialog } from 'components/NavMenuDialog/NavMenuDialog'
 
 type HeaderOwnProps = ComponentProps<typeof HeaderRoot>
@@ -17,37 +19,48 @@ type HeaderProps = HeaderOwnProps
 
 export const Header = (props: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [clientWindowHeight, setClientWindowHeight] = useState(null)
+  const scrolledHeader = clientWindowHeight > 30
+
+  const handleScroll = () => {
+    setClientWindowHeight(window.scrollY)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
   return (
-    <HeaderRoot {...props}>
+    <HeaderRoot scrolled={scrolledHeader} fixed={!isMenuOpen} {...props}>
       <Container>
         <HeaderContent>
           <a href="https://everland.earth" rel="noreferrer" target="_blank">
             <Logo>
-              <Image src={everlandLogo} alt="Logo" />
+              <Image src={scrolledHeader ? everlandLogoJasper : everlandLogo} alt="Logo" />
             </Logo>
           </a>
 
-          <Nav>
-            <Link href="/projects" passHref>
-              <Text as="a" color="neutral-white">
-                PROJECTS
+          <NavMenu scrolledHeader={scrolledHeader} />
+
+          <LoginButton scrolled={scrolledHeader}>
+            <a href="https://everland.earth/login">
+              <Text
+                as="a"
+                color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
+                weight="bold"
+              >
+                Login
               </Text>
-            </Link>
-            <a href="https://everland.earth/contact/" rel="noreferrer" target="_blank">
-              <Text color="neutral-white">CONTACT US</Text>
             </a>
-            <a href="https://everland.earth/who-we-are" rel="noreferrer" target="_blank">
-              <Text color="neutral-white">ABOUT US</Text>
-            </a>
-          </Nav>
+          </LoginButton>
 
           <Menu onClick={toggleMenu}>
-            <Icon name="menu" size="8" />
+            <IconMenu scrolled={scrolledHeader} />
           </Menu>
         </HeaderContent>
       </Container>

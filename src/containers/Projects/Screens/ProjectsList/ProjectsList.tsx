@@ -16,7 +16,7 @@ export const ProjectsList = () => {
     <ProjectsListBackground>
       <ProjectsListRoot>
         <Header />
-        <Spacer space="8" direction="column" />
+        <Spacer space="24" direction="column" />
         <Container>
           <Text as="h3" size="heroTitle3" family="secondary" color="neutral-white" weight="regular">
             Projects

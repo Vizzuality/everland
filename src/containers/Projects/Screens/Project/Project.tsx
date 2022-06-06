@@ -22,6 +22,7 @@ import {
   ScrollDown,
   SpaceBetween,
   RelatedProjects,
+  Subtitle,
   Video,
   ProjectRoot,
   HeroContent,
@@ -119,9 +120,12 @@ export const Project = () => {
                 {project.title}
               </Text>
             </HeroTitle>
-            <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
-              {project.subtitle}
-            </Text>
+
+            <Subtitle>
+              <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
+                {project.subtitle}
+              </Text>
+            </Subtitle>
 
             <Spacer space="8" direction="column" />
 
@@ -182,7 +186,7 @@ export const Project = () => {
           <Container
             css={{
               '@mobile': { paddingLeft: 0, paddingRight: 0 },
-              '@bp2': { paddingLeft: '$16', paddingRight: '$16' },
+              '@bp2': { paddingLeft: '$18', paddingRight: '$18' },
             }}
           >
             <Impact>

@@ -152,6 +152,9 @@ export const Text = styled('span', {
       regular: {
         fontWeight: '$regular',
       },
+      semibold: {
+        fontWeight: '$semibold',
+      },
       bold: {
         fontWeight: '$bold',
       },

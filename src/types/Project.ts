@@ -45,6 +45,7 @@ export type ProjectSummary = {
   id: string
   slug: string
   title: string
+  shortTitle: string
   mainPicture: string
   standards: string
   location: Location
