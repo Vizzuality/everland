@@ -19,7 +19,6 @@ export const MenuDialogItemPill = styled('div', {
   display: 'flex',
   alignItems: 'center',
   height: '$11',
-  '&:active': { borderStyle: 'none' },
 })
 
 export const MenuContent = styled('div', {
