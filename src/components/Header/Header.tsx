@@ -36,7 +36,7 @@ export const Header = (props: HeaderProps) => {
   }
 
   return (
-    <HeaderRoot scrolled={scrolledHeader} {...props}>
+    <HeaderRoot scrolled={scrolledHeader} fixed={!isMenuOpen} {...props}>
       <Container>
         <HeaderContent>
           <a href="https://everland.earth" rel="noreferrer" target="_blank">
@@ -60,7 +60,7 @@ export const Header = (props: HeaderProps) => {
           </LoginButton>
 
           <Menu onClick={toggleMenu}>
-            <IconMenu />
+            <IconMenu scrolled={scrolledHeader} />
           </Menu>
         </HeaderContent>
       </Container>

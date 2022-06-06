@@ -1,13 +1,6 @@
 import { styled } from 'stitches.config'
 
 export const HeaderRoot = styled('header', {
-  '@bp2': {
-    left: 0,
-    position: 'fixed',
-    top: 0,
-    width: '100%',
-    zIndex: '$4',
-  },
   variants: {
     scrolled: {
       true: {
@@ -20,6 +13,7 @@ export const HeaderRoot = styled('header', {
         top: 0,
         left: 0,
         zIndex: '$4',
+        width: '100%',
       },
     },
   },
@@ -82,4 +76,12 @@ export const IconMenu = styled('div', {
   borderBottom: '1px solid white',
   height: '10px',
   width: '30px',
+  variants: {
+    scrolled: {
+      true: {
+        borderColor: '$primary-jasper-500',
+        borderWidth: '2px',
+      },
+    },
+  },
 })
