@@ -22,6 +22,7 @@ import {
   ScrollDown,
   SpaceBetween,
   RelatedProjects,
+  Subtitle,
   Video,
   ProjectRoot,
   HeroContent,
@@ -119,9 +120,12 @@ export const Project = () => {
                 {project.title}
               </Text>
             </HeroTitle>
-            <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
-              {project.subtitle}
-            </Text>
+
+            <Subtitle>
+              <Text size="h2" color="neutral-white" family="secondary" fontStyle="italic">
+                {project.subtitle}
+              </Text>
+            </Subtitle>
 
             <Spacer space="8" direction="column" />
 

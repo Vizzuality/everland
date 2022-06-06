@@ -15,6 +15,7 @@ export const Hero = styled('div', {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
 })
+
 export const HeroTitle = styled('div', {
   '@bp3': {
     paddingRight: '150px',
@@ -164,6 +165,10 @@ export const InterventionModel = styled('div', {
   '@bp3': {
     px: '$23',
   },
+})
+
+export const Subtitle = styled('div', {
+  textAlign: 'center',
 })
 
 export const VideoPlayIcon = styled('div', {
