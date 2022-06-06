@@ -46,11 +46,7 @@ export const NavMenu = ({ scrolledHeader }) => {
             {projectsList.map((p) => (
               <NavDropdownItem key={p.id}>
                 <Link href={`/projects/${p.id}`} passHref>
-                  <Text
-                    as="a"
-                    color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
-                    weight="bold"
-                  >
+                  <Text as="a" color="primary-jasper-500" weight="bold">
                     {p.shortTitle}
                   </Text>
                 </Link>
@@ -160,7 +156,11 @@ export const NavMenu = ({ scrolledHeader }) => {
 
       <NavItem>
         <NavDropdownItem href="https://everland.earth/news" rel="noreferrer" target="_blank">
-          <Text as="a" color="neutral-white" weight="bold">
+          <Text
+            as="a"
+            color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
+            weight="bold"
+          >
             News
           </Text>
         </NavDropdownItem>
