@@ -8,7 +8,7 @@ import { Icon } from 'components/Icon'
 
 import { Nav, NavItem, NavDropdown, NavDropdownItem } from './NavMenu.styles'
 
-export const NavMenu = () => {
+export const NavMenu = ({ scrolledHeader }) => {
   const [submenu, setSubmenu] = useState([false, false, false])
 
   const { data: projectsList } = useFetchProjectsList()
@@ -17,7 +17,11 @@ export const NavMenu = () => {
     <Nav>
       <NavItem>
         <NavDropdownItem href="https://theforestplan.earth" rel="noreferrer" target="_blank">
-          <Text as="a" color="neutral-white" weight="bold">
+          <Text
+            as="a"
+            color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
+            weight="bold"
+          >
             The Forest Plan
           </Text>
         </NavDropdownItem>
@@ -27,10 +31,13 @@ export const NavMenu = () => {
         onMouseEnter={() => setSubmenu([true, false, false])}
         onMouseLeave={() => setSubmenu([false, false, false])}
       >
-        <Text as="a" color="neutral-white" weight="bold">
+        <Text as="a" color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'} weight="bold">
           Projects
         </Text>
-        <Icon name="arrow-down-line" color="neutral-white" />
+        <Icon
+          name="arrow-down-line"
+          color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
+        />
         {submenu[0] && (
           <NavDropdown
             onMouseEnter={() => setSubmenu([true, false, false])}
@@ -39,7 +46,11 @@ export const NavMenu = () => {
             {projectsList.map((p) => (
               <NavDropdownItem key={p.id}>
                 <Link href={`/projects/${p.id}`} passHref>
-                  <Text as="a" color="primary-jasper-500" weight="bold">
+                  <Text
+                    as="a"
+                    color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
+                    weight="bold"
+                  >
                     {p.shortTitle}
                   </Text>
                 </Link>
@@ -53,10 +64,13 @@ export const NavMenu = () => {
         onMouseEnter={() => setSubmenu([false, true, false])}
         onMouseLeave={() => setSubmenu([false, false, false])}
       >
-        <Text color="neutral-white" weight="bold">
+        <Text color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'} weight="bold">
           REDD+
         </Text>
-        <Icon name="arrow-down-line" color="neutral-white" />
+        <Icon
+          name="arrow-down-line"
+          color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
+        />
         {submenu[1] && (
           <NavDropdown
             onMouseEnter={() => setSubmenu([false, true, false])}
@@ -99,10 +113,13 @@ export const NavMenu = () => {
         onMouseEnter={() => setSubmenu([false, false, true])}
         onMouseLeave={() => setSubmenu([false, false, false])}
       >
-        <Text color="neutral-white" weight="bold">
+        <Text color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'} weight="bold">
           About Us
         </Text>
-        <Icon name="arrow-down-line" color="neutral-white" />
+        <Icon
+          name="arrow-down-line"
+          color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
+        />
         {submenu[2] && (
           <NavDropdown
             onMouseEnter={() => setSubmenu([false, false, true])}

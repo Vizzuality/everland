@@ -2,12 +2,13 @@ import { styled } from 'stitches.config'
 
 export const Nav = styled('nav', {
   display: 'none',
-  gap: '35px',
   margin: 'auto',
-  paddingRight: '93px',
+  justifyContent: 'space-between',
+  gap: '35px',
 
   '@bp2': {
     display: 'flex',
+    flexDirection: 'row',
   },
 })
 

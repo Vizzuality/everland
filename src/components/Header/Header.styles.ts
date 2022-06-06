@@ -1,11 +1,19 @@
 import { styled } from 'stitches.config'
 
 export const HeaderRoot = styled('header', {
-  width: '100%',
-  position: 'relative',
-  zIndex: 10,
-
+  '@bp2': {
+    left: 0,
+    position: 'fixed',
+    top: 0,
+    width: '100%',
+    zIndex: '$4',
+  },
   variants: {
+    background: {
+      scrolled: {
+        backgroundColor: 'white',
+      },
+    },
     fixed: {
       true: {
         position: 'fixed',
@@ -22,6 +30,7 @@ export const HeaderContent = styled('div', {
   alignItems: 'center',
   justifyContent: 'space-between',
   paddingTop: '$7',
+  paddingBottom: '$7',
 })
 
 export const Menu = styled('button', {
@@ -41,5 +50,26 @@ export const Menu = styled('button', {
 
   '@bp2': {
     display: 'none',
+  },
+})
+
+export const LoginButton = styled('button', {
+  display: 'none',
+  '@bp2': {
+    display: 'block',
+    border: '2px solid white',
+    borderRadius: '16px',
+    background: 'transparent',
+    color: 'white',
+    fontWeight: 'bold',
+    outline: 'none',
+    padding: '6px 18px',
+  },
+  variants: {
+    border: {
+      scrolled: {
+        borderColor: '$primary-jasper-500',
+      },
+    },
   },
 })
