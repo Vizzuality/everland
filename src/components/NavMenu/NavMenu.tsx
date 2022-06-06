@@ -21,7 +21,7 @@ export const NavMenu = ({ scrolledHeader }) => {
           <Text
             as="a"
             color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
-            weight="bold"
+            weight="semibold"
           >
             The Forest Plan
           </Text>
@@ -32,7 +32,11 @@ export const NavMenu = ({ scrolledHeader }) => {
         onMouseEnter={() => setSubmenu([true, false, false])}
         onMouseLeave={() => setSubmenu([false, false, false])}
       >
-        <Text as="a" color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'} weight="bold">
+        <Text
+          as="a"
+          color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
+          weight="semibold"
+        >
           Projects
         </Text>
         <Icon
@@ -61,7 +65,7 @@ export const NavMenu = ({ scrolledHeader }) => {
         onMouseEnter={() => setSubmenu([false, true, false])}
         onMouseLeave={() => setSubmenu([false, false, false])}
       >
-        <Text color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'} weight="bold">
+        <Text color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'} weight="semibold">
           REDD+
         </Text>
         <Icon
@@ -88,7 +92,7 @@ export const NavMenu = ({ scrolledHeader }) => {
         onMouseEnter={() => setSubmenu([false, false, true])}
         onMouseLeave={() => setSubmenu([false, false, false])}
       >
-        <Text color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'} weight="bold">
+        <Text color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'} weight="semibold">
           About Us
         </Text>
         <Icon
@@ -116,7 +120,7 @@ export const NavMenu = ({ scrolledHeader }) => {
           <Text
             as="a"
             color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
-            weight="bold"
+            weight="semibold"
           >
             News
           </Text>

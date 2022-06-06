@@ -186,7 +186,7 @@ export const Project = () => {
           <Container
             css={{
               '@mobile': { paddingLeft: 0, paddingRight: 0 },
-              '@bp2': { paddingLeft: '$16', paddingRight: '$16' },
+              '@bp2': { paddingLeft: '$18', paddingRight: '$18' },
             }}
           >
             <Impact>
