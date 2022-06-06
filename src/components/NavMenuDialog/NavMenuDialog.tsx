@@ -29,7 +29,7 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
 
   const toggleSubmenu = (e, i) => {
     e.preventDefault()
-    const newState = [...submenu]
+    const newState = [false, false, false]
     newState[i] = !newState[i]
     setSubmenu(newState)
   }
