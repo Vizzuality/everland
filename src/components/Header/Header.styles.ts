@@ -35,7 +35,7 @@ export const HeaderContent = styled('div', {
 
 export const Menu = styled('button', {
   size: '$16',
-  backgroundColor: '$neutral-light-beige',
+  backgroundColor: 'transparent',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -75,4 +75,11 @@ export const LoginButton = styled('button', {
       },
     },
   },
+})
+
+export const IconMenu = styled('div', {
+  borderTop: '1px solid white',
+  borderBottom: '1px solid white',
+  height: '10px',
+  width: '30px',
 })
