@@ -21,10 +21,14 @@ export const MenuDialogItemPill = styled('div', {
   height: '$11',
 })
 
+export const MenuContent = styled('div', {
+  paddingTop: '15px',
+})
+
 export const MenuDialogContentItem = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  marginBottom: '10px',
+  marginBottom: '20px',
 })
 
 export const CloseButton = styled('button', {

@@ -23,29 +23,6 @@
     ]
   },
   {
-    "id": "keo-seima-id",
-    "slug": "keo-seima",
-    "title": "The Wildlife Conservation Society Keo Seima Project",
-    "shortTitle": "Keo Seima",
-    "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
-    "standards": "VCS, CCB",
-    "location": {
-      "iso": "KHM",
-      "name": "Cambodia",
-      "centroid": [
-        11.562108,
-        104.888535
-      ],
-      "geometry": null
-    },
-    "impact": [
-      "Community",
-      "Governance",
-      "Biodiversity",
-      "Climate"
-    ]
-  },
-  {
     "id": "mai-ndombe-id",
     "slug": "mai-ndombe",
     "title": "The Wildlife Works Mai Ndombe Project",
@@ -69,11 +46,11 @@
     ]
   },
   {
-    "id": "southern-cardamom-id",
-    "slug": "southern-cardamom-id",
-    "title": "The Wildlife Alliance Southern Cardamom Project",
-    "shortTitle": "Southern Cardamom",
-    "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
+    "id": "keo-seima-id",
+    "slug": "keo-seima",
+    "title": "The Wildlife Conservation Society Keo Seima Project",
+    "shortTitle": "Keo Seima",
+    "mainPicture": "/images/projects/keo-seima/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
       "iso": "KHM",
@@ -97,6 +74,29 @@
     "title": "Tumring",
     "shortTitle": "Tumring",
     "mainPicture": "/images/projects/tumring/catalogue.jpg",
+    "standards": "VCS, CCB",
+    "location": {
+      "iso": "KHM",
+      "name": "Cambodia",
+      "centroid": [
+        11.562108,
+        104.888535
+      ],
+      "geometry": null
+    },
+    "impact": [
+      "Community",
+      "Governance",
+      "Biodiversity",
+      "Climate"
+    ]
+  },
+  {
+    "id": "southern-cardamom-id",
+    "slug": "southern-cardamom-id",
+    "title": "The Wildlife Alliance Southern Cardamom Project",
+    "shortTitle": "Southern Cardamom",
+    "mainPicture": "/images/projects/southern-cardamom/catalogue.jpg",
     "standards": "VCS, CCB",
     "location": {
       "iso": "KHM",

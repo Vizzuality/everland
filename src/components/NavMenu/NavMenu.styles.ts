@@ -33,7 +33,7 @@ export const NavDropdown = styled('div', {
 })
 
 export const NavDropdownItem = styled('a', {
-  marginBottom: '15px',
+  marginBottom: '25px',
   '&:last-child': {
     marginBottom: 0,
   },

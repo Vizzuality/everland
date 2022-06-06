@@ -9,6 +9,7 @@ import {
   IconWrapper,
   Nav,
   NavMenuDialogRoot,
+  MenuContent,
   MenuDialogItem,
   MenuDialogItemPill,
   MenuDialogContentItem,
@@ -76,16 +77,19 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
                   <Icon name="arrow-down-line" color="neutral-white" />
                 </IconWrapper>
               </MenuDialogItemPill>
-              {submenu[0] &&
-                projectsList.map((p) => (
-                  <MenuDialogContentItem key={p.id} ref={content}>
-                    <Link href={`/projects/${p.id}`} passHref>
-                      <Text as="a" color="neutral-white" weight="bold">
-                        {p.shortTitle}
-                      </Text>
-                    </Link>
-                  </MenuDialogContentItem>
-                ))}
+              {submenu[0] && (
+                <MenuContent>
+                  {projectsList.map((p) => (
+                    <MenuDialogContentItem key={p.id} ref={content}>
+                      <Link href={`/projects/${p.id}`} passHref>
+                        <Text as="a" color="neutral-white" weight="bold">
+                          {p.shortTitle}
+                        </Text>
+                      </Link>
+                    </MenuDialogContentItem>
+                  ))}
+                </MenuContent>
+              )}
             </MenuDialogItem>
 
             <MenuDialogItem>
@@ -97,16 +101,19 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
                   <Icon name="arrow-down-line" color="neutral-white" />
                 </IconWrapper>
               </MenuDialogItemPill>
-              {submenu[1] &&
-                MENU_LINKS.redd.map((l, i) => (
-                  <MenuDialogContentItem key={i}>
-                    <a href={l.href}>
-                      <Text as="a" color="neutral-white" weight="bold">
-                        {l.title}
-                      </Text>
-                    </a>
-                  </MenuDialogContentItem>
-                ))}
+              {submenu[1] && (
+                <MenuContent>
+                  {MENU_LINKS.redd.map((l, i) => (
+                    <MenuDialogContentItem key={i}>
+                      <a href={l.href}>
+                        <Text as="a" color="neutral-white" weight="bold">
+                          {l.title}
+                        </Text>
+                      </a>
+                    </MenuDialogContentItem>
+                  ))}
+                </MenuContent>
+              )}
             </MenuDialogItem>
 
             <MenuDialogItem>
@@ -118,16 +125,19 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
                   <Icon name="arrow-down-line" color="neutral-white" />
                 </IconWrapper>
               </MenuDialogItemPill>
-              {submenu[2] &&
-                MENU_LINKS.about.map((l, i) => (
-                  <MenuDialogContentItem key={i}>
-                    <a href={l.href}>
-                      <Text as="a" color="neutral-white" weight="bold">
-                        {l.title}
-                      </Text>
-                    </a>
-                  </MenuDialogContentItem>
-                ))}
+              {submenu[2] && (
+                <MenuContent>
+                  {MENU_LINKS.about.map((l, i) => (
+                    <MenuDialogContentItem key={i}>
+                      <a href={l.href}>
+                        <Text as="a" color="neutral-white" weight="bold">
+                          {l.title}
+                        </Text>
+                      </a>
+                    </MenuDialogContentItem>
+                  ))}
+                </MenuContent>
+              )}
             </MenuDialogItem>
 
             <MenuDialogItem>
