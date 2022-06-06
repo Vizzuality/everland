@@ -9,8 +9,8 @@ export const HeaderRoot = styled('header', {
     zIndex: '$4',
   },
   variants: {
-    background: {
-      scrolled: {
+    scrolled: {
+      true: {
         backgroundColor: 'white',
       },
     },
@@ -69,8 +69,8 @@ export const LoginButton = styled('button', {
     padding: '6px 18px',
   },
   variants: {
-    border: {
-      scrolled: {
+    scrolled: {
+      true: {
         borderColor: '$primary-jasper-500',
       },
     },

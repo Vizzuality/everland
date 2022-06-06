@@ -37,7 +37,7 @@ export const Header = (props: HeaderProps) => {
   }
 
   return (
-    <HeaderRoot background={scrolledHeader && 'scrolled'} {...props}>
+    <HeaderRoot scrolled={scrolledHeader} {...props}>
       <Container>
         <HeaderContent>
           <a href="https://everland.earth" rel="noreferrer" target="_blank">
@@ -48,7 +48,7 @@ export const Header = (props: HeaderProps) => {
 
           <NavMenu scrolledHeader={scrolledHeader} />
 
-          <LoginButton border={scrolledHeader && 'scrolled'}>
+          <LoginButton scrolled={scrolledHeader}>
             <a href="https://everland.earth/login">
               <Text
                 as="a"
