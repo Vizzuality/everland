@@ -3,12 +3,11 @@ import React, { ComponentProps, useState, useEffect } from 'react'
 import * as everlandLogo from '../../../public/images/common/logo.svg'
 import everlandLogoJasper from '../../../public/images/common/logo-everland-jasper.png'
 
-import { HeaderContent, HeaderRoot, IconMenu, Menu, LoginButton } from './Header.styles'
+import { HeaderContent, HeaderRoot, IconMenu, Menu } from './Header.styles'
 
 import { Container } from 'containers/components/Container/Container'
 import Image from 'next/image'
 
-import { Text } from 'components/Text'
 import { Logo } from 'components/Logo'
 import { NavMenu } from 'components/NavMenu'
 import { NavMenuDialog } from 'components/NavMenuDialog/NavMenuDialog'
@@ -47,7 +46,7 @@ export const Header = (props: HeaderProps) => {
 
           <NavMenu scrolledHeader={scrolledHeader} />
 
-          <LoginButton scrolled={scrolledHeader}>
+          {/* <LoginButton scrolled={scrolledHeader}>
             <a href="https://everland.earth/login">
               <Text
                 as="a"
@@ -57,7 +56,7 @@ export const Header = (props: HeaderProps) => {
                 Login
               </Text>
             </a>
-          </LoginButton>
+          </LoginButton> */}
 
           <Menu onClick={toggleMenu}>
             <IconMenu scrolled={scrolledHeader} />
