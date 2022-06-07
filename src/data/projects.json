@@ -1,5 +1,6 @@
 [
   {
+    "order": 1,
     "id": "kasigau-id",
     "slug": "kasigau",
     "title": "The Wildlife Works Kasigau Project",
@@ -23,6 +24,7 @@
     ]
   },
   {
+    "order": 2,
     "id": "mai-ndombe-id",
     "slug": "mai-ndombe",
     "title": "The Wildlife Works Mai Ndombe Project",
@@ -46,6 +48,7 @@
     ]
   },
   {
+    "order": 3,
     "id": "keo-seima-id",
     "slug": "keo-seima",
     "title": "The Wildlife Conservation Society Keo Seima Project",
@@ -69,6 +72,7 @@
     ]
   },
   {
+    "order": 4,
     "id": "tumring-id",
     "slug": "tumring",
     "title": "Tumring",
@@ -92,6 +96,7 @@
     ]
   },
   {
+    "order": 5,
     "id": "southern-cardamom-id",
     "slug": "southern-cardamom-id",
     "title": "The Wildlife Alliance Southern Cardamom Project",
@@ -115,6 +120,7 @@
     ]
   },
   {
+    "order": 6,
     "id": "guinea-bissau-id",
     "slug": "guinea-bissau",
     "title": "Guinea Bissau Avoided Deforestation",

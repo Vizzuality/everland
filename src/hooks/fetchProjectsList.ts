@@ -9,10 +9,12 @@ type Options = UseQueryOptions<Response, Error>
 
 const createKey = () => 'projects-list'
 
+const orderedProjects = Projects.sort((a, b) => {
+  return a.order - b.order
+})
 const queryFetcher = () => () => {
-  return Promise.resolve(Projects) as unknown as Response
+  return Promise.resolve(orderedProjects) as unknown as Response
 }
-
 export const useFetchProjectsList = (options?: Options) => {
   return useQuery<Response, Error>(createKey(), queryFetcher(), options)
 }
