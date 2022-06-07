@@ -8,11 +8,14 @@ import { Icon } from 'components/Icon'
 
 import { Nav, NavItem, NavDropdown, NavDropdownItem } from './NavMenu.styles'
 import { MENU_LINKS } from './constants'
+import { sortBy } from 'lodash'
 
 export const NavMenu = ({ scrolledHeader }) => {
   const [submenu, setSubmenu] = useState([false, false, false])
 
-  const { data: projectsList } = useFetchProjectsList()
+  const { data: projectsList } = useFetchProjectsList({
+    select: (projectList) => sortBy(projectList, 'order'),
+  })
 
   return (
     <Nav>

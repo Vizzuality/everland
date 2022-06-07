@@ -16,6 +16,7 @@ import {
   MenuClick,
   MenuCollapsableClick,
 } from './NavMenuDialog.styles'
+import { sortBy } from 'lodash'
 
 import { MENU_LINKS } from './constants'
 
@@ -37,7 +38,9 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
     setSubmenu(newState)
   }
 
-  const { data: projectsList } = useFetchProjectsList()
+  const { data: projectsList } = useFetchProjectsList({
+    select: (projectList) => sortBy(projectList, 'order'),
+  })
 
   return (
     <Dialog
