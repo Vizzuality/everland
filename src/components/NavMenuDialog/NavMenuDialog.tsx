@@ -13,6 +13,8 @@ import {
   MenuDialogItem,
   MenuDialogItemPill,
   MenuDialogContentItem,
+  MenuClick,
+  MenuCollapsableClick,
 } from './NavMenuDialog.styles'
 
 import { MENU_LINKS } from './constants'
@@ -60,19 +62,21 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
           <Nav>
             <MenuDialogItem>
               <MenuDialogItemPill>
-                <a href="https://theforestplan.earth" rel="noreferrer" target="_blank">
+                <MenuClick href="https://theforestplan.earth" rel="noreferrer" target="_blank">
                   <Text as="a" color="neutral-white" weight="bold">
                     The Forest Plan
                   </Text>
-                </a>
+                </MenuClick>
               </MenuDialogItemPill>
             </MenuDialogItem>
 
             <MenuDialogItem>
               <MenuDialogItemPill onClick={(e) => toggleSubmenu(e, 0)}>
-                <Text as="a" color="neutral-white" weight="bold">
-                  Projects
-                </Text>
+                <MenuCollapsableClick>
+                  <Text as="a" color="neutral-white" weight="bold">
+                    Projects
+                  </Text>
+                </MenuCollapsableClick>
                 <IconWrapper>
                   <Icon name="arrow-down-line" color="neutral-white" />
                 </IconWrapper>
@@ -94,9 +98,11 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
 
             <MenuDialogItem>
               <MenuDialogItemPill onClick={(e) => toggleSubmenu(e, 1)}>
-                <Text as="a" color="neutral-white" weight="bold">
-                  REDD+
-                </Text>
+                <MenuCollapsableClick>
+                  <Text as="a" color="neutral-white" weight="bold">
+                    REDD+
+                  </Text>
+                </MenuCollapsableClick>
                 <IconWrapper>
                   <Icon name="arrow-down-line" color="neutral-white" />
                 </IconWrapper>
@@ -118,9 +124,11 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
 
             <MenuDialogItem>
               <MenuDialogItemPill onClick={(e) => toggleSubmenu(e, 2)}>
-                <Text as="a" color="neutral-white" weight="bold">
-                  About us
-                </Text>
+                <MenuCollapsableClick>
+                  <Text as="a" color="neutral-white" weight="bold">
+                    About us
+                  </Text>
+                </MenuCollapsableClick>
                 <IconWrapper>
                   <Icon name="arrow-down-line" color="neutral-white" />
                 </IconWrapper>
@@ -142,21 +150,11 @@ export const NavMenuDialog = ({ isOpen, onOpenChange }: NavMenuDialogProps) => {
 
             <MenuDialogItem>
               <MenuDialogItemPill>
-                <a href="https://everland.earth/news" rel="noreferrer" target="_blank">
+                <MenuClick href="https://everland.earth/news" rel="noreferrer" target="_blank">
                   <Text as="a" color="neutral-white" weight="bold">
                     News
                   </Text>
-                </a>
-              </MenuDialogItemPill>
-            </MenuDialogItem>
-
-            <MenuDialogItem>
-              <MenuDialogItemPill>
-                <a href="https://everland.earth/login" rel="noreferrer" target="_blank">
-                  <Text as="a" color="neutral-white" weight="bold">
-                    Login
-                  </Text>
-                </a>
+                </MenuClick>
               </MenuDialogItemPill>
             </MenuDialogItem>
           </Nav>

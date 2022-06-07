@@ -13,6 +13,21 @@ export const MenuDialogItem = styled('div', {
   width: '100%',
   borderBottom: '0.6px solid',
   borderColor: 'rgba(255,255,255, 0.5)',
+  '-webkit-tap-highlight-color': 'transparent',
+})
+
+export const MenuClick = styled('a', {
+  '&:active': {
+    backgroundColor: 'rgba(51, 181, 229, 0.4)',
+    transition: 'background-color 0.2s ease-in-out',
+  },
+})
+
+export const MenuCollapsableClick = styled('div', {
+  '&:active': {
+    backgroundColor: 'rgba(51, 181, 229, 0.4)',
+    transition: 'background-color 0.2s ease-in-out',
+  },
 })
 
 export const MenuDialogItemPill = styled('div', {
@@ -29,6 +44,10 @@ export const MenuDialogContentItem = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   marginBottom: '20px',
+  '&:active': {
+    backgroundColor: 'rgba(51, 181, 229, 0.4)',
+    transition: 'background-color 0.2s ease-in-out',
+  },
 })
 
 export const CloseButton = styled('button', {
