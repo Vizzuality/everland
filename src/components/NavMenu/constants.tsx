@@ -24,7 +24,7 @@ export const MENU_LINKS = {
     },
     {
       title: 'Our Offer',
-      href: '"https://everland.earth/our-offer"',
+      href: 'https://everland.earth/our-offer',
     },
   ],
 }
