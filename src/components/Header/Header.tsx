@@ -18,8 +18,8 @@ export const Header = (props: HeaderProps) => {
   const scrolledHeader = clientWindowHeight > 30
 
   const LOGO_IMAGE = scrolledHeader
-    ? 'images/common/logo-everland-jasper.png'
-    : 'images/common/logo.svg'
+    ? '/images/common/logo-everland-jasper.png'
+    : '/images/common/logo.svg'
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY)
