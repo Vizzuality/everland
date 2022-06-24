@@ -102,3 +102,8 @@ export const TabImage = styled('figure', {
     right: '-120px',
   },
 })
+
+export const InterventionModelImage = styled('img', {
+  height: '100%',
+  width: '100%',
+})

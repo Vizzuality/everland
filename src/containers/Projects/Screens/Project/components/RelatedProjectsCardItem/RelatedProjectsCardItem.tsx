@@ -1,7 +1,6 @@
 import { Icon } from 'components/Icon'
 import { Spacer } from 'components/Spacer'
 import { Text } from 'components/Text'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ProjectSummary } from 'types/Project'
 import {
@@ -9,6 +8,7 @@ import {
   RelatedProjectsCardItemRoot,
   Location,
   TextContainer,
+  RelatedProjectImage,
 } from './RelatedProjectsCardItem.styles'
 
 export const RelatedProjectsCardItem = ({
@@ -22,7 +22,7 @@ export const RelatedProjectsCardItem = ({
     <Link href={`/projects/${id}`} passHref>
       <RelatedProjectsCardItemRoot>
         <ImageContainer>
-          {mainPicture && <Image src={mainPicture} alt={title} layout="fill" objectFit="cover" />}
+          {mainPicture && <RelatedProjectImage src={mainPicture} alt={title} />}
           <Location>
             <Icon name="marker" size={6} color="neutral-white" />
             <Spacer space="3" direction="row" />

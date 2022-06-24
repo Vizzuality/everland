@@ -29,11 +29,12 @@ import {
   VideoPlayIcon,
   VideoOverlay,
   VideoContainer,
+  VideoImage,
 } from './Project.styles'
 
 import { Header } from 'components/Header'
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
+
 import { useFetchProjectDetail } from 'hooks/fetchProjectDetail'
 import { useRouter } from 'next/router'
 import { ScrollToTop } from 'components/ScrollToTop/ScrollToTop'
@@ -204,7 +205,6 @@ export const Project = () => {
           </Container>
         </Section>
       )}
-
       {project.video && (
         <Section scrollDistance="7">
           <Container>
@@ -220,7 +220,7 @@ export const Project = () => {
                 <>
                   <VideoOverlay />
                   <VideoPlayIcon>
-                    <Image src={playIcon} alt="play" />
+                    <VideoImage src={`${playIcon}`} alt="play" />
                   </VideoPlayIcon>
                 </>
               )}
