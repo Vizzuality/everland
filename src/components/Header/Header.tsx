@@ -1,6 +1,6 @@
 import React, { ComponentProps, useState, useEffect } from 'react'
 
-import { HeaderContent, HeaderRoot, IconMenu, Menu } from './Header.styles'
+import { HeaderContent, HeaderRoot, IconMenu, LogoImage, Menu } from './Header.styles'
 
 import { Container } from 'containers/components/Container/Container'
 
@@ -40,8 +40,7 @@ export const Header = (props: HeaderProps) => {
         <HeaderContent>
           <a href="https://everland.earth" rel="noreferrer" target="_blank">
             <Logo>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={LOGO_IMAGE} alt="Logo" />
+              <LogoImage src={LOGO_IMAGE} alt="Logo" />
             </Logo>
           </a>
 

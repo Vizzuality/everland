@@ -27,3 +27,9 @@ export const Location = styled('div', {
 export const TextContainer = styled('div', {
   padding: '$3',
 })
+
+export const MainPicture = styled('img', {
+  height: '100%',
+  objectFit: 'cover',
+  width: '100%',
+})
