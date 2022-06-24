@@ -1,12 +1,8 @@
 import React, { ComponentProps, useState, useEffect } from 'react'
 
-import * as everlandLogo from '../../../public/images/common/logo.svg'
-import everlandLogoJasper from '../../../public/images/common/logo-everland-jasper.png'
-
 import { HeaderContent, HeaderRoot, IconMenu, Menu } from './Header.styles'
 
 import { Container } from 'containers/components/Container/Container'
-import Image from 'next/image'
 
 import { Logo } from 'components/Logo'
 import { NavMenu } from 'components/NavMenu'
@@ -20,6 +16,10 @@ export const Header = (props: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [clientWindowHeight, setClientWindowHeight] = useState(null)
   const scrolledHeader = clientWindowHeight > 30
+
+  const LOGO_IMAGE = scrolledHeader
+    ? 'images/common/logo-everland-jasper.png'
+    : 'images/common/logo.svg'
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY)
@@ -40,23 +40,12 @@ export const Header = (props: HeaderProps) => {
         <HeaderContent>
           <a href="https://everland.earth" rel="noreferrer" target="_blank">
             <Logo>
-              <Image src={scrolledHeader ? everlandLogoJasper : everlandLogo} alt="Logo" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={LOGO_IMAGE} alt="Logo" />
             </Logo>
           </a>
 
           <NavMenu scrolledHeader={scrolledHeader} />
-
-          {/* <LoginButton scrolled={scrolledHeader}>
-            <a href="https://everland.earth/login">
-              <Text
-                as="a"
-                color={scrolledHeader ? 'primary-jasper-500' : 'neutral-white'}
-                weight="bold"
-              >
-                Login
-              </Text>
-            </a>
-          </LoginButton> */}
 
           <Menu onClick={toggleMenu}>
             <IconMenu scrolled={scrolledHeader} />
