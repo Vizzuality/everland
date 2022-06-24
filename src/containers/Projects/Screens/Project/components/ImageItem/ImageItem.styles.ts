@@ -4,14 +4,13 @@ import { styled } from 'stitches.config'
 export const Title = styled(Text, {
   transition: 'opacity .2s ease-out .1s, transform .2s ease-out .1s',
   transform: 'translateY(20px)',
-  opacity: 0,
+  opacity: 1,
 })
 
 export const Description = styled(Text, {
   transition: 'opacity .2s ease-out .15s, transform .2s ease-out .15s',
   transform: 'translateY(20px)',
   opacity: 0,
-
   '& > .italic': {
     fontStyle: 'italic',
   },
@@ -57,4 +56,11 @@ export const ImageItemRoot = styled('div', {
       },
     },
   },
+})
+
+export const ItemImage = styled('img', {
+  height: '100%',
+  objectFit: 'cover',
+  width: '100%',
+  maxHeight: '538px',
 })
