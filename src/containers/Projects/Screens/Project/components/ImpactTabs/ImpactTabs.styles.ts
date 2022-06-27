@@ -217,3 +217,9 @@ export const TabTitleText = styled(Text, {
     fontSize: '$h3',
   },
 })
+
+export const TabSectionImage = styled('img', {
+  height: '100%',
+  objectFit: 'contain',
+  width: '100%',
+})

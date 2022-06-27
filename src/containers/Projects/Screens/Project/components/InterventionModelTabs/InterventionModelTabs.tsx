@@ -1,8 +1,8 @@
 import { Text } from 'components/Text'
-import Image from 'next/image'
 
 import {
   InterventionModelTabsRoot,
+  InterventionModelImage,
   TabContainer,
   TabImage,
   TabsList,
@@ -32,12 +32,12 @@ export const InterventionModelTabs = ({ tabs }: InterventionModelTabsProps) => {
           </TabTrigger>
         ))}
       </TabsList>
-      {tabs.map(({ title, description, image }, index) => (
+      {tabs.map(({ title, description, image }) => (
         <TabContainer key={title} value={title}>
           <Text size="body1" dangerouslySetInnerHTML={{ __html: description }} />
           {image && (
             <TabImage>
-              <Image src={image.src} alt={image.alt} layout="fill" />
+              <InterventionModelImage src={image.src} alt={image.alt} />
             </TabImage>
           )}
         </TabContainer>

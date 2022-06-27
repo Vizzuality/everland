@@ -81,3 +81,5 @@ export const IconMenu = styled('div', {
     },
   },
 })
+
+export const LogoImage = styled('img', {})

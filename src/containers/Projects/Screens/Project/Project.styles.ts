@@ -242,3 +242,5 @@ export const RelatedProjects = styled('div', {
     minHeight: '453px',
   },
 })
+
+export const VideoImage = styled('img', {})

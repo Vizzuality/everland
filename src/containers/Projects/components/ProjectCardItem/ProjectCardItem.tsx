@@ -1,12 +1,12 @@
 import {
   ImageContainer,
   Location,
+  MainPicture,
   ProjectCardItemRoot,
   TextContainer,
 } from './ProjectCardItem.styles'
 
 import { Icon } from 'components/Icon'
-import Image from 'next/image'
 import { Spacer } from 'components/Spacer'
 import { Text } from 'components/Text'
 import { useRouter } from 'next/router'
@@ -26,7 +26,7 @@ export const ProjectCardItem = ({
   return (
     <ProjectCardItemRoot onClick={handleClick}>
       <ImageContainer>
-        <Image src={mainPicture} alt={title} layout="fill" objectFit="cover" />
+        <MainPicture src={mainPicture} alt={title} />
         <Location>
           <Icon name="marker" size={6} color="neutral-white" />
           <Spacer space="3" direction="row" />

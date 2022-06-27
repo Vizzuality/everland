@@ -3,7 +3,6 @@ import { Spacer } from 'components/Spacer'
 import { Text } from 'components/Text'
 import { useFetchImpactTree } from 'hooks/fetchImpactTree'
 import { groupBy } from 'lodash'
-import Image from 'next/image'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Impact, Photo } from 'types/Project'
 import {
@@ -14,6 +13,7 @@ import {
   TabContent,
   TabContentText,
   TabImage,
+  TabSectionImage,
   TabTitleText,
   TabsList,
   TabTrigger,
@@ -186,7 +186,7 @@ export const ImpactTabs = ({ impact }: ImpactTabsProps) => {
             </TabContentText>
             {photo && (
               <TabImage>
-                <Image src={photo.url} alt={photo.altText} layout="fill" objectFit="contain" />
+                <TabSectionImage src={photo.url} alt={photo.altText} />
               </TabImage>
             )}
           </TabContent>
